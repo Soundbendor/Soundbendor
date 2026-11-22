@@ -1542,3 +1542,13 @@ article > .sb-section-head:first-child {
     display: none;
   }
 }
+
+// separator in the People degree line: Degree • Major • Year
+.sb-sep {
+  display: inline-block;
+  margin: 0 0.35em;
+  font-size: 1.15em;
+  line-height: 1;
+  vertical-align: -0.05em;
+  color: var(--global-text-color-light);
+}

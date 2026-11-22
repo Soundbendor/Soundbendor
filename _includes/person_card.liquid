@@ -18,9 +18,10 @@
     <div class="sb-name">
       {{ p.name }}
     </div>
-    {%- assign sb_prog = p.program | replace: ', ', ' · ' | replace: 'Computer Science', 'CS' | replace: 'Artificial Intelligence', 'AI' | replace: 'Mechanical Engineering', 'ME' | replace: 'Electrical Engineering', 'EE' -%}
+    {%- capture sb_sep %}<span class="sb-sep">•</span>{% endcapture -%}
+    {%- assign sb_prog = p.program | replace: ', ', sb_sep | replace: 'Computer Science', 'CS' | replace: 'Artificial Intelligence', 'AI' | replace: 'Mechanical Engineering', 'ME' | replace: 'Electrical Engineering', 'EE' -%}
     <div class="sb-meta">
-      {{ sb_prog }}{% if p.year != "" %} · {{ p.year }}{% endif %}
+      {{ sb_prog }}{% if p.year != "" %}{{ sb_sep }}{{ p.year }}{% endif %}
       {%- if p.campus != "" %}<br><span class="sb-campus">{{ p.campus }}</span>{% endif -%}
       {%- if p.other_degrees.size > 0 %}<br>Also {{ p.other_degrees | join: ', ' }}{% endif -%}
       {%- if p.note != "" %}<br>{{ p.note }}{% endif -%}

@@ -16,7 +16,7 @@
   level: "phd"
   program: "Ph.D., Computer Science / AI"
   year: ""
-  campus: "Corvallis"
+  campus: "Bend → Corvallis"
   other_degrees: ["M.S. 2026", "B.S. 2022"]
   activities: ["AMP", "CRF", "NCUR", "Capstone", "Honors"]
   tags: ["Music Emotion", "Language Models", "Multimodal", "Computer Vision", "Sustainability", "Food Waste", "IoT", "Speech & Language"]
@@ -170,7 +170,7 @@
   level: "bs"
   program: "B.S., Computer Science"
   year: ""
-  campus: "Cascades"
+  campus: "Bend"
   other_degrees: []
   activities: ["CRF"]
   tags: ["Music Tagging", "Timbre", "Audio Synthesis"]
@@ -192,7 +192,7 @@
   level: "bs"
   program: "B.S., Computer Science"
   year: ""
-  campus: "Cascades"
+  campus: "Bend"
   other_degrees: []
   activities: ["CRF"]
   tags: []
@@ -214,7 +214,7 @@
   level: "bs"
   program: "B.S., Computer Science"
   year: ""
-  campus: "Cascades"
+  campus: "Bend"
   other_degrees: []
   activities: ["CRF"]
   tags: []
@@ -236,7 +236,7 @@
   level: "bs"
   program: "B.S., Computer Science"
   year: ""
-  campus: "Cascades"
+  campus: "Bend"
   other_degrees: []
   activities: ["CRF"]
   tags: []
@@ -258,7 +258,7 @@
   level: "bs"
   program: "B.S., Computer Science"
   year: ""
-  campus: "Cascades"
+  campus: "Bend"
   other_degrees: []
   activities: ["AMP", "CRF"]
   tags: []
@@ -280,7 +280,7 @@
   level: "bs"
   program: "B.S., Computer Science"
   year: ""
-  campus: "Cascades"
+  campus: "Bend"
   other_degrees: []
   activities: ["AMP", "CRF"]
   tags: []
@@ -368,7 +368,7 @@
   level: "ms"
   program: "M.S., Computer Science"
   year: "2025"
-  campus: "Cascades"
+  campus: "Bend"
   other_degrees: ["B.S. 2024"]
   activities: ["AMP"]
   tags: ["Health", "IoT"]
@@ -456,7 +456,7 @@
   level: "bs"
   program: "B.S., Computer Science"
   year: "2025"
-  campus: "Cascades"
+  campus: "Bend"
   other_degrees: []
   activities: ["CRF"]
   tags: ["Music Emotion", "Language Models"]
@@ -478,7 +478,7 @@
   level: "bs"
   program: "B.S., Computer Science"
   year: "2025"
-  campus: "Cascades"
+  campus: "Bend"
   other_degrees: []
   activities: ["CRF"]
   tags: ["Music Tagging", "Timbre", "Signal Processing", "Tools"]
@@ -500,7 +500,7 @@
   level: "bs"
   program: "B.S., Computer Science"
   year: "2025"
-  campus: "Cascades"
+  campus: "Bend"
   other_degrees: []
   activities: ["CRF"]
   tags: ["Datasets", "Interfaces", "Tools"]
@@ -610,7 +610,7 @@
   level: "bs"
   program: "B.S., Computer Science"
   year: "2024"
-  campus: "Cascades"
+  campus: "Bend"
   other_degrees: []
   activities: ["Capstone"]
   tags: ["Health", "IoT"]
@@ -720,7 +720,7 @@
   level: "bs"
   program: "B.S., Computer Science"
   year: "2024"
-  campus: "Cascades"
+  campus: "Bend"
   other_degrees: []
   activities: ["CRF", "Capstone"]
   tags: ["Music Emotion", "Recommendation", "Rhythm", "Health", "Apps"]
@@ -742,7 +742,7 @@
   level: "bs"
   program: "B.S., Computer Science"
   year: "2024"
-  campus: "Cascades"
+  campus: "Bend"
   other_degrees: []
   activities: ["Capstone"]
   tags: ["Computer Vision", "Sustainability", "Food Waste", "Apps"]
@@ -764,7 +764,7 @@
   level: "bs"
   program: "B.S., Computer Science"
   year: "2024"
-  campus: "Cascades"
+  campus: "Bend"
   other_degrees: []
   activities: ["Capstone", "CRF"]
   tags: ["Computer Vision", "Sustainability", "Food Waste", "Apps"]
@@ -830,7 +830,7 @@
   level: "bs"
   program: "B.S., Computer Science"
   year: "2024"
-  campus: "Cascades"
+  campus: "Bend"
   other_degrees: []
   activities: ["CRF"]
   tags: ["Music Emotion", "Language Models", "Datasets"]
@@ -874,7 +874,7 @@
   level: "bs"
   program: "B.S., Computer Science"
   year: "2024"
-  campus: "Cascades"
+  campus: "Bend"
   other_degrees: []
   activities: ["CRF", "Capstone"]
   tags: ["Music Emotion", "Recommendation", "Rhythm", "Health", "Apps", "Signal Processing"]
@@ -896,7 +896,7 @@
   level: "bs"
   program: "B.S., Computer Science"
   year: "2024"
-  campus: "Cascades"
+  campus: "Bend"
   other_degrees: []
   activities: ["Capstone"]
   tags: ["Computer Vision", "Sustainability", "Food Waste", "Apps"]
@@ -918,7 +918,7 @@
   level: "bs"
   program: "B.S., Computer Science"
   year: "2024"
-  campus: "Cascades"
+  campus: "Bend"
   other_degrees: []
   activities: ["CRF", "Capstone"]
   tags: ["Music Emotion", "Recommendation", "Rhythm", "Health", "Apps"]
@@ -962,7 +962,7 @@
   level: "bs"
   program: "B.S., Computer Science"
   year: "2024"
-  campus: "Cascades"
+  campus: "Bend"
   other_degrees: []
   activities: ["Capstone"]
   tags: ["Computer Vision", "Sustainability", "Food Waste", "Apps"]
@@ -1050,7 +1050,7 @@
   level: "bs"
   program: "B.S., Computer Science"
   year: "2023"
-  campus: "Cascades"
+  campus: "Bend"
   other_degrees: []
   activities: ["Capstone"]
   tags: ["Ecology"]
@@ -1072,7 +1072,7 @@
   level: "bs"
   program: "B.S., Computer Science"
   year: "2023"
-  campus: "Cascades"
+  campus: "Bend"
   other_degrees: []
   activities: ["Capstone"]
   tags: ["Music Emotion", "Computer Vision", "Datasets"]
@@ -1226,7 +1226,7 @@
   level: "bs"
   program: "B.S., Computer Science"
   year: "2023"
-  campus: "Cascades"
+  campus: "Bend"
   other_degrees: []
   activities: ["CRF", "Capstone"]
   tags: ["Ecology"]
@@ -1248,7 +1248,7 @@
   level: "bs"
   program: "B.S., Computer Science"
   year: "2023"
-  campus: "Cascades"
+  campus: "Bend"
   other_degrees: []
   activities: ["CRF", "NCUR", "Capstone"]
   tags: ["Music Emotion", "Computer Vision", "Datasets", "Perception", "Hearing", "Health", "Apps", "Interfaces"]
@@ -1270,7 +1270,7 @@
   level: "bs"
   program: "B.S., Computer Science"
   year: "2023"
-  campus: "Cascades"
+  campus: "Bend"
   other_degrees: []
   activities: ["Capstone"]
   tags: ["Computer Vision", "Health", "Apps"]
@@ -1380,7 +1380,7 @@
   level: "bs"
   program: "B.S., Computer Science"
   year: "2023"
-  campus: "Cascades"
+  campus: "Bend"
   other_degrees: []
   activities: ["CRF", "Capstone"]
   tags: ["Ecology"]
@@ -1424,7 +1424,7 @@
   level: "bs"
   program: "B.S., Computer Science"
   year: "2023"
-  campus: "Cascades"
+  campus: "Bend"
   other_degrees: []
   activities: ["Capstone"]
   tags: ["Transcription", "Datasets"]
@@ -1468,7 +1468,7 @@
   level: "bs"
   program: "B.S., Computer Science"
   year: "2023"
-  campus: "Cascades"
+  campus: "Bend"
   other_degrees: []
   activities: ["Capstone"]
   tags: ["Music Theory", "Interfaces"]
@@ -1732,7 +1732,7 @@
   level: "bs"
   program: "B.S., Computer Science"
   year: "2023"
-  campus: "Cascades"
+  campus: "Bend"
   other_degrees: []
   activities: ["Capstone"]
   tags: ["Music Emotion", "Datasets", "Apps"]
@@ -1776,7 +1776,7 @@
   level: "bs"
   program: "B.S., Computer Science"
   year: "2023"
-  campus: "Cascades"
+  campus: "Bend"
   other_degrees: []
   activities: ["Capstone"]
   tags: ["Computer Vision", "Health", "Apps"]
@@ -1798,7 +1798,7 @@
   level: "bs"
   program: "B.S., Computer Science"
   year: "2023"
-  campus: "Cascades"
+  campus: "Bend"
   other_degrees: []
   activities: ["Capstone"]
   tags: ["Voice", "Speech & Language", "Audio Synthesis"]
@@ -1908,7 +1908,7 @@
   level: "bs"
   program: "B.S., Computer Science"
   year: "2023"
-  campus: "Cascades"
+  campus: "Bend"
   other_degrees: []
   activities: ["Capstone"]
   tags: ["Ecology"]
@@ -1974,7 +1974,7 @@
   level: "bs"
   program: "B.S., Computer Science"
   year: "2023"
-  campus: "Cascades"
+  campus: "Bend"
   other_degrees: []
   activities: ["Capstone"]
   tags: ["Voice", "Speech & Language", "Audio Synthesis"]
@@ -2084,7 +2084,7 @@
   level: "bs"
   program: "B.S., Computer Science"
   year: "2021"
-  campus: "Cascades"
+  campus: "Bend"
   other_degrees: []
   activities: ["CRF"]
   tags: ["Sustainability", "Apps"]
@@ -2106,7 +2106,7 @@
   level: "bs"
   program: "B.S., Computer Science"
   year: "2021"
-  campus: "Cascades"
+  campus: "Bend"
   other_degrees: []
   activities: ["CRF", "NCUR"]
   tags: ["Health", "IoT"]
@@ -2172,7 +2172,7 @@
   level: "bs"
   program: "B.S., Computer Science"
   year: ""
-  campus: "Cascades"
+  campus: "Bend"
   other_degrees: []
   activities: ["CRF"]
   tags: []
