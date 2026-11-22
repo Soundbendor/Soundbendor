@@ -1,11 +1,10 @@
 ---
 layout: post
-date: 2023-05-15
+date: 2023-05-30
 title: "Orion Junkins wins Outstanding Lightning Talk Award"
 kind: Award
 source: "Cascades Research and Scholarship Symposium"
 link: https://osucascades.edu/research/students/cascades-research-and-scholarship-symposium/2023-cascades-research-and
-when: "Spring 2023"
 inline: true
 related_posts: false
 ---
