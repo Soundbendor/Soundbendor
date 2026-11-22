@@ -1521,3 +1521,24 @@ article > .sb-section-head:first-child {
 .post-description:empty {
   display: none;
 }
+
+// People: photo with the LinkedIn / GitHub / website / Scholar icons underneath
+.sb-person-side {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.sb-person-links {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  font-size: 1.05rem;
+  line-height: 1;
+
+  &:empty {
+    display: none;
+  }
+}

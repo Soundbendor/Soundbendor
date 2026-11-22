@@ -1,18 +1,22 @@
 {%- comment -%} One person. Usage: {% include person_card.liquid p=person compact=false %} {%- endcomment -%}
 {%- assign p = include.p -%}
 <div class="sb-person{% if include.compact %} sb-compact{% endif %}" id="{{ p.id }}" data-tags="{{ p.tags | join: '|' }}">
-  {%- if p.photo != "" -%}
-    <img class="sb-photo" loading="lazy" src="{{ p.photo | prepend: '/assets/img/people/' | relative_url }}" alt="{{ p.name }}">
-  {%- else -%}
-    <img class="sb-photo sb-placeholder" loading="lazy" src="{{ '/assets/img/people/placeholder.png' | relative_url }}" alt="">
-  {%- endif -%}
+  <div class="sb-person-side">
+    {%- if p.photo != "" -%}
+      <img class="sb-photo" loading="lazy" src="{{ p.photo | prepend: '/assets/img/people/' | relative_url }}" alt="{{ p.name }}">
+    {%- else -%}
+      <img class="sb-photo sb-placeholder" loading="lazy" src="{{ '/assets/img/people/placeholder.png' | relative_url }}" alt="">
+    {%- endif -%}
+    <div class="sb-person-links">
+      {%- if p.links.linkedin != "" %}<a class="sb-icon" href="{{ p.links.linkedin }}" aria-label="{{ p.name }} on LinkedIn"><i class="fa-brands fa-linkedin"></i></a>{% endif -%}
+      {%- if p.links.github != "" %}<a class="sb-icon" href="{{ p.links.github }}" aria-label="{{ p.name }} on GitHub"><i class="fa-brands fa-github"></i></a>{% endif -%}
+      {%- if p.links.website != "" %}<a class="sb-icon" href="{{ p.links.website }}" aria-label="{{ p.name }}'s website"><i class="fa-solid fa-globe"></i></a>{% endif -%}
+      {%- if p.links.scholar != "" %}<a class="sb-icon" href="{{ p.links.scholar }}" aria-label="{{ p.name }} on Google Scholar"><i class="ai ai-google-scholar"></i></a>{% endif -%}
+    </div>
+  </div>
   <div class="sb-person-body">
     <div class="sb-name">
       {{ p.name }}
-      {%- if p.links.linkedin != "" %} <a class="sb-icon" href="{{ p.links.linkedin }}" aria-label="{{ p.name }} on LinkedIn"><i class="fa-brands fa-linkedin"></i></a>{% endif -%}
-      {%- if p.links.github != "" %} <a class="sb-icon" href="{{ p.links.github }}" aria-label="{{ p.name }} on GitHub"><i class="fa-brands fa-github"></i></a>{% endif -%}
-      {%- if p.links.website != "" %} <a class="sb-icon" href="{{ p.links.website }}" aria-label="{{ p.name }}'s website"><i class="fa-solid fa-globe"></i></a>{% endif -%}
-      {%- if p.links.scholar != "" %} <a class="sb-icon" href="{{ p.links.scholar }}" aria-label="{{ p.name }} on Google Scholar"><i class="ai ai-google-scholar"></i></a>{% endif -%}
     </div>
     {%- assign sb_prog = p.program | replace: ', ', ' · ' | replace: 'Computer Science', 'CS' | replace: 'Artificial Intelligence', 'AI' | replace: 'Mechanical Engineering', 'ME' | replace: 'Electrical Engineering', 'EE' -%}
     <div class="sb-meta">
