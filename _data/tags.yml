@@ -1,24 +1,29 @@
-# The Soundbendor theme tags, in display order. Shared by papers, theses, projects and people.
-# Topics first, then methods and outputs. A chip with nothing to show on a page is hidden there.
+# The Soundbendor theme tags, in display order, grouped by colour (OSU secondary palette;
+# colours are set in _sass/_soundbendor.scss). Shared by papers, theses, projects and people.
+# A chip with nothing to show on a page is hidden there.
 - Music Emotion
-- Music Perception
 - Music Theory
-- Rhythm
-- Music Transcription
+- Transcription
+- Recommendation
 - Music Tagging
-- Music Recommendation
+- Perception
+- Hearing
+- Voice
 - Timbre
-- Audio Synthesis
+- Rhythm
 - Speech & Language
 - Language Models
+- Multimodal
+- Audio Synthesis
 - Signal Processing
 - Computer Vision
 - Bioacoustics
 - Ecology
 - Sustainability
+- Food Waste
 - Health
-- Interface
-- IoT
 - Datasets
+- IoT
 - Apps
+- Interfaces
 - Tools

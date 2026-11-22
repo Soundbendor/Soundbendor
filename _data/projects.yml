@@ -12,7 +12,7 @@
   year: 2026
   type: "CRF"
   people: ["marc-vannucci"]
-  tags: ["Timbre", "Music Tagging", "Audio Synthesis"]
+  tags: ["Music Tagging", "Timbre", "Audio Synthesis"]
   video: "YYIbzzr3-4A"
   summary: ""
   related: []
@@ -42,7 +42,7 @@
   year: 2025
   type: "CRF"
   people: ["daniel-lounsbury"]
-  tags: ["Interface", "Datasets", "Tools"]
+  tags: ["Datasets", "Interfaces", "Tools"]
   summary: ""
   video: "2bl0nL1c2hk"
   slides: ""
@@ -57,7 +57,7 @@
   year: 2025
   type: "CRF"
   people: ["alec-krsek"]
-  tags: ["Timbre", "Music Tagging", "Signal Processing", "Tools"]
+  tags: ["Music Tagging", "Timbre", "Signal Processing", "Tools"]
   summary: "A Python tool that labels any sound file with timbre words. It extracts 15 acoustic features with librosa and Praat (spectral centroid, harmonics-to-noise ratio, jitter, shimmer, temporal envelope and more) and maps them to descriptors such as strident or wavering, grouped into tonal, dynamic, rhythmic, textural and brightness categories. Tested on the ESC-50 environmental sound dataset, the goal is to label audio datasets automatically so a model can learn timbre directly from audio."
   video: ""
   slides: ""
@@ -72,7 +72,7 @@
   year: 2024
   type: "Capstone"
   people: ["kameron-keller", "dalton-shults", "matthew-omalley-nichols"]
-  tags: ["Music Emotion", "Rhythm", "Music Recommendation", "Health", "Apps"]
+  tags: ["Music Emotion", "Recommendation", "Rhythm", "Health", "Apps"]
   summary: "The AlgoRhythms mobile application generates a fun, interactive workout based on user-selected music. Using machine learning, we analyzed music and extracted data about its composition to build interactive workout visualizations in a mobile application. The application connects to a robust backend infrastructure that includes a Django API for passing data to the application, a PostgreSQL database for storing data, and an Nginx web server, all hosted on Amazon Web Services. AlgoRhythms focuses on creating a product that will let users pick the music they enjoy, providing them with a workout synchronized to their favorite music's rhythms. AlgoRhythms automatically generates your exercises, removing the need for prior exercise knowledge, lowering the barrier of entry for those new to working out, and providing variety for seasoned fitness enthusiasts. The application also provides detailed workout descriptions and video guides for each exercise. The project is currently entering a testing Alpha phase and is unavailable to the public. To learn more, contact Dalton, Kameron, or Matthew via LinkedIn by hovering over the images below."
   video: "ypiphXN5uuU"
   slides: ""
@@ -88,7 +88,7 @@
   year: 2024
   type: "Capstone"
   people: ["daniel-lau", "kim-markley", "blake-pugh", "micah-stalberg"]
-  tags: ["Sustainability", "Computer Vision", "Apps"]
+  tags: ["Computer Vision", "Sustainability", "Food Waste", "Apps"]
   summary: "The sustainability challenge of how to properly dispose of uneaten food is a rapidly evolving area of research in the battle to solve the climate change crisis. In an effort to contribute useful data to this field, the binsight.ai team is building one approach to identify and track household food waste habits. As a part of this large project, we created the mobile binsight.ai app to support the collection of data during a field study in the summer of 2024. The main features of this mobile app include connecting a binsight.ai Smart Compost Bin to Wi-Fi, displaying images of food waste captured by the bin, and providing graphs and statistics of composted items on a dashboard to encourage food waste reduction goals. This project is generously funded by Foundation for Food & Agriculture Research and the Kroger Co. Zero Hunger. With the support of this partnership, we hope to make a dent in the multi-billion-dollar annual problem of food waste."
   video: "mk88SDPEFSc"
   slides: ""
@@ -148,7 +148,7 @@
   year: 2024
   type: "Independent study"
   people: ["andrew-young"]
-  tags: ["Interface", "Datasets", "Tools"]
+  tags: ["Datasets", "Interfaces", "Tools"]
   summary: ""
   video: "HqV5deCIMXA"
   slides: ""
@@ -163,7 +163,7 @@
   year: 2024
   type: "Capstone"
   people: ["jake-anding", "devin-martin"]
-  tags: ["Interface", "Apps"]
+  tags: ["Apps", "Interfaces"]
   summary: "The Walking Piano project allows users to play various songs on a piano with a catch: the user must play with their feet! Our aim is to develop a standalone software that works alongside a physical MIDI piano controller that can be played by the user as they move across the physical piano. By providing simple guidance with colorful notes falling towards a visual piano for reference, the software will empower users of all skill levels to enjoy the unique experience of playing a large MIDI piano and creating incredible music, alone, or with a friend."
   video: "vvf6wcLTews"
   slides: ""
@@ -178,7 +178,7 @@
   year: 2023
   type: "Layman Fellowship"
   people: ["kameron-keller", "dalton-shults"]
-  tags: ["Music Emotion", "Rhythm", "Music Recommendation", "Health", "Apps"]
+  tags: ["Music Emotion", "Recommendation", "Rhythm", "Health", "Apps"]
   summary: "AlgoRhythms is an application that automatically generates exercise workouts from a given song. Using machine learning and intelligent mappings, we select workouts from a set of exercises that best fit the rhythm and energy of the music. First, we segment the song into labeled sections, in which the labels represent similarities between segments of a song. Next, these segments are mapped to specific exercises and are used to generate a video. This video guides the user through the exercises mapped to the song’s labeled segments by displaying repetition timings that match the rhythm of the song."
   video: "G7uD60NkERM"
   slides: "projects/2023-algorhythms-slides.pdf"
@@ -238,7 +238,7 @@
   year: 2023
   type: "Layman Fellowship"
   people: ["samson-devol"]
-  tags: ["Music Perception", "Health", "Interface", "Apps"]
+  tags: ["Perception", "Hearing", "Health", "Apps", "Interfaces"]
   summary: "This project builds a website tool that attempts to simulate hearing loss. The audio signal is filtered by a dynamic representation of an audiogram, allowing the user to simulate different types of hearing loss. Our goal is to develop a tool to encourage better understanding of hearing loss in order to motivate empathy, accessible design, and prevention of hearing damage."
   video: "ipQkl6GNp4w"
   slides: ""
@@ -268,7 +268,7 @@
   year: 2023
   type: "Capstone"
   people: ["luke-reynolds", "himanshu-dhir", "chih-yun-wu", "jayson-kildea"]
-  tags: ["Health", "Computer Vision", "Apps"]
+  tags: ["Computer Vision", "Health", "Apps"]
   summary: "In this project our goal is to create a useful application for tracking meals. We designed a website tool to track users’ diet and provide helpful insights through interactive data visualization and interface to enter in meals by utilizing AI identification."
   video: "r8__tsQ48UA"
   slides: ""
@@ -283,7 +283,7 @@
   year: 2023
   type: "Capstone"
   people: ["caleb-knight", "scott-rein", "mason-mann"]
-  tags: ["Music Transcription", "Datasets"]
+  tags: ["Transcription", "Datasets"]
   summary: "This project proposes an automatic pipeline to generate a novel dataset for machine learning music scores directly from audio. The MIDI Performance Data Website is a platform to collect synchronized audio and MIDI files, crowdsourced by musicians across the world. Additionally, we provide a repository for researchers to search, filter, and download audio-MIDI data."
   video: "Qgrd5PeclrI"
   slides: ""
@@ -328,7 +328,7 @@
   year: 2023
   type: "Capstone"
   people: ["alex-prestwich", "kobe-chenea", "paul-koos", "victor-marquez"]
-  tags: ["Music Theory", "Interface"]
+  tags: ["Music Theory", "Interfaces"]
   summary: "This project creates a read-only music visualization interface that handles MIDI or MusicXML input and display an interactive musical score in a view window in Python. We designed numerous UI/UX features including window scrolling, window resizing, and score details that is highly responsive to user input. We implemented score slicing to allow the user to load a portion of the score as opposed to the entire score. This project lays significant groundwork for symbolic music visualization software, with many new musical elements and features planned in the future."
   video: "6QPmVV6HtUA"
   slides: ""
@@ -389,7 +389,7 @@
   year: 2023
   type: "Capstone"
   people: ["bradly-landucci", "john-knowlton"]
-  tags: ["Timbre", "Audio Synthesis", "Interface", "Apps"]
+  tags: ["Timbre", "Audio Synthesis", "Apps", "Interfaces"]
   summary: "Our project develops a web application that visually represents the pairs of different sounds that a user can hear and vote on. This provides a crowd-sourced fitness function for a genetic algorithm to evolve interesting synthetic sounds. Our project uses additive synthesis in order to represent instruments partial by partial. Instruments are synthesized client-side eliminating the need for cloud storage of audio."
   video: ""
   slides: ""
@@ -404,7 +404,7 @@
   year: 2023
   type: "Capstone"
   people: ["zachary-chand", "nicholas-burrell", "jungmin-lee", "gavin-lesher", "avery-mao", "griffin-riley", "kevin-tran"]
-  tags: ["Speech & Language", "Audio Synthesis"]
+  tags: ["Voice", "Speech & Language", "Audio Synthesis"]
   summary: "Constructed languages are artificial languages that have been developed artificially, rather than being evolved naturally over time. This novel text-to-speech tool synthesizes hypothetical pronunciations for constructed languages. To generate speech clips for languages without any speakers or audio examples, we approximate this speech from the constitute phonetic sounds extracted from spoken examples of 100 natural languages using a combination of concatenative and formant synthesis techniques."
   video: ""
   slides: ""
@@ -419,7 +419,7 @@
   year: 2022
   type: "Grant project"
   people: ["matt-morgan"]
-  tags: ["Sustainability", "Health", "Computer Vision"]
+  tags: ["Computer Vision", "Sustainability", "Health"]
   summary: "Keeping track of dietary habits traditionally requires a written diary of the foods consumed at every meal. To simplify this process, we imagine an automated food computer vision system that would save people time and convenience by autonomously logging meals. In this project, we lay the foundation for this vision. We aggregate a dataset of annotated multi-label food images, then train a PyTorch model to recognize and localize 18 different foods with 91% accuracy. Our research creates a baseline for future work that we hope can be used to track nutritional intake in hospitals, schools, and correctional facilities."
   video: ""
   slides: ""
@@ -434,7 +434,7 @@
   year: 2022
   type: "NCUR"
   people: ["matt-morgan"]
-  tags: ["Sustainability", "Health", "Computer Vision"]
+  tags: ["Computer Vision", "Sustainability", "Health"]
   summary: "Keeping track of dietary habits traditionally requires a written diary of the foods consumed in every meal. Mobile apps have added some convenience to the process, but the consumer must still spend time logging each and every meal. To simplify this process, we imagine an automated food camera detection system that would save people time and convenience by autonomously logging meals. Moreover, dietary information would be stored in the cloud, offering easy access to nutritionists and other software platforms. In this project, we lay the foundation for this vision. We prepare a dataset of food images designed for machine learning, then implement an AI model to recognize multiple foods in a given picture. Our research creates a baseline for future work that we hope can be used to track nutritional intake in schools and hospitals, helping decrease malnutrition in vulnerable populations."
   video: "xmswDkaExhQ"
   slides: "projects/2022-multi-food-items-detection-and-localization-in-images-slides.pdf"
@@ -509,7 +509,7 @@
   year: 2021
   type: "NCUR"
   people: ["victoria-ebert"]
-  tags: ["Music Transcription", "Signal Processing"]
+  tags: ["Transcription", "Signal Processing"]
   summary: "Audio transcription is a complicated problem in the field of music information retrieval. In this work, we attempt automatic transcription directly from audio waveforms using a uses a BLSTM network and a time-series MIDI representation."
   video: "InUuROiyrEc"
   slides: ""
@@ -539,7 +539,7 @@
   year: 2021
   type: "URSA"
   people: ["thomas-burg"]
-  tags: ["Timbre", "Music Tagging"]
+  tags: ["Music Tagging", "Timbre"]
   summary: "The automatic identification of musical instruments is an important task in music information retrieval. Previous approaches often rely on spectral analysis to identify the frequency patterns needed to distinguish between instructions. In this work, we present an approach to automatically identify musical instruments directly from the raw audio waveform, without performing any spectral analysis or feature extraction. For this task, we trained a bidirectional LSTM, a type of recurrent neural network often used to learn sequential data. The model was trained on sequences of 256 bits from one-second samples of single-channel 16 kHz wav files. The model was trained on audio excerpts from the RWC Music Database, which contains examples of musical instruments played across their range and with different dynamics. To prepare for learning, the data was first split into individual, one-second chunks and downsampled to reduce the amount of data. The model was trained on ten instruments to perform multiclass classification directly from raw audio sequences."
   video: "tcHuNvWpMIA"
   slides: "projects/2021-identifying-musical-instruments-with-machine-learning-slides.pdf"
@@ -554,7 +554,7 @@
   year: 2021
   type: "NCUR"
   people: ["shaurya-gaur"]
-  tags: ["Music Emotion", "Music Recommendation"]
+  tags: ["Music Emotion", "Recommendation"]
   summary: "We listen to music for enjoyment, distraction, joy, comfort, and focus. People curate music playlists to reflect and affect their own moods. Popular music platforms like Spotify also create playlists of songs with similar moods by feeding data on a song’s characteristics to machine learning models which create personalized playlists for users. The music from these playlists is not optimized to steer users to productivity, and often distracts instead. Previous affective music studies create playlists of songs with a similar emotional state, but those playlists were not dynamic based on mood. We create a \"productivity playlist,\" an intelligent algorithm that creates playlists that automatically adjust based on the user’s current mood to lead them towards a happier or more productive state."
   video: "PQzAKqqoDHc"
   slides: "projects/2021-mood-dynamic-playlists-slides.pdf"
@@ -585,7 +585,7 @@
   year: 2021
   type: "URSA"
   people: ["alex-prestwich"]
-  tags: ["Speech & Language", "Signal Processing"]
+  tags: ["Voice", "Speech & Language", "Signal Processing"]
   summary: "Oftentimes the voices of a few drown out the voices of many. We interpret this problem literally as we investigate the ability of supervised machine learning models to predict sentiment directly from crowd audio in which multiple speakers are speaking simultaneously. Using a dataset of one second audio recordings of individuals saying \"yes\" or \"no\", we mix together different voices speaking at the same time to create a dataset of crowd audio responses. Each audio mixture was annotated with the specific proportion of the crowd response. On different mixture sizes ranging from 1 to 10 constituent voices, we trained BLSTM models using raw audio to predict the average sentiment of the crowd response."
   video: "A6bktmCS2FA"
   slides: ""
@@ -600,7 +600,7 @@
   year: 2020
   type: "URSA"
   people: ["parker-carlson"]
-  tags: ["Music Theory", "Signal Processing", "Audio Synthesis"]
+  tags: ["Music Theory", "Audio Synthesis", "Signal Processing"]
   summary: "We explore using deep learning to automatically transpose audio: remap the pitch and respective harmonics of a given sound to a new frequency mapping. State-of-the-art systems that model raw-audio are limited to generating audio one sample at a time, which is prohibitively slow. This motivates our use of deep recurrent neural networks to develop a system that can run in near-real time, while attempting to minimize noise and interference. We find that our neural network was able to learn encodings of pitch and timbre (tone color) from raw audio. This allowed the network to generate audio that has been shifted up in pitch while maintaining accurate perception of the music’s timbre. Our model also generalized from training with only synthetic monophonic sounds to accurately remapping real polyphonic sounds with accurate timbre."
   video: "l093vhJXY-g"
   slides: ""
@@ -615,7 +615,7 @@
   year: 2020
   type: "URSA"
   people: ["victoria-ebert"]
-  tags: ["Music Transcription", "Signal Processing"]
+  tags: ["Transcription", "Signal Processing"]
   summary: "Audio transcription is a complicated problem in the field of music information retrieval. Many attempts have been made in this field using different types of neural networks and different formats of the audio and MIDI. This attempt uses a BLSTM and a time-series MIDI."
   video: "VYiwz89rWZ4"
   slides: ""
@@ -630,7 +630,7 @@
   year: 2020
   type: "URSA"
   people: ["krystal-steiner"]
-  tags: ["Health", "IoT", "Datasets"]
+  tags: ["Health", "Datasets", "IoT"]
   summary: "Canine epilepsy is a neurological disorder that animal specialists desire to monitor to better inform treatment plans. In this research I compared and contrasted any seizure monitoring devices already that exist in the market. I designed research protocols and marketing materials to recruit interested parties into a study monitoring canine epilepsy."
   video: "niHmhrZxPe0"
   slides: "projects/2020-canine-seizure-data-collection-study-slides.pdf"
@@ -660,7 +660,7 @@
   year: 2020
   type: "URSA"
   people: ["shaurya-gaur"]
-  tags: ["Music Emotion", "Music Recommendation", "Apps"]
+  tags: ["Music Emotion", "Recommendation", "Apps"]
   summary: "In this project, our goal is to design an intelligent playlist that automatically adjusts the music playing based on the measurements of the user’s attention and productivity levels. Although previous affective music studies create playlists of songs with a similar emotional state, our playlist creation algorithm is designed to take users on an emotional journey."
   video: "e0TvA8f8yiw"
   slides: "projects/2020-productivity-playlist-slides.pdf"
@@ -675,7 +675,7 @@
   year: 2020
   type: "URSA"
   people: ["erick-branner"]
-  tags: ["Music Perception", "Health"]
+  tags: ["Perception", "Hearing", "Health"]
   summary: "Partial hearing loss can affect how a person perceives the world. The standardized definition of hearing loss, often used to determine candidacy for cochlear implants, determines “the configuration, severity, and site of lesion from a pure-tone audiogram”. By emulating hearing loss with common sounds, we can increase our understanding of how people may perceive the auditory world. I designed a web application that filters audio based on a pure-tone audiogram, a graphical representation of perceived volume intensity. This method provides an audible representation of various hearing loss scenarios. This pure-tone audiogram and peaking filter approach simulates hearing loss through an easy-to-use web application that allows different and familiar sounds to be attenuated according to several common patterns of hearing loss. Data from a pure-tone audiogram were applied to the MP3 audio stream."
   video: "R8Hyd92aXqI"
   slides: ""
@@ -690,7 +690,7 @@
   year: 2020
   type: "URSA"
   people: ["chitali-buge"]
-  tags: ["Music Perception", "Health", "Audio Synthesis", "Interface"]
+  tags: ["Perception", "Audio Synthesis", "Health", "Interfaces"]
   summary: "The Electronic Vital Sign Monitor is integral in many hospitals. This machine generally measures heart rate, blood pressure, oxygen level, body temperature, and respiratory rate. The current monitor deployed in hospitals audibly represents only heart rate and blood pressure. Heart rate is sonified through rhythm: the audible beep indicates a heartbeat and the silence signifies the gap between each heartbeat. Blood pressure is sonified into audio by pitch: the higher the pitch, the higher the blood pressure. However, the current model could be expanded to sonify a third datum point. We propose to integrate blood oxygen level into the audio by altering the timbre of the audio signal."
   video: "jP-JpDugG9w"
   slides: ""

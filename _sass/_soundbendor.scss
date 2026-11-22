@@ -47,38 +47,43 @@ article a,
   text-underline-offset: 2px;
 }
 
-/* ---------- theme tags: one colour per family (pill tint, border and dot) ---------- */
-$sb-blue: #006a8e;   // Stratosphere: music
-$sb-purple: #7b4f9e; // speech and language (not an OSU secondary; none is purple)
-$sb-teal: #00859b;   // High Tide: synthesis and signal processing
-$sb-orange: #d3832b; // Solar Flare: computer vision
-$sb-yellow: #ffb500; // Luminance: bioacoustics
-$sb-green: #4a773c;  // Pine Stand: ecology and sustainability
-$sb-red: #b3263e;    // health
-$sb-grey: #8e9089;   // Crater: infrastructure and outputs
+/* ---------- theme tags: one OSU secondary colour per family (pill tint, border and dot) ---------- */
+$sb-stratosphere: #006a8e;
+$sb-moondust: #c6dae7;
+$sb-star-canvas: #003b5c;
+$sb-high-tide: #00859b;
+$sb-solar-flare: #d3832b;
+$sb-candela: #fdd26e;
+$sb-pine-stand: #4a773c;
+$sb-high-desert: #7a6855;
+$sb-crater: #8e9089;
 $sb-tag-colors: (
-  "Music Emotion": $sb-blue,
-  "Music Perception": $sb-blue,
-  "Music Theory": $sb-blue,
-  "Rhythm": $sb-blue,
-  "Music Transcription": $sb-blue,
-  "Music Tagging": $sb-blue,
-  "Music Recommendation": $sb-blue,
-  "Timbre": $sb-blue,
-  "Speech & Language": $sb-purple,
-  "Language Models": $sb-purple,
-  "Audio Synthesis": $sb-teal,
-  "Signal Processing": $sb-teal,
-  "Computer Vision": $sb-orange,
-  "Bioacoustics": $sb-yellow,
-  "Ecology": $sb-green,
-  "Sustainability": $sb-green,
-  "Health": $sb-red,
-  "Interface": $sb-grey,
-  "IoT": $sb-grey,
-  "Datasets": $sb-grey,
-  "Apps": $sb-grey,
-  "Tools": $sb-grey,
+  "Music Emotion": $sb-stratosphere,
+  "Music Theory": $sb-stratosphere,
+  "Transcription": $sb-stratosphere,
+  "Recommendation": $sb-stratosphere,
+  "Music Tagging": $sb-stratosphere,
+  "Perception": $sb-moondust,
+  "Hearing": $sb-moondust,
+  "Voice": $sb-moondust,
+  "Timbre": $sb-moondust,
+  "Rhythm": $sb-moondust,
+  "Speech & Language": $sb-star-canvas,
+  "Language Models": $sb-star-canvas,
+  "Multimodal": $sb-star-canvas,
+  "Audio Synthesis": $sb-high-tide,
+  "Signal Processing": $sb-high-tide,
+  "Computer Vision": $sb-solar-flare,
+  "Bioacoustics": $sb-candela,
+  "Ecology": $sb-pine-stand,
+  "Sustainability": $sb-pine-stand,
+  "Food Waste": $sb-pine-stand,
+  "Health": $sb-high-desert,
+  "Datasets": $sb-crater,
+  "IoT": $sb-crater,
+  "Apps": $sb-crater,
+  "Interfaces": $sb-crater,
+  "Tools": $sb-crater,
 );
 
 .sb-tags {
@@ -110,6 +115,7 @@ $sb-tag-colors: (
     height: 0.55em;
     border-radius: 50%;
     background: var(--sb-dot, #8e9089);
+    box-shadow: 0 0 0 1px var(--sb-dot-edge, transparent);
     flex: none;
   }
 
@@ -121,12 +127,25 @@ $sb-tag-colors: (
 @each $tag, $c in $sb-tag-colors {
   [data-tag="#{$tag}"] {
     --sb-dot: #{$c};
-    --sb-tag-bg: #{rgba($c, 0.12)};
-    --sb-tag-border: #{rgba($c, 0.45)};
+    // pale colours (Moondust, Candela) need a stronger tint and a darker edge to show on white
+    @if lightness($c) > 70% {
+      --sb-tag-bg: #{rgba($c, 0.45)};
+      --sb-tag-border: #{mix($c, #423e3c, 60%)};
+      --sb-dot-edge: #{mix($c, #423e3c, 50%)};
+    } @else {
+      --sb-tag-bg: #{rgba($c, 0.12)};
+      --sb-tag-border: #{rgba($c, 0.45)};
+    }
   }
   html[data-theme="dark"] [data-tag="#{$tag}"] {
-    --sb-tag-bg: #{rgba($c, 0.22)};
-    --sb-tag-border: #{rgba($c, 0.6)};
+    @if lightness($c) > 70% {
+      --sb-tag-bg: #{rgba($c, 0.2)};
+      --sb-tag-border: #{rgba($c, 0.7)};
+      --sb-dot-edge: transparent;
+    } @else {
+      --sb-tag-bg: #{rgba($c, 0.22)};
+      --sb-tag-border: #{rgba($c, 0.6)};
+    }
   }
 }
 
