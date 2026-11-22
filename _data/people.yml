@@ -22,7 +22,7 @@
   tags: ["Music Emotion", "Language Models", "Multimodal", "Computer Vision", "Sustainability", "Food Waste", "IoT", "Speech & Language"]
   note: ""
   theses: ["beery2025towards", "beery2022predicting"]
-  papers: ["beery2024smart", "beery2023learning", "donnelly2022evaluating"]
+  papers: ["beery2026towards", "beery2024smart", "beery2023learning", "donnelly2022evaluating"]
   projects: ["2021-semantic-analysis-of-music-discourse"]
   links:
     linkedin: "https://www.linkedin.com/in/aidan-beery-68a1731a2"
@@ -305,10 +305,10 @@
   campus: "Corvallis"
   other_degrees: []
   activities: []
-  tags: []
+  tags: ["Signal Processing", "Bioacoustics"]
   note: ""
   theses: []
-  papers: []
+  papers: ["donnelly2022detecting"]
   projects: []
   links:
     linkedin: "https://www.linkedin.com/in/daniel-de-leon"
