@@ -47,34 +47,35 @@ article a,
   text-underline-offset: 2px;
 }
 
-/* ---------- theme tags: one OSU secondary per tag, used as a small dot ---------- */
+/* ---------- theme tags: one colour per family (pill tint, border and dot) ---------- */
+$sb-blue: #006a8e;   // Stratosphere: music
+$sb-purple: #7b4f9e; // speech and language (not an OSU secondary; none is purple)
+$sb-teal: #00859b;   // High Tide: synthesis and signal processing
+$sb-orange: #d3832b; // Solar Flare: computer vision
+$sb-yellow: #ffb500; // Luminance: bioacoustics
+$sb-green: #4a773c;  // Pine Stand: ecology and sustainability
+$sb-red: #b3263e;    // health
+$sb-grey: #8e9089;   // Crater: infrastructure and outputs
 $sb-tag-colors: (
-  "Music Emotion": #d3832b,
-  // Solar Flare
-  "Music Perception": #006a8e,
-  // Stratosphere
-  "Music Theory": #003b5c,
-  // Star Canvas
-  "Timbre": #00859b,
-  // High Tide
-  "Speech & Language": #7a6855,
-  // High Desert
-  "Signal Processing": #0d5257,
-  // Rogue Wave
-  "Bioacoustics": #4a773c,
-  // Pine Stand
-  "Ecology": #aa9d2e,
-  // Hop Bine
-  "Sustainability": #4a773c,
-  // Pine Stand
-  "Health": #00859b,
-  // High Tide
-  "Diagnostics": #006a8e,
-  // Stratosphere
-  "Education": #d3832b,
-  // Solar Flare
-  "Tools": #8e9089,
-  // Crater
+  "Music Emotion": $sb-blue,
+  "Music Perception": $sb-blue,
+  "Music Theory": $sb-blue,
+  "Music Scores": $sb-blue,
+  "Music Recommendation": $sb-blue,
+  "Timbre": $sb-blue,
+  "Speech & Language": $sb-purple,
+  "Language Models": $sb-purple,
+  "Audio Synthesis": $sb-teal,
+  "Signal Processing": $sb-teal,
+  "Computer Vision": $sb-orange,
+  "Bioacoustics": $sb-yellow,
+  "Ecology": $sb-green,
+  "Sustainability": $sb-green,
+  "Health": $sb-red,
+  "IoT": $sb-grey,
+  "Datasets": $sb-grey,
+  "Apps": $sb-grey,
+  "Tools": $sb-grey,
 );
 
 .sb-tags {
@@ -92,10 +93,10 @@ $sb-tag-colors: (
   font-size: 0.78rem;
   line-height: 1.6;
   padding: 0 0.6em;
-  border: 1px solid var(--global-divider-color);
+  border: 1px solid var(--sb-tag-border, var(--global-divider-color));
   border-radius: 999px;
   color: var(--sb-chip-text) !important;
-  background: transparent;
+  background: var(--sb-tag-bg, transparent);
   text-decoration: none !important;
   white-space: nowrap;
   cursor: pointer;
@@ -117,6 +118,12 @@ $sb-tag-colors: (
 @each $tag, $c in $sb-tag-colors {
   [data-tag="#{$tag}"] {
     --sb-dot: #{$c};
+    --sb-tag-bg: #{rgba($c, 0.12)};
+    --sb-tag-border: #{rgba($c, 0.45)};
+  }
+  html[data-theme="dark"] [data-tag="#{$tag}"] {
+    --sb-tag-bg: #{rgba($c, 0.22)};
+    --sb-tag-border: #{rgba($c, 0.6)};
   }
 }
 
