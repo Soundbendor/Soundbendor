@@ -19,7 +19,7 @@
   campus: "Corvallis"
   other_degrees: ["M.S. 2026", "B.S. 2022"]
   activities: ["AMP", "CRF", "NCUR", "Capstone", "Honors"]
-  tags: ["Sustainability", "Music Emotion", "Speech & Language"]
+  tags: ["Music Emotion", "Language Models", "Sustainability", "Computer Vision", "IoT", "Speech & Language"]
   note: ""
   theses: ["beery2025towards", "beery2022predicting"]
   papers: ["beery2024smart", "beery2023learning", "donnelly2022evaluating"]
@@ -41,7 +41,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: []
-  tags: ["Music Emotion"]
+  tags: ["Music Emotion", "Language Models", "Datasets"]
   note: ""
   theses: []
   papers: ["khanal2025emotionotes"]
@@ -63,7 +63,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: []
-  tags: ["Music Theory"]
+  tags: ["Music Theory", "Datasets"]
   note: ""
   theses: []
   papers: ["kwan2026probing"]
@@ -85,7 +85,7 @@
   campus: "Corvallis"
   other_degrees: ["M.S. 2026"]
   activities: []
-  tags: ["Timbre"]
+  tags: ["Timbre", "Language Models"]
   note: ""
   theses: ["mccabe2026audiofree"]
   papers: ["mccabe2026classifying"]
@@ -173,7 +173,7 @@
   campus: "Cascades"
   other_degrees: []
   activities: ["CRF"]
-  tags: ["Timbre"]
+  tags: ["Timbre", "Audio Synthesis"]
   note: ""
   theses: []
   papers: []
@@ -195,7 +195,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: []
-  tags: ["Music Emotion"]
+  tags: ["Music Emotion", "Language Models", "Datasets"]
   note: ""
   theses: []
   papers: ["aamir2026addressing"]
@@ -261,7 +261,7 @@
   campus: "Cascades"
   other_degrees: ["B.S. 2024"]
   activities: ["AMP"]
-  tags: ["Health"]
+  tags: ["Health", "IoT"]
   note: ""
   theses: ["martin2025machine"]
   papers: []
@@ -349,7 +349,7 @@
   campus: "Cascades"
   other_degrees: []
   activities: ["CRF"]
-  tags: ["Music Emotion"]
+  tags: ["Music Emotion", "Language Models"]
   note: ""
   theses: []
   papers: []
@@ -371,7 +371,7 @@
   campus: "Cascades"
   other_degrees: []
   activities: ["CRF"]
-  tags: ["Timbre"]
+  tags: ["Timbre", "Signal Processing", "Tools"]
   note: ""
   theses: []
   papers: []
@@ -393,7 +393,7 @@
   campus: "Cascades"
   other_degrees: []
   activities: ["CRF"]
-  tags: ["Tools"]
+  tags: ["Tools", "Datasets"]
   note: ""
   theses: []
   papers: []
@@ -437,7 +437,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: []
-  tags: ["Sustainability"]
+  tags: ["Sustainability", "Computer Vision", "IoT"]
   note: ""
   theses: []
   papers: ["beery2024smart"]
@@ -459,7 +459,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Music Theory"]
+  tags: ["Music Scores", "Apps"]
   note: ""
   theses: []
   papers: []
@@ -481,7 +481,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Speech & Language"]
+  tags: ["Speech & Language", "Audio Synthesis"]
   note: ""
   theses: []
   papers: []
@@ -503,7 +503,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Health", "Diagnostics"]
+  tags: ["Health", "IoT"]
   note: ""
   theses: []
   papers: []
@@ -525,7 +525,7 @@
   campus: "Cascades"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Health", "Diagnostics"]
+  tags: ["Health", "IoT"]
   note: ""
   theses: []
   papers: []
@@ -547,7 +547,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: []
-  tags: ["Sustainability"]
+  tags: ["Sustainability", "Computer Vision", "IoT"]
   note: ""
   theses: []
   papers: ["beery2024smart"]
@@ -569,7 +569,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: []
-  tags: ["Sustainability"]
+  tags: ["Sustainability", "Computer Vision", "IoT"]
   note: ""
   theses: []
   papers: ["beery2024smart"]
@@ -613,7 +613,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Health", "Diagnostics"]
+  tags: ["Health", "IoT"]
   note: ""
   theses: []
   papers: []
@@ -635,7 +635,7 @@
   campus: "Cascades"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Music Emotion", "Health"]
+  tags: ["Music Emotion", "Music Recommendation", "Health", "Apps"]
   note: ""
   theses: []
   papers: []
@@ -657,7 +657,7 @@
   campus: "Cascades"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Sustainability"]
+  tags: ["Sustainability", "Computer Vision", "Apps"]
   note: ""
   theses: []
   papers: []
@@ -679,7 +679,7 @@
   campus: "Cascades"
   other_degrees: []
   activities: ["Capstone", "CRF", "AMP"]
-  tags: ["Sustainability", "Tools"]
+  tags: ["Sustainability", "Computer Vision", "Apps"]
   note: ""
   theses: []
   papers: []
@@ -701,7 +701,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Music Theory"]
+  tags: ["Music Scores", "Apps"]
   note: ""
   theses: []
   papers: []
@@ -745,7 +745,7 @@
   campus: "Cascades"
   other_degrees: []
   activities: ["CRF"]
-  tags: ["Music Emotion", "Tools"]
+  tags: ["Music Emotion", "Language Models", "Datasets"]
   note: ""
   theses: []
   papers: []
@@ -767,7 +767,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Health", "Diagnostics"]
+  tags: ["Health", "IoT"]
   note: ""
   theses: []
   papers: []
@@ -789,7 +789,7 @@
   campus: "Cascades"
   other_degrees: []
   activities: ["CRF", "Capstone"]
-  tags: ["Music Emotion", "Health", "Signal Processing"]
+  tags: ["Music Emotion", "Music Recommendation", "Health", "Apps", "Signal Processing"]
   note: ""
   theses: []
   papers: []
@@ -811,7 +811,7 @@
   campus: "Cascades"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Sustainability"]
+  tags: ["Sustainability", "Computer Vision", "Apps"]
   note: ""
   theses: []
   papers: []
@@ -833,7 +833,7 @@
   campus: "Cascades"
   other_degrees: []
   activities: ["CRF", "Capstone"]
-  tags: ["Music Emotion", "Health"]
+  tags: ["Music Emotion", "Music Recommendation", "Health", "Apps"]
   note: ""
   theses: []
   papers: []
@@ -877,7 +877,7 @@
   campus: "Cascades"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Sustainability"]
+  tags: ["Sustainability", "Computer Vision", "Apps"]
   note: ""
   theses: []
   papers: []
@@ -921,7 +921,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Music Emotion", "Tools"]
+  tags: ["Tools", "Datasets", "Music Emotion", "Apps"]
   note: ""
   theses: []
   papers: []
@@ -943,7 +943,7 @@
   campus: "Ecampus"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Music Emotion", "Tools"]
+  tags: ["Music Emotion", "Datasets", "Apps"]
   note: ""
   theses: []
   papers: []
@@ -987,7 +987,7 @@
   campus: "Cascades"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Music Emotion", "Tools"]
+  tags: ["Music Emotion", "Computer Vision", "Datasets"]
   note: ""
   theses: []
   papers: []
@@ -1009,7 +1009,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["URSA"]
-  tags: ["Health", "Music Perception"]
+  tags: ["Music Perception", "Health", "Audio Synthesis"]
   note: ""
   theses: []
   papers: []
@@ -1031,7 +1031,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Speech & Language"]
+  tags: ["Speech & Language", "Audio Synthesis"]
   note: ""
   theses: []
   papers: []
@@ -1053,7 +1053,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["URSA", "NCUR"]
-  tags: ["Speech & Language", "Signal Processing", "Music Theory"]
+  tags: ["Signal Processing", "Audio Synthesis", "Speech & Language", "Music Theory"]
   note: ""
   theses: []
   papers: ["carlson2024sung", "donnelly2023transposition"]
@@ -1097,7 +1097,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Music Theory", "Tools"]
+  tags: ["Music Scores", "Apps"]
   note: ""
   theses: []
   papers: []
@@ -1119,7 +1119,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Bioacoustics", "Ecology"]
+  tags: ["Bioacoustics", "Ecology", "Datasets", "Apps"]
   note: ""
   theses: []
   papers: []
@@ -1163,7 +1163,7 @@
   campus: "Cascades"
   other_degrees: []
   activities: ["CRF", "NCUR", "Capstone"]
-  tags: ["Music Emotion", "Tools", "Music Perception", "Health"]
+  tags: ["Music Emotion", "Computer Vision", "Datasets", "Music Perception", "Health", "Apps"]
   note: ""
   theses: []
   papers: []
@@ -1185,7 +1185,7 @@
   campus: "Cascades"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Health", "Tools"]
+  tags: ["Health", "Computer Vision", "Apps"]
   note: ""
   theses: []
   papers: []
@@ -1207,7 +1207,7 @@
   campus: "Ecampus"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Bioacoustics", "Ecology"]
+  tags: ["Bioacoustics", "Ecology", "Datasets", "Apps"]
   note: ""
   theses: []
   papers: []
@@ -1229,7 +1229,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["URSA", "NCUR", "Honors"]
-  tags: ["Music Emotion"]
+  tags: ["Music Emotion", "Music Recommendation", "Apps"]
   note: ""
   theses: ["gaur2023mood"]
   papers: ["gaur2024generating", "donnelly2022mood"]
@@ -1273,7 +1273,7 @@
   campus: "Ecampus"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Tools"]
+  tags: ["Apps"]
   note: ""
   theses: []
   papers: []
@@ -1317,7 +1317,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Health", "Tools"]
+  tags: ["Health", "Computer Vision", "Apps"]
   note: ""
   theses: []
   papers: []
@@ -1339,7 +1339,7 @@
   campus: "Cascades"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Music Theory", "Tools"]
+  tags: ["Music Scores", "Datasets"]
   note: ""
   theses: []
   papers: []
@@ -1361,7 +1361,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Honors"]
-  tags: ["Timbre"]
+  tags: ["Timbre", "Audio Synthesis", "Apps"]
   note: ""
   theses: ["knowlton2023synthetic"]
   papers: []
@@ -1383,7 +1383,7 @@
   campus: "Cascades"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Music Theory", "Tools"]
+  tags: ["Music Scores", "Apps"]
   note: ""
   theses: []
   papers: []
@@ -1405,7 +1405,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Timbre"]
+  tags: ["Timbre", "Audio Synthesis", "Apps"]
   note: ""
   theses: []
   papers: []
@@ -1427,7 +1427,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Speech & Language"]
+  tags: ["Speech & Language", "Audio Synthesis"]
   note: ""
   theses: []
   papers: []
@@ -1449,7 +1449,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Speech & Language"]
+  tags: ["Speech & Language", "Audio Synthesis"]
   note: ""
   theses: []
   papers: []
@@ -1471,7 +1471,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Music Theory", "Tools"]
+  tags: ["Music Scores", "Datasets"]
   note: ""
   theses: []
   papers: []
@@ -1493,7 +1493,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Speech & Language"]
+  tags: ["Speech & Language", "Audio Synthesis"]
   note: ""
   theses: []
   papers: []
@@ -1515,7 +1515,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Music Theory", "Tools"]
+  tags: ["Music Scores", "Apps"]
   note: ""
   theses: []
   papers: []
@@ -1537,7 +1537,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Honors", "Capstone"]
-  tags: ["Bioacoustics", "Ecology"]
+  tags: ["Bioacoustics", "Signal Processing", "Ecology", "Datasets", "Apps"]
   note: ""
   theses: ["mathew2023improving"]
   papers: []
@@ -1559,7 +1559,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Grant", "NCUR"]
-  tags: ["Sustainability"]
+  tags: ["Sustainability", "Health", "Computer Vision"]
   note: ""
   theses: []
   papers: []
@@ -1581,7 +1581,7 @@
   campus: "Ecampus"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Music Emotion", "Tools"]
+  tags: ["Music Emotion", "Datasets", "Apps"]
   note: ""
   theses: []
   papers: []
@@ -1603,7 +1603,7 @@
   campus: "Ecampus"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Bioacoustics", "Ecology"]
+  tags: ["Bioacoustics", "Ecology", "Datasets", "Apps"]
   note: ""
   theses: []
   papers: []
@@ -1625,7 +1625,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["URSA", "Capstone"]
-  tags: ["Signal Processing", "Speech & Language", "Music Theory", "Tools"]
+  tags: ["Signal Processing", "Speech & Language", "Music Scores", "Apps"]
   note: ""
   theses: []
   papers: ["donnelly2022identifying"]
@@ -1647,7 +1647,7 @@
   campus: "Cascades"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Music Emotion", "Tools"]
+  tags: ["Music Emotion", "Datasets", "Apps"]
   note: ""
   theses: []
   papers: []
@@ -1669,7 +1669,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Music Theory", "Tools"]
+  tags: ["Music Scores", "Datasets"]
   note: ""
   theses: []
   papers: []
@@ -1691,7 +1691,7 @@
   campus: "Cascades"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Health", "Tools"]
+  tags: ["Health", "Computer Vision", "Apps"]
   note: ""
   theses: []
   papers: []
@@ -1713,7 +1713,7 @@
   campus: "Cascades"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Speech & Language"]
+  tags: ["Speech & Language", "Audio Synthesis"]
   note: ""
   theses: []
   papers: []
@@ -1735,7 +1735,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Music Emotion", "Tools"]
+  tags: ["Music Emotion", "Datasets", "Apps"]
   note: ""
   theses: []
   papers: []
@@ -1757,7 +1757,7 @@
   campus: "Ecampus"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Music Emotion", "Tools"]
+  tags: ["Music Emotion", "Datasets", "Apps"]
   note: ""
   theses: []
   papers: []
@@ -1779,7 +1779,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["URSA"]
-  tags: ["Health", "Diagnostics"]
+  tags: ["Health", "IoT", "Datasets"]
   note: ""
   theses: []
   papers: []
@@ -1801,7 +1801,7 @@
   campus: "Ecampus"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Tools"]
+  tags: ["Apps"]
   note: ""
   theses: []
   papers: []
@@ -1845,7 +1845,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Bioacoustics", "Ecology"]
+  tags: ["Bioacoustics", "Ecology", "Datasets", "Apps"]
   note: ""
   theses: []
   papers: []
@@ -1867,7 +1867,7 @@
   campus: "Ecampus"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Tools"]
+  tags: ["Apps"]
   note: ""
   theses: []
   papers: []
@@ -1889,7 +1889,7 @@
   campus: "Cascades"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Speech & Language"]
+  tags: ["Speech & Language", "Audio Synthesis"]
   note: ""
   theses: []
   papers: []
@@ -1911,7 +1911,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Music Emotion", "Tools"]
+  tags: ["Music Emotion", "Datasets", "Apps"]
   note: ""
   theses: []
   papers: []
@@ -1933,7 +1933,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Health", "Tools"]
+  tags: ["Health", "Computer Vision", "Apps"]
   note: ""
   theses: []
   papers: []
@@ -1977,7 +1977,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["URSA", "NCUR", "Capstone", "Honors"]
-  tags: ["Music Theory", "Signal Processing"]
+  tags: ["Music Scores", "Signal Processing"]
   note: ""
   theses: ["ebert2022transcribing"]
   papers: ["donnelly2022transcription"]
@@ -1999,7 +1999,7 @@
   campus: "Cascades"
   other_degrees: []
   activities: ["CRF"]
-  tags: ["Sustainability"]
+  tags: ["Sustainability", "Apps"]
   note: ""
   theses: []
   papers: []
@@ -2021,7 +2021,7 @@
   campus: "Cascades"
   other_degrees: []
   activities: ["CRF", "NCUR"]
-  tags: ["Health", "Diagnostics"]
+  tags: ["Health", "IoT"]
   note: ""
   theses: []
   papers: []
@@ -2153,7 +2153,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["URSA"]
-  tags: ["Music Theory", "Tools"]
+  tags: ["Music Scores", "Tools"]
   note: "Transferred"
   theses: []
   papers: []

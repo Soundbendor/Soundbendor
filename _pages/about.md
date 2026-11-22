@@ -22,8 +22,13 @@ We work on computational musicology, music emotion, acoustic analysis and bioaco
 
 Browse publications by topic:
 
+{% comment -%} only topics that have at least one paper on /publications/ {%- endcomment -%}
+{%- assign pubtags = "|" -%}
+{%- for e in site.data.bibkeys -%}{%- if e[1].page == "/publications/" -%}{%- assign pubtags = pubtags | append: e[1].tags | append: "|" -%}{%- endif -%}{%- endfor -%}
 <div class="sb-tags">
 {%- for t in site.data.tags -%}
+  {%- assign needle = "|" | append: t | append: "|" -%}
+  {%- unless pubtags contains needle -%}{%- continue -%}{%- endunless -%}
   <a class="sb-tag" data-tag="{{ t }}" href="{{ '/publications/' | relative_url }}?tag={{ t | url_encode }}">{{ t }}</a>
 {%- endfor -%}
 </div>

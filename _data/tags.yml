@@ -1,14 +1,21 @@
-# The 13 Soundbendor theme tags, in display order. Shared by papers, theses, projects and people.
+# The Soundbendor theme tags, in display order. Shared by papers, theses, projects and people.
+# Topics first, then methods and outputs. A chip with nothing to show on a page is hidden there.
 - Music Emotion
 - Music Perception
 - Music Theory
+- Music Scores
+- Music Recommendation
 - Timbre
+- Audio Synthesis
 - Speech & Language
+- Language Models
 - Signal Processing
+- Computer Vision
 - Bioacoustics
 - Ecology
 - Sustainability
 - Health
-- Diagnostics
-- Education
+- IoT
+- Datasets
+- Apps
 - Tools
