@@ -2,6 +2,7 @@
 # Seeded 2026-11-21 from the old site's database. Edit by pull request.
 #   type      URSA | NCUR | CRF | Layman Fellowship | Grant project | Capstone | Research
 #   people    ids from _data/people.yml     tags  theme tags (see _data/tags.yml)
+#   team      optional text shown instead of (or after) people, e.g. a team with no named members
 #   video     YouTube video ID              slides, poster, poster2  paths under assets/pdf/
 #   image     card image under assets/img/ (else the video thumbnail)
 #   related   bib keys of later papers or theses
@@ -288,6 +289,22 @@
   slides: ""
   poster: "projects/2023-smart-dog-collar-poster.pdf"
   image: "projects/2023-smart-dog-collar.png"
+  website: ""
+  code: ""
+  related: []
+
+- id: "2023-smart-dog-wearable"
+  title: "Smart Dog Wearable for Seizure Detection"
+  year: 2023
+  type: "Capstone"
+  people: []
+  team: "Energy Systems Engineering Team 6, OSU-Cascades (ENGR 415-416)"
+  tags: ["Health", "Diagnostics"]
+  summary: "Engineering design capstone that built the hardware side of the smart dog collar: a non-intrusive wrap harness that collects continuous health data from an epileptic dog. A silicone stethoscope with an embedded microphone and a thermocouple sit near the heart for heartbeat and temperature, and a microcontroller on the dog's back adds motion and environmental sensors."
+  video: ""
+  slides: ""
+  poster: "projects/2023-smart-dog-wearable-poster.pdf"
+  image: "projects/2023-smart-dog-wearable.jpg"
   website: ""
   code: ""
   related: []

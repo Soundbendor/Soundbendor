@@ -10,6 +10,7 @@
     <div class="sb-meta">{{ pr.year }} · {{ pr.type }}</div>
     <h3 class="sb-project-title">{{ pr.title }}</h3>
     <div class="sb-team">
+      {%- if pr.team and pr.team != "" -%}{{ pr.team }}{% if pr.people.size > 0 %}: {% endif %}{%- endif -%}
       {%- for pid in pr.people -%}
         {%- assign person = site.data.people | where: "id", pid | first -%}
         <a href="{{ '/people/' | relative_url }}#{{ pid }}">{{ person.name }}</a>{% unless forloop.last %}, {% endunless %}
