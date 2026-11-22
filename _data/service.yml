@@ -1,4 +1,14 @@
 # Professional service shown on the PI page, newest first.
+- role: Conference Chair
+  what: "EvoMUSART 2027, 16th International Conference on Artificial Intelligence in Music, Sound, Art and Design"
+  venue: EvoStar 2027, Mainz, Germany
+  year: 2027
+  url: https://www.evostar.org/2027/evomusart/
+- role: Program Committee
+  what: "EvoMUSART 2026"
+  venue: EvoStar 2026
+  year: 2026
+  url: https://www.evostar.org/2026/evomusart/
 - role: Guest Editor
   what: "Special Issue “Machine Understanding of Music and Sound”"
   venue: Algorithms (MDPI)

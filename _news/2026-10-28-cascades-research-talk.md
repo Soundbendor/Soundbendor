@@ -1,8 +1,15 @@
 ---
 layout: post
 date: 2026-10-28
+title: "Can we teach AI to feel music?"
+kind: Talk
+source: "OSU-Cascades Research Talks"
+link: https://osucascades.edu/research/events
+links:
+  - label: "Slides"
+    url: /assets/pdf/news/2026-10-28-cascades-research-talk-slides.pdf
 inline: true
 related_posts: false
 ---
 
-Patrick Donnelly gave an [OSU-Cascades Research Talk](https://osucascades.edu/research/events), "Can we teach AI to feel music? The challenge of building reliable datasets for music emotion recognition" ([slides]({{ '/assets/pdf/news/2026-10-28-cascades-research-talk-slides.pdf' | relative_url }})).
+Patrick's campus research talk on the challenge of building reliable datasets for music emotion recognition.

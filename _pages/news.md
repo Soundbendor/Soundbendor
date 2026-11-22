@@ -2,9 +2,9 @@
 layout: page
 title: News
 permalink: /news/
-description: Awards, talks, press and events.
+description: Awards, talks, press coverage, funding and events.
 nav: true
 nav_order: 5
 ---
 
-{% include news.liquid %}
+{% include sb_news.liquid %}

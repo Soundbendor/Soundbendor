@@ -1,0 +1,21 @@
+{%- comment -%}
+  News list. Usage: {% include sb_news.liquid %} (full page, grouped by year)
+                    {% include sb_news.liquid limit=3 %} (compact, newest first)
+  Each _news item: title, date, kind (Press|Award|Talk|Funding|Event|Service), source,
+  link, optional image (under assets/img/), when (shown instead of the date),
+  links (label/url list); the body is a one- or two-sentence summary.
+{%- endcomment -%}
+{%- assign items = site.news | sort: "date" | reverse -%}
+{%- if include.limit -%}
+<div class="sb-news sb-news-compact">
+  {%- for n in items limit: include.limit -%}{% include sb_news_item.liquid n=n %}{%- endfor -%}
+</div>
+{%- else -%}
+{%- assign years = items | group_by_exp: "n", "n.date | date: '%Y'" -%}
+<div class="sb-news">
+  {%- for y in years -%}
+  <h2 class="sb-year">{{ y.name }}</h2>
+  {%- for n in y.items -%}{% include sb_news_item.liquid n=n %}{%- endfor -%}
+  {%- endfor -%}
+</div>
+{%- endif -%}

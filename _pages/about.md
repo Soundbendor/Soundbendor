@@ -27,7 +27,9 @@ Each theme links to the papers, theses and projects tagged with it.
 
 ### News
 
-{% include news.liquid limit=true %}
+{% include sb_news.liquid limit=3 %}
+
+<p class="sb-more-news"><a href="{{ '/news/' | relative_url }}">All news <i class="fa-solid fa-arrow-right"></i></a></p>
 
 <div class="sb-band">
   <strong>Join us.</strong> We welcome students with backgrounds in music and computer science, from undergraduate research to the Ph.D.
