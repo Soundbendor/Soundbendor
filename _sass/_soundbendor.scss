@@ -1611,3 +1611,11 @@ html[data-theme="dark"] .sb-pi-links a i,
 html[data-theme="dark"] .sb-pi-links .sb-sep {
   color: #{$luminance};
 }
+
+// footer: Copyright YEAR • Soundbendor Lab • EECS • Oregon State University
+footer .sb-sep {
+  margin: 0 0.5em;
+  font-size: 1.3em;
+  color: var(--global-footer-text-color);
+  opacity: 0.8;
+}

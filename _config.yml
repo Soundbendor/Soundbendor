@@ -11,8 +11,8 @@ contact_note: >
 description: >
   The Soundbendor Lab at Oregon State University studies music, sound and machine learning.
 footer_text: >
-  Soundbendor Lab, <a href="https://engineering.oregonstate.edu/EECS">EECS</a> &middot;
-  <a href="https://oregonstate.edu/">Oregon State University</a>
+  Soundbendor Lab <span class="sb-sep">•</span> <a href="https://engineering.oregonstate.edu/EECS">EECS</a>
+  <span class="sb-sep">•</span> <a href="https://oregonstate.edu/">Oregon State University</a>
 keywords: music information retrieval, audio, machine learning, Oregon State University, Soundbendor
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🎵
