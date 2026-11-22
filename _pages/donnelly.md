@@ -27,7 +27,7 @@ He teaches mainly on the OSU-Cascades campus in Bend and mentors undergraduate a
 
 <div class="sb-pi-links">
   <div>
-    <a href="mailto:patrick.donnelly@oregonstate.edu"><i class="fa-solid fa-envelope"></i>patrick.donnelly@oregonstate.edu</a><span class="sb-sep">•</span>
+    <a href="mailto:patrick.donnelly@oregonstate.edu"><i class="fa-solid fa-envelope"></i>Email</a><span class="sb-sep">•</span>
     <a href="https://engineering.oregonstate.edu/about/directory/patrick-donnelly"><i class="fa-solid fa-building-columns"></i>OSU Engineering</a><span class="sb-sep">•</span>
     <a href="https://osucascades.edu/directory/patrick-donnelly"><i class="fa-solid fa-mountain-sun"></i>OSU Cascades</a>
   </div>
@@ -46,20 +46,20 @@ He teaches mainly on the OSU-Cascades campus in Bend and mentors undergraduate a
 
 {% include tag_filter.liquid %}
 
-<div class="publications">
+<div class="publications sb-pi">
 {% bibliography --file donnelly %}
 </div>
 
 <details class="sb-earlier" id="earlier-work">
 <summary>Before 2020</summary>
-<div class="publications">
+<div class="publications sb-pi">
 {% bibliography --file earlier %}
 </div>
 </details>
 
 <details class="sb-earlier" id="theses">
 <summary>Student Theses</summary>
-<div class="publications">
+<div class="publications sb-pi">
 {% bibliography --file theses-pi --group_by none %}
 </div>
 </details>
@@ -67,11 +67,11 @@ He teaches mainly on the OSU-Cascades campus in Bend and mentors undergraduate a
 ## Service
 
 {% for x in site.data.service %}
-- **{{ x.role }}**, [{{ x.what }}]({{ x.url }}), *{{ x.venue }}*, {{ x.year }}
+- **{{ x.role }}**, [{{ x.what }}]({{ x.url }}){% if x.venue %}, *{{ x.venue }}*{% endif %}, {{ x.year }}
 {% endfor %}
 
 ## Funding
 
 {% for g in site.data.funding %}
-- {% if g.role %}**{{ g.role }}**, {% endif %}[{{ g.title }}]({{ g.url }}). {{ g.sponsor }}{% if g.number %}, {{ g.number }}{% endif %}{% if g.years %}, {{ g.years }}{% endif %}.{% if g.poster %} [Poster]({{ g.poster | prepend: '/assets/pdf/' | relative_url }}){% endif %}
+- {% if g.role %}**{{ g.role }}**, {% endif %}[{{ g.title }}]({{ g.url }}). {{ g.sponsor }}{% if g.number %}, {{ g.number }}{% endif %}{% if g.years %}, {{ g.years }}{% endif %}.{% if g.poster %} <a class="sb-pill-link" href="{{ g.poster | prepend: '/assets/pdf/' | relative_url }}"><i class="fa-solid fa-image"></i> Poster</a>{% endif %}
 {% endfor %}

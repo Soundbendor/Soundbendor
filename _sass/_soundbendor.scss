@@ -56,6 +56,7 @@ $sb-solar-flare: #d3832b;
 $sb-candela: #fdd26e;
 $sb-pine-stand: #4a773c;
 $sb-high-desert: #7a6855;
+$sb-hop-bine: #aa9d2e;
 $sb-crater: #8e9089;
 $sb-tag-colors: (
   "music-emotion": $sb-stratosphere,
@@ -81,6 +82,7 @@ $sb-tag-colors: (
   "sustainability": $sb-pine-stand,
   "food-waste": $sb-pine-stand,
   "health": $sb-high-desert,
+  "education": $sb-hop-bine,
   "datasets": $sb-crater,
   "iot": $sb-crater,
   "apps": $sb-crater,
@@ -460,20 +462,20 @@ details.sb-more {
   }
 }
 
-// venue badge in the left column
+// venue badge in the left column: coloured outline and text, no fill
 .sb-venue {
   display: block;
   width: 100%;
   text-align: center;
   font-size: 0.72rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.02em;
-  padding: 0.2rem 0.3rem;
+  padding: 0.12rem 0.3rem;
   border-radius: 0.25rem;
-  color: #{$copy};
-  background: #{mix($beaver-orange, #ffffff, 20%)}; // beaver!20: conferences (and theses)
+  border: 2px solid #{$beaver-orange};   // conferences (and theses)
+  color: #{$beaver-orange};
+  background: transparent;
   text-decoration: none;
-  border-bottom: 0;
   cursor: default;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -481,23 +483,19 @@ details.sb-more {
 }
 
 .sb-venue-journal {
-  background: #{mix(#4a773c, #ffffff, 20%)}; // Pine Stand!20
+  border-color: #4a773c;   // Pine Stand
+  color: #4a773c;
 }
+
 .sb-venue-book {
-  background: #{mix($luminance, #ffffff, 35%)}; // Luminance!35 (at 20% it nearly vanishes on white)
+  border-color: #{$luminance};             // Luminance outline
+  color: #{mix($luminance, #423e3c, 55%)}; // darker gold text so it stays readable on white
 }
+
 html[data-theme="dark"] {
-  .sb-venue {
-    color: #f7f5f5;
-    background: #{mix($beaver-orange, #2b3035, 45%)};
-  }
-  .sb-venue-journal {
-    background: #{mix(#4a773c, #2b3035, 60%)};
-  }
-  .sb-venue-book {
-    color: #{$dark-bg};
-    background: #{mix($luminance, #2b3035, 75%)};
-  }
+  .sb-venue { border-color: #ff7a45; color: #ff7a45; }
+  .sb-venue-journal { border-color: #8fbf7f; color: #8fbf7f; }
+  .sb-venue-book { border-color: #{$luminance}; color: #{$luminance}; }
 }
 
 // tags and Related links share one line, wrapping only when needed
@@ -599,31 +597,32 @@ h2.sb-year {
   color: var(--global-text-color-light);
 }
 
-// collapsible year groups on Publications (built by tag-filter.js)
+// collapsible year groups on Publications (built by tag-filter.js): the year heading keeps its
+// usual look (right-aligned, rule above); a small arrow after the year shows open or closed
 details.sb-year {
   > summary {
+    display: block;
     list-style: none;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+
     &::-webkit-details-marker {
       display: none;
     }
-    &::before {
-      content: "\25B8";
-      color: var(--global-text-color-light);
-      font-size: 1.1rem;
+
+    h2.bibliography::after {
+      content: "\25BE";
+      display: inline-block;
+      margin-left: 0.4em;
+      font-size: 0.8em;
       transition: transform 0.15s;
     }
-    h2.bibliography {
-      margin: 0.75rem 0 0.5rem;
-    }
+
     &:hover h2.bibliography {
       color: var(--global-theme-color);
     }
   }
-  &[open] > summary::before {
+
+  &:not([open]) > summary h2.bibliography::after {
     transform: rotate(90deg);
   }
 }
@@ -1618,4 +1617,35 @@ footer .sb-sep {
   font-size: 1.3em;
   color: var(--global-footer-text-color);
   opacity: 0.8;
+}
+
+// the PI's own name in author lists: bold on his page, plain elsewhere
+.sb-self {
+  font-style: normal;
+}
+.sb-pi .sb-self {
+  font-weight: 700;
+}
+
+// small outlined link pill (e.g. Poster on the PI page's Funding list)
+.sb-pill-link {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.5;
+  padding: 0 0.6em;
+  border: 1.5px solid #{$beaver-orange};
+  border-radius: 999px;
+  color: #{$beaver-orange} !important;
+  text-decoration: none !important;
+  vertical-align: 0.1em;
+
+  &:hover {
+    background: #{$beaver-orange};
+    color: #ffffff !important;
+  }
+}
+html[data-theme="dark"] .sb-pill-link {
+  border-color: #{$luminance};
+  color: #{$luminance} !important;
 }

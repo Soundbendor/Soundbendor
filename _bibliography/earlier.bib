@@ -20,7 +20,7 @@
   doi        = {10.3102/0013189X18785613},
   abstract   = {Analyzing the quality of classroom talk is central to educational research and improvement efforts. In particular, the presence of authentic teacher questions, where answers are not predetermined by the teacher, helps constitute and serves as a marker of productive classroom discourse. Further, authentic questions can be cultivated to improve teaching effectiveness and consequently student achievement. Unfortunately, current methods to measure question authenticity do not scale because they rely on human observations or coding of teacher discourse. To address this challenge, we set out to use automatic speech recognition, natural language processing, and machine learning to train computers to detect authentic questions in real-world classrooms automatically. Our methods were iteratively refined using classroom audio and human-coded observational data from two sources: (a) a large archival database of text transcripts of 451 observations from 112 classrooms; and (b) a newly collected sample of 132 high-quality audio recordings from 27 classrooms, obtained under technical constraints that anticipate large-scale automated data collection and analysis. Correlations between human-coded and computer-coded authenticity at the classroom level were sufficiently high ( r = .602 for archival transcripts and .687 for audio recordings) to provide a valuable complement to human coding in research efforts.},
   abbr       = {Ed. Res.},
-  keywords   = {Speech & Text, IoT},
+  keywords   = {Speech & Text, Education, IoT},
   pdf        = {papers/kelly2018automatically.pdf},
   exclude    = {true},
   bibtex_show= {true}
@@ -100,7 +100,7 @@
   year       = {2019},
   note       = {Short paper},
   abbr       = {EDM},
-  keywords   = {Speech & Text, IoT},
+  keywords   = {Speech & Text, Education, IoT},
   pdf        = {papers/stone2019utterance.pdf},
   exclude    = {true},
   bibtex_show= {true}
@@ -120,7 +120,7 @@
   abstract   = {Attention is key to effective learning, but mind wandering, a phenomenon in which attention shifts from task-related processing to task-unrelated thoughts, is pervasive across learning tasks. Therefore, intelligent learning environments should benefit from mechanisms to detect and respond to attentional lapses, such as mind wandering. As a step in this direction, we report the development and validation of the first student-independent facial feature-based mind wandering detector. We collected training data in a lab study where participants self-reported when they caught themselves mind wandering over the course of completing a 32.5 min narrative film comprehension task. We used computer vision techniques to extract facial features and bodily movements from videos. Using supervised learning methods, we were able to detect a mind wandering with an F 1 score of .390, which reflected a 31\% improvement over a chance model. We discuss how our mind wandering detector can be used to adapt the learning experience, particularly for online learning contexts.},
   note       = {Full paper; AR=30\%},
   abbr       = {AIED},
-  keywords   = {Computer Vision, IoT},
+  keywords   = {Computer Vision, Education, IoT},
   pdf        = {papers/stewart2017face.pdf},
   exclude    = {true},
   bibtex_show= {true}
@@ -135,7 +135,7 @@
   year       = {2017},
   note       = {Short paper; AR=42\%},
   abbr       = {EDM},
-  keywords   = {Speech & Text, IoT},
+  keywords   = {Speech & Text, Education, IoT},
   pdf        = {papers/olney2017assessing.pdf},
   exclude    = {true},
   bibtex_show= {true}
@@ -154,7 +154,7 @@
   abstract   = {We investigate automatic detection of teacher questions from audio recordings collected in live classrooms with the goal of providing automated feedback to teachers. Using a dataset of audio recordings from 11 teachers across 37 class sessions, we automatically segment the audio into individual teacher utterances and code each as containing a question or not. We train supervised machine learning models to detect the human-coded questions using high-level linguistic features extracted from automatic speech recognition (ASR) transcripts, acoustic and prosodic features from the audio recordings, as well as context features, such as timing and turn-taking dynamics. Models are trained and validated independently of the teacher to ensure generalization to new teachers. We are able to distinguish questions and non-questions with a weighted F1 score of 0.69. A comparison of the three feature sets indicates that a model using linguistic features outperforms those using acoustic-prosodic and context features for question detection, but the combination of features yields a 5\% improvement in overall accuracy compared to linguistic features alone. We discuss applications for pedagogical research, teacher formative assessment, and teacher professional development.},
   note       = {Long paper; AR=32\%},
   abbr       = {LAK},
-  keywords   = {Speech & Text, Multimodal, IoT},
+  keywords   = {Speech & Text, Multimodal, Education, IoT},
   pdf        = {papers/donnelly2017words.pdf},
   exclude    = {true},
   bibtex_show= {true}
@@ -172,7 +172,7 @@
   abstract   = {We investigate multi-sensor modeling of teachers’ instructional segments (e.g., lecture, group work) from audio recordings collected in 56 classes from eight teachers across five middle schools. Our approach fuses two sensors: a unidirectional microphone for teacher audio and a pressure zone microphone for general classroom audio. We segment and analyze the audio streams with respect to discourse timing, linguistic, and paralinguistic features. We train supervised classifiers to identify the five instructional segments that collectively comprised a majority of the data, achieving teacher-independent F1 scores ranging from 0.49 to 0.60. With respect to individual segments, the individual sensor models and the fused model were on par for Question \& Answer and Procedures \& Directions segments. For Supervised Seatwork, Small Group Work, and Lecture segments, the classroom model outperformed both the teacher and fusion models. Across all segments, a multi-sensor approach led to an average 8\% improvement over the state of the art approach that only analyzed teacher audio. We discuss implications of our findings for the emerging field of multimodal learning analytics.},
   note       = {Long paper; AR=38\%},
   abbr       = {ICMI},
-  keywords   = {Speech & Text, Multimodal, IoT},
+  keywords   = {Speech & Text, Multimodal, Education, IoT},
   pdf        = {papers/donnelly2016multi.pdf},
   poster     = {posters/donnelly2016multi.pdf},
   exclude    = {true},
@@ -189,7 +189,7 @@
   doi        = {10.18653/v1/W16-3623},
   abstract   = {We investigate automatic question detection from recordings of teacher speech collected in live classrooms. Our corpus contains audio recordings of 37 class sessions taught by 11 teachers. We automatically segment teacher speech into utterances using an amplitude envelope thresholding approach followed by filtering non-speech via automatic speech recognition (ASR). We manually code the segmented utterances as containing a teacher question or not based on an empirically-validated scheme for coding classroom discourse. We compute domain-independent natural language processing (NLP) features from transcripts generated by three ASR engines (AT\&T, Bing Speech, and Azure Speech). Our teacher-independent supervised machine learning model detects questions with an overall weighted F1 score of 0.59, a 51\% improvement over chance. Furthermore, the proportion of automatically-detected questions per class session strongly correlates (Pearson’s r = 0.85) with human-coded question rates. We consider our results to reflect a substantial (37\%) improvement over the state-of-the-art in automatic question detection from naturalistic audio. We conclude by discussing applications of our work for teachers, researchers, and other stakeholders.},
   abbr       = {SIGDIAL},
-  keywords   = {Speech & Text, IoT},
+  keywords   = {Speech & Text, Education, IoT},
   pdf        = {papers/blanchard2016identifying.pdf},
   poster     = {posters/blanchard2016identifying.pdf},
   exclude    = {true},
@@ -209,7 +209,7 @@
   abstract   = {We investigate automatic analysis of teachers' instructional strategies from audio recordings collected in live classrooms. We collected a data set of teacher audio and human-coded instructional activities (e.g., lecture, question and answer, group work) in 76 middle school literature, language arts, and civics classes from eleven teachers across six schools. We automatically segment teacher audio to analyze speech vs. rest patterns, generate automatic transcripts of the teachers' speech to extract natural language features, and compute low-level acoustic features. We train supervised machine learning models to identify occurrences of five key instructional segments (Question \& Answer, Procedures and Directions, Supervised Seatwork, Small Group Work, and Lecture) that collectively comprise 76\% of the data. Models are validated independently of teacher in order to increase generalizability to new teachers from the same sample. We were able to identify the five instructional segments above chance levels with F1 scores ranging from 0.64 to 0.78. We discuss key findings in the context of teacher modeling for formative assessment and professional development.},
   note       = {Long paper; AR=24\%},
   abbr       = {UMAP},
-  keywords   = {Speech & Text, IoT},
+  keywords   = {Speech & Text, Education, IoT},
   pdf        = {papers/donnelly2016automatic.pdf},
   poster     = {posters/donnelly2016automatic.pdf},
   exclude    = {true},
@@ -229,7 +229,7 @@
   abstract   = {Mind wandering (MW) is a ubiquitous phenomenon in which attention involuntarily shifts from task-related processing to task-unrelated thoughts. This study reports preliminary results of a video-based MW detector during film viewing. We collected training data in a study where participants self-reported when they caught themselves MW over the course of watching a 32.5 minute commercial film. We trained classification models on automatically extracted facial features and bodily movement and were able to detect MW with an F1 of .30. The model was successful in reproducing the MW distribution obtained from the self-reports},
   note       = {Extended abstract; AR=41\%},
   abbr       = {UMAP},
-  keywords   = {Computer Vision, IoT},
+  keywords   = {Computer Vision, Education, IoT},
   pdf        = {papers/stewart2016s.pdf},
   exclude    = {true},
   bibtex_show= {true}
@@ -245,7 +245,7 @@
   year       = {2016},
   note       = {Exemplary full paper; AR=15\%},
   abbr       = {EDM},
-  keywords   = {Computer Vision, IoT},
+  keywords   = {Computer Vision, Education, IoT},
   pdf        = {papers/hutt2016eyes.pdf},
   exclude    = {true},
   bibtex_show= {true}
@@ -261,7 +261,7 @@
   year       = {2016},
   note       = {Short paper; AR=52\%},
   abbr       = {EDM},
-  keywords   = {Speech & Text, IoT},
+  keywords   = {Speech & Text, Education, IoT},
   pdf        = {papers/blanchard2016semi.pdf},
   exclude    = {true},
   bibtex_show= {true}
@@ -439,7 +439,7 @@
   publisher  = {US Army Research Laboratory: Orlando, FL},
   year       = {2017},
   abbr       = {Chapter},
-  keywords   = {Speech & Text, IoT},
+  keywords   = {Speech & Text, Education, IoT},
   pdf        = {papers/olney2017chapter.pdf},
   exclude    = {true},
   bibtex_show= {true}
