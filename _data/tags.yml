@@ -1,8 +1,8 @@
 # The Soundbendor theme tags, in display order, grouped by colour (OSU secondary palette;
 # colours are set in _sass/_soundbendor.scss). Shared by papers, theses, projects and people.
-# Every page shows the full list in this order.
+# A chip with nothing to show on a page is hidden there.
 - Music Emotion
-- Music Theory
+- Musicology
 - Transcription
 - Generation
 - Recommendation

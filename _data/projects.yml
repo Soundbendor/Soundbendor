@@ -345,7 +345,7 @@
   year: 2023
   type: "Capstone"
   people: ["alex-prestwich", "kobe-chenea", "paul-koos", "victor-marquez"]
-  tags: ["Music Theory", "Interfaces"]
+  tags: ["Musicology", "Interfaces"]
   summary: "A Python viewer that displays MIDI or MusicXML files as interactive musical scores. Features include responsive scrolling and resizing, detailed score elements and score slicing, which loads only part of a long piece. It lays groundwork for symbolic music visualization software, with more musical elements planned."
   video: "6QPmVV6HtUA"
   slides: ""
@@ -481,7 +481,7 @@
   year: 2022
   type: "URSA"
   people: ["max-wild"]
-  tags: ["Music Theory"]
+  tags: ["Musicology"]
   summary: "A flexible Python toolkit and data representation for loading, storing and manipulating symbolic music notation. It is designed so researchers can evaluate and generate music with artificial intelligence and machine learning algorithms, without first writing their own code to parse and convert score formats."
   video: "3GlCB73zUlA"
   slides: "projects/2022-musicai-slides.pdf"

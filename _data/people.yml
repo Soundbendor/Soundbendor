@@ -65,7 +65,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: []
-  tags: ["Music Theory", "Generation", "Rhythm", "Audio Models", "Datasets"]
+  tags: ["Musicology", "Generation", "Rhythm", "Audio Models", "Datasets"]
   note: ""
   theses: []
   papers: ["kwan2026probing"]
@@ -109,7 +109,7 @@
   campus: ""
   other_degrees: []
   activities: []
-  tags: ["Music Theory", "Rhythm", "Datasets"]
+  tags: ["Musicology", "Rhythm", "Datasets"]
   note: ""
   theses: []
   papers: ["tassin2026toward"]
@@ -1253,7 +1253,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Music Theory", "Interfaces"]
+  tags: ["Musicology", "Interfaces"]
   note: ""
   theses: []
   papers: []
@@ -1539,7 +1539,7 @@
   campus: "Bend"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Music Theory", "Interfaces"]
+  tags: ["Musicology", "Interfaces"]
   note: ""
   theses: []
   papers: []
@@ -1671,7 +1671,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Music Theory", "Interfaces"]
+  tags: ["Musicology", "Interfaces"]
   note: ""
   theses: []
   papers: []
@@ -1781,7 +1781,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["URSA", "Capstone"]
-  tags: ["Voice", "Speech & Text", "Signal Processing", "Datasets", "Music Theory", "Interfaces"]
+  tags: ["Voice", "Speech & Text", "Signal Processing", "Datasets", "Musicology", "Interfaces"]
   note: ""
   theses: []
   papers: ["donnelly2022identifying"]
@@ -2309,7 +2309,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["URSA"]
-  tags: ["Music Theory"]
+  tags: ["Musicology"]
   note: "Transferred"
   theses: []
   papers: []
