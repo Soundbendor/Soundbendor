@@ -55,21 +55,25 @@ OSU undergraduates join the lab in several ways. Several projects have led to co
     <div class="sb-join-icon"><i class="fa-solid fa-flask"></i></div>
     <h3>URSA Engage</h3>
     <p>A mentored first research experience for early undergraduates.</p>
+    <a class="sb-more-link" href="https://undergradresearch.oregonstate.edu/ursa-engage">Learn more <i class="fa-solid fa-arrow-right"></i></a>
   </div>
   <div class="sb-join-card sb-accent-green">
     <div class="sb-join-icon"><i class="fa-solid fa-mountain-sun"></i></div>
-    <h3>Cascades Research Fellowship</h3>
+    <h3>Cascades Research and Scholarship Fellowship</h3>
     <p>A research fellowship for OSU-Cascades students in Bend.</p>
+    <a class="sb-more-link" href="https://osucascades.edu/research/students/cascades-research-and-scholarship-fellowship">Learn more <i class="fa-solid fa-arrow-right"></i></a>
   </div>
   <div class="sb-join-card sb-accent-orange">
     <div class="sb-join-icon"><i class="fa-solid fa-book-open"></i></div>
-    <h3>Honors thesis</h3>
+    <h3>Honors College thesis</h3>
     <p>An undergraduate research thesis through the Honors College.</p>
+    <a class="sb-more-link" href="https://honors.oregonstate.edu/thesis-guide">Learn more <i class="fa-solid fa-arrow-right"></i></a>
   </div>
   <div class="sb-join-card sb-accent-blue">
     <div class="sb-join-icon"><i class="fa-solid fa-people-group"></i></div>
-    <h3>Senior capstone</h3>
+    <h3>Senior capstone (EECS)</h3>
     <p>Team projects that build tools, apps and datasets for the lab.</p>
+    <a class="sb-more-link" href="https://engineering.oregonstate.edu/EECS/alumni-industry/student-engagement/Capstone">Learn more <i class="fa-solid fa-arrow-right"></i></a>
   </div>
 </div>
 
