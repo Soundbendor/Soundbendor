@@ -371,11 +371,11 @@
   campus: "Cascades"
   other_degrees: []
   activities: ["CRF"]
-  tags: []
+  tags: ["Timbre"]
   note: ""
   theses: []
   papers: []
-  projects: []
+  projects: ["2025-timbral-analysis"]
   links:
     linkedin: ""
     github: ""

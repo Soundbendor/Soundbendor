@@ -52,6 +52,21 @@
   code: ""
   related: []
 
+- id: "2025-timbral-analysis"
+  title: "Timbral Analysis"
+  year: 2025
+  type: "CRF"
+  people: ["alec-krsek"]
+  tags: ["Timbre"]
+  summary: "A Python tool that labels any sound file with timbre words. It extracts 15 acoustic features with librosa and Praat (spectral centroid, harmonics-to-noise ratio, jitter, shimmer, temporal envelope and more) and maps them to descriptors such as strident or wavering, grouped into tonal, dynamic, rhythmic, textural and brightness categories. Tested on the ESC-50 environmental sound dataset, the goal is to label audio datasets automatically so a model can learn timbre directly from audio."
+  video: ""
+  slides: ""
+  poster: "projects/2025-timbral-analysis-poster.pdf"
+  image: "projects/2025-timbral-analysis.jpg"
+  website: ""
+  code: ""
+  related: []
+
 - id: "2024-algorhythms"
   title: "AlgoRhythms"
   year: 2024
