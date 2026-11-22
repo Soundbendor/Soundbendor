@@ -45,6 +45,12 @@ He teaches mainly on the OSU-Cascades campus in Bend and mentors students in Cor
 {% bibliography --file theses-pi --group_by none %}
 </div>
 
+## Service
+
+{% for x in site.data.service %}
+- **{{ x.role }}**, [{{ x.what }}]({{ x.url }}), *{{ x.venue }}*, {{ x.year }}
+{% endfor %}
+
 ## Funding
 
 {% for g in site.data.funding %}
