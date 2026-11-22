@@ -89,7 +89,7 @@
   year: 2024
   type: "Capstone"
   people: ["kameron-keller", "dalton-shults", "matthew-omalley-nichols"]
-  tags: ["Rhythm", "Health", "Apps"]
+  tags: ["Rhythm", "Health", "Interfaces"]
   summary: "A mobile app that turns songs you choose into a workout synchronized to the music's rhythm. Machine learning analyzes each song and selects exercises, with descriptions and video guides, so beginners need no prior fitness knowledge. A Django, PostgreSQL and Nginx backend runs on Amazon Web Services."
   video: "ypiphXN5uuU"
   slides: ""
@@ -105,7 +105,7 @@
   year: 2024
   type: "Capstone"
   people: ["daniel-lau", "kim-markley", "blake-pugh", "micah-stalberg"]
-  tags: ["Sustainability", "Food Waste", "IoT", "Apps"]
+  tags: ["Sustainability", "Food Waste", "IoT", "Interfaces"]
   summary: "The mobile app for the binsight.ai smart compost bin, built for a 2024 household field study. It connects the bin to Wi-Fi, shows the photos of food waste the bin captures, and charts composted items on a dashboard that encourages waste-reduction goals. Funded by FFAR and Kroger Zero Hunger."
   video: "mk88SDPEFSc"
   slides: ""
@@ -180,7 +180,7 @@
   year: 2024
   type: "Capstone"
   people: ["jake-anding", "devin-martin"]
-  tags: ["Apps", "Interfaces"]
+  tags: ["Interfaces"]
   summary: "Software for a giant floor piano played with your feet. Working with a physical MIDI piano controller, it guides players with colorful notes falling toward an on-screen keyboard, so people of any skill level can play songs alone or with a friend while walking across the keys."
   video: "vvf6wcLTews"
   slides: ""
@@ -195,7 +195,7 @@
   year: 2023
   type: "CRF"
   people: ["kameron-keller", "dalton-shults"]
-  tags: ["Rhythm", "Health", "Apps"]
+  tags: ["Rhythm", "Health", "Interfaces"]
   summary: "Generates exercise workouts from any song. The song is segmented into labeled sections of similar material, each section is mapped to an exercise that fits its rhythm and energy, and a generated video guides the user through the routine with repetition timing that matches the beat."
   video: "G7uD60NkERM"
   slides: "projects/2023-algorhythms-slides.pdf"
@@ -210,7 +210,7 @@
   year: 2023
   type: "Capstone"
   people: ["cole-theodore", "miya-degeer", "anju-mathew", "jesse-piccione", "caleb-elson"]
-  tags: ["Audio Tagging", "Signal Processing", "Bioacoustics", "Environment", "Datasets", "Apps"]
+  tags: ["Audio Tagging", "Signal Processing", "Bioacoustics", "Environment", "Datasets", "Interfaces"]
   summary: "A web hub where ornithologists explore, clean and label bird song recordings. Audio analysis automatically extracts bird calls from hour-long field recordings, and a machine learning pipeline suggests species, giving amateurs and experts a second opinion while saving hours of listening. It also serves as a repository of bird audio."
   video: "TAsvN3JgTBM"
   slides: ""
@@ -255,7 +255,7 @@
   year: 2023
   type: "CRF"
   people: ["samson-devol"]
-  tags: ["Perception", "Hearing", "Signal Processing", "Health", "Apps", "Interfaces"]
+  tags: ["Perception", "Hearing", "Signal Processing", "Health", "Interfaces"]
   summary: "A website that simulates hearing loss. Audio is filtered through an adjustable audiogram, so listeners can hear how different types and degrees of hearing loss change familiar sounds. The goal is to build understanding and empathy, encourage accessible design and promote the prevention of hearing damage."
   video: "ipQkl6GNp4w"
   slides: ""
@@ -270,7 +270,7 @@
   year: 2023
   type: "CRF"
   people: ["kim-markley"]
-  tags: ["Apps"]
+  tags: ["Interfaces"]
   summary: "An online art walk and artist directory for Bend, Oregon, where local artists share biographies, creative processes, current work, skills and services. To learn what artists, partners and other stakeholders actually need, the team designed and ran a bilingual survey that will guide the platform's design."
   video: ""
   slides: ""
@@ -285,7 +285,7 @@
   year: 2023
   type: "Capstone"
   people: ["luke-reynolds", "himanshu-dhir", "chih-yun-wu", "jayson-kildea"]
-  tags: ["Computer Vision", "Health", "Apps"]
+  tags: ["Computer Vision", "Health", "Interfaces"]
   summary: "A website for tracking meals and diet. Users enter meals through an interface that uses AI to identify foods, and interactive data visualizations turn the record into helpful insights about their diet and eating habits over time, replacing the work of keeping a written food diary."
   video: "r8__tsQ48UA"
   slides: ""
@@ -300,7 +300,7 @@
   year: 2023
   type: "Capstone"
   people: ["caleb-knight", "scott-rein", "mason-mann"]
-  tags: ["Transcription", "Multimodal", "Datasets", "Apps"]
+  tags: ["Transcription", "Multimodal", "Datasets", "Interfaces"]
   summary: "A website that crowdsources synchronized audio and MIDI recordings from musicians around the world, building a dataset for training models that transcribe music scores directly from audio. A public repository lets researchers search, filter and download the paired audio and MIDI files for their own work."
   video: "Qgrd5PeclrI"
   slides: ""
@@ -315,7 +315,7 @@
   year: 2023
   type: "Capstone"
   people: ["danielle-puga", "allison-schultz", "andrew-young", "matthew-walker"]
-  tags: ["Music Emotion", "Datasets", "Apps"]
+  tags: ["Music Emotion", "Datasets", "Interfaces"]
   summary: "A crowdsourcing app that gathers listeners' self-reported emotional responses to music. Songs stream through Spotify, which avoids copyright concerns and offers popular, current music. The responses form a quantitative dataset of subjective emotion for machine learning research, validated against similar published studies."
   video: "P-CAbiLg3zk"
   slides: ""
@@ -330,7 +330,7 @@
   year: 2023
   type: "Capstone"
   people: ["michael-murad", "mia-bilka", "chris-somnitz"]
-  tags: ["Music Emotion", "Datasets", "Apps"]
+  tags: ["Music Emotion", "Datasets", "Interfaces"]
   summary: "A mobile app that crowdsources emotional responses to music. Users play any song through Spotify and rate how it makes them feel on a valence-arousal scale; anonymized ratings are stored in a cloud database. The data could support mood-based playlists, better recommendations and matching songs to situations."
   video: "vqFpcx-C9-E"
   slides: ""
@@ -391,7 +391,7 @@
   year: 2023
   type: "Capstone"
   people: ["ann-marie-hicks", "zach-stevenson", "jonathan-to"]
-  tags: ["Apps"]
+  tags: ["Interfaces"]
   summary: "A new, flexible and modular website for the Soundbendor Lab, a research group in Oregon State's School of Electrical Engineering and Computer Science. It was designed to meet the needs of a rapidly growing lab and its projects in computational musicology, acoustic analysis and bioacoustics."
   video: "thk1s5p2SYs"
   slides: ""
@@ -406,7 +406,7 @@
   year: 2023
   type: "Capstone"
   people: ["bradly-landucci", "john-knowlton"]
-  tags: ["Generation", "Timbre", "Audio Synthesis", "Apps", "Interfaces"]
+  tags: ["Generation", "Timbre", "Audio Synthesis", "Interfaces"]
   summary: "A web app that evolves new instrument sounds with a genetic algorithm. Listeners hear pairs of sounds and vote for the more interesting one, providing a crowdsourced fitness function. Instruments are built partial by partial with additive synthesis and rendered in the browser, so no audio storage is needed."
   video: ""
   slides: ""
@@ -511,7 +511,7 @@
   year: 2021
   type: "CRF"
   people: ["shayla-lane"]
-  tags: ["Sustainability", "Apps"]
+  tags: ["Sustainability", "Interfaces"]
   summary: "A mobile app that helps shoppers buy ethically. It condenses complex information about the practices of the companies behind everyday products into a simple, transparent five-star rating, so consumers can compare brands quickly in the store without researching each manufacturer themselves."
   video: "6vmH80qF2Ig"
   slides: ""
@@ -677,7 +677,7 @@
   year: 2020
   type: "URSA"
   people: ["shaurya-gaur"]
-  tags: ["Music Emotion", "Recommendation", "Apps"]
+  tags: ["Music Emotion", "Recommendation", "Interfaces"]
   summary: "An intelligent playlist that adjusts the music it plays according to measurements of the listener's attention and productivity. Unlike earlier affective playlists, which keep songs at a similar emotional state, its algorithm takes listeners on an emotional journey toward focus and productivity."
   video: "e0TvA8f8yiw"
   slides: "projects/2020-productivity-playlist-slides.pdf"
@@ -692,7 +692,7 @@
   year: 2020
   type: "URSA"
   people: ["erick-branner"]
-  tags: ["Perception", "Hearing", "Signal Processing", "Health", "Apps"]
+  tags: ["Perception", "Hearing", "Signal Processing", "Health", "Interfaces"]
   summary: "A web app that lets listeners hear how partial hearing loss changes familiar sounds. Audio is filtered according to a pure-tone audiogram, the standard clinical chart of hearing, using peaking filters that reproduce several common patterns of loss, to build understanding of how others perceive the world."
   video: "R8Hyd92aXqI"
   slides: ""

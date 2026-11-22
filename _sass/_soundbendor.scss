@@ -53,7 +53,6 @@ $sb-moondust: #c6dae7;
 $sb-star-canvas: #003b5c;
 $sb-rogue-wave: #0d5257;
 $sb-solar-flare: #d3832b;
-$sb-candela: #fdd26e;
 $sb-pine-stand: #4a773c;
 $sb-high-desert: #7a6855;
 $sb-crater: #8e9089;
@@ -76,7 +75,7 @@ $sb-tag-colors: (
   "audio-synthesis": $sb-rogue-wave,
   "signal-processing": $sb-rogue-wave,
   "computer-vision": $sb-solar-flare,
-  "bioacoustics": $sb-candela,
+  "bioacoustics": $sb-pine-stand,
   "environment": $sb-pine-stand,
   "sustainability": $sb-pine-stand,
   "food-waste": $sb-pine-stand,
@@ -84,7 +83,6 @@ $sb-tag-colors: (
   "health": $sb-high-desert,
   "datasets": $sb-crater,
   "iot": $sb-crater,
-  "apps": $sb-crater,
   "interfaces": $sb-crater,
 );
 
