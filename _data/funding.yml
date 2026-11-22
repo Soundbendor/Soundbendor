@@ -1,6 +1,18 @@
-# Grants shown on the PI page. Add role and years when confirmed.
+# Grants shown on the PI page, newest first. Fields: sponsor, title, number, role, years, url, poster (under assets/pdf/).
+- sponsor: Foundation for Food & Agriculture Research (FFAR) and the Kroger Co. Zero Hunger | Zero Waste Foundation
+  title: Smart Compost Bin for Measurement of Consumer Food Waste  # title from the 2024 ICMI talk; confirm the official grant title
+  number: FFAR 22-000420
+  role: PI
+  years: 2023–
+  url: https://foundationfar.org/news/grant-aims-to-reduce-food-waste/
+- sponsor: National Science Foundation
+  title: "EXP: Collaborative Research: Cyber-enabled Teacher Discourse Analytics to Empower Teacher Learning"
+  number: NSF 1735785
+  role: Co-PI
+  years: 2017–2022
+  url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=1735785
 - sponsor: Institute of Education Sciences
   title: Automating the Measurement and Assessment of Classroom Discourse
-  number: R305A130030
+  number: IES R305A130030
   url: https://ies.ed.gov/use-work/awards/automating-measurement-and-assessment-classroom-discourse
   poster: funding/ies-r305a130030-poster-2015.pdf

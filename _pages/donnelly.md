@@ -54,5 +54,5 @@ He teaches mainly on the OSU-Cascades campus in Bend and mentors students in Cor
 ## Funding
 
 {% for g in site.data.funding %}
-- **{{ g.sponsor }}**{% if g.number %} ({{ g.number }}){% endif %}: [{{ g.title }}]({{ g.url }}){% if g.poster %} · [poster]({{ g.poster | prepend: '/assets/pdf/' | relative_url }}){% endif %}
+- {% if g.role %}**{{ g.role }}**, {% endif %}[{{ g.title }}]({{ g.url }}). {{ g.sponsor }}{% if g.number %}, {{ g.number }}{% endif %}{% if g.years %}, {{ g.years }}{% endif %}.{% if g.poster %} [Poster]({{ g.poster | prepend: '/assets/pdf/' | relative_url }}){% endif %}
 {% endfor %}
