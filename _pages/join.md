@@ -68,6 +68,12 @@ OSU undergraduates join the lab in several ways. Several projects have led to co
     <p>An undergraduate research thesis through the Honors College.</p>
     <a class="sb-more-link" href="https://honors.oregonstate.edu/thesis-guide">Learn more <i class="fa-solid fa-arrow-right"></i></a>
   </div>
+  <div class="sb-join-card sb-accent-teal">
+    <div class="sb-join-icon"><i class="fa-solid fa-forward-fast"></i></div>
+    <h3>Accelerated Master's Platform (AMP)</h3>
+    <p>Start graduate courses as an undergraduate and continue into the M.S. Several lab members have taken this path from the B.S. to the M.S.</p>
+    <a class="sb-more-link" href="https://gradschool.oregonstate.edu/accelerated-masters-platform">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
   <div class="sb-join-card sb-accent-blue">
     <div class="sb-join-icon"><i class="fa-solid fa-people-group"></i></div>
     <h3>Senior capstone (EECS)</h3>

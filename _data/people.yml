@@ -128,7 +128,7 @@
   year: ""
   campus: ""
   other_degrees: []
-  activities: []
+  activities: ["AMP"]
   tags: []
   note: ""
   theses: []
@@ -209,7 +209,7 @@
 
 - id: "colin-mant"
   name: "Colin Mant"
-  photo: ""
+  photo: "colin-mant.jpg"
   status: "current"
   level: "bs"
   program: "B.S., Computer Science"
@@ -260,7 +260,7 @@
   year: ""
   campus: "Cascades"
   other_degrees: []
-  activities: ["CRF"]
+  activities: ["AMP", "CRF"]
   tags: []
   note: ""
   theses: []
@@ -268,6 +268,28 @@
   projects: []
   links:
     linkedin: "https://www.linkedin.com/in/tylersilva23/"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "eric-orr"
+  name: "Eric Orr"
+  photo: "eric-orr.jpg"
+  status: "current"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: ""
+  campus: "Cascades"
+  other_degrees: []
+  activities: ["AMP", "CRF"]
+  tags: []
+  note: ""
+  theses: []
+  papers: []
+  projects: []
+  links:
+    linkedin: ""
     github: ""
     website: ""
     scholar: ""
@@ -326,7 +348,7 @@
   year: "2026"
   campus: "Corvallis"
   other_degrees: ["B.S. 2025"]
-  activities: ["CRF", "URSA", "Honors", "Capstone", "AMP"]
+  activities: ["AMP", "CRF", "URSA", "Honors", "Capstone"]
   tags: ["Music Emotion"]
   note: ""
   theses: ["leib2026time", "leib2025interpreting"]
@@ -486,28 +508,6 @@
   theses: []
   papers: []
   projects: ["2025-sound-dataset-annotation-tool"]
-  links:
-    linkedin: ""
-    github: ""
-    website: ""
-    scholar: ""
-  now: ""
-
-- id: "eric-orr"
-  name: "Eric Orr"
-  photo: "eric-orr.jpg"
-  status: "alumni"
-  level: "bs"
-  program: "B.S., Computer Science"
-  year: "2025"
-  campus: "Cascades"
-  other_degrees: []
-  activities: ["CRF"]
-  tags: []
-  note: ""
-  theses: []
-  papers: []
-  projects: []
   links:
     linkedin: ""
     github: ""
