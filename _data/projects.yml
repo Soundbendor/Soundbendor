@@ -28,10 +28,10 @@
   type: "CRF"
   people: ["isaac-brickner"]
   tags: ["Music Emotion", "Language Models"]
-  summary: ""
+  summary: "Can ChatGPT judge how a song feels? GPT-4o-mini rated the valence and arousal of Billboard Top 100 songs since 1958 using three prompt styles: a direct number, five descriptive words and a paragraph. Against four human-annotated datasets, agreement was best with AMG1608, though still only moderate."
   video: "VKpTv3OJy1Y"
-  slides: ""
-  poster: ""
+  slides: "projects/2025-llm-emotion-prediction-slides.pdf"
+  poster: "projects/2025-llm-emotion-prediction-poster.pdf"
   image: ""
   website: ""
   code: ""
@@ -43,10 +43,10 @@
   type: "CRF"
   people: ["daniel-lounsbury"]
   tags: ["Datasets", "Interfaces", "Tools"]
-  summary: ""
+  summary: "A flexible web framework for crowdsourcing labels for audio datasets. Participants tag sound excerpts with emotional or timbral descriptors in six annotation styles, such as Best Match, Strength and Opposites. Researchers create custom studies, upload sounds and descriptors, track progress and export results for training machine learning models."
   video: "2bl0nL1c2hk"
-  slides: ""
-  poster: ""
+  slides: "projects/2025-sound-dataset-annotation-tool-slides.pdf"
+  poster: "projects/2025-sound-dataset-annotation-tool-poster.pdf"
   image: ""
   website: ""
   code: ""
@@ -149,7 +149,7 @@
   type: "Ind. Study"
   people: ["andrew-young"]
   tags: ["Datasets", "Interfaces", "Tools"]
-  summary: ""
+  summary: "The first version of the lab's sound annotation website, built over a summer. Volunteers register, listen to music snippets and choose descriptors such as noisy, smooth or bright, drawn from published timbre research. A React front end and an Express and MongoDB API store annotations that researchers export as CSV."
   video: "HqV5deCIMXA"
   slides: ""
   poster: ""
