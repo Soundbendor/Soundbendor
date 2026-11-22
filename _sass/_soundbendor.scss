@@ -600,3 +600,229 @@ details.sb-earlier + h2,
 details.sb-earlier + p + h2 {
   margin-top: 2.75rem;
 }
+
+/* ---------- Join page ---------- */
+$sb-stratosphere: #006a8e;
+$sb-high-tide: #00859b;
+$sb-pine: #4a773c;
+
+.sb-hero {
+  position: relative;
+  margin: 0 0 1.5rem;
+  border-radius: 0.6rem;
+  overflow: hidden;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    object-position: center 35%;
+  }
+
+  figcaption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 2.5rem 1.25rem 1rem;
+    background: linear-gradient(to top, rgba(33, 37, 41, 0.85), rgba(33, 37, 41, 0));
+    color: #ffffff;
+  }
+
+  .sb-hero-title {
+    display: block;
+    font-family: $sb-head-font;
+    font-weight: 700;
+    font-size: 1.9rem;
+    line-height: 1.1;
+  }
+
+  .sb-hero-sub {
+    display: block;
+    font-size: 0.95rem;
+    opacity: 0.9;
+  }
+}
+
+.sb-join-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 1.25rem;
+
+  &.sb-join-small {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+.sb-join-card {
+  --sb-accent: #{$beaver-orange};
+  background: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-top: 5px solid var(--sb-accent);
+  border-radius: 0.5rem;
+  padding: 1rem 1.1rem 0.9rem;
+
+  h3 {
+    margin: 0.4rem 0 0.35rem !important;
+    font-size: 1.25rem !important;
+    color: var(--global-text-color) !important;
+    font-weight: 700 !important;
+  }
+
+  p {
+    margin: 0.4rem 0 0;
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+
+  &.sb-accent-orange { --sb-accent: #{$beaver-orange}; }
+  &.sb-accent-blue { --sb-accent: #{$sb-stratosphere}; }
+  &.sb-accent-teal { --sb-accent: #{$sb-high-tide}; }
+  &.sb-accent-green { --sb-accent: #{$sb-pine}; }
+}
+
+.sb-join-icon {
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  color: #ffffff;
+  background: var(--sb-accent);
+}
+
+.sb-join-small .sb-join-icon {
+  width: 2.2rem;
+  height: 2.2rem;
+  font-size: 1rem;
+}
+
+.sb-degrees {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+
+  span {
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.1rem 0.55rem;
+    border-radius: 999px;
+    color: var(--sb-accent);
+    border: 1.5px solid var(--sb-accent);
+  }
+}
+
+html[data-theme="dark"] .sb-degrees span {
+  color: var(--global-text-color);
+}
+
+.sb-steps {
+  display: grid;
+  gap: 0.6rem;
+  margin: 0.5rem 0 1.5rem;
+}
+
+.sb-step {
+  display: flex;
+  gap: 0.8rem;
+  align-items: flex-start;
+  background: var(--global-card-bg-color);
+  border-radius: 0.5rem;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--global-divider-color);
+
+  .sb-step-n {
+    flex: none;
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    background: #{$beaver-orange};
+    color: #ffffff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.sb-photo-strip {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    display: block;
+  }
+
+  @media (max-width: 575px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.sb-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  background: #{$beaver-orange};
+  color: #ffffff;
+  border-radius: 0.6rem;
+  padding: 1.2rem 1.4rem;
+  margin: 2rem 0 1.5rem;
+
+  .sb-cta-title {
+    font-family: $sb-head-font;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.1;
+  }
+
+  .sb-cta-btn {
+    background: #ffffff;
+    color: #{$beaver-orange} !important;
+    font-weight: 700;
+    padding: 0.55rem 1.1rem;
+    border-radius: 999px;
+    text-decoration: none !important;
+    white-space: nowrap;
+
+    &:hover {
+      background: #{$off-white};
+    }
+  }
+}
+
+.sb-dei {
+  border-left: 5px solid #{$sb-high-tide};
+  background: var(--global-card-bg-color);
+  border-radius: 0 0.5rem 0.5rem 0;
+  padding: 0.9rem 1.2rem;
+
+  h3 {
+    margin-top: 0 !important;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .sb-hero img {
+    height: 230px;
+  }
+
+  .sb-hero .sb-hero-title {
+    font-size: 1.45rem;
+  }
+}
