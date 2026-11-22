@@ -1,0 +1,2144 @@
+# Lab members. Seeded 2026-11-21 from the CV, the old site's database and the photo folder.
+# Edit by pull request. One entry per person:
+#   id        = photo file stem in assets/img/people/ (photo: "" shows the placeholder)
+#   status    current | alumni        level   phd | ms | bs (highest degree with the lab)
+#   year      graduation year (blank if unknown or current)
+#   other_degrees  earlier or later degrees with the lab, e.g. "B.S. 2022"
+#   activities  URSA, CRF, NCUR, Honors, Capstone, AMP, Grant
+#   tags      theme tags (see _data/tags.yml)
+#   theses, papers  bib keys; projects  ids from _data/projects.yml
+#   now       alumni: current job or school, e.g. "Software engineer at X" (optional)
+
+- id: "aidan-beery"
+  name: "Aidan Beery"
+  photo: "aidan-beery.jpg"
+  status: "current"
+  level: "phd"
+  program: "Ph.D., Computer Science / AI"
+  year: ""
+  campus: "Corvallis"
+  other_degrees: ["M.S. 2026", "B.S. 2022"]
+  activities: ["AMP", "CRF", "NCUR", "Capstone", "Honors"]
+  tags: ["Sustainability", "Music Emotion", "Speech & Language"]
+  note: ""
+  theses: ["beery2025towards", "beery2022predicting"]
+  papers: ["beery2024smart", "beery2023learning", "donnelly2022evaluating"]
+  projects: ["2021-semantic-analysis-of-music-discourse"]
+  links:
+    linkedin: "https://www.linkedin.com/in/aidan-beery-68a1731a2"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "pratik-khanal"
+  name: "Pratik Khanal"
+  photo: "pratik-khanal.jpeg"
+  status: "current"
+  level: "phd"
+  program: "Ph.D., Computer Science"
+  year: ""
+  campus: "Corvallis"
+  other_degrees: []
+  activities: []
+  tags: ["Music Emotion"]
+  note: ""
+  theses: []
+  papers: ["khanal2025emotionotes"]
+  projects: []
+  links:
+    linkedin: "https://np.linkedin.com/in/pratik-khanal1"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "derek-kwan"
+  name: "Derek Kwan"
+  photo: "derek-kwan.png"
+  status: "current"
+  level: "phd"
+  program: "Ph.D., Computer Science"
+  year: ""
+  campus: "Corvallis"
+  other_degrees: []
+  activities: []
+  tags: ["Music Theory"]
+  note: ""
+  theses: []
+  papers: ["kwan2026probing"]
+  projects: []
+  links:
+    linkedin: "https://www.linkedin.com/in/derek-kwan-568bb67/"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "peter-mccabe"
+  name: "Peter McCabe"
+  photo: "peter-mccabe.jpg"
+  status: "current"
+  level: "phd"
+  program: "Ph.D., Artificial Intelligence"
+  year: ""
+  campus: "Corvallis"
+  other_degrees: ["M.S. 2026"]
+  activities: []
+  tags: ["Timbre"]
+  note: ""
+  theses: ["mccabe2026audiofree"]
+  papers: ["mccabe2026classifying"]
+  projects: []
+  links:
+    linkedin: "https://www.linkedin.com/in/p-j-mccabe/"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "ian-tassin"
+  name: "Ian Tassin"
+  photo: "ian-tassin.jpeg"
+  status: "current"
+  level: "phd"
+  program: "Ph.D., Computer Science"
+  year: ""
+  campus: ""
+  other_degrees: []
+  activities: []
+  tags: ["Music Theory"]
+  note: ""
+  theses: []
+  papers: ["tassin2026toward"]
+  projects: []
+  links:
+    linkedin: ""
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "abbey-hankins"
+  name: "Abbey Hankins"
+  photo: "abbey-hankins.jpeg"
+  status: "current"
+  level: "ms"
+  program: "M.S., Computer Science"
+  year: ""
+  campus: ""
+  other_degrees: []
+  activities: []
+  tags: []
+  note: ""
+  theses: []
+  papers: []
+  projects: []
+  links:
+    linkedin: ""
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "marc-vannucci"
+  name: "Marc Vannucci"
+  photo: ""
+  status: "current"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: ""
+  campus: "Cascades"
+  other_degrees: []
+  activities: ["CRF"]
+  tags: ["Timbre"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2026-bridging-the-timbre-gap"]
+  links:
+    linkedin: ""
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "janita-aamir"
+  name: "Janita Aamir"
+  photo: "janita-aamir.jpg"
+  status: "alumni"
+  level: "phd"
+  program: "Ph.D., Computer Science"
+  year: ""
+  campus: "Corvallis"
+  other_degrees: []
+  activities: []
+  tags: ["Music Emotion"]
+  note: "Switched to an M.S. capstone"
+  theses: []
+  papers: ["aamir2026addressing"]
+  projects: []
+  links:
+    linkedin: "https://www.linkedin.com/in/janita-aamir"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "jc-zontos"
+  name: "JC Zontos"
+  photo: "jc-zontos.png"
+  status: "alumni"
+  level: "phd"
+  program: "Ph.D., Artificial Intelligence"
+  year: ""
+  campus: "Corvallis"
+  other_degrees: []
+  activities: []
+  tags: []
+  note: "Switched to an M.S. capstone"
+  theses: []
+  papers: []
+  projects: []
+  links:
+    linkedin: "https://www.linkedin.com/in/jczontos"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "shaun-leib"
+  name: "Shaun Leib"
+  photo: "shaun-leib.jpg"
+  status: "alumni"
+  level: "ms"
+  program: "M.S., Computer Science"
+  year: "2026"
+  campus: "Corvallis"
+  other_degrees: ["B.S. 2025"]
+  activities: ["URSA", "Honors", "Capstone", "AMP"]
+  tags: ["Music Emotion"]
+  note: ""
+  theses: ["leib2026time", "leib2025interpreting"]
+  papers: []
+  projects: ["2024-music-sentiment-analysis", "2022-music-sentiment-analysis"]
+  links:
+    linkedin: "https://www.linkedin.com/in/shaun-leib-72b84b264"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "austin-martin"
+  name: "Austin Martin"
+  photo: "austin-martin.jpg"
+  status: "alumni"
+  level: "ms"
+  program: "M.S., Computer Science"
+  year: "2025"
+  campus: "Cascades"
+  other_degrees: ["B.S. 2024"]
+  activities: ["AMP"]
+  tags: ["Health"]
+  note: ""
+  theses: ["martin2025machine"]
+  papers: []
+  projects: []
+  links:
+    linkedin: ""
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "shengxuan-wang"
+  name: "Shengxuan Wang"
+  photo: "shengxuan-wang.jpeg"
+  status: "alumni"
+  level: "ms"
+  program: "M.S., Computer Science"
+  year: "2025"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: []
+  tags: ["Music Emotion"]
+  note: ""
+  theses: ["wang2025comparative"]
+  papers: []
+  projects: []
+  links:
+    linkedin: "https://www.linkedin.com/in/shengxuanw"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "daniel-de-leon"
+  name: "Daniel De Leon"
+  photo: "daniel-de-leon.jpg"
+  status: "alumni"
+  level: "ms"
+  program: "M.S., Computer Science"
+  year: "2022"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: []
+  tags: []
+  note: ""
+  theses: []
+  papers: []
+  projects: []
+  links:
+    linkedin: "https://www.linkedin.com/in/daniel-de-leon"
+    github: ""
+    website: ""
+    scholar: ""
+  now: "Machine Learning Engineer, Intel"
+
+- id: "vi-vuong"
+  name: "Vi Vuong"
+  photo: ""
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2026"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: []
+  tags: ["Health"]
+  note: ""
+  theses: []
+  papers: []
+  projects: []
+  links:
+    linkedin: ""
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "isaac-brickner"
+  name: "Isaac Brickner"
+  photo: "isaac-brickner.jpeg"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2025"
+  campus: "Cascades"
+  other_degrees: []
+  activities: ["CRF"]
+  tags: []
+  note: ""
+  theses: []
+  papers: []
+  projects: []
+  links:
+    linkedin: ""
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "alec-krsek"
+  name: "Alec Krsek"
+  photo: "alec-krsek.jpg"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2025"
+  campus: "Cascades"
+  other_degrees: []
+  activities: ["CRF"]
+  tags: []
+  note: ""
+  theses: []
+  papers: []
+  projects: []
+  links:
+    linkedin: ""
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "daniel-lounsbury"
+  name: "Daniel Lounsbury"
+  photo: "daniel-lounsbury.jpeg"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2025"
+  campus: "Cascades"
+  other_degrees: []
+  activities: ["CRF"]
+  tags: ["Tools"]
+  note: ""
+  theses: []
+  papers: []
+  projects: []
+  links:
+    linkedin: ""
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "eric-orr"
+  name: "Eric Orr"
+  photo: "eric-orr.jpg"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2025"
+  campus: "Cascades"
+  other_degrees: []
+  activities: ["CRF"]
+  tags: []
+  note: ""
+  theses: []
+  papers: []
+  projects: []
+  links:
+    linkedin: ""
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "will-richards"
+  name: "Will Richards"
+  photo: "will-richards.jpeg"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2025"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: []
+  tags: ["Sustainability"]
+  note: ""
+  theses: []
+  papers: ["beery2024smart"]
+  projects: []
+  links:
+    linkedin: ""
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "jake-anding"
+  name: "Jake Anding"
+  photo: "jake-anding.jpg"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2024"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Music Theory"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2024-walking-piano-interface"]
+  links:
+    linkedin: "https://www.linkedin.com/in/wesleyanding/"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "zachary-chand"
+  name: "Zachary Chand"
+  photo: "zachary-chand.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2024"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Speech & Language"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-tts-for-constructed-languages"]
+  links:
+    linkedin: "https://www.linkedin.com/in/zack-chand-497a911a1"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "michael-chen"
+  name: "Michael Chen"
+  photo: "michael-chen.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2024"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Health", "Diagnostics"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-smart-dog-collar"]
+  links:
+    linkedin: "https://www.linkedin.com/in/michaelschen123"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "ryan-earl"
+  name: "Ryan Earl"
+  photo: "ryan-earl.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2024"
+  campus: "Cascades"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Health", "Diagnostics"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-smart-dog-collar"]
+  links:
+    linkedin: "https://www.linkedin.com/in/ryanleoearl"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "daniel-eastman"
+  name: "Daniel Eastman"
+  photo: "daniel-eastman.jpeg"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Mechanical Engineering"
+  year: "2024"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: []
+  tags: ["Sustainability"]
+  note: ""
+  theses: []
+  papers: ["beery2024smart"]
+  projects: []
+  links:
+    linkedin: "https://www.linkedin.com/in/danielweastman/"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "jake-enos"
+  name: "Jake Enos"
+  photo: "jake-enos.jpeg"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Mechanical Engineering"
+  year: "2024"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: []
+  tags: ["Sustainability"]
+  note: ""
+  theses: []
+  papers: ["beery2024smart"]
+  projects: []
+  links:
+    linkedin: "https://www.linkedin.com/in/jakeenos5468/"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "michael-girsberger"
+  name: "Michael Girsberger"
+  photo: "michael-girsberger.jpg"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2024"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["URSA"]
+  tags: []
+  note: ""
+  theses: []
+  papers: []
+  projects: []
+  links:
+    linkedin: ""
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "hiroto-kazama"
+  name: "Hiroto Kazama"
+  photo: "hiroto-kazama.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2024"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Health", "Diagnostics"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-smart-dog-collar"]
+  links:
+    linkedin: "https://www.linkedin.com/in/hiroto-kazama"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "kameron-keller"
+  name: "Kameron Keller"
+  photo: "kameron-keller.jpeg"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2024"
+  campus: "Cascades"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Music Emotion", "Health"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2024-algorhythms", "2023-algorhythms"]
+  links:
+    linkedin: "https://www.linkedin.com/in/kameron-keller"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "daniel-lau"
+  name: "Daniel Lau"
+  photo: "daniel-lau.jpg"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2024"
+  campus: "Cascades"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Sustainability"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2024-binsight-ai-app"]
+  links:
+    linkedin: "https://www.linkedin.com/in/theusaf/"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "kim-markley"
+  name: "Kim Markley"
+  photo: "kim-markley.jpeg"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2024"
+  campus: "Cascades"
+  other_degrees: []
+  activities: ["Capstone", "CRF", "AMP"]
+  tags: ["Sustainability", "Tools"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2024-binsight-ai-app", "2023-made-with-love-in-bend"]
+  links:
+    linkedin: "https://www.linkedin.com/in/kimberly-markley"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "devin-martin"
+  name: "Devin Martin"
+  photo: "devin-martin.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2024"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Music Theory"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2024-walking-piano-interface"]
+  links:
+    linkedin: "https://www.linkedin.com/in/devin-martin-6953b9264/"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "vaylen-melendez"
+  name: "Vaylen Melendez"
+  photo: "vaylen-melendez.jpg"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2024"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: []
+  tags: ["Health"]
+  note: ""
+  theses: []
+  papers: []
+  projects: []
+  links:
+    linkedin: ""
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "alexander-miesbauer"
+  name: "Alexander Miesbauer"
+  photo: "alexander-miesbauer.jpg"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2024"
+  campus: "Cascades"
+  other_degrees: []
+  activities: ["CRF"]
+  tags: ["Music Emotion", "Tools"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2024-concert-program-note-extraction"]
+  links:
+    linkedin: ""
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "keenan-newcomer"
+  name: "Keenan Newcomer"
+  photo: "keenan-newcomer.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2024"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Health", "Diagnostics"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-smart-dog-collar"]
+  links:
+    linkedin: "https://www.linkedin.com/in/keenan-newcomer"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "matthew-omalley-nichols"
+  name: "Matthew O'Malley-Nichols"
+  photo: "matthew-omalley-nichols.jpeg"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2024"
+  campus: "Cascades"
+  other_degrees: []
+  activities: ["CRF", "Capstone"]
+  tags: ["Music Emotion", "Health", "Signal Processing"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2024-algorhythms", "2024-hierarchical-spectral-clustering"]
+  links:
+    linkedin: "https://www.linkedin.com/in/matthew-o-malley-nichols-b30725296/"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "blake-pugh"
+  name: "Blake Pugh"
+  photo: "blake-pugh.jpg"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2024"
+  campus: "Cascades"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Sustainability"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2024-binsight-ai-app"]
+  links:
+    linkedin: "https://www.linkedin.com/in/blake-pugh-a08642274/"
+    github: ""
+    website: ""
+    scholar: ""
+  now: "Software Engineer at Paladin Data Corporation"
+
+- id: "dalton-shults"
+  name: "Dalton Shults"
+  photo: "dalton-shults.jpeg"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2024"
+  campus: "Cascades"
+  other_degrees: []
+  activities: ["CRF", "Capstone"]
+  tags: ["Music Emotion", "Health"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2024-algorhythms", "2023-algorhythms"]
+  links:
+    linkedin: "https://www.linkedin.com/in/dalton-shults-271a57274/"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "carlana-man-kwan-so"
+  name: "Carlana Man Kwan So"
+  photo: "carlana-man-kwan-so.jpg"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2024"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["URSA"]
+  tags: []
+  note: ""
+  theses: []
+  papers: []
+  projects: []
+  links:
+    linkedin: ""
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "micah-stalberg"
+  name: "Micah Stalberg"
+  photo: "micah-stalberg.jpg"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2024"
+  campus: "Cascades"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Sustainability"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2024-binsight-ai-app"]
+  links:
+    linkedin: "https://www.linkedin.com/in/micah-stalberg-490101182/"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "brendon-tran"
+  name: "Brendon Tran"
+  photo: "brendon-tran.jpg"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2024"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["URSA"]
+  tags: []
+  note: ""
+  theses: []
+  papers: []
+  projects: []
+  links:
+    linkedin: ""
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "andrew-young"
+  name: "Andrew Young"
+  photo: "andrew-young.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2024"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Music Emotion", "Tools"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-music-affect-app"]
+  links:
+    linkedin: "https://www.linkedin.com/in/andyruwruw"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "mia-bilka"
+  name: "Mia Bilka"
+  photo: ""
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Ecampus"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Music Emotion", "Tools"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-music-affect-data-collection-app"]
+  links:
+    linkedin: ""
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "zachary-bochanski"
+  name: "Zachary Bochanski"
+  photo: "zachary-bochanski.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Cascades"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Ecology"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-deployable-ensembles-for-river-forecasting"]
+  links:
+    linkedin: "https://www.linkedin.com/in/zach-bochanski-7a4710111"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "jonah-broyer"
+  name: "Jonah Broyer"
+  photo: "jonah-broyer.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Cascades"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Music Emotion", "Tools"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-concert-program-data"]
+  links:
+    linkedin: "https://www.linkedin.com/in/jonah-broyer-1020a3283"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "chitali-buge"
+  name: "Chitali Buge"
+  photo: "chitali-buge.jpeg"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["URSA"]
+  tags: ["Health", "Music Perception"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2020-sonifying-vital-sign-monitor-audio"]
+  links:
+    linkedin: ""
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "nicholas-burrell"
+  name: "Nicholas Burrell"
+  photo: "nicholas-burrell.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Speech & Language"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-tts-for-constructed-languages"]
+  links:
+    linkedin: "https://www.linkedin.com/in/nicholas-burrell"
+    github: ""
+    website: ""
+    scholar: ""
+  now: "Software Developer at Autodesk"
+
+- id: "parker-carlson"
+  name: "Parker Carlson"
+  photo: "parker-carlson.jpeg"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["URSA", "NCUR"]
+  tags: ["Speech & Language", "Signal Processing", "Music Theory"]
+  note: ""
+  theses: []
+  papers: ["carlson2024sung", "donnelly2023transposition"]
+  projects: ["2020-audio-transposition"]
+  links:
+    linkedin: "https://www.linkedin.com/in/parkercarlson"
+    github: ""
+    website: ""
+    scholar: ""
+  now: "Doctoral candidate, University of California, Santa Barbara"
+
+- id: "hao-jun-chen"
+  name: "Hao Jun Chen"
+  photo: "hao-jun-chen.jpg"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["URSA"]
+  tags: []
+  note: ""
+  theses: []
+  papers: []
+  projects: []
+  links:
+    linkedin: ""
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "kobe-chenea"
+  name: "Kobe Chenea"
+  photo: "kobe-chenea.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Music Theory", "Tools"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-music-score-visualization"]
+  links:
+    linkedin: ""
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "miya-degeer"
+  name: "Miya DeGeer"
+  photo: "miya-degeer.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Bioacoustics", "Ecology"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-chirp"]
+  links:
+    linkedin: "https://www.linkedin.com/in/miya-degeer-743b75203"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "doug-dennis"
+  name: "Doug Dennis"
+  photo: ""
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Cascades"
+  other_degrees: []
+  activities: ["CRF", "Capstone"]
+  tags: ["Ecology"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-deployable-ensembles-for-river-forecasting"]
+  links:
+    linkedin: "https://www.linkedin.com/in/douglas-dennis-5771a9107"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "samson-devol"
+  name: "Samson Devol"
+  photo: "samson-devol.jpeg"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Cascades"
+  other_degrees: []
+  activities: ["CRF", "NCUR", "Capstone"]
+  tags: ["Music Emotion", "Tools", "Music Perception", "Health"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-concert-program-data", "2023-hearing-simulator"]
+  links:
+    linkedin: "https://www.linkedin.com/in/samson-devol-0b72391a1"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "himanshu-dhir"
+  name: "Himanshu Dhir"
+  photo: ""
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Cascades"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Health", "Tools"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-meal-spotter-website"]
+  links:
+    linkedin: "https://www.linkedin.com/in/himanshu-dhir-9a32a31b6"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "caleb-elson"
+  name: "Caleb Elson"
+  photo: "caleb-elson.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Ecampus"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Bioacoustics", "Ecology"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-chirp"]
+  links:
+    linkedin: "https://www.linkedin.com/in/caleb-elson"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "shaurya-gaur"
+  name: "Shaurya Gaur"
+  photo: "shaurya-gaur.jpeg"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["URSA", "NCUR", "Honors"]
+  tags: ["Music Emotion"]
+  note: ""
+  theses: ["gaur2023mood"]
+  papers: ["gaur2024generating", "donnelly2022mood"]
+  projects: ["2021-mood-dynamic-playlists", "2020-productivity-playlist"]
+  links:
+    linkedin: "https://www.linkedin.com/in/shaurgaur"
+    github: ""
+    website: ""
+    scholar: ""
+  now: "Masters candidate, Radbound University"
+
+- id: "aj-gokule"
+  name: "AJ Gokule"
+  photo: "aj-gokule.jpg"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["URSA"]
+  tags: []
+  note: ""
+  theses: []
+  papers: []
+  projects: []
+  links:
+    linkedin: "https://in.linkedin.com/in/ajinkya-gokule-1a973a1a6"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "ann-marie-hicks"
+  name: "Ann Marie Hicks"
+  photo: "ann-marie-hicks.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Ecampus"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Tools"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-soundbendor-website-redesign"]
+  links:
+    linkedin: "https://www.linkedin.com/in/annmarie-hicks"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "orion-junkins"
+  name: "Orion Junkins"
+  photo: "orion-junkins.jpeg"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Cascades"
+  other_degrees: []
+  activities: ["CRF", "Capstone"]
+  tags: ["Ecology"]
+  note: ""
+  theses: []
+  papers: ["donnelly2022short"]
+  projects: ["2023-deployable-ensembles-for-river-forecasting", "2022-river-level-forecasting"]
+  links:
+    linkedin: "https://www.linkedin.com/in/orion-junkins-356373227"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "jayson-kildea"
+  name: "Jayson Kildea"
+  photo: ""
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Health", "Tools"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-meal-spotter-website"]
+  links:
+    linkedin: "https://www.linkedin.com/in/jayson-william-kildea-042690275"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "caleb-knight"
+  name: "Caleb Knight"
+  photo: "caleb-knight.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Cascades"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Music Theory", "Tools"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-midi-performance-data"]
+  links:
+    linkedin: "https://www.linkedin.com/in/caleb-knight-546812195"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "john-knowlton"
+  name: "John Knowlton"
+  photo: "john-knowlton.jpeg"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["Honors"]
+  tags: ["Timbre"]
+  note: ""
+  theses: ["knowlton2023synthetic"]
+  papers: []
+  projects: ["2023-synthetic-instrument-generation"]
+  links:
+    linkedin: "https://www.linkedin.com/in/john-knowlton"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "paul-koos"
+  name: "Paul Koos"
+  photo: "paul-koos.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Cascades"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Music Theory", "Tools"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-music-score-visualization"]
+  links:
+    linkedin: "https://www.linkedin.com/in/paul-koos-oregon?trk=public_profile_browsemap"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "bradly-landucci"
+  name: "Bradly Landucci"
+  photo: "bradly-landucci.jpeg"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Timbre"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-synthetic-instrument-generation"]
+  links:
+    linkedin: ""
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "jungmin-lee"
+  name: "Jungmin Lee"
+  photo: "jungmin-lee.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Speech & Language"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-tts-for-constructed-languages"]
+  links:
+    linkedin: "Jungmin Lee"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "gavin-lesher"
+  name: "Gavin Lesher"
+  photo: "gavin-lesher.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Speech & Language"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-tts-for-constructed-languages"]
+  links:
+    linkedin: "https://www.linkedin.com/in/gavin-lesher-b8a449257"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "mason-mann"
+  name: "Mason Mann"
+  photo: "mason-mann.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Music Theory", "Tools"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-midi-performance-data"]
+  links:
+    linkedin: "https://www.linkedin.com/in/mason-mann-4b181516b"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "avery-mao"
+  name: "Avery Mao"
+  photo: ""
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Speech & Language"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-tts-for-constructed-languages"]
+  links:
+    linkedin: ""
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "victor-marquez"
+  name: "Victor Marquez"
+  photo: "victor-marquez.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Music Theory", "Tools"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-music-score-visualization"]
+  links:
+    linkedin: "https://www.linkedin.com/in/victor-marquez-10a851236"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "anju-mathew"
+  name: "Anju Mathew"
+  photo: "anju-mathew.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["Honors", "Capstone"]
+  tags: ["Bioacoustics", "Ecology"]
+  note: ""
+  theses: ["mathew2023improving"]
+  papers: []
+  projects: ["2023-chirp"]
+  links:
+    linkedin: ""
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "matt-morgan"
+  name: "Matt Morgan"
+  photo: "matt-morgan.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["Grant", "NCUR"]
+  tags: ["Sustainability"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2022-multi-food-item-detection", "2022-multi-food-items-detection-and-localization-in-images"]
+  links:
+    linkedin: "https://www.linkedin.com/in/mattmorgan6"
+    github: ""
+    website: ""
+    scholar: ""
+  now: "Software Engineer, Yoodli"
+
+- id: "michael-murad"
+  name: "Michael Murad"
+  photo: "michael-murad.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Ecampus"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Music Emotion", "Tools"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-music-affect-data-collection-app"]
+  links:
+    linkedin: "https://www.linkedin.com/in/the-michael-murad"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "jesse-piccione"
+  name: "Jesse Piccione"
+  photo: "jesse-piccione.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Ecampus"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Bioacoustics", "Ecology"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-chirp"]
+  links:
+    linkedin: "https://www.linkedin.com/in/jesse-piccione-aab271169"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "alex-prestwich"
+  name: "Alex Prestwich"
+  photo: "alex-prestwich.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["URSA", "Capstone"]
+  tags: ["Signal Processing", "Speech & Language", "Music Theory", "Tools"]
+  note: ""
+  theses: []
+  papers: ["donnelly2022identifying"]
+  projects: ["2023-music-score-visualization", "2021-voice-vote"]
+  links:
+    linkedin: "https://www.linkedin.com/in/alexander-prestwich-5b77b31a4"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "danielle-puga"
+  name: "Danielle Puga"
+  photo: "danielle-puga.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Cascades"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Music Emotion", "Tools"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-music-affect-app"]
+  links:
+    linkedin: "https://www.linkedin.com/in/daniellepuga"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "scott-rein"
+  name: "Scott Rein"
+  photo: "scott-rein.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Music Theory", "Tools"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-midi-performance-data"]
+  links:
+    linkedin: "https://www.linkedin.com/in/scot-rein"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "luke-reynolds"
+  name: "Luke Reynolds"
+  photo: "luke-reynolds.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Cascades"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Health", "Tools"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-meal-spotter-website"]
+  links:
+    linkedin: "https://www.linkedin.com/in/luke-reynolds-23806a159"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "griffin-riley"
+  name: "Griffin Riley"
+  photo: "griffin-riley.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Cascades"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Speech & Language"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-tts-for-constructed-languages"]
+  links:
+    linkedin: "https://www.linkedin.com/in/griffin-riley-342994187"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "allison-schultz"
+  name: "Allison Schultz"
+  photo: "allison-schultz.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Music Emotion", "Tools"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-music-affect-app"]
+  links:
+    linkedin: "https://www.linkedin.com/in/allison-schultz-444387198"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "chris-somnitz"
+  name: "Chris Somnitz"
+  photo: ""
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Ecampus"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Music Emotion", "Tools"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-music-affect-data-collection-app"]
+  links:
+    linkedin: ""
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "krystal-steiner"
+  name: "Krystal Steiner"
+  photo: "krystal-steiner.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Biology"
+  year: "2023"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["URSA"]
+  tags: ["Health", "Diagnostics"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2020-canine-seizure-data-collection-study"]
+  links:
+    linkedin: "https://www.linkedin.com/in/krystal-steiner-922b3316a"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "zach-stevenson"
+  name: "Zach Stevenson"
+  photo: "zach-stevenson.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Ecampus"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Tools"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-soundbendor-website-redesign"]
+  links:
+    linkedin: "https://www.linkedin.com/in/zach-stevenson"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "melissa-swearingen"
+  name: "Melissa Swearingen"
+  photo: "melissa-swearingen.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Cascades"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Ecology"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-deployable-ensembles-for-river-forecasting"]
+  links:
+    linkedin: "https://www.linkedin.com/in/melissa-swearingen"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "cole-theodore"
+  name: "Cole Theodore"
+  photo: "cole-theodore.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Bioacoustics", "Ecology"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-chirp"]
+  links:
+    linkedin: "https://www.linkedin.com/in/cole-theodore"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "jonathan-to"
+  name: "Jonathan To"
+  photo: ""
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Ecampus"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Tools"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-soundbendor-website-redesign"]
+  links:
+    linkedin: ""
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "kevin-tran"
+  name: "Kevin Tran"
+  photo: "kevin-tran.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Cascades"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Speech & Language"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-tts-for-constructed-languages"]
+  links:
+    linkedin: "https://www.linkedin.com/in/kevint0218"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "matthew-walker"
+  name: "Matthew Walker"
+  photo: "matthew-walker.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Music Emotion", "Tools"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-music-affect-app"]
+  links:
+    linkedin: "https://www.linkedin.com/in/matthew-walker-2a697b255"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "chih-yun-wu"
+  name: "Chih-Yun Wu"
+  photo: "chih-yun-wu.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2023"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Health", "Tools"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2023-meal-spotter-website"]
+  links:
+    linkedin: "https://www.linkedin.com/in/chih-yun-wu-798488241"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "erick-branner"
+  name: "Erick Branner"
+  photo: "erick-branner.jpeg"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2022"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["URSA"]
+  tags: ["Music Perception", "Health"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2020-simulating-deafness"]
+  links:
+    linkedin: "https://www.linkedin.com/in/erick-branner-470755161"
+    github: ""
+    website: ""
+    scholar: ""
+  now: "Software Developer, PNC Financial Services"
+
+- id: "victoria-ebert"
+  name: "Victoria Ebert"
+  photo: "victoria-ebert.jpeg"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2022"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["URSA", "NCUR", "Capstone", "Honors"]
+  tags: ["Music Theory", "Signal Processing"]
+  note: ""
+  theses: ["ebert2022transcribing"]
+  papers: ["donnelly2022transcription"]
+  projects: ["2021-deep-audio-transcription", "2020-automatic-music-transcription"]
+  links:
+    linkedin: "https://www.linkedin.com/in/ebertv"
+    github: ""
+    website: ""
+    scholar: ""
+  now: "Doctoral candidate (NLP), University of Washington"
+
+- id: "shayla-lane"
+  name: "Shayla Lane"
+  photo: "shayla-lane.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2021"
+  campus: "Cascades"
+  other_degrees: []
+  activities: ["CRF"]
+  tags: ["Sustainability"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2021-conscience-consumer"]
+  links:
+    linkedin: "https://www.linkedin.com/in/shayla-lane-388abb179/"
+    github: ""
+    website: ""
+    scholar: ""
+  now: "Software Engineering, Vector Care"
+
+- id: "marji-symonds"
+  name: "Marji Symonds"
+  photo: "marji-symonds.jpeg"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2021"
+  campus: "Cascades"
+  other_degrees: []
+  activities: ["CRF", "NCUR"]
+  tags: ["Health", "Diagnostics"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2021-detecting-seizures-in-dogs"]
+  links:
+    linkedin: "https://www.linkedin.com/in/marji-symonds"
+    github: ""
+    website: ""
+    scholar: ""
+  now: "Cybersecurity Specialist, U.S. Coast Guard"
+
+- id: "thomas-burg"
+  name: "Thomas Burg"
+  photo: "thomas-burg.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Bioengineering"
+  year: ""
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["URSA"]
+  tags: ["Timbre"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2021-identifying-musical-instruments-with-machine-learning"]
+  links:
+    linkedin: "https://www.linkedin.com/in/thomas-burg-27635b21b"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "king-hin-chan"
+  name: "King-Hin Chan"
+  photo: "king-hin-chan.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: ""
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["URSA"]
+  tags: ["Music Emotion"]
+  note: "Transferred"
+  theses: []
+  papers: []
+  projects: ["2020-music-sentiment-analysis"]
+  links:
+    linkedin: ""
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "blaize-guerra"
+  name: "Blaize Guerra"
+  photo: "blaize-guerra.jpg"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: ""
+  campus: "Cascades"
+  other_degrees: []
+  activities: ["CRF"]
+  tags: []
+  note: "Transferred"
+  theses: []
+  papers: []
+  projects: []
+  links:
+    linkedin: ""
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "kevin-ng"
+  name: "Kevin Ng"
+  photo: "kevin-ng.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: ""
+  campus: ""
+  other_degrees: []
+  activities: []
+  tags: ["Sustainability"]
+  note: ""
+  theses: []
+  papers: []
+  projects: []
+  links:
+    linkedin: ""
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "nathan-rumsey"
+  name: "Nathan Rumsey"
+  photo: "nathan-rumsey.jpg"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: ""
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["URSA"]
+  tags: []
+  note: ""
+  theses: []
+  papers: []
+  projects: []
+  links:
+    linkedin: ""
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "max-wild"
+  name: "Max Wild"
+  photo: "max-wild.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: ""
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["URSA"]
+  tags: ["Music Theory", "Tools"]
+  note: "Transferred"
+  theses: []
+  papers: []
+  projects: ["2022-musicai"]
+  links:
+    linkedin: "https://www.linkedin.com/in/-max-wild"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""

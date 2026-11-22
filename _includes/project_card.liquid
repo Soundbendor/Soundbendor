@@ -1,0 +1,44 @@
+{%- comment -%} One project. Usage: {% include project_card.liquid pr=project %} {%- endcomment -%}
+{%- assign pr = include.pr -%}
+<div class="sb-project card" id="{{ pr.id }}" data-tags="{{ pr.tags | join: '|' }}">
+  {%- if pr.image != "" -%}
+    <img class="sb-project-img" loading="lazy" src="{{ pr.image | prepend: '/assets/img/' | relative_url }}" alt="">
+  {%- elsif pr.video != "" -%}
+    <img class="sb-project-img" loading="lazy" src="https://i.ytimg.com/vi/{{ pr.video }}/hqdefault.jpg" alt="">
+  {%- endif -%}
+  <div class="sb-project-body">
+    <div class="sb-meta">{{ pr.year }} · {{ pr.type }}</div>
+    <h3 class="sb-project-title">{{ pr.title }}</h3>
+    <div class="sb-team">
+      {%- for pid in pr.people -%}
+        {%- assign person = site.data.people | where: "id", pid | first -%}
+        <a href="{{ '/people/' | relative_url }}#{{ pid }}">{{ person.name }}</a>{% unless forloop.last %}, {% endunless %}
+      {%- endfor -%}
+    </div>
+    {%- if pr.tags.size > 0 -%}
+      <div class="sb-tags">{% for t in pr.tags %}<a class="sb-tag" data-tag="{{ t }}" href="?tag={{ t | url_encode }}">{{ t }}</a>{% endfor %}</div>
+    {%- endif -%}
+    <div class="links sb-links">
+      {%- if pr.video != "" %}<a class="btn btn-sm z-depth-0" href="https://www.youtube.com/watch?v={{ pr.video }}">Video</a>{% endif -%}
+      {%- if pr.slides != "" %}<a class="btn btn-sm z-depth-0" href="{{ pr.slides | prepend: '/assets/pdf/' | relative_url }}">Slides</a>{% endif -%}
+      {%- if pr.poster != "" %}<a class="btn btn-sm z-depth-0" href="{{ pr.poster | prepend: '/assets/pdf/' | relative_url }}">Poster</a>{% endif -%}
+      {%- if pr.poster2 and pr.poster2 != "" %}<a class="btn btn-sm z-depth-0" href="{{ pr.poster2 | prepend: '/assets/pdf/' | relative_url }}">Poster 2</a>{% endif -%}
+      {%- if pr.website != "" %}<a class="btn btn-sm z-depth-0" href="{{ pr.website }}">Website</a>{% endif -%}
+      {%- if pr.code != "" %}<a class="btn btn-sm z-depth-0" href="{{ pr.code }}">Code</a>{% endif -%}
+    </div>
+    {%- if pr.summary != "" or pr.video != "" -%}
+      <details class="sb-more">
+        <summary>{% if pr.video != "" %}Watch and read more{% else %}Read more{% endif %}</summary>
+        {%- if pr.video != "" -%}
+          <div class="sb-video"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/{{ pr.video }}" title="{{ pr.title }}" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+        {%- endif -%}
+        {%- if pr.summary != "" %}<p>{{ pr.summary }}</p>{% endif -%}
+      </details>
+    {%- endif -%}
+    {%- if pr.related.size > 0 -%}
+      <div class="sb-related">Related:
+        {% for k in pr.related %}{% assign info = site.data.bibkeys[k] %}{% if info %}<a href="{{ info.page | relative_url }}#{{ k }}">{{ info.label }}</a>{% unless forloop.last %}; {% endunless %}{% endif %}{% endfor %}
+      </div>
+    {%- endif -%}
+  </div>
+</div>

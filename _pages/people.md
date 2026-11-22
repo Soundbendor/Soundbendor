@@ -7,4 +7,47 @@ nav: true
 nav_order: 1
 ---
 
-The People page is being built next: photos, programs and years for current members and alumni.
+<div class="sb-person sb-director">
+  <img class="sb-photo" src="{{ '/assets/img/people/patrick-donnelly-2024.png' | relative_url }}" alt="Patrick Donnelly">
+  <div class="sb-person-body">
+    <div class="sb-name"><a href="{{ '/donnelly/' | relative_url }}">Patrick Donnelly</a></div>
+    <div class="sb-meta">Director · Computer Science, Oregon State University · Cascades</div>
+  </div>
+</div>
+
+{% include tag_filter.liquid %}
+
+{% assign current = site.data.people | where: "status", "current" %}
+{% assign alumni = site.data.people | where: "status", "alumni" %}
+
+<h2>Current members</h2>
+{% assign groups = "phd:Ph.D. students|ms:M.S. students|bs:Undergraduates" | split: "|" %}
+{% for g in groups %}
+  {% assign parts = g | split: ":" %}
+  {% assign list = current | where: "level", parts[0] %}
+  {% if list.size > 0 %}
+  <section class="sb-group">
+    <h3>{{ parts[1] }}</h3>
+    <div class="sb-people-grid">{% for p in list %}{% include person_card.liquid p=p %}{% endfor %}</div>
+  </section>
+  {% endif %}
+{% endfor %}
+
+<h2>Alumni</h2>
+{% assign grads = alumni | where_exp: "p", "p.level != 'bs'" %}
+<section class="sb-group">
+  <h3>Graduate students</h3>
+  <div class="sb-people-grid">{% for p in grads %}{% include person_card.liquid p=p %}{% endfor %}</div>
+</section>
+
+{% assign ugrads = alumni | where: "level", "bs" %}
+{% assign uyears = ugrads | map: "year" | uniq %}
+{% for y in uyears %}
+<section class="sb-group">
+  <h3>Undergraduates{% if y != "" %}, {{ y }}{% else %}, year not listed{% endif %}</h3>
+  {% assign list = ugrads | where: "year", y %}
+  <div class="sb-people-grid sb-compact-grid">{% for p in list %}{% include person_card.liquid p=p compact=true %}{% endfor %}</div>
+</section>
+{% endfor %}
+
+<p class="sb-optout">Listed here by mistake, or want something changed or removed? Email <a href="mailto:{{ site.lab_email }}">{{ site.lab_email }}</a>.</p>

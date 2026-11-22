@@ -1,0 +1,35 @@
+{%- comment -%} One person. Usage: {% include person_card.liquid p=person compact=false %} {%- endcomment -%}
+{%- assign p = include.p -%}
+<div class="sb-person{% if include.compact %} sb-compact{% endif %}" id="{{ p.id }}" data-tags="{{ p.tags | join: '|' }}">
+  {%- if p.photo != "" -%}
+    <img class="sb-photo" loading="lazy" src="{{ p.photo | prepend: '/assets/img/people/' | relative_url }}" alt="{{ p.name }}">
+  {%- else -%}
+    <img class="sb-photo sb-placeholder" loading="lazy" src="{{ '/assets/img/people/placeholder.png' | relative_url }}" alt="">
+  {%- endif -%}
+  <div class="sb-person-body">
+    <div class="sb-name">
+      {{ p.name }}
+      {%- if p.links.linkedin != "" %} <a class="sb-icon" href="{{ p.links.linkedin }}" aria-label="{{ p.name }} on LinkedIn"><i class="fa-brands fa-linkedin"></i></a>{% endif -%}
+      {%- if p.links.github != "" %} <a class="sb-icon" href="{{ p.links.github }}" aria-label="{{ p.name }} on GitHub"><i class="fa-brands fa-github"></i></a>{% endif -%}
+      {%- if p.links.website != "" %} <a class="sb-icon" href="{{ p.links.website }}" aria-label="{{ p.name }}'s website"><i class="fa-solid fa-globe"></i></a>{% endif -%}
+      {%- if p.links.scholar != "" %} <a class="sb-icon" href="{{ p.links.scholar }}" aria-label="{{ p.name }} on Google Scholar"><i class="ai ai-google-scholar"></i></a>{% endif -%}
+    </div>
+    <div class="sb-meta">
+      {{ p.program }}{% if p.year != "" %}, {{ p.year }}{% endif %}{% if p.campus != "" %} · {{ p.campus }}{% endif %}
+      {%- if p.other_degrees.size > 0 %}<br>Also {{ p.other_degrees | join: ', ' }}{% endif -%}
+      {%- if p.note != "" %}<br>{{ p.note }}{% endif -%}
+    </div>
+    {%- if p.now != "" %}<div class="sb-now">Now: {{ p.now }}</div>{% endif -%}
+    {%- if p.activities.size > 0 -%}
+      <div class="sb-badges">{% for a in p.activities %}<span class="sb-badge">{{ a }}</span>{% endfor %}</div>
+    {%- endif -%}
+    {%- assign work = p.theses | concat: p.papers -%}
+    {%- if work.size > 0 or p.projects.size > 0 -%}
+      <div class="sb-work">
+        {%- for k in p.theses -%}{%- assign info = site.data.bibkeys[k] -%}{% if info %}<a href="{{ info.page | relative_url }}#{{ k }}">{{ info.kind }} {{ info.year }}</a> {% endif %}{%- endfor -%}
+        {%- if p.papers.size > 0 -%}{%- assign fk = p.papers | first -%}<a href="{{ site.data.bibkeys[fk].page | relative_url }}#{{ fk }}">{{ p.papers.size }} paper{% if p.papers.size > 1 %}s{% endif %}</a> {% endif -%}
+        {%- for pid in p.projects -%}{%- assign pr = site.data.projects | where: "id", pid | first -%}<a href="{{ '/projects/' | relative_url }}#{{ pid }}">{{ pr.title | truncatewords: 4 }}</a> {% endfor -%}
+      </div>
+    {%- endif -%}
+  </div>
+</div>

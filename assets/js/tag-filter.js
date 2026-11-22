@@ -6,7 +6,7 @@
   function apply(tag) {
     document.querySelectorAll("[data-tags]").forEach(function (el) {
       var tags = (el.getAttribute("data-tags") || "").split("|");
-      var item = el.closest("li") || el;
+      var item = el.closest(".publications li") || el;
       item.classList.toggle("sb-hidden", !!tag && tags.indexOf(tag) === -1);
     });
     // hide year headings (and their lists) that have nothing left to show
@@ -16,6 +16,12 @@
       var visible = list.querySelectorAll("li:not(.sb-hidden)").length;
       h.classList.toggle("sb-hidden", visible === 0);
       list.classList.toggle("sb-hidden", visible === 0);
+    });
+    // hide People/Projects sections that have nothing left to show
+    document.querySelectorAll(".sb-group").forEach(function (g) {
+      var items = g.querySelectorAll("[data-tags]");
+      var shown = g.querySelectorAll("[data-tags]:not(.sb-hidden)");
+      g.classList.toggle("sb-hidden", items.length > 0 && shown.length === 0);
     });
     document.querySelectorAll(".sb-filter .sb-chip").forEach(function (c) {
       c.classList.toggle("active", (c.getAttribute("data-tag") || "") === (tag || ""));

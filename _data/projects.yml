@@ -1,0 +1,623 @@
+# Student projects without their own paper page: research projects and capstones.
+# Seeded 2026-11-21 from the old site's database. Edit by pull request.
+#   type      URSA | NCUR | CRF | Layman Fellowship | Grant project | Capstone | Research
+#   people    ids from _data/people.yml     tags  theme tags (see _data/tags.yml)
+#   video     YouTube video ID              slides, poster, poster2  paths under assets/pdf/
+#   image     card image under assets/img/ (else the video thumbnail)
+#   related   bib keys of later papers or theses
+
+- id: "2026-bridging-the-timbre-gap"
+  title: "Bridging the Timbre Gap: A Generative Approach to Audio Labeling"
+  year: 2026
+  type: "CRF"
+  people: ["marc-vannucci"]
+  tags: ["Timbre"]
+  video: "YYIbzzr3-4A"
+  summary: ""
+  related: []
+  slides: "projects/2026-bridging-the-timbre-gap-slides.pdf"
+  poster: "projects/2026-bridging-the-timbre-gap-poster.pdf"
+  image: ""
+  website: ""
+  code: ""
+
+- id: "2024-algorhythms"
+  title: "AlgoRhythms"
+  year: 2024
+  type: "Capstone"
+  people: ["kameron-keller", "dalton-shults", "matthew-omalley-nichols"]
+  tags: ["Music Emotion", "Health"]
+  summary: "The AlgoRhythms mobile application generates a fun, interactive workout based on user-selected music. Using machine learning, we analyzed music and extracted data about its composition to build interactive workout visualizations in a mobile application. The application connects to a robust backend infrastructure that includes a Django API for passing data to the application, a PostgreSQL database for storing data, and an Nginx web server, all hosted on Amazon Web Services. AlgoRhythms focuses on creating a product that will let users pick the music they enjoy, providing them with a workout synchronized to their favorite music's rhythms. AlgoRhythms automatically generates your exercises, removing the need for prior exercise knowledge, lowering the barrier of entry for those new to working out, and providing variety for seasoned fitness enthusiasts. The application also provides detailed workout descriptions and video guides for each exercise. The project is currently entering a testing Alpha phase and is unavailable to the public. To learn more, contact Dalton, Kameron, or Matthew via LinkedIn by hovering over the images below."
+  video: ""
+  slides: ""
+  poster: "projects/2024-algorhythms-poster.pdf"
+  image: "projects/2024-algorhythms.png"
+  website: ""
+  code: ""
+  related: []
+  poster2: "projects/2024-algorhythms-symposium-poster.pdf"
+
+- id: "2024-binsight-ai-app"
+  title: "binsight.ai App"
+  year: 2024
+  type: "Capstone"
+  people: ["daniel-lau", "kim-markley", "blake-pugh", "micah-stalberg"]
+  tags: ["Sustainability"]
+  summary: "The sustainability challenge of how to properly dispose of uneaten food is a rapidly evolving area of research in the battle to solve the climate change crisis. In an effort to contribute useful data to this field, the binsight.ai team is building one approach to identify and track household food waste habits. As a part of this large project, we created the mobile binsight.ai app to support the collection of data during a field study in the summer of 2024. The main features of this mobile app include connecting a binsight.ai Smart Compost Bin to Wi-Fi, displaying images of food waste captured by the bin, and providing graphs and statistics of composted items on a dashboard to encourage food waste reduction goals. This project is generously funded by Foundation for Food & Agriculture Research and the Kroger Co. Zero Hunger. With the support of this partnership, we hope to make a dent in the multi-billion-dollar annual problem of food waste."
+  video: "mk88SDPEFSc"
+  slides: ""
+  poster: "projects/2024-binsight-ai-app-poster.pdf"
+  image: "projects/2024-binsight-ai-app.png"
+  website: ""
+  code: "https://github.com/soundbendor/smart-bin-app"
+  related: ["beery2024smart", "beery2025towards"]
+
+- id: "2024-concert-program-note-extraction"
+  title: "Concert Program Note Extraction"
+  year: 2024
+  type: "CRF"
+  people: ["alexander-miesbauer"]
+  tags: ["Music Emotion", "Tools"]
+  related: ["khanal2025emotionotes"]
+  summary: ""
+  video: ""
+  slides: ""
+  poster: "projects/2024-concert-program-note-extraction-poster.pdf"
+  image: ""
+  website: ""
+  code: ""
+
+- id: "2024-hierarchical-spectral-clustering"
+  title: "Hierarchical Spectral Clustering"
+  year: 2024
+  type: "CRF"
+  people: ["matthew-omalley-nichols"]
+  tags: ["Signal Processing"]
+  summary: ""
+  video: ""
+  related: []
+  slides: ""
+  poster: "projects/2024-hierarchical-spectral-clustering-poster.pdf"
+  image: ""
+  website: ""
+  code: ""
+
+- id: "2024-music-sentiment-analysis"
+  title: "Music Sentiment Analysis"
+  year: 2024
+  type: "Capstone"
+  people: ["shaun-leib"]
+  tags: ["Music Emotion"]
+  summary: "Using a dataset of annotated music examples and extracted static features, we attempt to use machine learning techniques to predict emotion classifications in the valence arousal space. Firstly, we replicate results obtained by Professor Renato Panda by using the abovementioned static features evaluated using a support vector machine. Then we design both a convolutional neural network and a bidirectional long-short term memory network trained using mel-spectrograms and raw audio as input respectively. Finally, we compare our results with Panda’s and offer next steps to improve them even further."
+  video: ""
+  slides: ""
+  poster: "projects/2024-music-sentiment-analysis-poster.pdf"
+  image: "projects/2024-music-sentiment-analysis.png"
+  website: ""
+  code: ""
+  related: ["leib2025interpreting", "leib2026time"]
+
+- id: "2024-walking-piano-interface"
+  title: "Walking Piano Interface"
+  year: 2024
+  type: "Capstone"
+  people: ["jake-anding", "devin-martin"]
+  tags: ["Music Theory"]
+  summary: "The Walking Piano project allows users to play various songs on a piano with a catch: the user must play with their feet! Our aim is to develop a standalone software that works alongside a physical MIDI piano controller that can be played by the user as they move across the physical piano. By providing simple guidance with colorful notes falling towards a visual piano for reference, the software will empower users of all skill levels to enjoy the unique experience of playing a large MIDI piano and creating incredible music, alone, or with a friend."
+  video: ""
+  slides: ""
+  poster: "projects/2024-walking-piano-interface-poster.pdf"
+  image: "projects/2024-walking-piano-interface.png"
+  website: ""
+  code: ""
+  related: []
+
+- id: "2023-algorhythms"
+  title: "AlgoRhythms"
+  year: 2023
+  type: "Layman Fellowship"
+  people: ["kameron-keller", "dalton-shults"]
+  tags: ["Music Emotion", "Health"]
+  summary: "AlgoRhythms is an application that automatically generates exercise workouts from a given song. Using machine learning and intelligent mappings, we select workouts from a set of exercises that best fit the rhythm and energy of the music. First, we segment the song into labeled sections, in which the labels represent similarities between segments of a song. Next, these segments are mapped to specific exercises and are used to generate a video. This video guides the user through the exercises mapped to the song’s labeled segments by displaying repetition timings that match the rhythm of the song."
+  video: "G7uD60NkERM"
+  slides: ""
+  poster: "projects/2023-algorhythms-poster.pdf"
+  image: "projects/2023-algorhythms.png"
+  website: ""
+  code: ""
+  related: []
+
+- id: "2023-chirp"
+  title: "Chirp"
+  year: 2023
+  type: "Capstone"
+  people: ["cole-theodore", "miya-degeer", "anju-mathew", "jesse-piccione", "caleb-elson"]
+  tags: ["Bioacoustics", "Ecology"]
+  summary: "The Bird Song Application Chirp is a hub for ornithologists to explore, clean, and label bird song data. It combines an intuitive user interface with a powerful data-science driven backend to act as a repository for bird song audio. Using audio analysis techniques, it automatically extracts bird calls from hour-long clips recorded in the field, saving researchers valuable time to focus on what really matters: the birds. Equipped with a cutting-edge machine learning pipeline, our novel application facilitates a user-friendly approach to identify the bird calls extracted from audio clips, giving both amateur and experts users alike a valuable second opinion identifying which birds they hear."
+  video: "TAsvN3JgTBM"
+  slides: ""
+  poster: "projects/2023-chirp-poster.pdf"
+  image: "projects/2023-chirp.png"
+  website: "https://events.engineering.oregonstate.edu/expo2023/project/chirp-bird-song-prediction-app"
+  code: ""
+  related: ["mathew2023improving"]
+
+- id: "2023-concert-program-data"
+  title: "Concert Program Data"
+  year: 2023
+  type: "Research"
+  people: ["samson-devol", "jonah-broyer"]
+  tags: ["Music Emotion", "Tools"]
+  summary: "The Concert Program Optical Character Recognition (OCR) project collects historical concert data from the web and organizes it in data repository so users can download the information, filtered by desired attributes. This system allows this text data to be fed to various Deep Learning algorithms."
+  video: "Y7WHteOsbTk"
+  slides: ""
+  poster: "projects/2023-concert-program-data-poster.pdf"
+  image: "projects/2023-concert-program-data.png"
+  website: ""
+  code: ""
+  related: []
+
+- id: "2023-deployable-ensembles-for-river-forecasting"
+  title: "Deployable Ensembles for River Forecasting"
+  year: 2023
+  type: "Capstone"
+  people: ["orion-junkins", "doug-dennis", "zachary-bochanski", "melissa-swearingen"]
+  tags: ["Ecology"]
+  summary: "Anticipation of rapid changes in river flow, especially floods, is a critical task for many stakeholders. While river flow rate is directly correlated to weather, these systems are difficult to model with traditional statistical methods. Neural networks are well-suited for this task, but the amount of computation required for accurate forecasting prohibits real-world deployment. We hypothesize that an ensemble of networks can outperform single network solutions while and will be easier to train and deploy. Here, we demonstrate this in practice and at scale. We present a containerized ensemble of neural network that run scheduled inference on AWS with results published on a public front end."
+  video: "s9dqKgClDeo"
+  slides: ""
+  poster: "projects/2023-deployable-ensembles-for-river-forecasting-poster.pdf"
+  image: "projects/2023-deployable-ensembles-for-river-forecasting.png"
+  website: ""
+  code: ""
+  related: []
+
+- id: "2023-hearing-simulator"
+  title: "Hearing Simulator"
+  year: 2023
+  type: "Layman Fellowship"
+  people: ["samson-devol"]
+  tags: ["Music Perception", "Health"]
+  summary: "This project builds a website tool that attempts to simulate hearing loss. The audio signal is filtered by a dynamic representation of an audiogram, allowing the user to simulate different types of hearing loss. Our goal is to develop a tool to encourage better understanding of hearing loss in order to motivate empathy, accessible design, and prevention of hearing damage."
+  video: "ipQkl6GNp4w"
+  slides: ""
+  poster: "projects/2023-hearing-simulator-poster.pdf"
+  image: "projects/2023-hearing-simulator.png"
+  website: "https://hearingsimulator.com/"
+  code: ""
+  related: []
+
+- id: "2023-made-with-love-in-bend"
+  title: "Made with Love in Bend"
+  year: 2023
+  type: "Layman Fellowship"
+  people: ["kim-markley"]
+  tags: ["Tools"]
+  summary: "Our vision for the Made With Love in Bend project is is to create an online \"art walk\" and artist directory that showcases the diverse talents and abundant skills within our community. The project's mission is to support and connect artists by providing them with a platform to share their biographies, creative processes, current work, and a directory of their skills and services. Towards this goal, we developed and deployed a bilingual online survey to identify the real needs of potential stakeholders, artists, and partners. By leveraging insights gained through this research, we can begin to design technological solutions to support the individual needs of artists in our community."
+  video: ""
+  slides: ""
+  poster: "projects/2023-made-with-love-in-bend-poster.pdf"
+  image: "projects/2023-made-with-love-in-bend.png"
+  website: ""
+  code: ""
+  related: []
+
+- id: "2023-meal-spotter-website"
+  title: "Meal Spotter Website"
+  year: 2023
+  type: "Capstone"
+  people: ["luke-reynolds", "himanshu-dhir", "chih-yun-wu", "jayson-kildea"]
+  tags: ["Health", "Tools"]
+  summary: "In this project our goal is to create a useful application for tracking meals. We designed a website tool to track users’ diet and provide helpful insights through interactive data visualization and interface to enter in meals by utilizing AI identification."
+  video: "r8__tsQ48UA"
+  slides: ""
+  poster: "projects/2023-meal-spotter-website-poster.pdf"
+  image: "projects/2023-meal-spotter-website.png"
+  website: ""
+  code: ""
+  related: []
+
+- id: "2023-midi-performance-data"
+  title: "MIDI Performance Data"
+  year: 2023
+  type: "Capstone"
+  people: ["caleb-knight", "scott-rein", "mason-mann"]
+  tags: ["Music Theory", "Tools"]
+  summary: "This project proposes an automatic pipeline to generate a novel dataset for machine learning music scores directly from audio. The MIDI Performance Data Website is a platform to collect synchronized audio and MIDI files, crowdsourced by musicians across the world. Additionally, we provide a repository for researchers to search, filter, and download audio-MIDI data."
+  video: "Qgrd5PeclrI"
+  slides: ""
+  poster: "projects/2023-midi-performance-data-poster.pdf"
+  image: "projects/2023-midi-performance-data.png"
+  website: ""
+  code: ""
+  related: []
+
+- id: "2023-music-affect-app"
+  title: "Music Affect App"
+  year: 2023
+  type: "Capstone"
+  people: ["danielle-puga", "allison-schultz", "andrew-young", "matthew-walker"]
+  tags: ["Music Emotion", "Tools"]
+  summary: "The goal of our Music Affect Data Collection application is to gather user emotional responses to music through self-reporting to aid in this research task. Our app will utilize Spotify’s streaming services to access popular and relevant music while providing the added benefit of avoiding copyright infringement concerns. The data gathered from users will be conducive to machine learning research and will be validated in comparison to similar studies. Through this crowd-sourced solution, researchers will be able to create a comprehensive, quantitative dataset of user’s subjective emotional responses to a variety of music."
+  video: "P-CAbiLg3zk"
+  slides: ""
+  poster: "projects/2023-music-affect-app-poster.pdf"
+  image: "projects/2023-music-affect-app.png"
+  website: ""
+  code: ""
+  related: []
+
+- id: "2023-music-affect-data-collection-app"
+  title: "Music Affect Data Collection App"
+  year: 2023
+  type: "Capstone"
+  people: ["michael-murad", "mia-bilka", "chris-somnitz"]
+  tags: ["Music Emotion", "Tools"]
+  summary: "The Music Affect Data Collection mobile application is a crowdsourcing solution to the problem of collecting emotional response data for a wide variety of music from a large sample of individuals. The app allows any user to listen to a song of their choosing through Spotify and report their emotional response to that song via a standardized valence-arousal affect model. This anonymized response data is then sent to a cloud database, where it is stored along with other crowdsourced responses for later analysis. The data produced by this app could be used as a model for automatically building mood-based playlists, refining recommendation algorithms, or identifying ideal songs for unique scenarios, among many other applications."
+  video: "vqFpcx-C9-E"
+  slides: ""
+  poster: ""
+  image: "projects/2023-music-affect-data-collection-app.png"
+  website: "https://eecs.engineering.oregonstate.edu/project-showcase/projects/?id=meBQME6bWh9pNgJR"
+  code: ""
+  related: []
+
+- id: "2023-music-score-visualization"
+  title: "Music Score Visualization"
+  year: 2023
+  type: "Capstone"
+  people: ["alex-prestwich", "kobe-chenea", "paul-koos", "victor-marquez"]
+  tags: ["Music Theory", "Tools"]
+  summary: "This project creates a read-only music visualization interface that handles MIDI or MusicXML input and display an interactive musical score in a view window in Python. We designed numerous UI/UX features including window scrolling, window resizing, and score details that is highly responsive to user input. We implemented score slicing to allow the user to load a portion of the score as opposed to the entire score. This project lays significant groundwork for symbolic music visualization software, with many new musical elements and features planned in the future."
+  video: "6QPmVV6HtUA"
+  slides: ""
+  poster: "projects/2023-music-score-visualization-poster.pdf"
+  image: "projects/2023-music-score-visualization.png"
+  website: ""
+  code: ""
+  related: []
+
+- id: "2023-smart-dog-collar"
+  title: "Smart Dog Collar"
+  year: 2023
+  type: "Capstone"
+  people: ["ryan-earl", "hiroto-kazama", "keenan-newcomer", "michael-chen"]
+  tags: ["Health", "Diagnostics"]
+  summary: "This device is designed to detect seizures and send urgent and timely push notifications. Physically, the device sits within a collar/harness that the dog wears. This harness contains sensors and electronics that monitor the dog’s behavior and algorithms that recognize the motions indicative of a seizure."
+  video: "xKSrQLdwuZE"
+  slides: ""
+  poster: "projects/2023-smart-dog-collar-poster.pdf"
+  image: "projects/2023-smart-dog-collar.png"
+  website: ""
+  code: ""
+  related: []
+
+- id: "2023-soundbendor-website-redesign"
+  title: "Soundbendor Website Redesign"
+  year: 2023
+  type: "Capstone"
+  people: ["ann-marie-hicks", "zach-stevenson", "jonathan-to"]
+  tags: ["Tools"]
+  summary: "SoundBendor Lab is a research group in the School of Electrical Engineering and Computer Science at Oregon State University. It includes a diverse set of projects in the areas of computational musicology, acoustic analysis, and bioacoustics understanding. This project is directed towards the creation of a new website that is both flexible and modular, to meet the needs of the rapidly-growing SoundBendor Lab."
+  video: "thk1s5p2SYs"
+  slides: ""
+  poster: ""
+  image: "projects/2023-soundbendor-website-redesign.png"
+  website: "https://eecs.engineering.oregonstate.edu/project-showcase/projects/?id=n8XkO8YteUe2Ipx4"
+  code: ""
+  related: []
+
+- id: "2023-synthetic-instrument-generation"
+  title: "Synthetic Instrument Generation"
+  year: 2023
+  type: "Capstone"
+  people: ["bradly-landucci", "john-knowlton"]
+  tags: ["Timbre"]
+  summary: "Our project develops a web application that visually represents the pairs of different sounds that a user can hear and vote on. This provides a crowd-sourced fitness function for a genetic algorithm to evolve interesting synthetic sounds. Our project uses additive synthesis in order to represent instruments partial by partial. Instruments are synthesized client-side eliminating the need for cloud storage of audio."
+  video: ""
+  slides: ""
+  poster: "projects/2023-synthetic-instrument-generation-poster.pdf"
+  image: "projects/2023-synthetic-instrument-generation.png"
+  website: ""
+  code: ""
+  related: ["knowlton2023synthetic"]
+
+- id: "2023-tts-for-constructed-languages"
+  title: "TTS for Constructed Languages"
+  year: 2023
+  type: "Capstone"
+  people: ["zachary-chand", "nicholas-burrell", "jungmin-lee", "gavin-lesher", "avery-mao", "griffin-riley", "kevin-tran"]
+  tags: ["Speech & Language"]
+  summary: "Constructed languages are artificial languages that have been developed artificially, rather than being evolved naturally over time. This novel text-to-speech tool synthesizes hypothetical pronunciations for constructed languages. To generate speech clips for languages without any speakers or audio examples, we approximate this speech from the constitute phonetic sounds extracted from spoken examples of 100 natural languages using a combination of concatenative and formant synthesis techniques."
+  video: ""
+  slides: ""
+  poster: "projects/2023-tts-for-constructed-languages-poster.pdf"
+  image: "projects/2023-tts-for-constructed-languages.png"
+  website: ""
+  code: ""
+  related: []
+
+- id: "2022-multi-food-item-detection"
+  title: "Multi-food Item Detection"
+  year: 2022
+  type: "Grant project"
+  people: ["matt-morgan"]
+  tags: ["Sustainability"]
+  summary: "Keeping track of dietary habits traditionally requires a written diary of the foods consumed at every meal. To simplify this process, we imagine an automated food computer vision system that would save people time and convenience by autonomously logging meals. In this project, we lay the foundation for this vision. We aggregate a dataset of annotated multi-label food images, then train a PyTorch model to recognize and localize 18 different foods with 91% accuracy. Our research creates a baseline for future work that we hope can be used to track nutritional intake in hospitals, schools, and correctional facilities."
+  video: ""
+  slides: ""
+  poster: "projects/2022-multi-food-item-detection-poster.pdf"
+  image: "projects/2022-multi-food-item-detection.png"
+  website: ""
+  code: ""
+  related: []
+
+- id: "2022-multi-food-items-detection-and-localization-in-images"
+  title: "Multi-Food Items Detection and Localization in Images"
+  year: 2022
+  type: "NCUR"
+  people: ["matt-morgan"]
+  tags: ["Sustainability"]
+  summary: "Keeping track of dietary habits traditionally requires a written diary of the foods consumed in every meal. Mobile apps have added some convenience to the process, but the consumer must still spend time logging each and every meal. To simplify this process, we imagine an automated food camera detection system that would save people time and convenience by autonomously logging meals. Moreover, dietary information would be stored in the cloud, offering easy access to nutritionists and other software platforms. In this project, we lay the foundation for this vision. We prepare a dataset of food images designed for machine learning, then implement an AI model to recognize multiple foods in a given picture. Our research creates a baseline for future work that we hope can be used to track nutritional intake in schools and hospitals, helping decrease malnutrition in vulnerable populations."
+  video: "xmswDkaExhQ"
+  slides: "projects/2022-multi-food-items-detection-and-localization-in-images-slides.pdf"
+  poster: ""
+  image: "projects/2022-multi-food-items-detection-and-localization-in-images.png"
+  website: ""
+  code: ""
+  related: []
+
+- id: "2022-music-sentiment-analysis"
+  title: "Music Sentiment Analysis"
+  year: 2022
+  type: "Layman Fellowship"
+  people: ["shaun-leib"]
+  tags: ["Music Emotion"]
+  summary: "Using a dataset of annotated music examples, we train recurrent neural networks to attempt to predict emotion values (valence and arousal) directly from audio waveforms."
+  video: "ZjJeKon2Vhs"
+  slides: "projects/2022-music-sentiment-analysis-slides.pdf"
+  poster: ""
+  image: "projects/2022-music-sentiment-analysis.png"
+  website: ""
+  code: ""
+  related: ["leib2025interpreting"]
+
+- id: "2022-musicai"
+  title: "MusicAI"
+  year: 2022
+  type: "URSA"
+  people: ["max-wild"]
+  tags: ["Music Theory", "Tools"]
+  summary: "In this work, we propose a data representation for loading, storing, and manipulating symbolic music notation. This involves a powerful and flexible Python toolkit to allow the evaluation and generation of music using artificial intelligence and machine learning algorithms."
+  video: "3GlCB73zUlA"
+  slides: "projects/2022-musicai-slides.pdf"
+  poster: ""
+  image: "projects/2022-musicai.png"
+  website: ""
+  code: ""
+  related: []
+
+- id: "2022-river-level-forecasting"
+  title: "River Level Forecasting"
+  year: 2022
+  type: "Layman Fellowship"
+  people: ["orion-junkins"]
+  tags: ["Ecology"]
+  summary: "This project proposes an ensemble of Recurrent Neural Network models to forecast river flow rate using weather data from throughout the catchment. Small, localized models are trained for each weather data source and predictions are combined to predict the flow rate at a chosen site. This ensemble approach allows for a larger input dataset while avoiding the pitfalls of large dimensionality. The final ensemble model yields a MAPE of 8.57%, which is 10.02% lower than the best performing localized model."
+  video: "Pnu-kKo_bzE"
+  slides: "projects/2022-river-level-forecasting-slides.pdf"
+  poster: "projects/2022-river-level-forecasting-poster.pdf"
+  image: "projects/2022-river-level-forecasting.png"
+  website: ""
+  code: ""
+  related: ["donnelly2022short"]
+
+- id: "2021-conscience-consumer"
+  title: "Conscience Consumer"
+  year: 2021
+  type: "Layman Fellowship"
+  people: ["shayla-lane"]
+  tags: ["Sustainability"]
+  summary: "This project develops the Conscientious Consumer, a mobile application that condenses all of the complex data about ethics of manufacturers of every-day products into a simple and transparent five star rating."
+  video: "6vmH80qF2Ig"
+  slides: ""
+  poster: ""
+  image: "projects/2021-conscience-consumer.png"
+  website: ""
+  code: ""
+  related: []
+
+- id: "2021-deep-audio-transcription"
+  title: "Deep Audio Transcription"
+  year: 2021
+  type: "NCUR"
+  people: ["victoria-ebert"]
+  tags: ["Music Theory", "Signal Processing"]
+  summary: "Audio transcription is a complicated problem in the field of music information retrieval. In this work, we attempt automatic transcription directly from audio waveforms using a uses a BLSTM network and a time-series MIDI representation."
+  video: "InUuROiyrEc"
+  slides: ""
+  poster: "projects/2021-deep-audio-transcription-poster.pdf"
+  image: "projects/2021-deep-audio-transcription.png"
+  website: ""
+  code: ""
+  related: ["ebert2022transcribing", "donnelly2022transcription"]
+
+- id: "2021-detecting-seizures-in-dogs"
+  title: "Detecting Seizures in Dogs"
+  year: 2021
+  type: "NCUR"
+  people: ["marji-symonds"]
+  tags: ["Health", "Diagnostics"]
+  summary: "Epilepsy affects 1 out every 130 dogs (0.75%), a condition that affects both the well-being of the canine and owner. Current standard methods for monitoring epilepsy are often invasive for patients. However, non-invasive reporting of seizure episodes in dogs will allow clinicians to fully track a patient’s seizure history and better inform the treatment of their epileptic patients. This project focuses on using accelerometric and gyroscopic sensors to detect and identify movement in order to capture critical data points in canine epilepsy."
+  video: "Wk-hZgU_Mz0"
+  slides: ""
+  poster: "projects/2021-detecting-seizures-in-dogs-poster.pdf"
+  image: "projects/2021-detecting-seizures-in-dogs.png"
+  website: ""
+  code: ""
+  related: []
+
+- id: "2021-identifying-musical-instruments-with-machine-learning"
+  title: "Identifying Musical Instruments with Machine Learning"
+  year: 2021
+  type: "URSA"
+  people: ["thomas-burg"]
+  tags: ["Timbre"]
+  summary: "The automatic identification of musical instruments is an important task in music information retrieval. Previous approaches often rely on spectral analysis to identify the frequency patterns needed to distinguish between instructions. In this work, we present an approach to automatically identify musical instruments directly from the raw audio waveform, without performing any spectral analysis or feature extraction. For this task, we trained a bidirectional LSTM, a type of recurrent neural network often used to learn sequential data. The model was trained on sequences of 256 bits from one-second samples of single-channel 16 kHz wav files. The model was trained on audio excerpts from the RWC Music Database, which contains examples of musical instruments played across their range and with different dynamics. To prepare for learning, the data was first split into individual, one-second chunks and downsampled to reduce the amount of data. The model was trained on ten instruments to perform multiclass classification directly from raw audio sequences."
+  video: "tcHuNvWpMIA"
+  slides: "projects/2021-identifying-musical-instruments-with-machine-learning-slides.pdf"
+  poster: ""
+  image: "projects/2021-identifying-musical-instruments-with-machine-learning.png"
+  website: ""
+  code: ""
+  related: []
+
+- id: "2021-mood-dynamic-playlists"
+  title: "Mood Dynamic Playlists"
+  year: 2021
+  type: "NCUR"
+  people: ["shaurya-gaur"]
+  tags: ["Music Emotion"]
+  summary: "We listen to music for enjoyment, distraction, joy, comfort, and focus. People curate music playlists to reflect and affect their own moods. Popular music platforms like Spotify also create playlists of songs with similar moods by feeding data on a song’s characteristics to machine learning models which create personalized playlists for users. The music from these playlists is not optimized to steer users to productivity, and often distracts instead. Previous affective music studies create playlists of songs with a similar emotional state, but those playlists were not dynamic based on mood. We create a \"productivity playlist,\" an intelligent algorithm that creates playlists that automatically adjust based on the user’s current mood to lead them towards a happier or more productive state."
+  video: "PQzAKqqoDHc"
+  slides: "projects/2021-mood-dynamic-playlists-slides.pdf"
+  poster: "projects/2021-mood-dynamic-playlists-poster.pdf"
+  image: "projects/2021-mood-dynamic-playlists.png"
+  website: ""
+  code: ""
+  related: ["gaur2023mood", "donnelly2022mood", "gaur2024generating"]
+
+- id: "2021-semantic-analysis-of-music-discourse"
+  title: "Semantic Analysis of Music Discourse"
+  year: 2021
+  type: "NCUR"
+  people: ["aidan-beery"]
+  tags: ["Music Emotion", "Speech & Language"]
+  summary: "Determining the emotional affect of a song is a challenging task in the music information retrieval domain. Our research seeks to contribute a framework for predicting musical affect based on commentary from social media platforms. We extract features from comments by analyzing the sentiment of individual words."
+  video: "E8lY8DfLb2I"
+  slides: "projects/2021-semantic-analysis-of-music-discourse-slides.pdf"
+  poster: "projects/2021-semantic-analysis-of-music-discourse-poster.pdf"
+  image: "projects/2021-semantic-analysis-of-music-discourse.png"
+  website: ""
+  code: ""
+  related: ["beery2022predicting", "donnelly2022evaluating"]
+
+- id: "2021-voice-vote"
+  title: "Voice Vote"
+  year: 2021
+  type: "URSA"
+  people: ["alex-prestwich"]
+  tags: ["Speech & Language"]
+  summary: "Oftentimes the voices of a few drown out the voices of many. We interpret this problem literally as we investigate the ability of supervised machine learning models to predict sentiment directly from crowd audio in which multiple speakers are speaking simultaneously. Using a dataset of one second audio recordings of individuals saying \"yes\" or \"no\", we mix together different voices speaking at the same time to create a dataset of crowd audio responses. Each audio mixture was annotated with the specific proportion of the crowd response. On different mixture sizes ranging from 1 to 10 constituent voices, we trained BLSTM models using raw audio to predict the average sentiment of the crowd response."
+  video: "A6bktmCS2FA"
+  slides: ""
+  poster: ""
+  image: "projects/2021-voice-vote.png"
+  website: ""
+  code: ""
+  related: ["donnelly2022identifying"]
+
+- id: "2020-audio-transposition"
+  title: "Audio Transposition"
+  year: 2020
+  type: "URSA"
+  people: ["parker-carlson"]
+  tags: ["Music Theory", "Signal Processing"]
+  summary: "We explore using deep learning to automatically transpose audio: remap the pitch and respective harmonics of a given sound to a new frequency mapping. State-of-the-art systems that model raw-audio are limited to generating audio one sample at a time, which is prohibitively slow. This motivates our use of deep recurrent neural networks to develop a system that can run in near-real time, while attempting to minimize noise and interference. We find that our neural network was able to learn encodings of pitch and timbre (tone color) from raw audio. This allowed the network to generate audio that has been shifted up in pitch while maintaining accurate perception of the music’s timbre. Our model also generalized from training with only synthetic monophonic sounds to accurately remapping real polyphonic sounds with accurate timbre."
+  video: "l093vhJXY-g"
+  slides: ""
+  poster: ""
+  image: "projects/2020-audio-transposition.png"
+  website: ""
+  code: ""
+  related: ["donnelly2023transposition"]
+
+- id: "2020-automatic-music-transcription"
+  title: "Automatic Music Transcription"
+  year: 2020
+  type: "URSA"
+  people: ["victoria-ebert"]
+  tags: ["Music Theory", "Signal Processing"]
+  summary: "Audio transcription is a complicated problem in the field of music information retrieval. Many attempts have been made in this field using different types of neural networks and different formats of the audio and MIDI. This attempt uses a BLSTM and a time-series MIDI."
+  video: "VYiwz89rWZ4"
+  slides: ""
+  poster: "projects/2020-automatic-music-transcription-poster.pdf"
+  image: "projects/2020-automatic-music-transcription.png"
+  website: ""
+  code: ""
+  related: ["ebert2022transcribing", "donnelly2022transcription"]
+
+- id: "2020-canine-seizure-data-collection-study"
+  title: "Canine Seizure Data Collection Study"
+  year: 2020
+  type: "URSA"
+  people: ["krystal-steiner"]
+  tags: ["Health", "Diagnostics"]
+  summary: "Canine epilepsy is a neurological disorder that animal specialists desire to monitor to better inform treatment plans. In this research I compared and contrasted any seizure monitoring devices already that exist in the market. I designed research protocols and marketing materials to recruit interested parties into a study monitoring canine epilepsy."
+  video: "niHmhrZxPe0"
+  slides: "projects/2020-canine-seizure-data-collection-study-slides.pdf"
+  poster: ""
+  image: "projects/2020-canine-seizure-data-collection-study.png"
+  website: ""
+  code: ""
+  related: []
+
+- id: "2020-music-sentiment-analysis"
+  title: "Music Sentiment Analysis"
+  year: 2020
+  type: "URSA"
+  people: ["king-hin-chan"]
+  tags: ["Music Emotion"]
+  summary: "Understanding the psychological effect of music can help us understand more about the interaction between human beings and music. This research adopts machine learning to predict the measures of psychological effect for excerpts of music. Using a research dataset of musical pieces correlated with valence and arousal values - psychological measures of positivity and intensity, we train neural networks to learn patterns in the musical signal associated with different emotions."
+  video: "h5HWv2U1c30"
+  slides: ""
+  poster: ""
+  image: "projects/2020-music-sentiment-analysis.png"
+  website: ""
+  code: ""
+  related: []
+
+- id: "2020-productivity-playlist"
+  title: "Productivity Playlist"
+  year: 2020
+  type: "URSA"
+  people: ["shaurya-gaur"]
+  tags: ["Music Emotion"]
+  summary: "In this project, our goal is to design an intelligent playlist that automatically adjusts the music playing based on the measurements of the user’s attention and productivity levels. Although previous affective music studies create playlists of songs with a similar emotional state, our playlist creation algorithm is designed to take users on an emotional journey."
+  video: "e0TvA8f8yiw"
+  slides: "projects/2020-productivity-playlist-slides.pdf"
+  poster: ""
+  image: "projects/2020-productivity-playlist.png"
+  website: ""
+  code: ""
+  related: ["gaur2023mood"]
+
+- id: "2020-simulating-deafness"
+  title: "Simulating Deafness"
+  year: 2020
+  type: "URSA"
+  people: ["erick-branner"]
+  tags: ["Music Perception", "Health"]
+  summary: "Partial hearing loss can affect how a person perceives the world. The standardized definition of hearing loss, often used to determine candidacy for cochlear implants, determines “the configuration, severity, and site of lesion from a pure-tone audiogram”. By emulating hearing loss with common sounds, we can increase our understanding of how people may perceive the auditory world. I designed a web application that filters audio based on a pure-tone audiogram, a graphical representation of perceived volume intensity. This method provides an audible representation of various hearing loss scenarios. This pure-tone audiogram and peaking filter approach simulates hearing loss through an easy-to-use web application that allows different and familiar sounds to be attenuated according to several common patterns of hearing loss. Data from a pure-tone audiogram were applied to the MP3 audio stream."
+  video: "R8Hyd92aXqI"
+  slides: ""
+  poster: ""
+  image: "projects/2020-simulating-deafness.png"
+  website: ""
+  code: ""
+  related: []
+
+- id: "2020-sonifying-vital-sign-monitor-audio"
+  title: "Sonifying Vital Sign Monitor Audio"
+  year: 2020
+  type: "URSA"
+  people: ["chitali-buge"]
+  tags: ["Health", "Music Perception"]
+  summary: "The Electronic Vital Sign Monitor is integral in many hospitals. This machine generally measures heart rate, blood pressure, oxygen level, body temperature, and respiratory rate. The current monitor deployed in hospitals audibly represents only heart rate and blood pressure. Heart rate is sonified through rhythm: the audible beep indicates a heartbeat and the silence signifies the gap between each heartbeat. Blood pressure is sonified into audio by pitch: the higher the pitch, the higher the blood pressure. However, the current model could be expanded to sonify a third datum point. We propose to integrate blood oxygen level into the audio by altering the timbre of the audio signal."
+  video: "jP-JpDugG9w"
+  slides: ""
+  poster: ""
+  image: "projects/2020-sonifying-vital-sign-monitor-audio.png"
+  website: ""
+  code: ""
+  related: []
