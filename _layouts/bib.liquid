@@ -2,14 +2,15 @@
 ---
 {%- comment -%}
   Soundbendor override of al_folio_core 1.0.15 _layouts/bib.liquid.
-  Changes: data-tags on the row; Archive/Link button for entry.url;
-  theme-tag chips and a "Related:" line after the buttons.
+  Changes: data-tags on the row; venue badge column always on (no thumbnails);
+  the bib "note" field (a CV annotation) is not shown; Archive/Link button for entry.url;
+  theme-tag chips and "Related:" links on one line after the buttons.
   After a gem update, re-diff with: bundle exec al-folio upgrade overrides diff _layouts/bib.liquid
 {%- endcomment -%}
 {%- assign sb_tags = entry.keywords | split: ',' -%}
 <div class="row" data-tags="{% for t in sb_tags %}{{ t | strip }}{% unless forloop.last %}|{% endunless %}{% endfor %}">
-  {% if site.enable_publication_thumbnails %}
-    <div class="col col-sm-2 abbr">
+  {% if true %}
+    <div class="col-sm-2 abbr sb-venue-col">
       {%- if entry.abbr -%}
         {%- if site.data.venues[entry.abbr] -%}
           {% assign venue_style = null %}
@@ -29,8 +30,10 @@
             {% endif %}
           </abbr>
         {% else %}
-          <abbr class="badge rounded w-100">{{ entry.abbr }}</abbr>
+          <abbr class="sb-venue" title="{{ entry.abbr }}">{{ entry.abbr }}</abbr>
         {% endif %}
+      {% elsif entry.school %}
+        <abbr class="sb-venue" title="{{ entry.type }}">{{ entry.type | split: ' ' | first | replace: ',', '' }}</abbr>
       {% endif %}
       {% if entry.preview %}
         {%- comment -%}
@@ -69,7 +72,7 @@
   {% endif %}
 
   <!-- Entry bib key -->
-  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
+  <div id="{{ entry.key }}" class="col-sm-10">
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
     <!-- Author -->
@@ -206,9 +209,6 @@
     <div class="periodical">
       {{ periodical | strip }}
     </div>
-    <div class="periodical">
-      {{ entry.note | strip }}
-    </div>
 
     <!-- Links/Buttons -->
     <div class="links">
@@ -289,6 +289,7 @@
         {% endif %}
       {% endif %}
     </div>
+    {% if entry.keywords or entry.related %}<div class="sb-foot">{% endif %}
     {% if entry.keywords %}
       <div class="sb-tags">
         {% for t in sb_tags %}{% assign tt = t | strip %}<a class="sb-tag" data-tag="{{ tt }}" href="?tag={{ tt | url_encode }}">{{ tt }}</a>{% endfor %}
@@ -301,6 +302,7 @@
         {% for rk in rel_keys %}{% assign k = rk | strip %}{% assign info = site.data.bibkeys[k] %}{% if info %}<a href="{{ info.page | relative_url }}#{{ k }}">{{ info.label }}</a>{% else %}{{ k }}{% endif %}{% unless forloop.last %}; {% endunless %}{% endfor %}
       </div>
     {% endif %}
+    {% if entry.keywords or entry.related %}</div>{% endif %}
     {% if site.enable_publication_badges %}
       {% assign entry_has_altmetric_badge = false %}
       {% if entry.altmetric and entry.altmetric != 'false' %}
