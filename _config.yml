@@ -373,6 +373,7 @@ enable_publication_badges:
 filtered_bibtex_keywords:
   [
     abbr,
+    venue_kind,
     additional_info,
     altmetric,
     annotation,
