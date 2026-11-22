@@ -39,11 +39,12 @@ He teaches mainly on the OSU-Cascades campus in Bend and mentors students in Cor
 </div>
 </details>
 
-## Theses
-
+<details class="sb-earlier" id="theses">
+<summary>Show theses (A.B., M.M., Ph.D.)</summary>
 <div class="publications">
 {% bibliography --file theses-pi --group_by none %}
 </div>
+</details>
 
 ## Service
 
