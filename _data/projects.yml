@@ -152,7 +152,7 @@
   summary: "The first version of the lab's sound annotation website, built over a summer. Volunteers register, listen to music snippets and choose descriptors such as noisy, smooth or bright, drawn from published timbre research. A React front end and an Express and MongoDB API store annotations that researchers export as CSV."
   video: "HqV5deCIMXA"
   slides: ""
-  poster: ""
+  poster: "projects/2024-sound-annotation-tool-poster.pdf"
   image: ""
   website: ""
   code: ""
