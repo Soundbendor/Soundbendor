@@ -3,6 +3,7 @@ layout: post
 date: 2021-12-14
 title: "Curiosity leads to computer science master's degree program"
 kind: Press
+student: true
 source: "OSU College of Engineering"
 link: https://engineering.oregonstate.edu/all-stories/curiosity-leads-computer-science-masters-degree-program
 inline: true

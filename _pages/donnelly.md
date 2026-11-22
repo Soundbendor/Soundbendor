@@ -20,7 +20,9 @@ As a postdoctoral researcher in the Emotive Computing Lab at the University of N
 Before joining OSU in 2019 he taught computer science at Chico State.
 He teaches mainly on the OSU-Cascades campus in Bend and mentors students in Corvallis, in Bend and on Ecampus.
 
-**Email:** [patrick.donnelly@oregonstate.edu](mailto:patrick.donnelly@oregonstate.edu) · [Google Scholar](https://scholar.google.com/citations?user=TFDLhm4AAAAJ)
+**Email:** [patrick.donnelly@oregonstate.edu](mailto:patrick.donnelly@oregonstate.edu) · [Google Scholar](https://scholar.google.com/citations?user=TFDLhm4AAAAJ) · [OSU profile](https://engineering.oregonstate.edu/about/directory/patrick-donnelly)
+
+<nav class="sb-jump" aria-label="On this page"><a href="#publications">Publications</a><a href="#earlier-work">Earlier work</a><a href="#theses">Theses</a><a href="#service">Service</a><a href="#funding">Funding</a></nav>
 
 <div style="clear: both;"></div>
 

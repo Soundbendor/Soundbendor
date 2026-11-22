@@ -2,7 +2,7 @@
 ---
 {%- comment -%}
   Soundbendor override of al_folio_core 1.0.15 _layouts/bib.liquid.
-  Changes: data-tags on the row; Data button for entry.data; venue badge column always on (no thumbnails);
+  Changes: clearer button labels (Abstract, BibTeX, Publisher page); data-tags on the row; Data button for entry.data; venue badge column always on (no thumbnails);
   the bib "note" field (a CV annotation) is not shown; Archive/Link button for entry.url;
   theme-tag chips and a closed-by-default "Related (n)" toggle on one line after the buttons.
   After a gem update, re-diff with: bundle exec al-folio upgrade overrides diff _layouts/bib.liquid
@@ -218,7 +218,7 @@
         </a>
       {% endif %}
       {% if entry.abstract %}
-        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
       {% endif %}
       {% if entry.doi %}
         <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
@@ -230,7 +230,7 @@
         <a href="https://hal.science/{{ entry.hal }}" class="btn btn-sm z-depth-0" role="button">HAL</a>
       {% endif %}
       {% if entry.bibtex_show %}
-        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+        <a class="bibtex btn btn-sm z-depth-0" role="button">BibTeX</a>
       {% endif %}
       {% if entry.html %}
         {% if entry.html contains '://' %}
@@ -288,7 +288,7 @@
         {% if entry.school %}
           <a href="{{ entry.url }}" class="btn btn-sm z-depth-0" role="button">Archive</a>
         {% elsif entry.doi == nil %}
-          <a href="{{ entry.url }}" class="btn btn-sm z-depth-0" role="button">Link</a>
+          <a href="{{ entry.url }}" class="btn btn-sm z-depth-0" role="button">Publisher page</a>
         {% endif %}
       {% endif %}
     </div>

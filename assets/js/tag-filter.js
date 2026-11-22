@@ -23,6 +23,18 @@
       var shown = g.querySelectorAll("[data-tags]:not(.sb-hidden)");
       g.classList.toggle("sb-hidden", items.length > 0 && shown.length === 0);
     });
+    // result count and clear link
+    var status = document.querySelector(".sb-filter-status");
+    if (status) {
+      var n = 0;
+      document.querySelectorAll("[data-tags]").forEach(function (el) {
+        var item = el.closest(".publications li") || el;
+        if (!item.classList.contains("sb-hidden")) n++;
+      });
+      status.hidden = !tag;
+      status.querySelector(".sb-filter-count").textContent =
+        n + (n === 1 ? " item" : " items") + " tagged \u201c" + tag + "\u201d";
+    }
     document.querySelectorAll(".sb-filter .sb-chip").forEach(function (c) {
       c.classList.toggle("active", (c.getAttribute("data-tag") || "") === (tag || ""));
     });
@@ -33,10 +45,10 @@
   }
 
   document.addEventListener("click", function (ev) {
-    var a = ev.target.closest(".sb-chip, .sb-tag");
+    var a = ev.target.closest(".sb-chip, .sb-tag, .sb-filter-clear");
     if (!a || !document.querySelector(".sb-filter")) return;
     ev.preventDefault();
-    var tag = a.getAttribute("data-tag") || "";
+    var tag = a.classList.contains("sb-filter-clear") ? "" : a.getAttribute("data-tag") || "";
     if (a.classList.contains("sb-tag") && tag === current()) tag = "";
     var url = new URL(window.location.href);
     if (tag) url.searchParams.set("tag", tag);

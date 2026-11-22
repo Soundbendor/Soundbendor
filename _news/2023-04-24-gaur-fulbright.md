@@ -3,6 +3,7 @@ layout: post
 date: 2023-04-24
 title: "Shaurya Gaur awarded a Fulbright to study ethical AI"
 kind: Award
+student: true
 source: "Oregon State Newsroom"
 link: https://news.oregonstate.edu/news/oregon-state-university-sets-record-eight-fulbright-us-student-program-awards
 image: news/2023-04-24-shaurya-gaur-awarded-fulbright-to-study.jpg

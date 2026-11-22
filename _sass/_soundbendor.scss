@@ -1092,3 +1092,62 @@ $sb-kind-colors: (
     height: 160px;
   }
 }
+
+/* ---------- audit quick fixes ---------- */
+// Home logo: one per theme (display comes from .only-light/.only-dark)
+.sb-home-logo {
+  max-width: 380px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 1.25rem;
+}
+
+// filter result count and clear link
+.sb-filter-status {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  font-size: 0.85rem;
+  margin: -0.25rem 0 0.75rem;
+  color: var(--global-text-color-light);
+
+  &[hidden] {
+    display: none;
+  }
+
+  .sb-filter-clear {
+    font-weight: 700;
+    color: var(--global-theme-color) !important;
+  }
+}
+
+// PI page jump links
+.sb-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.75rem 0 0.5rem;
+
+  a {
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.15rem 0.75rem;
+    border-radius: 999px;
+    border: 1px solid var(--global-divider-color);
+    background: var(--global-card-bg-color);
+    color: var(--global-text-color) !important;
+    text-decoration: none !important;
+
+    &:hover {
+      border-color: var(--global-theme-color);
+    }
+  }
+}
+
+#publications,
+#earlier-work,
+#theses,
+#service,
+#funding {
+  scroll-margin-top: 80px;
+}

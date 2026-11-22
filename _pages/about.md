@@ -1,23 +1,21 @@
 ---
 layout: page
-title: Home
+title: Soundbendor Lab
 permalink: /
-description: Machine understanding of sound and music
+description: Machine understanding of sound and music · School of Electrical Engineering and Computer Science, Oregon State University
 nav: false
-announcements:
-  limit: 3
 ---
 
-<img class="img-fluid only-light" src="{{ '/assets/img/logo/soundbendor-logo.png' | relative_url }}" alt="Soundbendor Lab" style="max-width: 420px; margin: 0 auto 1.5rem; display: block;">
-<img class="img-fluid only-dark" src="{{ '/assets/img/logo/soundbendor-logo-dark.png' | relative_url }}" alt="Soundbendor Lab" style="max-width: 420px; margin: 0 auto 1.5rem; display: block;">
+<img class="sb-home-logo only-light" src="{{ '/assets/img/logo/soundbendor-logo.png' | relative_url }}" alt="">
+<img class="sb-home-logo only-dark" src="{{ '/assets/img/logo/soundbendor-logo-dark.png' | relative_url }}" alt="">
 
 The Soundbendor Lab is a research group in the School of Electrical Engineering and Computer Science at Oregon State University.
 Our interdisciplinary research focuses on a computational understanding of sound and music using artificial intelligence and deep learning.
 We work on computational musicology, music emotion, acoustic analysis and bioacoustics, with students in Corvallis, in Bend (OSU-Cascades) and on Ecampus.
 
-### Research themes
+## Research themes
 
-Each theme links to the papers, theses and projects tagged with it.
+Browse publications by topic:
 
 <div class="sb-tags">
 {%- for t in site.data.tags -%}
@@ -25,9 +23,9 @@ Each theme links to the papers, theses and projects tagged with it.
 {%- endfor -%}
 </div>
 
-### News
+## News
 
-{% include sb_news.liquid limit=3 %}
+{% include sb_news.liquid limit=3 student=true %}
 
 <p class="sb-more-news"><a href="{{ '/news/' | relative_url }}">All news <i class="fa-solid fa-arrow-right"></i></a></p>
 

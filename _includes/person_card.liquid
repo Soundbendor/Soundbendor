@@ -28,7 +28,7 @@
       <div class="sb-work">
         {%- for k in p.theses -%}{%- assign info = site.data.bibkeys[k] -%}{% if info %}<a href="{{ info.page | relative_url }}#{{ k }}">{{ info.kind }} {{ info.year }}</a> {% endif %}{%- endfor -%}
         {%- if p.papers.size > 0 -%}{%- assign fk = p.papers | first -%}<a href="{{ site.data.bibkeys[fk].page | relative_url }}#{{ fk }}">{{ p.papers.size }} paper{% if p.papers.size > 1 %}s{% endif %}</a> {% endif -%}
-        {%- for pid in p.projects -%}{%- assign pr = site.data.projects | where: "id", pid | first -%}<a href="{{ '/projects/' | relative_url }}#{{ pid }}">{{ pr.title | truncatewords: 4 }}</a> {% endfor -%}
+        {%- for pid in p.projects -%}{%- assign pr = site.data.projects | where: "id", pid | first -%}<a href="{{ '/projects/' | relative_url }}#{{ pid }}">{{ pr.title | truncatewords: 4 }} ({{ pr.year }})</a> {% endfor -%}
       </div>
     {%- endif -%}
   </div>
