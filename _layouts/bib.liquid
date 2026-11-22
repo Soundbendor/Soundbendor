@@ -31,7 +31,8 @@
             {% endif %}
           </abbr>
         {% else %}
-          <abbr class="sb-venue" title="{{ entry.abbr }}">{{ entry.abbr }}</abbr>
+          {%- assign sb_kind = "conf" -%}{%- if entry.type == "article" -%}{%- assign sb_kind = "journal" -%}{%- elsif entry.type == "incollection" or entry.type == "book" or entry.type == "inbook" -%}{%- assign sb_kind = "book" -%}{%- endif -%}
+          <abbr class="sb-venue sb-venue-{{ sb_kind }}" title="{{ entry.abbr }}">{{ entry.abbr }}</abbr>
         {% endif %}
       {% elsif entry.school %}
         <abbr class="sb-venue" title="{{ entry.type }}">{{ entry.type | split: ' ' | first | replace: ',', '' }}</abbr>

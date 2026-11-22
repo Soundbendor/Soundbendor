@@ -428,8 +428,8 @@ details.sb-more {
   letter-spacing: 0.02em;
   padding: 0.2rem 0.3rem;
   border-radius: 0.25rem;
-  color: #ffffff;
-  background: #{$beaver-orange};
+  color: #{$copy};
+  background: #{mix($beaver-orange, #ffffff, 20%)}; // beaver!20: conferences (and theses)
   text-decoration: none;
   border-bottom: 0;
   cursor: default;
@@ -438,9 +438,24 @@ details.sb-more {
   white-space: nowrap;
 }
 
-html[data-theme="dark"] .sb-venue {
-  color: #{$dark-bg};
-  background: #{$luminance};
+.sb-venue-journal {
+  background: #{mix(#4a773c, #ffffff, 20%)}; // Pine Stand!20
+}
+.sb-venue-book {
+  background: #{mix($luminance, #ffffff, 35%)}; // Luminance!35 (at 20% it nearly vanishes on white)
+}
+html[data-theme="dark"] {
+  .sb-venue {
+    color: #f7f5f5;
+    background: #{mix($beaver-orange, #2b3035, 45%)};
+  }
+  .sb-venue-journal {
+    background: #{mix(#4a773c, #2b3035, 60%)};
+  }
+  .sb-venue-book {
+    color: #{$dark-bg};
+    background: #{mix($luminance, #2b3035, 75%)};
+  }
 }
 
 // tags and Related links share one line, wrapping only when needed
