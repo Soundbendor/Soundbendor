@@ -18,7 +18,7 @@
   related: []
   slides: "projects/2026-bridging-the-timbre-gap-slides.pdf"
   poster: "projects/2026-bridging-the-timbre-gap-poster.pdf"
-  image: ""
+  image: "projects/2026-bridging-the-timbre-gap.jpg"
   website: ""
   code: ""
 
@@ -94,7 +94,7 @@
   video: ""
   slides: ""
   poster: "projects/2024-concert-program-note-extraction-poster.pdf"
-  image: ""
+  image: "projects/2024-concert-program-note-extraction.jpg"
   website: ""
   code: ""
 
@@ -109,7 +109,7 @@
   related: []
   slides: ""
   poster: "projects/2024-hierarchical-spectral-clustering-poster.pdf"
-  image: ""
+  image: "projects/2024-hierarchical-spectral-clustering.jpg"
   website: ""
   code: ""
 
@@ -166,7 +166,7 @@
   tags: ["Music Emotion", "Health"]
   summary: "AlgoRhythms is an application that automatically generates exercise workouts from a given song. Using machine learning and intelligent mappings, we select workouts from a set of exercises that best fit the rhythm and energy of the music. First, we segment the song into labeled sections, in which the labels represent similarities between segments of a song. Next, these segments are mapped to specific exercises and are used to generate a video. This video guides the user through the exercises mapped to the song’s labeled segments by displaying repetition timings that match the rhythm of the song."
   video: "G7uD60NkERM"
-  slides: ""
+  slides: "projects/2023-algorhythms-slides.pdf"
   poster: "projects/2023-algorhythms-poster.pdf"
   image: "projects/2023-algorhythms.png"
   website: ""

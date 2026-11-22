@@ -24,6 +24,11 @@ beery2025towards:
   label: "Beery 2025 (M.S. project)"
   kind: "M.S. project"
   year: "2025"
+beery2026towards:
+  page: "/publications/"
+  label: "Beery & Donnelly 2026"
+  kind: "Paper"
+  year: "2026"
 blanchard2016identifying:
   page: "/donnelly/"
   label: "Blanchard et al. 2016"

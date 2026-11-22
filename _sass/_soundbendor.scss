@@ -590,3 +590,13 @@ details.sb-more > summary {
     font-size: 2.1rem;
   }
 }
+
+// breathing room between the PI page's toggles and the next section
+details.sb-earlier {
+  margin-bottom: 0.5rem;
+}
+
+details.sb-earlier + h2,
+details.sb-earlier + p + h2 {
+  margin-top: 2.75rem;
+}
