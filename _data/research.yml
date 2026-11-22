@@ -32,7 +32,7 @@
     We apply signal processing and machine learning to sounds and sensor signals outside music:
     harbor porpoise echolocation clicks, bird song, river levels and seizures in dogs wearing a smart collar.
   image: projects/2023-chirp.png
-  tags: [Bioacoustics, Ecology, Health, IoT]
+  tags: [Bioacoustics, Environment, Health, IoT]
   papers: [donnelly2022detecting, donnelly2022short]
   theses: [deleon2022automatic, mathew2023improving, martin2025machine]
   projects: [2023-chirp, 2023-smart-dog-collar]

@@ -78,7 +78,7 @@ $sb-tag-colors: (
   "signal-processing": $sb-rogue-wave,
   "computer-vision": $sb-solar-flare,
   "bioacoustics": $sb-candela,
-  "ecology": $sb-pine-stand,
+  "environment": $sb-pine-stand,
   "sustainability": $sb-pine-stand,
   "food-waste": $sb-pine-stand,
   "health": $sb-high-desert,
@@ -167,6 +167,7 @@ $sb-tag-colors: (
   display: flex;
   gap: 0.4rem;
   overflow-x: auto;
+  margin-top: 1.25rem;
   padding: 0.25rem 0 0.75rem;
   margin-bottom: 0.5rem;
   scrollbar-width: thin;
@@ -1648,4 +1649,61 @@ footer .sb-sep {
 html[data-theme="dark"] .sb-pill-link {
   border-color: #{$luminance};
   color: #{$luminance} !important;
+}
+
+/* ---------- Project cards: image rule, small tags, link buttons, status ---------- */
+.sb-project-img {
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+// tags on cards are smaller than the filter chips at the top; the colours carry the meaning
+.sb-tags-sm {
+  gap: 0.25rem;
+
+  .sb-tag {
+    font-size: 0.68rem;
+    line-height: 1.5;
+    padding: 0 0.5em;
+  }
+}
+
+// Video / Slides / Poster / Website / Code: the same outlined buttons as on Publications
+.sb-project .sb-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.3rem;
+
+  a.btn {
+    color: var(--global-text-color) !important;
+    border: 1px solid var(--global-text-color);
+    border-radius: 0.25rem;
+    padding: 0.1rem 0.6rem;
+    font-size: 0.75rem;
+    margin: 0;
+    box-shadow: none;
+    text-decoration: none !important;
+
+    &:hover {
+      color: var(--global-theme-color) !important;
+      border-color: var(--global-theme-color);
+    }
+  }
+}
+
+// "In progress" badge for projects still under way
+.sb-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.1rem 0.6rem;
+  border-radius: 0.25rem;
+  border: 1px dashed #{$beaver-orange};
+  color: #{$beaver-orange};
+}
+html[data-theme="dark"] .sb-status {
+  border-color: #{$luminance};
+  color: #{$luminance};
 }

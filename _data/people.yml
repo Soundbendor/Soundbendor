@@ -201,7 +201,7 @@
   note: ""
   theses: []
   papers: []
-  projects: ["2026-sound-dataset-annotation-tool-capstone"]
+  projects: ["2026-aura-capstone"]
   links:
     linkedin: ""
     github: ""
@@ -245,7 +245,7 @@
   note: ""
   theses: []
   papers: []
-  projects: ["2026-sound-dataset-annotation-tool-capstone"]
+  projects: ["2026-aura-capstone"]
   links:
     linkedin: "https://www.linkedin.com/in/madison-neiswonger/"
     github: "https://github.com/MadsNeis"
@@ -289,7 +289,7 @@
   note: ""
   theses: []
   papers: []
-  projects: ["2026-sound-dataset-annotation-tool-capstone"]
+  projects: ["2026-aura-capstone"]
   links:
     linkedin: "https://www.linkedin.com/in/hunter-scholz-971869296/"
     github: ""
@@ -1121,7 +1121,7 @@
   campus: "Bend"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Ecology"]
+  tags: ["Environment"]
   note: ""
   theses: []
   papers: []
@@ -1275,7 +1275,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Bioacoustics", "Ecology", "Datasets", "Apps"]
+  tags: ["Bioacoustics", "Environment", "Datasets", "Apps"]
   note: ""
   theses: []
   papers: []
@@ -1297,7 +1297,7 @@
   campus: "Bend"
   other_degrees: []
   activities: ["CRF", "Capstone"]
-  tags: ["Ecology"]
+  tags: ["Environment"]
   note: ""
   theses: []
   papers: []
@@ -1363,7 +1363,7 @@
   campus: "Ecampus"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Bioacoustics", "Ecology", "Datasets", "Apps"]
+  tags: ["Bioacoustics", "Environment", "Datasets", "Apps"]
   note: ""
   theses: []
   papers: []
@@ -1451,7 +1451,7 @@
   campus: "Bend"
   other_degrees: []
   activities: ["CRF", "Capstone"]
-  tags: ["Ecology"]
+  tags: ["Environment"]
   note: ""
   theses: []
   papers: ["donnelly2022short"]
@@ -1693,7 +1693,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Honors", "Capstone"]
-  tags: ["Signal Processing", "Bioacoustics", "Ecology", "Datasets", "Apps"]
+  tags: ["Signal Processing", "Bioacoustics", "Environment", "Datasets", "Apps"]
   note: ""
   theses: ["mathew2023improving"]
   papers: []
@@ -1759,7 +1759,7 @@
   campus: "Ecampus"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Bioacoustics", "Ecology", "Datasets", "Apps"]
+  tags: ["Bioacoustics", "Environment", "Datasets", "Apps"]
   note: ""
   theses: []
   papers: []
@@ -1979,7 +1979,7 @@
   campus: "Bend"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Ecology"]
+  tags: ["Environment"]
   note: ""
   theses: []
   papers: []
@@ -2001,7 +2001,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Bioacoustics", "Ecology", "Datasets", "Apps"]
+  tags: ["Bioacoustics", "Environment", "Datasets", "Apps"]
   note: ""
   theses: []
   papers: []

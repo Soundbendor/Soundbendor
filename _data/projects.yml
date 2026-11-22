@@ -1,5 +1,6 @@
 # Student projects without their own paper page: research projects and capstones.
 # Seeded 2026-11-21 from the old site's database. Edit by pull request.
+#   status    optional, e.g. "In progress" (shown as a badge on the card)
 #   type      URSA | NCUR | CRF (Cascades Research Fellowship, formerly Layman) | Ind. Study | Grant project | Capstone | Research
 #   people    ids from _data/people.yml     tags  theme tags (see _data/tags.yml)
 #   team      optional text shown instead of (or after) people, e.g. a team with no named members
@@ -7,18 +8,19 @@
 #   image     card image under assets/img/ (else the video thumbnail)
 #   related   bib keys of later papers or theses
 
-- id: "2026-sound-dataset-annotation-tool-capstone"
-  title: "Sound Dataset Annotation Tool"
+- id: "2026-aura-capstone"
+  title: "AURA: Audio Understanding and Research Annotation"
   year: 2026
   type: "Capstone"
+  status: "In progress"
   people: ["madison-neiswonger", "dylan-deforrest", "hunter-scholtz"]
   tags: ["Datasets", "Interfaces"]
   video: ""
-  summary: "A senior capstone team is extending the lab's Sound Dataset Annotation Tool, the crowdsourcing website for labeling audio with timbre and emotion descriptors that Andrew Young began in 2024 and Daniel Lounsbury continued in 2025. The project is under way; posters, slides and video will follow."
+  summary: "AURA (Audio Understanding and Research Annotation) is a web tool for crowdsourcing labels for audio datasets. Participants play sounds and label them in eight modes, from Best Match to a two-dimensional emotion grid and labels over time; researchers manage studies, upload audio, build label sets, view analytics and download data."
   related: []
-  slides: ""
+  slides: "projects/2026-aura-capstone-slides.pdf"
   poster: ""
-  image: "projects/2026-sound-dataset-annotation-tool-capstone.jpg"
+  image: "projects/2026-aura-capstone.jpg"
   website: ""
   code: ""
 
@@ -208,7 +210,7 @@
   year: 2023
   type: "Capstone"
   people: ["cole-theodore", "miya-degeer", "anju-mathew", "jesse-piccione", "caleb-elson"]
-  tags: ["Bioacoustics", "Ecology", "Datasets", "Apps"]
+  tags: ["Bioacoustics", "Environment", "Datasets", "Apps"]
   summary: "A web hub where ornithologists explore, clean and label bird song recordings. Audio analysis automatically extracts bird calls from hour-long field recordings, and a machine learning pipeline suggests species, giving amateurs and experts a second opinion while saving hours of listening. It also serves as a repository of bird audio."
   video: "TAsvN3JgTBM"
   slides: ""
@@ -238,7 +240,7 @@
   year: 2023
   type: "Capstone"
   people: ["orion-junkins", "doug-dennis", "zachary-bochanski", "melissa-swearingen"]
-  tags: ["Ecology"]
+  tags: ["Environment"]
   summary: "Forecasts rapid changes in river flow, including floods, with an ensemble of small neural networks that is cheaper to train and deploy than one large model. The containerized ensemble runs scheduled inference on Amazon Web Services and publishes its forecasts on a public website, demonstrating the approach at scale."
   video: "s9dqKgClDeo"
   slides: ""
@@ -494,7 +496,7 @@
   year: 2022
   type: "CRF"
   people: ["orion-junkins"]
-  tags: ["Ecology"]
+  tags: ["Environment"]
   summary: "Forecasts river flow from weather data across a catchment using an ensemble of recurrent neural networks. A small model is trained for each weather source and their predictions are combined, avoiding high dimensionality. The ensemble's error (MAPE 8.57%) is 10% lower than the best single model."
   video: "Pnu-kKo_bzE"
   slides: "projects/2022-river-level-forecasting-slides.pdf"
