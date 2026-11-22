@@ -1,0 +1,52 @@
+---
+layout: page
+permalink: /donnelly/
+title: Patrick Donnelly
+description: Director, Soundbendor Lab
+nav: true
+nav_order: 6
+---
+
+<img class="img-fluid rounded float-md-right ml-md-4 mb-3" style="max-width: 240px;" src="{{ '/assets/img/people/patrick-donnelly-2024.png' | relative_url }}" alt="Patrick Donnelly">
+
+Patrick Donnelly is a faculty member in Computer Science at Oregon State University, where he directs the Soundbendor Lab.
+Combining his background in machine learning and musicology, he uses computational approaches to better understand sound and music.
+
+Patrick has always been fascinated by the intersection of math, music and language.
+As an undergraduate at Washington University in St. Louis he majored in computer science, music and Italian.
+He received master's degrees in Computer Music and Musicology from the Peabody Conservatory and in Computer Science from Johns Hopkins University,
+and his Ph.D. in Computer Science from Montana State University in 2015, with a dissertation on classifying musical instrument timbre in polyphonic audio.
+As a postdoctoral researcher in the Emotive Computing Lab at the University of Notre Dame, he analyzed teachers' instructional practices using acoustic signal processing and machine learning.
+Before joining OSU in 2019 he taught computer science at Chico State.
+He teaches mainly on the OSU-Cascades campus in Bend and mentors students in Corvallis, in Bend and on Ecampus.
+
+**Email:** [patrick.donnelly@oregonstate.edu](mailto:patrick.donnelly@oregonstate.edu)
+
+<div style="clear: both;"></div>
+
+## Publications
+
+{% include tag_filter.liquid %}
+
+<div class="publications">
+{% bibliography --file publications %}
+</div>
+
+<details class="sb-earlier" id="earlier-work">
+<summary>Show earlier work (before 2019)</summary>
+<div class="publications">
+{% bibliography --file earlier %}
+</div>
+</details>
+
+## Theses
+
+<div class="publications">
+{% bibliography --file theses-pi --group_by none %}
+</div>
+
+## Funding
+
+{% for g in site.data.funding %}
+- **{{ g.sponsor }}**{% if g.number %} ({{ g.number }}){% endif %}: [{{ g.title }}]({{ g.url }}){% if g.poster %} · [poster]({{ g.poster | prepend: '/assets/pdf/' | relative_url }}){% endif %}
+{% endfor %}

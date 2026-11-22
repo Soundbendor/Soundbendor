@@ -1,0 +1,8 @@
+{% comment %}
+  Soundbendor override of al_folio_core's analytics include: the stock providers,
+  plus GoatCounter (cookie-free) when site.goatcounter is set in _config.yml.
+{% endcomment %}
+{% al_analytics_scripts %}
+{% if site.goatcounter and jekyll.environment == 'production' %}
+  <script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+{% endif %}

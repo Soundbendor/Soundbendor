@@ -1,0 +1,169 @@
+/*******************************************************************************
+ * Soundbendor Lab: OSU brand colours and lab components.
+ * Colours: https://communications.oregonstate.edu/brand-guide/colors
+ * Beaver Orange is never tinted or shaded; secondaries are used sparingly.
+ ******************************************************************************/
+
+// OSU palette
+$beaver-orange: #d73f09;
+$copy: #423e3c;
+$off-white: #f7f5f5;
+$nav-grey: #e9e5e4;
+$dark-bg: #212529;
+$luminance: #ffb500;
+
+:root {
+  --global-theme-color: #{$beaver-orange};
+  --global-hover-color: #{$beaver-orange};
+  --global-text-color: #{$copy};
+  --global-bg-color: #ffffff;
+  --global-card-bg-color: #ffffff;
+  --sb-band-bg: #{$off-white};
+  --sb-chip-text: #{$copy};
+  --global-footer-bg-color: #{$dark-bg};
+  --global-footer-text-color: #{$nav-grey};
+  --global-footer-link-color: #ffffff;
+}
+
+html[data-theme="dark"] {
+  --global-theme-color: #{$luminance};
+  --global-hover-color: #{$luminance};
+  --global-hover-text-color: #{$dark-bg};
+  --global-bg-color: #{$dark-bg};
+  --global-card-bg-color: #2b3035;
+  --sb-band-bg: #2b3035;
+  --sb-chip-text: #e9e5e4;
+}
+
+// Links get an underline so colour is not the only cue (OSU web guidance).
+article a,
+.post a,
+.publications .links ~ .sb-related a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* ---------- theme tags: one OSU secondary per tag, used as a small dot ---------- */
+$sb-tag-colors: (
+  "Music Emotion": #d3832b,
+  // Solar Flare
+  "Music Perception": #006a8e,
+  // Stratosphere
+  "Music Theory": #003b5c,
+  // Star Canvas
+  "Timbre": #00859b,
+  // High Tide
+  "Speech & Language": #7a6855,
+  // High Desert
+  "Signal Processing": #0d5257,
+  // Rogue Wave
+  "Bioacoustics": #4a773c,
+  // Pine Stand
+  "Ecology": #aa9d2e,
+  // Hop Bine
+  "Sustainability": #4a773c,
+  // Pine Stand
+  "Health": #00859b,
+  // High Tide
+  "Diagnostics": #006a8e,
+  // Stratosphere
+  "Education": #d3832b,
+  // Solar Flare
+  "Tools": #8e9089,
+  // Crater
+);
+
+.sb-tags {
+  margin-top: 0.35rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.sb-tag,
+.sb-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  font-size: 0.78rem;
+  line-height: 1.6;
+  padding: 0 0.6em;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 999px;
+  color: var(--sb-chip-text) !important;
+  background: transparent;
+  text-decoration: none !important;
+  white-space: nowrap;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    width: 0.55em;
+    height: 0.55em;
+    border-radius: 50%;
+    background: var(--sb-dot, #8e9089);
+    flex: none;
+  }
+
+  &:hover {
+    border-color: var(--global-theme-color);
+  }
+}
+
+@each $tag, $c in $sb-tag-colors {
+  [data-tag="#{$tag}"] {
+    --sb-dot: #{$c};
+  }
+}
+
+.sb-chip.active {
+  border-color: var(--global-theme-color);
+  box-shadow: inset 0 0 0 1px var(--global-theme-color);
+  font-weight: 600;
+}
+
+// Filter bar: scrolls sideways on phones instead of wrapping into many rows.
+.sb-filter {
+  display: flex;
+  gap: 0.4rem;
+  overflow-x: auto;
+  padding: 0.25rem 0 0.75rem;
+  margin-bottom: 0.5rem;
+  scrollbar-width: thin;
+
+  @media (min-width: 768px) {
+    flex-wrap: wrap;
+    overflow-x: visible;
+  }
+}
+
+.sb-related {
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+  color: var(--global-text-color-light);
+}
+
+// Hidden by the tag filter
+.sb-hidden {
+  display: none !important;
+}
+
+/* ---------- earlier-work toggle on the PI page ---------- */
+details.sb-earlier {
+  margin-top: 2rem;
+
+  > summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--global-theme-color);
+    padding: 0.5rem 0;
+  }
+}
+
+/* ---------- home page ---------- */
+.sb-band {
+  background: var(--sb-band-bg);
+  border-radius: 0.5rem;
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0;
+}
