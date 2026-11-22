@@ -1,0 +1,14 @@
+# Datasets, code and demos on /research/#datasets-and-code. Only public, verified links.
+- name: SynTheory+
+  kind: Dataset
+  url: https://huggingface.co/datasets/derekxkwan/syntheory_plus
+  host: Hugging Face
+  description: Synthetic 4-second WAV examples (from generated MIDI) of polyrhythms, dynamics, seventh chords, mode mixture and secondary dominants, for probing what generative music models such as MusicGen and Jukebox encode about music theory.
+  license: MIT
+  paper: kwan2026probing
+- name: EmotioNotes
+  kind: Dataset
+  url: https://github.com/Soundbendor/program_notes_data
+  host: GitHub
+  description: Historical New York Philharmonic concert program notes (from the 1840s on), with performance metadata and estimated valence, arousal and dominance scores, for music emotion recognition and cultural musicology.
+  paper: khanal2025emotionotes

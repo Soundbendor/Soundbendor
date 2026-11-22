@@ -13,6 +13,11 @@ The Soundbendor Lab is a research group in the School of Electrical Engineering 
 Our interdisciplinary research focuses on a computational understanding of sound and music using artificial intelligence and deep learning.
 We work on computational musicology, music emotion, acoustic analysis and bioacoustics, with students in Corvallis, in Bend (OSU-Cascades) and on Ecampus.
 
+<div class="sb-home-cta">
+  <a class="sb-cta-primary" href="{{ '/research/' | relative_url }}">Explore our research</a>
+  <a class="sb-cta-secondary" href="{{ '/join/' | relative_url }}">Join the lab</a>
+</div>
+
 ## Research themes
 
 Browse publications by topic:

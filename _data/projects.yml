@@ -95,7 +95,7 @@
   poster: "projects/2024-binsight-ai-app-poster.pdf"
   image: "projects/2024-binsight-ai-app.png"
   website: ""
-  code: "https://github.com/soundbendor/smart-bin-app"
+  code: ""  # github.com/Soundbendor/smart-bin-app is private; add it back if the repo becomes public
   related: ["beery2024smart", "beery2025towards"]
 
 - id: "2024-concert-program-note-extraction"
