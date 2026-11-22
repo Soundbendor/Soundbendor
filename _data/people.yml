@@ -58,7 +58,7 @@
   photo: "derek-kwan.png"
   status: "current"
   level: "phd"
-  program: "Ph.D., Computer Science"
+  program: "Ph.D., Artificial Intelligence"
   year: ""
   campus: "Corvallis"
   other_degrees: []
@@ -125,6 +125,28 @@
   status: "current"
   level: "ms"
   program: "M.S., Computer Science"
+  year: ""
+  campus: ""
+  other_degrees: []
+  activities: []
+  tags: []
+  note: ""
+  theses: []
+  papers: []
+  projects: []
+  links:
+    linkedin: ""
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "alex-armendariz"
+  name: "Alex Armendariz"
+  photo: ""
+  status: "current"
+  level: "ms"
+  program: "M.S., Artificial Intelligence"
   year: ""
   campus: ""
   other_degrees: []
