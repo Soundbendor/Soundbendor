@@ -7,6 +7,21 @@
 #   image     card image under assets/img/ (else the video thumbnail)
 #   related   bib keys of later papers or theses
 
+- id: "2026-sound-dataset-annotation-tool-capstone"
+  title: "Sound Dataset Annotation Tool"
+  year: 2026
+  type: "Capstone"
+  people: ["madison-neiswonger", "dylan-deforrest", "hunter-scholtz"]
+  tags: ["Datasets", "Interfaces"]
+  video: ""
+  summary: "A senior capstone team is extending the lab's Sound Dataset Annotation Tool, the crowdsourcing website for labeling audio with timbre and emotion descriptors that Andrew Young began in 2024 and Daniel Lounsbury continued in 2025. The project is under way; posters, slides and video will follow."
+  related: []
+  slides: ""
+  poster: ""
+  image: ""
+  website: ""
+  code: ""
+
 - id: "2026-bridging-the-timbre-gap"
   title: "Bridging the Timbre Gap: A Generative Approach to Audio Labeling"
   year: 2026

@@ -295,6 +295,72 @@
     scholar: ""
   now: ""
 
+- id: "madison-neiswonger"
+  name: "Madison Neiswonger"
+  photo: "madison-neiswonger.jpg"
+  status: "current"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: ""
+  campus: "Bend"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Datasets", "Interfaces"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2026-sound-dataset-annotation-tool-capstone"]
+  links:
+    linkedin: "https://www.linkedin.com/in/madison-neiswonger/"
+    github: "https://github.com/MadsNeis"
+    website: "https://madison-neiswonger.figma.site/"
+    scholar: ""
+  now: ""
+
+- id: "dylan-deforrest"
+  name: "Dylan DeForrest"
+  photo: "dylan-deforrest.jpg"
+  status: "current"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: ""
+  campus: "Bend"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Datasets", "Interfaces"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2026-sound-dataset-annotation-tool-capstone"]
+  links:
+    linkedin: ""
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "hunter-scholtz"
+  name: "Hunter Scholtz"
+  photo: "hunter-scholtz.jpg"
+  status: "current"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: ""
+  campus: "Bend"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Datasets", "Interfaces"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2026-sound-dataset-annotation-tool-capstone"]
+  links:
+    linkedin: "https://www.linkedin.com/in/hunter-scholz-971869296/"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
 - id: "janita-aamir"
   name: "Janita Aamir"
   photo: "janita-aamir.jpg"
