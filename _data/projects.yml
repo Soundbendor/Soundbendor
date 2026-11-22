@@ -12,7 +12,7 @@
   year: 2026
   type: "CRF"
   people: ["marc-vannucci"]
-  tags: ["Music Tagging", "Timbre", "Audio Synthesis"]
+  tags: ["Generation", "Audio Tagging", "Timbre", "Audio Models", "Audio Synthesis"]
   video: "YYIbzzr3-4A"
   summary: "A synthetic dataset for classifying subjective timbre, the tone color that separates a guitar from a piano. Gemini writes varied sound scenarios for descriptive tags such as hollow, warm or metallic, a validator removes near-duplicates, and ElevenLabs generates the audio, avoiding costly and inconsistent manual labeling."
   related: []
@@ -57,7 +57,7 @@
   year: 2025
   type: "CRF"
   people: ["alec-krsek"]
-  tags: ["Music Tagging", "Timbre", "Signal Processing", "Tools"]
+  tags: ["Audio Tagging", "Timbre", "Signal Processing", "Tools"]
   summary: "A Python tool that labels any sound file with timbre words. It extracts 15 acoustic features with librosa and Praat, such as spectral centroid, jitter and shimmer, and maps them to descriptors like strident or wavering. Tested on ESC-50, it aims to label audio datasets automatically."
   video: ""
   slides: ""
@@ -389,7 +389,7 @@
   year: 2023
   type: "Capstone"
   people: ["bradly-landucci", "john-knowlton"]
-  tags: ["Timbre", "Audio Synthesis", "Apps", "Interfaces"]
+  tags: ["Generation", "Timbre", "Audio Synthesis", "Apps", "Interfaces"]
   summary: "A web app that evolves new instrument sounds with a genetic algorithm. Listeners hear pairs of sounds and vote for the more interesting one, providing a crowdsourced fitness function. Instruments are built partial by partial with additive synthesis and rendered in the browser, so no audio storage is needed."
   video: ""
   slides: ""
@@ -464,7 +464,7 @@
   year: 2022
   type: "URSA"
   people: ["max-wild"]
-  tags: ["Music Theory", "Tools"]
+  tags: ["Music Theory", "Generation", "Tools"]
   summary: "A flexible Python toolkit and data representation for loading, storing and manipulating symbolic music notation. It is designed so researchers can evaluate and generate music with artificial intelligence and machine learning algorithms, without first writing their own code to parse and convert score formats."
   video: "3GlCB73zUlA"
   slides: "projects/2022-musicai-slides.pdf"
@@ -539,7 +539,7 @@
   year: 2021
   type: "URSA"
   people: ["thomas-burg"]
-  tags: ["Music Tagging", "Timbre"]
+  tags: ["Audio Tagging", "Timbre"]
   summary: "Identifies musical instruments directly from raw audio, with no spectral analysis or feature extraction. A bidirectional LSTM was trained on one-second, downsampled excerpts from the RWC Music Database, which covers each instrument across its range and dynamics, to classify ten instruments."
   video: "tcHuNvWpMIA"
   slides: "projects/2021-identifying-musical-instruments-with-machine-learning-slides.pdf"

@@ -4,8 +4,9 @@
 - Music Emotion
 - Music Theory
 - Transcription
+- Generation
 - Recommendation
-- Music Tagging
+- Audio Tagging
 - Perception
 - Hearing
 - Voice
@@ -14,6 +15,7 @@
 - Speech & Language
 - Language Models
 - Multimodal
+- Audio Models
 - Audio Synthesis
 - Signal Processing
 - Computer Vision

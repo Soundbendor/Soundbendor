@@ -63,7 +63,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: []
-  tags: ["Music Theory", "Rhythm", "Datasets"]
+  tags: ["Music Theory", "Generation", "Rhythm", "Audio Models", "Datasets"]
   note: ""
   theses: []
   papers: ["kwan2026probing"]
@@ -85,7 +85,7 @@
   campus: "Corvallis"
   other_degrees: ["M.S. 2026"]
   activities: []
-  tags: ["Music Tagging", "Timbre", "Language Models", "Multimodal"]
+  tags: ["Audio Tagging", "Timbre", "Language Models", "Multimodal"]
   note: ""
   theses: ["mccabe2026audiofree"]
   papers: ["mccabe2026classifying"]
@@ -173,7 +173,7 @@
   campus: "Bend"
   other_degrees: []
   activities: ["CRF"]
-  tags: ["Music Tagging", "Timbre", "Audio Synthesis"]
+  tags: ["Generation", "Audio Tagging", "Timbre", "Audio Models", "Audio Synthesis"]
   note: ""
   theses: []
   papers: []
@@ -481,7 +481,7 @@
   campus: "Bend"
   other_degrees: []
   activities: ["CRF"]
-  tags: ["Music Tagging", "Timbre", "Signal Processing", "Tools"]
+  tags: ["Audio Tagging", "Timbre", "Signal Processing", "Tools"]
   note: ""
   theses: []
   papers: []
@@ -1449,7 +1449,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Honors"]
-  tags: ["Timbre", "Audio Synthesis", "Apps", "Interfaces"]
+  tags: ["Generation", "Timbre", "Audio Synthesis", "Apps", "Interfaces"]
   note: ""
   theses: ["knowlton2023synthetic"]
   papers: []
@@ -1493,7 +1493,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Timbre", "Audio Synthesis", "Apps", "Interfaces"]
+  tags: ["Generation", "Timbre", "Audio Synthesis", "Apps", "Interfaces"]
   note: ""
   theses: []
   papers: []
@@ -2131,7 +2131,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["URSA"]
-  tags: ["Music Tagging", "Timbre"]
+  tags: ["Audio Tagging", "Timbre"]
   note: ""
   theses: []
   papers: []
@@ -2241,7 +2241,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["URSA"]
-  tags: ["Music Theory", "Tools"]
+  tags: ["Music Theory", "Generation", "Tools"]
   note: "Transferred"
   theses: []
   papers: []

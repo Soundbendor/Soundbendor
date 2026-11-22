@@ -51,7 +51,7 @@ article a,
 $sb-stratosphere: #006a8e;
 $sb-moondust: #c6dae7;
 $sb-star-canvas: #003b5c;
-$sb-high-tide: #00859b;
+$sb-rogue-wave: #0d5257;
 $sb-solar-flare: #d3832b;
 $sb-candela: #fdd26e;
 $sb-pine-stand: #4a773c;
@@ -62,8 +62,9 @@ $sb-tag-colors: (
   "music-emotion": $sb-stratosphere,
   "music-theory": $sb-stratosphere,
   "transcription": $sb-stratosphere,
+  "generation": $sb-stratosphere,
   "recommendation": $sb-stratosphere,
-  "music-tagging": $sb-stratosphere,
+  "audio-tagging": $sb-stratosphere,
   "perception": $sb-moondust,
   "hearing": $sb-moondust,
   "voice": $sb-moondust,
@@ -72,8 +73,9 @@ $sb-tag-colors: (
   "speech-language": $sb-star-canvas,
   "language-models": $sb-star-canvas,
   "multimodal": $sb-star-canvas,
-  "audio-synthesis": $sb-high-tide,
-  "signal-processing": $sb-high-tide,
+  "audio-models": $sb-rogue-wave,
+  "audio-synthesis": $sb-rogue-wave,
+  "signal-processing": $sb-rogue-wave,
   "computer-vision": $sb-solar-flare,
   "bioacoustics": $sb-candela,
   "ecology": $sb-pine-stand,
