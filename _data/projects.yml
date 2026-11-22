@@ -42,7 +42,7 @@
   year: 2025
   type: "CRF"
   people: ["daniel-lounsbury"]
-  tags: ["Datasets", "Interfaces", "Tools"]
+  tags: ["Datasets", "Interfaces"]
   summary: "A flexible web framework for crowdsourcing labels for audio datasets. Participants tag sound excerpts with emotional or timbral descriptors in six annotation styles, such as Best Match, Strength and Opposites. Researchers create custom studies, upload sounds and descriptors, track progress and export results for training machine learning models."
   video: "2bl0nL1c2hk"
   slides: "projects/2025-sound-dataset-annotation-tool-slides.pdf"
@@ -57,7 +57,7 @@
   year: 2025
   type: "CRF"
   people: ["alec-krsek"]
-  tags: ["Audio Tagging", "Timbre", "Signal Processing", "Tools"]
+  tags: ["Audio Tagging", "Timbre", "Signal Processing"]
   summary: "A Python tool that labels any sound file with timbre words. It extracts 15 acoustic features with librosa and Praat, such as spectral centroid, jitter and shimmer, and maps them to descriptors like strident or wavering. Tested on ESC-50, it aims to label audio datasets automatically."
   video: ""
   slides: ""
@@ -148,7 +148,7 @@
   year: 2024
   type: "Ind. Study"
   people: ["andrew-young"]
-  tags: ["Datasets", "Interfaces", "Tools"]
+  tags: ["Datasets", "Interfaces"]
   summary: "The first version of the lab's sound annotation website, built over a summer. Volunteers register, listen to music snippets and choose descriptors such as noisy, smooth or bright, drawn from published timbre research. A React front end and an Express and MongoDB API store annotations that researchers export as CSV."
   video: "HqV5deCIMXA"
   slides: ""
@@ -404,7 +404,7 @@
   year: 2023
   type: "Capstone"
   people: ["zachary-chand", "nicholas-burrell", "jungmin-lee", "gavin-lesher", "avery-mao", "griffin-riley", "kevin-tran"]
-  tags: ["Voice", "Speech & Language", "Audio Synthesis"]
+  tags: ["Voice", "Speech & Text", "Audio Synthesis"]
   summary: "A text-to-speech tool that voices constructed languages, which have no native speakers or recordings. It assembles hypothetical pronunciations from phonetic sounds extracted from spoken examples of 100 natural languages, combining concatenative and formant synthesis to approximate how an invented language might sound when spoken aloud."
   video: ""
   slides: ""
@@ -464,7 +464,7 @@
   year: 2022
   type: "URSA"
   people: ["max-wild"]
-  tags: ["Music Theory", "Generation", "Tools"]
+  tags: ["Music Theory", "Generation"]
   summary: "A flexible Python toolkit and data representation for loading, storing and manipulating symbolic music notation. It is designed so researchers can evaluate and generate music with artificial intelligence and machine learning algorithms, without first writing their own code to parse and convert score formats."
   video: "3GlCB73zUlA"
   slides: "projects/2022-musicai-slides.pdf"
@@ -569,7 +569,7 @@
   year: 2021
   type: "NCUR"
   people: ["aidan-beery"]
-  tags: ["Music Emotion", "Speech & Language", "Language Models"]
+  tags: ["Music Emotion", "Speech & Text", "Language Models"]
   summary: "Predicts the emotion a song conveys from what people say about it on social media. The framework extracts features from user comments by analyzing the sentiment of individual words, offering an alternative to costly listening studies for labeling music emotion at scale."
   video: "E8lY8DfLb2I"
   video2: "zFpPjxJeq54"
@@ -585,7 +585,7 @@
   year: 2021
   type: "URSA"
   people: ["alex-prestwich"]
-  tags: ["Voice", "Speech & Language", "Signal Processing"]
+  tags: ["Voice", "Speech & Text", "Signal Processing"]
   summary: "Can a model tell how a crowd voted just by listening? Recordings of single people saying yes or no were mixed into crowds of one to ten simultaneous voices, labeled with the proportion of each answer. BLSTM models trained on raw audio then predicted the crowd's average response."
   video: "A6bktmCS2FA"
   slides: ""
