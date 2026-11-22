@@ -2,7 +2,7 @@
 ---
 {%- comment -%}
   Soundbendor override of al_folio_core 1.0.15 _layouts/bib.liquid.
-  Changes: data-tags on the row; venue badge column always on (no thumbnails);
+  Changes: data-tags on the row; Data button for entry.data; venue badge column always on (no thumbnails);
   the bib "note" field (a CV annotation) is not shown; Archive/Link button for entry.url;
   theme-tag chips and "Related:" links on one line after the buttons.
   After a gem update, re-diff with: bundle exec al-folio upgrade overrides diff _layouts/bib.liquid
@@ -260,6 +260,9 @@
       {% endif %}
       {% if entry.blog %}
         <a href="{{ entry.blog }}" class="btn btn-sm z-depth-0" role="button">Blog</a>
+      {% endif %}
+      {% if entry.data %}
+        <a href="{{ entry.data }}" class="btn btn-sm z-depth-0" role="button">Data</a>
       {% endif %}
       {% if entry.code %}
         <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button">Code</a>

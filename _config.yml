@@ -383,6 +383,7 @@ filtered_bibtex_keywords:
     blog,
     code,
     dimensions,
+    data,
     eprint,
     note,
     exclude,
