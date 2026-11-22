@@ -4,7 +4,7 @@
   Soundbendor override of al_folio_core 1.0.15 _layouts/bib.liquid.
   Changes: data-tags on the row; Data button for entry.data; venue badge column always on (no thumbnails);
   the bib "note" field (a CV annotation) is not shown; Archive/Link button for entry.url;
-  theme-tag chips and "Related:" links on one line after the buttons.
+  theme-tag chips and a closed-by-default "Related (n)" toggle on one line after the buttons.
   After a gem update, re-diff with: bundle exec al-folio upgrade overrides diff _layouts/bib.liquid
 {%- endcomment -%}
 {%- assign sb_tags = entry.keywords | split: ',' -%}
@@ -300,10 +300,11 @@
     {% endif %}
     {% if entry.related %}
       {% assign rel_keys = entry.related | split: ',' %}
-      <div class="sb-related">
-        Related:
-        {% for rk in rel_keys %}{% assign k = rk | strip %}{% assign info = site.data.bibkeys[k] %}{% if info %}<a href="{{ info.page | relative_url }}#{{ k }}">{{ info.label }}</a>{% else %}{{ k }}{% endif %}{% unless forloop.last %}; {% endunless %}{% endfor %}
-      </div>
+      <details class="sb-related">
+        <summary>Related ({{ rel_keys.size }})</summary>
+        <div class="sb-related-list">{% for rk in rel_keys %}{% assign k = rk | strip %}{% assign info = site.data.bibkeys[k] %}{% if info %}<a href="{{ info.page | relative_url }}#{{ k }}">{{ info.label }}</a>{% else %}{{ k }}{% endif %}{% unless forloop.last %}; {% endunless %}{% endfor %}
+</div>
+      </details>
     {% endif %}
     {% if entry.keywords or entry.related %}</div>{% endif %}
     {% if site.enable_publication_badges %}

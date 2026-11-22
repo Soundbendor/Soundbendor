@@ -41,9 +41,10 @@
       </details>
     {%- endif -%}
     {%- if pr.related.size > 0 -%}
-      <div class="sb-related">Related:
-        {% for k in pr.related %}{% assign info = site.data.bibkeys[k] %}{% if info %}<a href="{{ info.page | relative_url }}#{{ k }}">{{ info.label }}</a>{% unless forloop.last %}; {% endunless %}{% endif %}{% endfor %}
-      </div>
+      <details class="sb-related">
+        <summary>Related ({{ pr.related.size }})</summary>
+        <div class="sb-related-list">{% for k in pr.related %}{% assign info = site.data.bibkeys[k] %}{% if info %}<a href="{{ info.page | relative_url }}#{{ k }}">{{ info.label }}</a>{% unless forloop.last %}; {% endunless %}{% endif %}{% endfor %}</div>
+      </details>
     {%- endif -%}
   </div>
 </div>

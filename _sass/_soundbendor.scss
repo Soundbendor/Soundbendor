@@ -854,3 +854,79 @@ html[data-theme="dark"] .sb-degrees span {
 html[data-theme="dark"] .sb-join-card .sb-more-link {
   color: var(--global-theme-color) !important;
 }
+
+/* ---------- "Related (n)" toggle, closed by default ---------- */
+details.sb-related {
+  font-size: 0.8rem;
+  margin-top: 0;
+
+  > summary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3em;
+    cursor: pointer;
+    list-style: none;
+    padding: 0 0.6em;
+    line-height: 1.6;
+    border: 1px dashed var(--global-divider-color);
+    border-radius: 999px;
+    color: var(--global-text-color-light);
+    user-select: none;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &::before {
+      content: "\25B8"; // ▸
+      font-size: 0.85em;
+      transition: transform 0.15s ease;
+    }
+
+    &:hover {
+      border-color: var(--global-theme-color);
+      color: var(--global-text-color);
+    }
+  }
+
+  &[open] {
+    flex-basis: 100%; // in the tag line, the open list takes its own row
+
+    > summary::before {
+      transform: rotate(90deg);
+    }
+  }
+
+  .sb-related-list {
+    margin-top: 0.3rem;
+    font-size: 0.85rem;
+    color: var(--global-text-color-light);
+  }
+}
+
+.sb-project details.sb-related {
+  margin-top: 0.5rem;
+}
+
+/* ---------- Project cards: equal height within a row ---------- */
+.sb-project-grid {
+  align-items: stretch;
+}
+
+.sb-project {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.sb-project-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+
+  // buttons and toggles sit at the bottom so cards in a row line up
+  .sb-links {
+    margin-top: auto;
+    padding-top: 0.5rem;
+  }
+}
