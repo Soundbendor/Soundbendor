@@ -189,14 +189,14 @@
   name: "Janita Aamir"
   photo: "janita-aamir.jpg"
   status: "alumni"
-  level: "phd"
-  program: "Ph.D., Computer Science"
+  level: "ms"
+  program: "M.S., Computer Science"
   year: ""
   campus: "Corvallis"
   other_degrees: []
   activities: []
   tags: ["Music Emotion"]
-  note: "Switched to an M.S. capstone"
+  note: ""
   theses: []
   papers: ["aamir2026addressing"]
   projects: []
@@ -211,14 +211,14 @@
   name: "JC Zontos"
   photo: "jc-zontos.png"
   status: "alumni"
-  level: "phd"
-  program: "Ph.D., Artificial Intelligence"
+  level: "ms"
+  program: "M.S., Artificial Intelligence"
   year: ""
   campus: "Corvallis"
   other_degrees: []
   activities: []
   tags: []
-  note: "Switched to an M.S. capstone"
+  note: ""
   theses: []
   papers: []
   projects: []
