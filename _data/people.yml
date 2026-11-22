@@ -337,7 +337,7 @@
     github: ""
     website: ""
     scholar: ""
-  now: ""
+  now: "Adobe"
 
 - id: "shaun-leib"
   name: "Shaun Leib"
@@ -403,7 +403,7 @@
     github: ""
     website: ""
     scholar: ""
-  now: ""
+  now: "LinkedIn"
 
 - id: "daniel-de-leon"
   name: "Daniel De Leon"
@@ -425,7 +425,7 @@
     github: ""
     website: ""
     scholar: ""
-  now: "Intel"
+  now: "Confidential Core AI"
 
 - id: "vi-vuong"
   name: "Vi Vuong"
@@ -447,7 +447,7 @@
     github: ""
     website: ""
     scholar: ""
-  now: ""
+  now: "Oregon State University"
 
 - id: "isaac-brickner"
   name: "Isaac Brickner"
@@ -469,7 +469,7 @@
     github: ""
     website: ""
     scholar: ""
-  now: ""
+  now: "Columbia Sportswear"
 
 - id: "alec-krsek"
   name: "Alec Krsek"
@@ -491,7 +491,7 @@
     github: ""
     website: ""
     scholar: ""
-  now: ""
+  now: "Worldwide Tech Services"
 
 - id: "daniel-lounsbury"
   name: "Daniel Lounsbury"
@@ -535,7 +535,7 @@
     github: "https://github.com/WL-Richards"
     website: ""
     scholar: ""
-  now: ""
+  now: "Quantiiv"
 
 - id: "jake-anding"
   name: "Jake Anding"
@@ -711,7 +711,7 @@
     github: ""
     website: ""
     scholar: ""
-  now: ""
+  now: "Kintone"
 
 - id: "kameron-keller"
   name: "Kameron Keller"
@@ -733,7 +733,7 @@
     github: "https://github.com/KameronKeller"
     website: "https://www.kameronkeller.com/"
     scholar: ""
-  now: ""
+  now: "Olio Apps"
 
 - id: "daniel-lau"
   name: "Daniel Lau"
@@ -865,7 +865,7 @@
     github: ""
     website: ""
     scholar: ""
-  now: ""
+  now: "Garmin"
 
 - id: "matthew-omalley-nichols"
   name: "Matthew O'Malley-Nichols"
@@ -975,7 +975,7 @@
     github: ""
     website: ""
     scholar: ""
-  now: ""
+  now: "RoadRunner"
 
 - id: "brendon-tran"
   name: "Brendon Tran"
@@ -1019,7 +1019,7 @@
     github: "https://github.com/andyruwruw"
     website: "https://andyruwruw.com/"
     scholar: ""
-  now: ""
+  now: "Snap Inc."
 
 - id: "mia-bilka"
   name: "Mia Bilka"
@@ -1041,7 +1041,7 @@
     github: ""
     website: ""
     scholar: ""
-  now: ""
+  now: "DPR Construction"
 
 - id: "zachary-bochanski"
   name: "Zachary Bochanski"
@@ -1107,7 +1107,7 @@
     github: "https://github.com/chitali"
     website: ""
     scholar: ""
-  now: ""
+  now: "Disney"
 
 - id: "nicholas-burrell"
   name: "Nicholas Burrell"
@@ -1173,7 +1173,7 @@
     github: ""
     website: ""
     scholar: ""
-  now: ""
+  now: "ChipAgents"
 
 - id: "kobe-chenea"
   name: "Kobe Chenea"
@@ -1261,7 +1261,7 @@
     github: "https://github.com/SamsonDeVol"
     website: "https://samsondevol.com/"
     scholar: ""
-  now: ""
+  now: "Applause"
 
 - id: "himanshu-dhir"
   name: "Himanshu Dhir"
@@ -1327,7 +1327,7 @@
     github: "https://github.com/s7g4"
     website: ""
     scholar: ""
-  now: "Radboud University"
+  now: "VU Amsterdam"
 
 - id: "aj-gokule"
   name: "AJ Gokule"
@@ -1349,7 +1349,7 @@
     github: "https://github.com/aj-arts"
     website: "https://www.ajinkya.dev/"
     scholar: ""
-  now: ""
+  now: "Oregon State University"
 
 - id: "ann-marie-hicks"
   name: "Ann Marie Hicks"
@@ -1393,7 +1393,7 @@
     github: "https://github.com/orion-junkins"
     website: ""
     scholar: ""
-  now: ""
+  now: "NVIDIA"
 
 - id: "jayson-kildea"
   name: "Jayson Kildea"
@@ -1459,7 +1459,7 @@
     github: ""
     website: ""
     scholar: ""
-  now: ""
+  now: "John Deere"
 
 - id: "paul-koos"
   name: "Paul Koos"
@@ -1525,7 +1525,7 @@
     github: ""
     website: ""
     scholar: ""
-  now: ""
+  now: "Kong Studios"
 
 - id: "gavin-lesher"
   name: "Gavin Lesher"
@@ -1701,7 +1701,7 @@
     github: "https://github.com/jessepiccione"
     website: "https://piccione.dev/"
     scholar: ""
-  now: ""
+  now: "Intuit"
 
 - id: "alex-prestwich"
   name: "Alex Prestwich"
@@ -1745,7 +1745,7 @@
     github: ""
     website: ""
     scholar: ""
-  now: ""
+  now: "ESCO (Weir Group)"
 
 - id: "scott-rein"
   name: "Scott Rein"
@@ -1899,7 +1899,7 @@
     github: ""
     website: "https://zstevenson.com/"
     scholar: ""
-  now: ""
+  now: "Ballard Spahr"
 
 - id: "melissa-swearingen"
   name: "Melissa Swearingen"
@@ -1921,7 +1921,7 @@
     github: ""
     website: ""
     scholar: ""
-  now: ""
+  now: "ServiceNow"
 
 - id: "cole-theodore"
   name: "Cole Theodore"
@@ -1943,7 +1943,7 @@
     github: ""
     website: ""
     scholar: ""
-  now: ""
+  now: "Serval"
 
 - id: "jonathan-to"
   name: "Jonathan To"
