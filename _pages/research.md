@@ -38,8 +38,8 @@ nav_order: 0
     <div class="sb-area-browse">
       Browse all:
       {%- for t in a.tags -%}
-        <a class="sb-tag" data-tag="{{ t }}" href="{{ '/publications/' | relative_url }}?tag={{ t | url_encode }}">{{ t }} papers</a>
-        <a class="sb-tag" data-tag="{{ t }}" href="{{ '/projects/' | relative_url }}?tag={{ t | url_encode }}">{{ t }} projects</a>
+        <a class="sb-tag sb-t-{{ t | slugify }}" data-tag="{{ t }}" href="{{ '/publications/' | relative_url }}?tag={{ t | url_encode }}">{{ t }} papers</a>
+        <a class="sb-tag sb-t-{{ t | slugify }}" data-tag="{{ t }}" href="{{ '/projects/' | relative_url }}?tag={{ t | url_encode }}">{{ t }} projects</a>
       {%- endfor -%}
     </div>
   </div>

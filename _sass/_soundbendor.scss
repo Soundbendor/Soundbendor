@@ -57,33 +57,34 @@ $sb-candela: #fdd26e;
 $sb-pine-stand: #4a773c;
 $sb-high-desert: #7a6855;
 $sb-crater: #8e9089;
+// keys are Jekyll slugify of the tag name; markup carries class sb-t-<slug>
 $sb-tag-colors: (
-  "Music Emotion": $sb-stratosphere,
-  "Music Theory": $sb-stratosphere,
-  "Transcription": $sb-stratosphere,
-  "Recommendation": $sb-stratosphere,
-  "Music Tagging": $sb-stratosphere,
-  "Perception": $sb-moondust,
-  "Hearing": $sb-moondust,
-  "Voice": $sb-moondust,
-  "Timbre": $sb-moondust,
-  "Rhythm": $sb-moondust,
-  "Speech & Language": $sb-star-canvas,
-  "Language Models": $sb-star-canvas,
-  "Multimodal": $sb-star-canvas,
-  "Audio Synthesis": $sb-high-tide,
-  "Signal Processing": $sb-high-tide,
-  "Computer Vision": $sb-solar-flare,
-  "Bioacoustics": $sb-candela,
-  "Ecology": $sb-pine-stand,
-  "Sustainability": $sb-pine-stand,
-  "Food Waste": $sb-pine-stand,
-  "Health": $sb-high-desert,
-  "Datasets": $sb-crater,
-  "IoT": $sb-crater,
-  "Apps": $sb-crater,
-  "Interfaces": $sb-crater,
-  "Tools": $sb-crater,
+  "music-emotion": $sb-stratosphere,
+  "music-theory": $sb-stratosphere,
+  "transcription": $sb-stratosphere,
+  "recommendation": $sb-stratosphere,
+  "music-tagging": $sb-stratosphere,
+  "perception": $sb-moondust,
+  "hearing": $sb-moondust,
+  "voice": $sb-moondust,
+  "timbre": $sb-moondust,
+  "rhythm": $sb-moondust,
+  "speech-language": $sb-star-canvas,
+  "language-models": $sb-star-canvas,
+  "multimodal": $sb-star-canvas,
+  "audio-synthesis": $sb-high-tide,
+  "signal-processing": $sb-high-tide,
+  "computer-vision": $sb-solar-flare,
+  "bioacoustics": $sb-candela,
+  "ecology": $sb-pine-stand,
+  "sustainability": $sb-pine-stand,
+  "food-waste": $sb-pine-stand,
+  "health": $sb-high-desert,
+  "datasets": $sb-crater,
+  "iot": $sb-crater,
+  "apps": $sb-crater,
+  "interfaces": $sb-crater,
+  "tools": $sb-crater,
 );
 
 .sb-tags {
@@ -125,7 +126,7 @@ $sb-tag-colors: (
 }
 
 @each $tag, $c in $sb-tag-colors {
-  [data-tag="#{$tag}"] {
+  .sb-t-#{$tag} {
     --sb-dot: #{$c};
     // pale colours (Moondust, Candela) need a stronger tint and a darker edge to show on white
     @if lightness($c) > 70% {
@@ -137,7 +138,7 @@ $sb-tag-colors: (
       --sb-tag-border: #{rgba($c, 0.45)};
     }
   }
-  html[data-theme="dark"] [data-tag="#{$tag}"] {
+  html[data-theme="dark"] .sb-t-#{$tag} {
     @if lightness($c) > 70% {
       --sb-tag-bg: #{rgba($c, 0.2)};
       --sb-tag-border: #{rgba($c, 0.7)};

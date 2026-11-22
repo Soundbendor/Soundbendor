@@ -314,7 +314,7 @@
     {% if entry.keywords or entry.related %}<div class="sb-foot">{% endif %}
     {% if entry.keywords %}
       <div class="sb-tags">
-        {% for t in sb_tags %}{% assign tt = t | strip %}<a class="sb-tag" data-tag="{{ tt }}" href="?tag={{ tt | url_encode }}">{{ tt }}</a>{% endfor %}
+        {% for t in sb_tags %}{% assign tt = t | strip %}<a class="sb-tag sb-t-{{ tt | slugify }}" data-tag="{{ tt }}" href="?tag={{ tt | url_encode }}">{{ tt }}</a>{% endfor %}
       </div>
     {% endif %}
     {% if entry.related %}

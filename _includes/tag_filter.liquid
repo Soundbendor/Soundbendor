@@ -5,7 +5,7 @@
 <div class="sb-filter" role="toolbar" aria-label="Filter by theme">
   <a class="sb-chip" data-tag="" href="?">All</a>
   {%- for t in site.data.tags -%}
-    <a class="sb-chip" data-tag="{{ t }}" href="?tag={{ t | url_encode }}">{{ t }}</a>
+    <a class="sb-chip sb-t-{{ t | slugify }}" data-tag="{{ t }}" href="?tag={{ t | url_encode }}">{{ t }}</a>
   {%- endfor -%}
 </div>
 <div class="sb-filter-status" aria-live="polite" hidden>

@@ -17,7 +17,7 @@
       {%- endfor -%}
     </div>
     {%- if pr.tags.size > 0 -%}
-      <div class="sb-tags">{% for t in pr.tags %}<a class="sb-tag" data-tag="{{ t }}" href="?tag={{ t | url_encode }}">{{ t }}</a>{% endfor %}</div>
+      <div class="sb-tags">{% for t in pr.tags %}<a class="sb-tag sb-t-{{ t | slugify }}" data-tag="{{ t }}" href="?tag={{ t | url_encode }}">{{ t }}</a>{% endfor %}</div>
     {%- endif -%}
     <div class="links sb-links">
       {%- if pr.video != "" %}<a class="btn btn-sm z-depth-0" href="https://www.youtube.com/watch?v={{ pr.video }}">Video</a>{% endif -%}

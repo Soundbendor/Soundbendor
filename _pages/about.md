@@ -29,7 +29,7 @@ engaging undergraduate and graduate students in Corvallis, Bend, and on Ecampus.
 {%- for t in site.data.tags -%}
   {%- assign needle = "|" | append: t | append: "|" -%}
   {%- unless pubtags contains needle -%}{%- continue -%}{%- endunless -%}
-  <a class="sb-tag" data-tag="{{ t }}" href="{{ '/publications/' | relative_url }}?tag={{ t | url_encode }}">{{ t }}</a>
+  <a class="sb-tag sb-t-{{ t | slugify }}" data-tag="{{ t }}" href="{{ '/publications/' | relative_url }}?tag={{ t | url_encode }}">{{ t }}</a>
 {%- endfor -%}
 </div>
 
