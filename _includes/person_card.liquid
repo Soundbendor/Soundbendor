@@ -14,8 +14,10 @@
       {%- if p.links.website != "" %} <a class="sb-icon" href="{{ p.links.website }}" aria-label="{{ p.name }}'s website"><i class="fa-solid fa-globe"></i></a>{% endif -%}
       {%- if p.links.scholar != "" %} <a class="sb-icon" href="{{ p.links.scholar }}" aria-label="{{ p.name }} on Google Scholar"><i class="ai ai-google-scholar"></i></a>{% endif -%}
     </div>
+    {%- assign sb_prog = p.program | replace: ', ', ' · ' | replace: 'Computer Science', 'CS' | replace: 'Artificial Intelligence', 'AI' | replace: 'Mechanical Engineering', 'ME' | replace: 'Electrical Engineering', 'EE' -%}
     <div class="sb-meta">
-      {{ p.program }}{% if p.year != "" %}, {{ p.year }}{% endif %}{% if p.campus != "" %} · {{ p.campus }}{% endif %}
+      {{ sb_prog }}{% if p.year != "" %} · {{ p.year }}{% endif %}
+      {%- if p.campus != "" %}<br><span class="sb-campus">{{ p.campus }}</span>{% endif -%}
       {%- if p.other_degrees.size > 0 %}<br>Also {{ p.other_degrees | join: ', ' }}{% endif -%}
       {%- if p.note != "" %}<br>{{ p.note }}{% endif -%}
     </div>
@@ -23,12 +25,34 @@
     {%- if p.activities.size > 0 -%}
       <div class="sb-badges">{% for a in p.activities %}<span class="sb-badge">{{ a }}</span>{% endfor %}</div>
     {%- endif -%}
-    {%- assign work = p.theses | concat: p.papers -%}
-    {%- if work.size > 0 or p.projects.size > 0 -%}
+    {%- comment -%} Work links by category (Paper, Thesis, Project, Capstone), each to the most recent item {%- endcomment -%}
+    {%- assign n_pap = 0 -%}{%- assign y_pap = 0 -%}{%- assign k_pap = "" -%}
+    {%- for k in p.papers -%}{%- assign info = site.data.bibkeys[k] -%}{%- if info -%}
+      {%- assign n_pap = n_pap | plus: 1 -%}{%- assign y = info.year | plus: 0 -%}
+      {%- if y > y_pap or k_pap == "" -%}{%- assign y_pap = y -%}{%- assign k_pap = k -%}{%- endif -%}
+    {%- endif -%}{%- endfor -%}
+    {%- assign n_th = 0 -%}{%- assign y_th = 0 -%}{%- assign k_th = "" -%}
+    {%- for k in p.theses -%}{%- assign info = site.data.bibkeys[k] -%}{%- if info -%}
+      {%- assign n_th = n_th | plus: 1 -%}{%- assign y = info.year | plus: 0 -%}
+      {%- if y > y_th or k_th == "" -%}{%- assign y_th = y -%}{%- assign k_th = k -%}{%- endif -%}
+    {%- endif -%}{%- endfor -%}
+    {%- assign n_pr = 0 -%}{%- assign y_pr = 0 -%}{%- assign k_pr = "" -%}
+    {%- assign n_cap = 0 -%}{%- assign y_cap = 0 -%}{%- assign k_cap = "" -%}
+    {%- for pid in p.projects -%}{%- assign pr = site.data.projects | where: "id", pid | first -%}{%- if pr -%}
+      {%- assign y = pr.year | plus: 0 -%}
+      {%- if pr.type == "Capstone" -%}
+        {%- assign n_cap = n_cap | plus: 1 -%}{%- if y > y_cap or k_cap == "" -%}{%- assign y_cap = y -%}{%- assign k_cap = pid -%}{%- endif -%}
+      {%- else -%}
+        {%- assign n_pr = n_pr | plus: 1 -%}{%- if y > y_pr or k_pr == "" -%}{%- assign y_pr = y -%}{%- assign k_pr = pid -%}{%- endif -%}
+      {%- endif -%}
+    {%- endif -%}{%- endfor -%}
+    {%- assign n_all = n_pap | plus: n_th | plus: n_pr | plus: n_cap -%}
+    {%- if n_all > 0 -%}
       <div class="sb-work">
-        {%- for k in p.theses -%}{%- assign info = site.data.bibkeys[k] -%}{% if info %}<a href="{{ info.page | relative_url }}#{{ k }}">{{ info.kind }} {{ info.year }}</a> {% endif %}{%- endfor -%}
-        {%- if p.papers.size > 0 -%}{%- assign fk = p.papers | first -%}<a href="{{ site.data.bibkeys[fk].page | relative_url }}#{{ fk }}">{{ p.papers.size }} paper{% if p.papers.size > 1 %}s{% endif %}</a> {% endif -%}
-        {%- for pid in p.projects -%}{%- assign pr = site.data.projects | where: "id", pid | first -%}<a href="{{ '/projects/' | relative_url }}#{{ pid }}">{{ pr.title | truncatewords: 4 }} ({{ pr.year }})</a> {% endfor -%}
+        {%- if n_pap > 0 -%}<a href="{{ site.data.bibkeys[k_pap].page | relative_url }}#{{ k_pap }}">{% if n_pap > 1 %}{{ n_pap }} Papers{% else %}Paper{% endif %}</a>{%- endif -%}
+        {%- if n_th > 0 -%}<a href="{{ site.data.bibkeys[k_th].page | relative_url }}#{{ k_th }}">{% if n_th > 1 %}{{ n_th }} Theses{% else %}Thesis{% endif %}</a>{%- endif -%}
+        {%- if n_pr > 0 -%}<a href="{{ '/projects/' | relative_url }}#{{ k_pr }}">{% if n_pr > 1 %}{{ n_pr }} Projects{% else %}Project{% endif %}</a>{%- endif -%}
+        {%- if n_cap > 0 -%}<a href="{{ '/projects/' | relative_url }}#{{ k_cap }}">{% if n_cap > 1 %}{{ n_cap }} Capstones{% else %}Capstone{% endif %}</a>{%- endif -%}
       </div>
     {%- endif -%}
   </div>

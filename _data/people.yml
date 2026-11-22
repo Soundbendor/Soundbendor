@@ -238,7 +238,7 @@
   year: "2026"
   campus: "Corvallis"
   other_degrees: ["B.S. 2025"]
-  activities: ["URSA", "Honors", "Capstone", "AMP"]
+  activities: ["CRF", "URSA", "Honors", "Capstone", "AMP"]
   tags: ["Music Emotion"]
   note: ""
   theses: ["leib2026time", "leib2025interpreting"]
@@ -634,7 +634,7 @@
   year: "2024"
   campus: "Cascades"
   other_degrees: []
-  activities: ["Capstone"]
+  activities: ["CRF", "Capstone"]
   tags: ["Music Emotion", "Recommendation", "Rhythm", "Health", "Apps"]
   note: ""
   theses: []

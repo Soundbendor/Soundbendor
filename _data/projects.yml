@@ -1,6 +1,6 @@
 # Student projects without their own paper page: research projects and capstones.
 # Seeded 2026-11-21 from the old site's database. Edit by pull request.
-#   type      URSA | NCUR | CRF | Layman Fellowship | Grant project | Capstone | Research
+#   type      URSA | NCUR | CRF (Cascades Research Fellowship, formerly Layman) | Ind. Study | Grant project | Capstone | Research
 #   people    ids from _data/people.yml     tags  theme tags (see _data/tags.yml)
 #   team      optional text shown instead of (or after) people, e.g. a team with no named members
 #   video     YouTube video ID (video2: optional second talk)              slides, poster, poster2  paths under assets/pdf/
@@ -146,7 +146,7 @@
 - id: "2024-sound-annotation-tool"
   title: "Sound Annotation Tool"
   year: 2024
-  type: "Independent study"
+  type: "Ind. Study"
   people: ["andrew-young"]
   tags: ["Datasets", "Interfaces", "Tools"]
   summary: ""
@@ -176,7 +176,7 @@
 - id: "2023-algorhythms"
   title: "AlgoRhythms"
   year: 2023
-  type: "Layman Fellowship"
+  type: "CRF"
   people: ["kameron-keller", "dalton-shults"]
   tags: ["Music Emotion", "Recommendation", "Rhythm", "Health", "Apps"]
   summary: "AlgoRhythms is an application that automatically generates exercise workouts from a given song. Using machine learning and intelligent mappings, we select workouts from a set of exercises that best fit the rhythm and energy of the music. First, we segment the song into labeled sections, in which the labels represent similarities between segments of a song. Next, these segments are mapped to specific exercises and are used to generate a video. This video guides the user through the exercises mapped to the song’s labeled segments by displaying repetition timings that match the rhythm of the song."
@@ -236,7 +236,7 @@
 - id: "2023-hearing-simulator"
   title: "Hearing Simulator"
   year: 2023
-  type: "Layman Fellowship"
+  type: "CRF"
   people: ["samson-devol"]
   tags: ["Perception", "Hearing", "Health", "Apps", "Interfaces"]
   summary: "This project builds a website tool that attempts to simulate hearing loss. The audio signal is filtered by a dynamic representation of an audiogram, allowing the user to simulate different types of hearing loss. Our goal is to develop a tool to encourage better understanding of hearing loss in order to motivate empathy, accessible design, and prevention of hearing damage."
@@ -251,7 +251,7 @@
 - id: "2023-made-with-love-in-bend"
   title: "Made with Love in Bend"
   year: 2023
-  type: "Layman Fellowship"
+  type: "CRF"
   people: ["kim-markley"]
   tags: ["Apps"]
   summary: "Our vision for the Made With Love in Bend project is is to create an online \"art walk\" and artist directory that showcases the diverse talents and abundant skills within our community. The project's mission is to support and connect artists by providing them with a platform to share their biographies, creative processes, current work, and a directory of their skills and services. Towards this goal, we developed and deployed a bilingual online survey to identify the real needs of potential stakeholders, artists, and partners. By leveraging insights gained through this research, we can begin to design technological solutions to support the individual needs of artists in our community."
@@ -447,7 +447,7 @@
 - id: "2022-music-sentiment-analysis"
   title: "Music Sentiment Analysis"
   year: 2022
-  type: "Layman Fellowship"
+  type: "CRF"
   people: ["shaun-leib"]
   tags: ["Music Emotion"]
   summary: "Using a dataset of annotated music examples, we train recurrent neural networks to attempt to predict emotion values (valence and arousal) directly from audio waveforms."
@@ -477,7 +477,7 @@
 - id: "2022-river-level-forecasting"
   title: "River Level Forecasting"
   year: 2022
-  type: "Layman Fellowship"
+  type: "CRF"
   people: ["orion-junkins"]
   tags: ["Ecology"]
   summary: "This project proposes an ensemble of Recurrent Neural Network models to forecast river flow rate using weather data from throughout the catchment. Small, localized models are trained for each weather data source and predictions are combined to predict the flow rate at a chosen site. This ensemble approach allows for a larger input dataset while avoiding the pitfalls of large dimensionality. The final ensemble model yields a MAPE of 8.57%, which is 10.02% lower than the best performing localized model."
@@ -492,7 +492,7 @@
 - id: "2021-conscience-consumer"
   title: "Conscience Consumer"
   year: 2021
-  type: "Layman Fellowship"
+  type: "CRF"
   people: ["shayla-lane"]
   tags: ["Sustainability", "Apps"]
   summary: "This project develops the Conscientious Consumer, a mobile application that condenses all of the complex data about ethics of manufacturers of every-day products into a simple and transparent five star rating."

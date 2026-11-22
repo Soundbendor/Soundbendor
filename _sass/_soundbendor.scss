@@ -277,8 +277,27 @@ details.sb-earlier {
   font-style: italic;
 }
 
-.sb-work a {
-  margin-right: 0.4rem;
+.sb-work {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 0;
+}
+
+// Paper · Thesis · Project · Capstone
+.sb-work a + a::before {
+  content: "·";
+  display: inline-block;
+  margin: 0 0.4rem;
+  color: var(--global-text-color-light);
+  text-decoration: none;
+}
+
+.sb-campus {
+  font-variant: small-caps;
+  letter-spacing: 0.04em;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--global-text-color);
 }
 
 .sb-badges {
