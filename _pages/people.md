@@ -11,7 +11,7 @@ nav_order: 1
   <img class="sb-photo" src="{{ '/assets/img/people/patrick-donnelly-2024.png' | relative_url }}" alt="Patrick Donnelly">
   <div class="sb-person-body">
     <div class="sb-name"><a href="{{ '/donnelly/' | relative_url }}">Patrick Donnelly</a> <a class="sb-icon" href="https://scholar.google.com/citations?user=TFDLhm4AAAAJ" aria-label="Patrick Donnelly on Google Scholar"><i class="ai ai-google-scholar"></i></a></div>
-    <div class="sb-meta">Director · Computer Science, Oregon State University · Cascades</div>
+    <div class="sb-meta">Director · Associate Professor of Computer Science · Cascades</div>
   </div>
 </div>
 

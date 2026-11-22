@@ -9,7 +9,7 @@ nav_order: 6
 
 <img class="img-fluid rounded float-md-right ml-md-4 mb-3" style="max-width: 240px;" src="{{ '/assets/img/people/patrick-donnelly-2024.png' | relative_url }}" alt="Patrick Donnelly">
 
-Patrick Donnelly is a faculty member in Computer Science at Oregon State University, where he directs the Soundbendor Lab.
+Patrick Donnelly is an Associate Professor of Computer Science at Oregon State University, where he directs the Soundbendor Lab.
 Combining his background in machine learning and musicology, he uses computational approaches to better understand sound and music.
 
 Patrick has always been fascinated by the intersection of math, music and language.
