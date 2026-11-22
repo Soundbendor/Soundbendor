@@ -221,6 +221,10 @@
     {% endif %}
     {% assign entrytype_text = entrytype | strip_html | strip %}
     {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}<span class="sb-date">{{ entrymonth | append: entryyear | strip }}</span>{% endcapture %}
+    {%- comment -%} PI's own theses: "M.M. Thesis, Computer Music, 2008" (kind in grey, year in the date style) {%- endcomment -%}
+    {% if entry.school and entry.key contains 'donnelly' %}
+      {% capture periodical %}<span class="sb-thesis-kind">{{ entry.type }}</span>, <span class="sb-date">{{ entry.year }}</span>{% endcapture %}
+    {% endif %}
     <div class="periodical">
       {{ periodical | strip }}
     </div>

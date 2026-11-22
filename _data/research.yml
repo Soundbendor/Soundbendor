@@ -21,7 +21,7 @@
     from text alone, probing generative music models for music-theory concepts, measuring rhythm, and
     labelling sounds with the words people use for timbre.
   image: projects/2026-bridging-the-timbre-gap.jpg
-  tags: [Timbre, Music Theory, Music Scores, Audio Synthesis]
+  tags: [Timbre, Music Theory, Rhythm, Music Tagging, Music Transcription, Audio Synthesis]
   papers: [mccabe2026classifying, kwan2026probing, tassin2026toward, donnelly2023transposition]
   theses: [mccabe2026audiofree, knowlton2023synthetic]
   projects: [2026-bridging-the-timbre-gap, 2025-timbral-analysis]

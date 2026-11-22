@@ -63,7 +63,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: []
-  tags: ["Music Theory", "Datasets"]
+  tags: ["Music Theory", "Rhythm", "Datasets"]
   note: ""
   theses: []
   papers: ["kwan2026probing"]
@@ -85,7 +85,7 @@
   campus: "Corvallis"
   other_degrees: ["M.S. 2026"]
   activities: []
-  tags: ["Timbre", "Language Models"]
+  tags: ["Timbre", "Music Tagging", "Language Models"]
   note: ""
   theses: ["mccabe2026audiofree"]
   papers: ["mccabe2026classifying"]
@@ -107,7 +107,7 @@
   campus: ""
   other_degrees: []
   activities: []
-  tags: ["Music Theory"]
+  tags: ["Music Theory", "Rhythm", "Music Perception"]
   note: ""
   theses: []
   papers: ["tassin2026toward"]
@@ -173,7 +173,7 @@
   campus: "Cascades"
   other_degrees: []
   activities: ["CRF"]
-  tags: ["Timbre", "Audio Synthesis"]
+  tags: ["Timbre", "Music Tagging", "Audio Synthesis"]
   note: ""
   theses: []
   papers: []
@@ -371,7 +371,7 @@
   campus: "Cascades"
   other_degrees: []
   activities: ["CRF"]
-  tags: ["Timbre", "Signal Processing", "Tools"]
+  tags: ["Timbre", "Music Tagging", "Signal Processing", "Tools"]
   note: ""
   theses: []
   papers: []
@@ -393,7 +393,7 @@
   campus: "Cascades"
   other_degrees: []
   activities: ["CRF"]
-  tags: ["Tools", "Datasets"]
+  tags: ["Interface", "Datasets", "Tools"]
   note: ""
   theses: []
   papers: []
@@ -459,7 +459,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Music Scores", "Apps"]
+  tags: ["Interface", "Apps"]
   note: ""
   theses: []
   papers: []
@@ -635,7 +635,7 @@
   campus: "Cascades"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Music Emotion", "Music Recommendation", "Health", "Apps"]
+  tags: ["Music Emotion", "Rhythm", "Music Recommendation", "Health", "Apps"]
   note: ""
   theses: []
   papers: []
@@ -701,7 +701,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Music Scores", "Apps"]
+  tags: ["Interface", "Apps"]
   note: ""
   theses: []
   papers: []
@@ -789,7 +789,7 @@
   campus: "Cascades"
   other_degrees: []
   activities: ["CRF", "Capstone"]
-  tags: ["Music Emotion", "Music Recommendation", "Health", "Apps", "Signal Processing"]
+  tags: ["Music Emotion", "Rhythm", "Music Recommendation", "Health", "Apps", "Signal Processing"]
   note: ""
   theses: []
   papers: []
@@ -833,7 +833,7 @@
   campus: "Cascades"
   other_degrees: []
   activities: ["CRF", "Capstone"]
-  tags: ["Music Emotion", "Music Recommendation", "Health", "Apps"]
+  tags: ["Music Emotion", "Rhythm", "Music Recommendation", "Health", "Apps"]
   note: ""
   theses: []
   papers: []
@@ -921,7 +921,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Tools", "Datasets", "Music Emotion", "Apps"]
+  tags: ["Interface", "Datasets", "Tools", "Music Emotion", "Apps"]
   note: ""
   theses: []
   papers: []
@@ -1009,7 +1009,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["URSA"]
-  tags: ["Music Perception", "Health", "Audio Synthesis"]
+  tags: ["Music Perception", "Health", "Audio Synthesis", "Interface"]
   note: ""
   theses: []
   papers: []
@@ -1097,7 +1097,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Music Scores", "Apps"]
+  tags: ["Music Theory", "Interface"]
   note: ""
   theses: []
   papers: []
@@ -1163,7 +1163,7 @@
   campus: "Cascades"
   other_degrees: []
   activities: ["CRF", "NCUR", "Capstone"]
-  tags: ["Music Emotion", "Computer Vision", "Datasets", "Music Perception", "Health", "Apps"]
+  tags: ["Music Emotion", "Computer Vision", "Datasets", "Music Perception", "Health", "Interface", "Apps"]
   note: ""
   theses: []
   papers: []
@@ -1339,7 +1339,7 @@
   campus: "Cascades"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Music Scores", "Datasets"]
+  tags: ["Music Transcription", "Datasets"]
   note: ""
   theses: []
   papers: []
@@ -1361,7 +1361,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Honors"]
-  tags: ["Timbre", "Audio Synthesis", "Apps"]
+  tags: ["Timbre", "Audio Synthesis", "Interface", "Apps"]
   note: ""
   theses: ["knowlton2023synthetic"]
   papers: []
@@ -1383,7 +1383,7 @@
   campus: "Cascades"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Music Scores", "Apps"]
+  tags: ["Music Theory", "Interface"]
   note: ""
   theses: []
   papers: []
@@ -1405,7 +1405,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Timbre", "Audio Synthesis", "Apps"]
+  tags: ["Timbre", "Audio Synthesis", "Interface", "Apps"]
   note: ""
   theses: []
   papers: []
@@ -1471,7 +1471,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Music Scores", "Datasets"]
+  tags: ["Music Transcription", "Datasets"]
   note: ""
   theses: []
   papers: []
@@ -1515,7 +1515,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Music Scores", "Apps"]
+  tags: ["Music Theory", "Interface"]
   note: ""
   theses: []
   papers: []
@@ -1625,7 +1625,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["URSA", "Capstone"]
-  tags: ["Signal Processing", "Speech & Language", "Music Scores", "Apps"]
+  tags: ["Signal Processing", "Speech & Language", "Music Theory", "Interface"]
   note: ""
   theses: []
   papers: ["donnelly2022identifying"]
@@ -1669,7 +1669,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["Capstone"]
-  tags: ["Music Scores", "Datasets"]
+  tags: ["Music Transcription", "Datasets"]
   note: ""
   theses: []
   papers: []
@@ -1977,7 +1977,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["URSA", "NCUR", "Capstone", "Honors"]
-  tags: ["Music Scores", "Signal Processing"]
+  tags: ["Music Transcription", "Signal Processing"]
   note: ""
   theses: ["ebert2022transcribing"]
   papers: ["donnelly2022transcription"]
@@ -2043,7 +2043,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["URSA"]
-  tags: ["Timbre"]
+  tags: ["Timbre", "Music Tagging"]
   note: ""
   theses: []
   papers: []
@@ -2153,7 +2153,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["URSA"]
-  tags: ["Music Scores", "Tools"]
+  tags: ["Music Theory", "Tools"]
   note: "Transferred"
   theses: []
   papers: []

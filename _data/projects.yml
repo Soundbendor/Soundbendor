@@ -12,7 +12,7 @@
   year: 2026
   type: "CRF"
   people: ["marc-vannucci"]
-  tags: ["Timbre", "Audio Synthesis"]
+  tags: ["Timbre", "Music Tagging", "Audio Synthesis"]
   video: "YYIbzzr3-4A"
   summary: ""
   related: []
@@ -42,7 +42,7 @@
   year: 2025
   type: "CRF"
   people: ["daniel-lounsbury"]
-  tags: ["Tools", "Datasets"]
+  tags: ["Interface", "Datasets", "Tools"]
   summary: ""
   video: "2bl0nL1c2hk"
   slides: ""
@@ -57,7 +57,7 @@
   year: 2025
   type: "CRF"
   people: ["alec-krsek"]
-  tags: ["Timbre", "Signal Processing", "Tools"]
+  tags: ["Timbre", "Music Tagging", "Signal Processing", "Tools"]
   summary: "A Python tool that labels any sound file with timbre words. It extracts 15 acoustic features with librosa and Praat (spectral centroid, harmonics-to-noise ratio, jitter, shimmer, temporal envelope and more) and maps them to descriptors such as strident or wavering, grouped into tonal, dynamic, rhythmic, textural and brightness categories. Tested on the ESC-50 environmental sound dataset, the goal is to label audio datasets automatically so a model can learn timbre directly from audio."
   video: ""
   slides: ""
@@ -72,7 +72,7 @@
   year: 2024
   type: "Capstone"
   people: ["kameron-keller", "dalton-shults", "matthew-omalley-nichols"]
-  tags: ["Music Emotion", "Music Recommendation", "Health", "Apps"]
+  tags: ["Music Emotion", "Rhythm", "Music Recommendation", "Health", "Apps"]
   summary: "The AlgoRhythms mobile application generates a fun, interactive workout based on user-selected music. Using machine learning, we analyzed music and extracted data about its composition to build interactive workout visualizations in a mobile application. The application connects to a robust backend infrastructure that includes a Django API for passing data to the application, a PostgreSQL database for storing data, and an Nginx web server, all hosted on Amazon Web Services. AlgoRhythms focuses on creating a product that will let users pick the music they enjoy, providing them with a workout synchronized to their favorite music's rhythms. AlgoRhythms automatically generates your exercises, removing the need for prior exercise knowledge, lowering the barrier of entry for those new to working out, and providing variety for seasoned fitness enthusiasts. The application also provides detailed workout descriptions and video guides for each exercise. The project is currently entering a testing Alpha phase and is unavailable to the public. To learn more, contact Dalton, Kameron, or Matthew via LinkedIn by hovering over the images below."
   video: "ypiphXN5uuU"
   slides: ""
@@ -148,7 +148,7 @@
   year: 2024
   type: "Independent study"
   people: ["andrew-young"]
-  tags: ["Tools", "Datasets"]
+  tags: ["Interface", "Datasets", "Tools"]
   summary: ""
   video: "HqV5deCIMXA"
   slides: ""
@@ -163,7 +163,7 @@
   year: 2024
   type: "Capstone"
   people: ["jake-anding", "devin-martin"]
-  tags: ["Music Scores", "Apps"]
+  tags: ["Interface", "Apps"]
   summary: "The Walking Piano project allows users to play various songs on a piano with a catch: the user must play with their feet! Our aim is to develop a standalone software that works alongside a physical MIDI piano controller that can be played by the user as they move across the physical piano. By providing simple guidance with colorful notes falling towards a visual piano for reference, the software will empower users of all skill levels to enjoy the unique experience of playing a large MIDI piano and creating incredible music, alone, or with a friend."
   video: "vvf6wcLTews"
   slides: ""
@@ -178,7 +178,7 @@
   year: 2023
   type: "Layman Fellowship"
   people: ["kameron-keller", "dalton-shults"]
-  tags: ["Music Emotion", "Music Recommendation", "Health", "Apps"]
+  tags: ["Music Emotion", "Rhythm", "Music Recommendation", "Health", "Apps"]
   summary: "AlgoRhythms is an application that automatically generates exercise workouts from a given song. Using machine learning and intelligent mappings, we select workouts from a set of exercises that best fit the rhythm and energy of the music. First, we segment the song into labeled sections, in which the labels represent similarities between segments of a song. Next, these segments are mapped to specific exercises and are used to generate a video. This video guides the user through the exercises mapped to the song’s labeled segments by displaying repetition timings that match the rhythm of the song."
   video: "G7uD60NkERM"
   slides: "projects/2023-algorhythms-slides.pdf"
@@ -238,7 +238,7 @@
   year: 2023
   type: "Layman Fellowship"
   people: ["samson-devol"]
-  tags: ["Music Perception", "Health", "Apps"]
+  tags: ["Music Perception", "Health", "Interface", "Apps"]
   summary: "This project builds a website tool that attempts to simulate hearing loss. The audio signal is filtered by a dynamic representation of an audiogram, allowing the user to simulate different types of hearing loss. Our goal is to develop a tool to encourage better understanding of hearing loss in order to motivate empathy, accessible design, and prevention of hearing damage."
   video: "ipQkl6GNp4w"
   slides: ""
@@ -283,7 +283,7 @@
   year: 2023
   type: "Capstone"
   people: ["caleb-knight", "scott-rein", "mason-mann"]
-  tags: ["Music Scores", "Datasets"]
+  tags: ["Music Transcription", "Datasets"]
   summary: "This project proposes an automatic pipeline to generate a novel dataset for machine learning music scores directly from audio. The MIDI Performance Data Website is a platform to collect synchronized audio and MIDI files, crowdsourced by musicians across the world. Additionally, we provide a repository for researchers to search, filter, and download audio-MIDI data."
   video: "Qgrd5PeclrI"
   slides: ""
@@ -328,7 +328,7 @@
   year: 2023
   type: "Capstone"
   people: ["alex-prestwich", "kobe-chenea", "paul-koos", "victor-marquez"]
-  tags: ["Music Scores", "Apps"]
+  tags: ["Music Theory", "Interface"]
   summary: "This project creates a read-only music visualization interface that handles MIDI or MusicXML input and display an interactive musical score in a view window in Python. We designed numerous UI/UX features including window scrolling, window resizing, and score details that is highly responsive to user input. We implemented score slicing to allow the user to load a portion of the score as opposed to the entire score. This project lays significant groundwork for symbolic music visualization software, with many new musical elements and features planned in the future."
   video: "6QPmVV6HtUA"
   slides: ""
@@ -389,7 +389,7 @@
   year: 2023
   type: "Capstone"
   people: ["bradly-landucci", "john-knowlton"]
-  tags: ["Timbre", "Audio Synthesis", "Apps"]
+  tags: ["Timbre", "Audio Synthesis", "Interface", "Apps"]
   summary: "Our project develops a web application that visually represents the pairs of different sounds that a user can hear and vote on. This provides a crowd-sourced fitness function for a genetic algorithm to evolve interesting synthetic sounds. Our project uses additive synthesis in order to represent instruments partial by partial. Instruments are synthesized client-side eliminating the need for cloud storage of audio."
   video: ""
   slides: ""
@@ -464,7 +464,7 @@
   year: 2022
   type: "URSA"
   people: ["max-wild"]
-  tags: ["Music Scores", "Tools"]
+  tags: ["Music Theory", "Tools"]
   summary: "In this work, we propose a data representation for loading, storing, and manipulating symbolic music notation. This involves a powerful and flexible Python toolkit to allow the evaluation and generation of music using artificial intelligence and machine learning algorithms."
   video: "3GlCB73zUlA"
   slides: "projects/2022-musicai-slides.pdf"
@@ -509,7 +509,7 @@
   year: 2021
   type: "NCUR"
   people: ["victoria-ebert"]
-  tags: ["Music Scores", "Signal Processing"]
+  tags: ["Music Transcription", "Signal Processing"]
   summary: "Audio transcription is a complicated problem in the field of music information retrieval. In this work, we attempt automatic transcription directly from audio waveforms using a uses a BLSTM network and a time-series MIDI representation."
   video: "InUuROiyrEc"
   slides: ""
@@ -539,7 +539,7 @@
   year: 2021
   type: "URSA"
   people: ["thomas-burg"]
-  tags: ["Timbre"]
+  tags: ["Timbre", "Music Tagging"]
   summary: "The automatic identification of musical instruments is an important task in music information retrieval. Previous approaches often rely on spectral analysis to identify the frequency patterns needed to distinguish between instructions. In this work, we present an approach to automatically identify musical instruments directly from the raw audio waveform, without performing any spectral analysis or feature extraction. For this task, we trained a bidirectional LSTM, a type of recurrent neural network often used to learn sequential data. The model was trained on sequences of 256 bits from one-second samples of single-channel 16 kHz wav files. The model was trained on audio excerpts from the RWC Music Database, which contains examples of musical instruments played across their range and with different dynamics. To prepare for learning, the data was first split into individual, one-second chunks and downsampled to reduce the amount of data. The model was trained on ten instruments to perform multiclass classification directly from raw audio sequences."
   video: "tcHuNvWpMIA"
   slides: "projects/2021-identifying-musical-instruments-with-machine-learning-slides.pdf"
@@ -615,7 +615,7 @@
   year: 2020
   type: "URSA"
   people: ["victoria-ebert"]
-  tags: ["Music Scores", "Signal Processing"]
+  tags: ["Music Transcription", "Signal Processing"]
   summary: "Audio transcription is a complicated problem in the field of music information retrieval. Many attempts have been made in this field using different types of neural networks and different formats of the audio and MIDI. This attempt uses a BLSTM and a time-series MIDI."
   video: "VYiwz89rWZ4"
   slides: ""
@@ -690,7 +690,7 @@
   year: 2020
   type: "URSA"
   people: ["chitali-buge"]
-  tags: ["Music Perception", "Health", "Audio Synthesis"]
+  tags: ["Music Perception", "Health", "Audio Synthesis", "Interface"]
   summary: "The Electronic Vital Sign Monitor is integral in many hospitals. This machine generally measures heart rate, blood pressure, oxygen level, body temperature, and respiratory rate. The current monitor deployed in hospitals audibly represents only heart rate and blood pressure. Heart rate is sonified through rhythm: the audible beep indicates a heartbeat and the silence signifies the gap between each heartbeat. Blood pressure is sonified into audio by pitch: the higher the pitch, the higher the blood pressure. However, the current model could be expanded to sonify a third datum point. We propose to integrate blood oxygen level into the audio by altering the timbre of the audio signal."
   video: "jP-JpDugG9w"
   slides: ""

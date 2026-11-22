@@ -60,7 +60,9 @@ $sb-tag-colors: (
   "Music Emotion": $sb-blue,
   "Music Perception": $sb-blue,
   "Music Theory": $sb-blue,
-  "Music Scores": $sb-blue,
+  "Rhythm": $sb-blue,
+  "Music Transcription": $sb-blue,
+  "Music Tagging": $sb-blue,
   "Music Recommendation": $sb-blue,
   "Timbre": $sb-blue,
   "Speech & Language": $sb-purple,
@@ -72,6 +74,7 @@ $sb-tag-colors: (
   "Ecology": $sb-green,
   "Sustainability": $sb-green,
   "Health": $sb-red,
+  "Interface": $sb-grey,
   "IoT": $sb-grey,
   "Datasets": $sb-grey,
   "Apps": $sb-grey,
@@ -1355,4 +1358,122 @@ html[data-theme="dark"] .sb-home-cta .sb-cta-secondary {
   .sb-area-img {
     height: 180px;
   }
+}
+
+/* ---------- Home: tagline, intro highlights, section heads ---------- */
+.sb-tagline {
+  font-family: $sb-head-font;
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--global-text-color);
+  margin: 0 0 1.5rem;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 3.5rem;
+    height: 3px;
+    margin: 0.6rem auto 0;
+    background: #{$beaver-orange};
+    border-radius: 2px;
+  }
+}
+
+.sb-intro {
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+article .sb-intro a.sb-hl-osu,
+.sb-intro .sb-hl-osu {
+  color: #{$beaver-orange} !important;
+  font-weight: 700;
+}
+
+article .sb-intro a.sb-hl-eecs {
+  color: #{$luminance} !important; // OSU College of Engineering colour
+  font-weight: 700;
+}
+
+html[data-theme="dark"] .sb-intro .sb-hl-osu {
+  color: #ff7a45 !important; // Beaver Orange is too dark on the dark background
+}
+
+// a section heading with a button on its right
+.sb-section-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+
+  h2 {
+    margin: 0;
+  }
+}
+
+.sb-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45em;
+  font-weight: 700;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  background: #{$beaver-orange};
+  color: #ffffff !important;
+  text-decoration: none !important;
+  white-space: nowrap;
+
+  &:hover {
+    filter: brightness(1.1);
+  }
+}
+
+html[data-theme="dark"] .sb-btn {
+  background: var(--global-theme-color);
+  color: #{$dark-bg} !important;
+}
+
+.sb-join-band {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
+
+  > div {
+    flex: 1 1 22rem;
+  }
+}
+
+/* ---------- space and a rule between major page sections ---------- */
+article > h2,
+article > .sb-section-head,
+.post article > h2 {
+  margin-top: 2.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--global-divider-color);
+}
+
+article > .sb-cta,
+article > .sb-dei,
+article > .sb-band {
+  margin-top: 2.75rem;
+}
+
+// the first heading of a page needs no rule above it
+article > h2:first-child,
+article > .sb-section-head:first-child {
+  margin-top: 0.5rem;
+  border-top: 0;
+  padding-top: 0;
+}
+
+// PI theses: degree and kind in grey before the year
+.publications .periodical .sb-thesis-kind {
+  font-style: normal;
+  color: var(--global-text-color-light);
 }

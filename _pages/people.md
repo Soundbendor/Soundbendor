@@ -2,7 +2,6 @@
 layout: page
 permalink: /people/
 title: People
-description: Current members and alumni of the Soundbendor Lab.
 nav: true
 nav_order: 1
 ---

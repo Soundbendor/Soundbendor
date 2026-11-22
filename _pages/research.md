@@ -2,14 +2,10 @@
 layout: page
 permalink: /research/
 title: Research
-description: What the Soundbendor Lab works on, with featured projects, papers, theses and data for each area.
 nav: true
 nav_order: 0
 ---
 
-The lab studies the machine understanding of sound and music. Most of our work falls into four areas.
-Each area links to its papers, student theses and projects; the full archives are on
-[Publications]({{ '/publications/' | relative_url }}), [Theses]({{ '/theses/' | relative_url }}) and [Projects]({{ '/projects/' | relative_url }}).
 
 <nav class="sb-jump" aria-label="Research areas">
 {%- for a in site.data.research -%}<a href="#{{ a.id }}">{{ a.title }}</a>{%- endfor -%}<a href="#datasets-and-code">Datasets &amp; code</a>

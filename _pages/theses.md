@@ -2,7 +2,6 @@
 layout: page
 permalink: /theses/
 title: Theses
-description: Theses and projects by Soundbendor students. Filter by theme.
 nav: true
 nav_order: 3
 ---

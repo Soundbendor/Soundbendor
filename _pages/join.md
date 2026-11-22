@@ -2,7 +2,6 @@
 layout: page
 permalink: /join/
 title: Join
-description: For prospective students.
 nav: true
 nav_order: 7
 ---

@@ -2,7 +2,6 @@
 layout: page
 permalink: /projects/
 title: Projects
-description: Student research projects and capstones, with videos, slides and posters. Projects that led to a paper or thesis link to it.
 nav: true
 nav_order: 4
 ---

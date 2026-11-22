@@ -6,25 +6,6 @@
 
 % ==================== journal ====================
 
-@article{dale2022toward,
-  author     = {Dale, Meghan E and Godley, Amanda J and Capello, Sarah A and Donnelly, Patrick J and D'Mello, Sidney K and Kelly, Sean P},
-  title      = {Toward the automated analysis of teacher talk in secondary {ELA} classrooms},
-  journal    = {Teaching and Teacher Education},
-  volume     = {110},
-  pages      = {103584},
-  publisher  = {Elsevier},
-  year       = {2022},
-  month      = feb,
-  issn       = {0742-051X},
-  doi        = {10.1016/j.tate.2021.103584},
-  note       = {(IF = 3.27)},
-  abbr       = {TATE},
-  keywords   = {Speech & Language, IoT},
-  pdf        = {papers/dale2022toward.pdf},
-  exclude    = {true},
-  bibtex_show= {true}
-}
-
 @article{kelly2018automatically,
   author     = {Kelly, Sean and Olney, Andrew M and Donnelly, Patrick and Nystrand, Martin and D’Mello, Sidney K},
   title      = {Automatically measuring question authenticity in real-world classrooms},
@@ -59,7 +40,7 @@
   doi        = {10.1162/COMJ_a_00210},
   abstract   = {In this article, we explore the use of Bayesian networks for identifying the timbre of musical instruments. Peak spectral amplitude in ten frequency windows is extracted for each of 20 time windows to be used as features. Over a large data set of 24,000 audio examples covering the full musical range of 24 different common orchestral instruments, four different Bayesian network structures, including naive Bayes, are examined and compared with two support vector machines and a k-nearest neighbor classifier. Classification accuracy is examined by instrument, instrument family, and data set size. Bayesian networks with conditional dependencies in the time and frequency dimensions achieved 98 percent accuracy in the instrument classification task and 97 percent accuracy in the instrument family identification task. These results demonstrate a significant improvement over the previous approaches in the literature on this data set. Additionally, we tested our Bayesian approach on the widely used Iowa musical instrument data set, with similar results.},
   abbr       = {CMJ},
-  keywords   = {Timbre},
+  keywords   = {Timbre, Music Tagging},
   related    = {donnelly2015cross},
   pdf        = {papers/donnelly2013classification.pdf},
   exclude    = {true},
@@ -80,7 +61,7 @@
   doi        = {10.1177/1084713810387937},
   abstract   = {The capacity for internal rhythmic clocking involves a relationship between perceived auditory input and subsequent cognitive processing by which isochronous auditory stimuli induce a temporal beat expectancy in a listener. Although rhythm perception has previously been examined in cochlear implant (CI) users through various tasks based primarily on rhythm pattern identification, such tasks may not have been sufficiently nuanced to detect defects in internal rhythmic clocking, which requires temporal integration on a scale of milliseconds. The present study investigated the preservation of such rhythmic clocking in CI participants through a task requiring detection of isochronicity in the final beat of a four-beat series presented at different tempos. Our results show that CI users performed comparably to normal hearing (NH) participants in all isochronous rhythm detection tasks but that professionally trained musicians (MUS) significantly outperformed both NH and CI participants. These results suggest that CI users have intact rhythm perception even on a temporally demanding task that requires tight preservation of timing differences between a series of auditory events. Also, these results suggest that musical training might improve rhythmic clocking in CI users beyond normal hearing levels, which may be useful in light of the deficits in spectral processing commonly observed in CI users.},
   abbr       = {Trends Amplif.},
-  keywords   = {Music Perception},
+  keywords   = {Music Perception, Rhythm},
   pdf        = {papers/kim2010preservation.pdf},
   exclude    = {true},
   bibtex_show= {true}
@@ -108,24 +89,6 @@
 }
 
 % ==================== conf ====================
-
-@inproceedings{jensen2020toward,
-  author     = {Jensen, Emily and Dale, Meghan and Donnelly, Patrick J and Stone, Cathlyn and Kelly, Sean and Godley, Amanda and D'Mello, Sidney K},
-  title      = {Toward automated feedback on teacher discourse to enhance teacher learning},
-  booktitle  = {Proceedings of the ACM CHI Conference on Human Factors in Computing Systems (CHI 2020)},
-  pages      = {1--13},
-  publisher  = {ACM},
-  year       = {2020},
-  month      = apr,
-  doi        = {10.1145/3313831.3376418},
-  abstract   = {Like anyone, teachers need feedback to improve. Due to the high cost of human classroom observation, teachers receive infrequent feedback which is often more focused on evaluating performance than on improving practice. To address this critical barrier to teacher learning, we aim to provide teachers with detailed and actionable automated feedback. Towards this end, we developed an approach that enables teachers to easily record high-quality audio from their classes. Using this approach, teachers recorded 142 classroom sessions, of which 127 (89\%) were usable. Next, we used speech recognition and machine learning to develop teacher-generalizable computer-scored estimates of key dimensions of teacher discourse. We found that automated models were moderately accurate when compared to human coders and that speech recognition errors did not influence performance. We conclude that authentic teacher discourse can be recorded and analyzed for automatic feedback. Our next step is to incorporate the automatic models into an interactive visualization tool that will provide teachers with objective feedback on the quality of their discourse.},
-  note       = {Long paper; AR=24\%},
-  abbr       = {CHI},
-  keywords   = {Speech & Language, IoT},
-  pdf        = {papers/jensen2020toward.pdf},
-  exclude    = {true},
-  bibtex_show= {true}
-}
 
 @inproceedings{stone2019utterance,
   author     = {Stone, Cathlyn and Donnelly, Patrick J and Dale, Meghan and Capello, Sarah and Kelly, Sean and Godley, Amanda and D'Mello, Sidney K},
@@ -316,7 +279,7 @@
   abstract   = {Automatically identifying the musical instruments present in audio recordings is a complex and difficult task. Although the focus has recently shifted to identifying instruments in a polyphonic setting, the task of identifying solo instruments has not been solved. Most empirical studies recognizing musical instruments use only a single dataset in the experiments, despiteevidence that mapproaches do not generalize from one dataset to another dataset. In this work, we present a method for data driven learning of spectral filters for use in feature extraction from audio recordings of solo musical instruments and discuss the extensibility of this approach to polyphonic mixtures of instruments. We examine four datasets of musical instrument sounds that have 13 instruments in common. We demonstrate cross-dataset validation by showing that a feature extraction scheme learned from one dataset can be used successfully for feature extraction and classification on another dataset.},
   note       = {AR=47\%},
   abbr       = {ICDM},
-  keywords   = {Timbre, Datasets},
+  keywords   = {Timbre, Music Tagging, Datasets},
   related    = {donnelly2013classification, donnelly2014clustering},
   pdf        = {papers/donnelly2015cross.pdf},
   slides     = {slides/donnelly2015cross.pdf},
@@ -335,7 +298,7 @@
   abstract   = {We propose a technique of training models for feature extraction using prior expectation of regions of impor-tance in an instrument’s timbre. Over a dataset of train-ing examples, we extract significant spectral peaks, cal-culate their ratio to fundamental frequency, and use k-means clustering to identify a set of windows of spec-tral prominence for each instrument. These windows are used to extract amplitude values from training data to use as features in classification tasks. We test this ap-proach on two databases of 17 instruments, cross evalu-ate between datasets, and compare with MFCC features.},
   note       = {Long paper; AR=48\%},
   abbr       = {FLAIRS},
-  keywords   = {Timbre, Signal Processing, Datasets},
+  keywords   = {Timbre, Music Tagging, Signal Processing, Datasets},
   related    = {donnelly2015cross},
   pdf        = {papers/donnelly2014clustering.pdf},
   poster     = {posters/donnelly2014clustering.pdf},
@@ -406,7 +369,7 @@
   doi        = {10.1007/978-3-642-20520-0_28},
   abstract   = {This paper presents a genetic algorithm that evolves a four-part musical composition–melodically, harmonically, and rhythmically. Unlike similar attempts in the literature, our composition evolves from a single musical chord without human intervention or initial musical material. The mutation rules and fitness evaluation are based on common rules from music theory. The genetic operators and individual mutation rules are selected from probability distributions that evolve alongside the musical material.},
   abbr       = {EvoMUSART},
-  keywords   = {Music Theory, Music Scores, Audio Synthesis},
+  keywords   = {Music Theory, Audio Synthesis},
   pdf        = {papers/donnelly2011evolving.pdf},
   poster     = {posters/donnelly2011evolving.pdf},
   exclude    = {true},

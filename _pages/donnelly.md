@@ -22,7 +22,7 @@ He teaches mainly on the OSU-Cascades campus in Bend and mentors students in Cor
 
 **Email:** [patrick.donnelly@oregonstate.edu](mailto:patrick.donnelly@oregonstate.edu) · [Google Scholar](https://scholar.google.com/citations?user=TFDLhm4AAAAJ) · [OSU profile](https://engineering.oregonstate.edu/about/directory/patrick-donnelly)
 
-<nav class="sb-jump" aria-label="On this page"><a href="#publications">Publications</a><a href="#earlier-work">Earlier work</a><a href="#theses">Theses</a><a href="#service">Service</a><a href="#funding">Funding</a></nav>
+<nav class="sb-jump" aria-label="On this page"><a href="#publications">Publications</a><a href="#earlier-work">Earlier work</a><a href="#theses">Student theses</a><a href="#service">Service</a><a href="#funding">Funding</a></nav>
 
 <div style="clear: both;"></div>
 
@@ -31,18 +31,18 @@ He teaches mainly on the OSU-Cascades campus in Bend and mentors students in Cor
 {% include tag_filter.liquid %}
 
 <div class="publications">
-{% bibliography --file publications %}
+{% bibliography --file donnelly %}
 </div>
 
 <details class="sb-earlier" id="earlier-work">
-<summary>Show earlier work (before 2019)</summary>
+<summary>Earlier work (before 2020)</summary>
 <div class="publications">
 {% bibliography --file earlier %}
 </div>
 </details>
 
 <details class="sb-earlier" id="theses">
-<summary>Show theses (A.B., M.M., Ph.D.)</summary>
+<summary>Student theses</summary>
 <div class="publications">
 {% bibliography --file theses-pi --group_by none %}
 </div>
