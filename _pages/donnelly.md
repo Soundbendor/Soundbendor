@@ -18,11 +18,23 @@ He received master's degrees in Computer Music and Musicology from the Peabody C
 and his Ph.D. in Computer Science from Montana State University in 2015, with a dissertation on classifying musical instrument timbre in polyphonic audio.
 As a postdoctoral researcher in the Emotive Computing Lab at the University of Notre Dame, he analyzed teachers' instructional practices using acoustic signal processing and machine learning.
 Before joining OSU in 2019 he taught computer science at Chico State.
-He teaches mainly on the OSU-Cascades campus in Bend and mentors students in Corvallis, in Bend and on Ecampus.
+He teaches mainly on the OSU-Cascades campus in Bend and mentors students in Corvallis, in Bend and online through Ecampus.
 
-**Email:** [patrick.donnelly@oregonstate.edu](mailto:patrick.donnelly@oregonstate.edu) · [Google Scholar](https://scholar.google.com/citations?user=TFDLhm4AAAAJ) · [OSU profile](https://engineering.oregonstate.edu/about/directory/patrick-donnelly)
+<div class="sb-pi-links">
+  <div>
+    <a href="mailto:patrick.donnelly@oregonstate.edu"><i class="fa-solid fa-envelope"></i>patrick.donnelly@oregonstate.edu</a><span class="sb-sep">•</span>
+    <a href="https://scholar.google.com/citations?user=TFDLhm4AAAAJ"><i class="ai ai-google-scholar"></i>Google Scholar</a><span class="sb-sep">•</span>
+    <a href="https://engineering.oregonstate.edu/about/directory/patrick-donnelly"><i class="fa-solid fa-building-columns"></i>OSU Engineering</a><span class="sb-sep">•</span>
+    <a href="https://osucascades.edu/directory/patrick-donnelly"><i class="fa-solid fa-mountain-sun"></i>OSU-Cascades</a>
+  </div>
+  <div>
+    <a href="https://github.com/Soundbendor"><i class="fa-brands fa-github"></i>Soundbendor GitHub</a><span class="sb-sep">•</span>
+    <a href="https://github.com/donnpat"><i class="fa-brands fa-github"></i>Personal GitHub</a><span class="sb-sep">•</span>
+    <a href="https://www.youtube.com/@soundbendorlab7615"><i class="fa-brands fa-youtube"></i>Soundbendor YouTube</a>
+  </div>
+</div>
 
-<nav class="sb-jump" aria-label="On this page"><a href="#publications">Publications</a><a href="#earlier-work">Earlier work</a><a href="#theses">Student theses</a><a href="#service">Service</a><a href="#funding">Funding</a></nav>
+<nav class="sb-jump" aria-label="On this page"><a href="#publications">Publications</a><a href="#earlier-work">Before 2020</a><a href="#theses">Student Theses</a><a href="#service">Service</a><a href="#funding">Funding</a></nav>
 
 <div style="clear: both;"></div>
 
@@ -35,14 +47,14 @@ He teaches mainly on the OSU-Cascades campus in Bend and mentors students in Cor
 </div>
 
 <details class="sb-earlier" id="earlier-work">
-<summary>Earlier work (before 2020)</summary>
+<summary>Before 2020</summary>
 <div class="publications">
 {% bibliography --file earlier %}
 </div>
 </details>
 
 <details class="sb-earlier" id="theses">
-<summary>Student theses</summary>
+<summary>Student Theses</summary>
 <div class="publications">
 {% bibliography --file theses-pi --group_by none %}
 </div>

@@ -1559,3 +1559,49 @@ article > .sb-section-head:first-child {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+/* ---------- PI page: profile and contact links ---------- */
+.sb-pi-links {
+  margin: 1.25rem 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-weight: 600;
+  font-size: 1rem;
+
+  > div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 0.25rem;
+  }
+
+  a {
+    color: var(--global-text-color) !important;
+    text-decoration: none !important;
+    white-space: nowrap;
+
+    i {
+      color: #{$beaver-orange};
+      margin-right: 0.4em;
+      font-size: 1.1em;
+      vertical-align: -0.05em;
+    }
+
+    &:hover {
+      color: var(--global-theme-color) !important;
+      text-decoration: underline !important;
+      text-underline-offset: 3px;
+    }
+  }
+
+  .sb-sep {
+    color: #{$beaver-orange};
+    opacity: 0.6;
+  }
+}
+
+html[data-theme="dark"] .sb-pi-links a i,
+html[data-theme="dark"] .sb-pi-links .sb-sep {
+  color: #{$luminance};
+}
