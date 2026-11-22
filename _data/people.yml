@@ -185,6 +185,94 @@
     scholar: ""
   now: ""
 
+- id: "brendan-bessman"
+  name: "Brendan Bessman"
+  photo: "brendan-bessman.jpg"
+  status: "current"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: ""
+  campus: "Cascades"
+  other_degrees: []
+  activities: ["CRF"]
+  tags: []
+  note: ""
+  theses: []
+  papers: []
+  projects: []
+  links:
+    linkedin: "https://www.linkedin.com/in/bessmanb/"
+    github: ""
+    website: "https://brendanb627.github.io/"
+    scholar: ""
+  now: ""
+
+- id: "colin-mant"
+  name: "Colin Mant"
+  photo: ""
+  status: "current"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: ""
+  campus: "Cascades"
+  other_degrees: []
+  activities: ["CRF"]
+  tags: []
+  note: ""
+  theses: []
+  papers: []
+  projects: []
+  links:
+    linkedin: "https://www.linkedin.com/in/colinmant/"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "eames-smallwood"
+  name: "Eames Smallwood"
+  photo: ""
+  status: "current"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: ""
+  campus: "Cascades"
+  other_degrees: []
+  activities: ["CRF"]
+  tags: []
+  note: ""
+  theses: []
+  papers: []
+  projects: []
+  links:
+    linkedin: ""
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "tyler-silva"
+  name: "Tyler Silva"
+  photo: "tyler-silva.jpg"
+  status: "current"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: ""
+  campus: "Cascades"
+  other_degrees: []
+  activities: ["CRF"]
+  tags: []
+  note: ""
+  theses: []
+  papers: []
+  projects: []
+  links:
+    linkedin: "https://www.linkedin.com/in/tylersilva23/"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
 - id: "janita-aamir"
   name: "Janita Aamir"
   photo: "janita-aamir.jpg"
