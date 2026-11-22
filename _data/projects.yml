@@ -14,7 +14,7 @@
   type: "Capstone"
   status: "In progress"
   people: ["madison-neiswonger", "dylan-deforrest", "hunter-scholtz"]
-  tags: ["Datasets", "Interfaces"]
+  tags: ["Audio Tagging", "Datasets", "Interfaces"]
   video: ""
   summary: "AURA (Audio Understanding and Research Annotation) is a web tool for crowdsourcing labels for audio datasets. Participants play sounds and label them in eight modes, from Best Match to a two-dimensional emotion grid and labels over time; researchers manage studies, upload audio, build label sets, view analytics and download data."
   related: []
@@ -29,7 +29,7 @@
   year: 2026
   type: "CRF"
   people: ["marc-vannucci"]
-  tags: ["Generation", "Audio Tagging", "Timbre", "Audio Models", "Audio Synthesis"]
+  tags: ["Generation", "Audio Tagging", "Timbre", "Language Models", "Audio Models", "Audio Synthesis", "Datasets"]
   video: "YYIbzzr3-4A"
   summary: "A synthetic dataset for classifying subjective timbre, the tone color that separates a guitar from a piano. Gemini writes varied sound scenarios for descriptive tags such as hollow, warm or metallic, a validator removes near-duplicates, and ElevenLabs generates the audio, avoiding costly and inconsistent manual labeling."
   related: []
@@ -59,7 +59,7 @@
   year: 2025
   type: "CRF"
   people: ["daniel-lounsbury"]
-  tags: ["Datasets", "Interfaces"]
+  tags: ["Audio Tagging", "Datasets", "Interfaces"]
   summary: "A flexible web framework for crowdsourcing labels for audio datasets. Participants tag sound excerpts with emotional or timbral descriptors in six annotation styles, such as Best Match, Strength and Opposites. Researchers create custom studies, upload sounds and descriptors, track progress and export results for training machine learning models."
   video: "2bl0nL1c2hk"
   slides: "projects/2025-sound-dataset-annotation-tool-slides.pdf"
@@ -89,7 +89,7 @@
   year: 2024
   type: "Capstone"
   people: ["kameron-keller", "dalton-shults", "matthew-omalley-nichols"]
-  tags: ["Music Emotion", "Recommendation", "Rhythm", "Health", "Apps"]
+  tags: ["Rhythm", "Health", "Apps"]
   summary: "A mobile app that turns songs you choose into a workout synchronized to the music's rhythm. Machine learning analyzes each song and selects exercises, with descriptions and video guides, so beginners need no prior fitness knowledge. A Django, PostgreSQL and Nginx backend runs on Amazon Web Services."
   video: "ypiphXN5uuU"
   slides: ""
@@ -105,7 +105,7 @@
   year: 2024
   type: "Capstone"
   people: ["daniel-lau", "kim-markley", "blake-pugh", "micah-stalberg"]
-  tags: ["Computer Vision", "Sustainability", "Food Waste", "Apps"]
+  tags: ["Sustainability", "Food Waste", "IoT", "Apps"]
   summary: "The mobile app for the binsight.ai smart compost bin, built for a 2024 household field study. It connects the bin to Wi-Fi, shows the photos of food waste the bin captures, and charts composted items on a dashboard that encourages waste-reduction goals. Funded by FFAR and Kroger Zero Hunger."
   video: "mk88SDPEFSc"
   slides: ""
@@ -135,7 +135,7 @@
   year: 2024
   type: "CRF"
   people: ["matthew-omalley-nichols"]
-  tags: ["Signal Processing"]
+  tags: ["Timbre", "Rhythm", "Signal Processing"]
   summary: "A hierarchical clustering algorithm that divides songs into segments of similar timbre and approximate length, using recurrence and similarity matrices built from individual beats. Tested on rock, electronic, hip-hop and mixed-genre songs, it balances segment-length accuracy and cohesion better than k-means, helping synchronize events with a song's energy."
   video: "aMbrJmQmweI"
   related: []
@@ -165,7 +165,7 @@
   year: 2024
   type: "Ind. Study"
   people: ["andrew-young"]
-  tags: ["Datasets", "Interfaces"]
+  tags: ["Audio Tagging", "Datasets", "Interfaces"]
   summary: "The first version of the lab's sound annotation website, built over a summer. Volunteers register, listen to music snippets and choose descriptors such as noisy, smooth or bright, drawn from published timbre research. A React front end and an Express and MongoDB API store annotations that researchers export as CSV."
   video: "HqV5deCIMXA"
   slides: ""
@@ -195,7 +195,7 @@
   year: 2023
   type: "CRF"
   people: ["kameron-keller", "dalton-shults"]
-  tags: ["Music Emotion", "Recommendation", "Rhythm", "Health", "Apps"]
+  tags: ["Rhythm", "Health", "Apps"]
   summary: "Generates exercise workouts from any song. The song is segmented into labeled sections of similar material, each section is mapped to an exercise that fits its rhythm and energy, and a generated video guides the user through the routine with repetition timing that matches the beat."
   video: "G7uD60NkERM"
   slides: "projects/2023-algorhythms-slides.pdf"
@@ -210,7 +210,7 @@
   year: 2023
   type: "Capstone"
   people: ["cole-theodore", "miya-degeer", "anju-mathew", "jesse-piccione", "caleb-elson"]
-  tags: ["Bioacoustics", "Environment", "Datasets", "Apps"]
+  tags: ["Audio Tagging", "Signal Processing", "Bioacoustics", "Environment", "Datasets", "Apps"]
   summary: "A web hub where ornithologists explore, clean and label bird song recordings. Audio analysis automatically extracts bird calls from hour-long field recordings, and a machine learning pipeline suggests species, giving amateurs and experts a second opinion while saving hours of listening. It also serves as a repository of bird audio."
   video: "TAsvN3JgTBM"
   slides: ""
@@ -225,7 +225,7 @@
   year: 2023
   type: "Research"
   people: ["samson-devol", "jonah-broyer"]
-  tags: ["Music Emotion", "Computer Vision", "Datasets"]
+  tags: ["Speech & Text", "Computer Vision", "Datasets"]
   summary: "Collects historical concert programs from the web, converts them to text with optical character recognition, and organizes them in a searchable repository. Users can filter by attributes and download the data, which is ready to feed to a range of deep learning algorithms for research on music and text."
   video: "Y7WHteOsbTk"
   slides: ""
@@ -255,7 +255,7 @@
   year: 2023
   type: "CRF"
   people: ["samson-devol"]
-  tags: ["Perception", "Hearing", "Health", "Apps", "Interfaces"]
+  tags: ["Perception", "Hearing", "Signal Processing", "Health", "Apps", "Interfaces"]
   summary: "A website that simulates hearing loss. Audio is filtered through an adjustable audiogram, so listeners can hear how different types and degrees of hearing loss change familiar sounds. The goal is to build understanding and empathy, encourage accessible design and promote the prevention of hearing damage."
   video: "ipQkl6GNp4w"
   slides: ""
@@ -300,7 +300,7 @@
   year: 2023
   type: "Capstone"
   people: ["caleb-knight", "scott-rein", "mason-mann"]
-  tags: ["Transcription", "Datasets"]
+  tags: ["Transcription", "Multimodal", "Datasets", "Apps"]
   summary: "A website that crowdsources synchronized audio and MIDI recordings from musicians around the world, building a dataset for training models that transcribe music scores directly from audio. A public repository lets researchers search, filter and download the paired audio and MIDI files for their own work."
   video: "Qgrd5PeclrI"
   slides: ""
@@ -436,7 +436,7 @@
   year: 2022
   type: "Grant project"
   people: ["matt-morgan"]
-  tags: ["Computer Vision", "Sustainability", "Health"]
+  tags: ["Computer Vision", "Health", "Datasets"]
   summary: "Toward a camera that logs meals automatically instead of a written food diary. The team assembled a dataset of annotated images containing several foods and trained a PyTorch model that recognizes and locates 18 foods with 91% accuracy, a baseline for tracking nutrition in hospitals, schools and correctional facilities."
   video: ""
   slides: ""
@@ -451,7 +451,7 @@
   year: 2022
   type: "NCUR"
   people: ["matt-morgan"]
-  tags: ["Computer Vision", "Sustainability", "Health"]
+  tags: ["Computer Vision", "Health", "Datasets"]
   summary: "Lays the groundwork for a camera that logs every meal automatically and stores the record in the cloud for nutritionists. The team prepared a machine learning dataset of food images and built a model that recognizes multiple foods in one picture, aiming to help reduce malnutrition in schools and hospitals."
   video: "xmswDkaExhQ"
   slides: "projects/2022-multi-food-items-detection-and-localization-in-images-slides.pdf"
@@ -481,7 +481,7 @@
   year: 2022
   type: "URSA"
   people: ["max-wild"]
-  tags: ["Music Theory", "Generation"]
+  tags: ["Music Theory"]
   summary: "A flexible Python toolkit and data representation for loading, storing and manipulating symbolic music notation. It is designed so researchers can evaluate and generate music with artificial intelligence and machine learning algorithms, without first writing their own code to parse and convert score formats."
   video: "3GlCB73zUlA"
   slides: "projects/2022-musicai-slides.pdf"
@@ -526,7 +526,7 @@
   year: 2021
   type: "NCUR"
   people: ["victoria-ebert"]
-  tags: ["Transcription", "Signal Processing"]
+  tags: ["Transcription", "Audio Models"]
   summary: "Automatic music transcription, converting audio recordings into the notes that were played, is a hard problem in music information retrieval. This project transcribes directly from raw audio waveforms with a bidirectional LSTM network, producing a time-series MIDI representation of the performance without spectral preprocessing."
   video: "InUuROiyrEc"
   slides: ""
@@ -602,7 +602,7 @@
   year: 2021
   type: "URSA"
   people: ["alex-prestwich"]
-  tags: ["Voice", "Speech & Text", "Signal Processing"]
+  tags: ["Voice", "Speech & Text", "Signal Processing", "Datasets"]
   summary: "Can a model tell how a crowd voted just by listening? Recordings of single people saying yes or no were mixed into crowds of one to ten simultaneous voices, labeled with the proportion of each answer. BLSTM models trained on raw audio then predicted the crowd's average response."
   video: "A6bktmCS2FA"
   slides: ""
@@ -617,7 +617,7 @@
   year: 2020
   type: "URSA"
   people: ["parker-carlson"]
-  tags: ["Music Theory", "Audio Synthesis", "Signal Processing"]
+  tags: ["Audio Synthesis", "Signal Processing"]
   summary: "Uses deep recurrent neural networks to transpose audio, shifting pitch and harmonics to new frequencies in near real time, unlike slow sample-by-sample generators. The network learned encodings of pitch and timbre, and generalized from synthetic monophonic training sounds to real polyphonic music while keeping its tone color."
   video: "l093vhJXY-g"
   slides: ""
@@ -632,7 +632,7 @@
   year: 2020
   type: "URSA"
   people: ["victoria-ebert"]
-  tags: ["Transcription", "Signal Processing"]
+  tags: ["Transcription", "Audio Models"]
   summary: "Converts audio recordings of music into MIDI, a hard problem in music information retrieval that has been attempted with many network types and data formats. This project pairs a bidirectional LSTM network with a time-series MIDI representation to transcribe the notes directly from audio."
   video: "VYiwz89rWZ4"
   slides: ""
@@ -692,7 +692,7 @@
   year: 2020
   type: "URSA"
   people: ["erick-branner"]
-  tags: ["Perception", "Hearing", "Health"]
+  tags: ["Perception", "Hearing", "Signal Processing", "Health", "Apps"]
   summary: "A web app that lets listeners hear how partial hearing loss changes familiar sounds. Audio is filtered according to a pure-tone audiogram, the standard clinical chart of hearing, using peaking filters that reproduce several common patterns of loss, to build understanding of how others perceive the world."
   video: "R8Hyd92aXqI"
   slides: ""
@@ -707,7 +707,7 @@
   year: 2020
   type: "URSA"
   people: ["chitali-buge"]
-  tags: ["Perception", "Audio Synthesis", "Health", "Interfaces"]
+  tags: ["Perception", "Timbre", "Audio Synthesis", "Health", "Interfaces"]
   summary: "Hospital vital-sign monitors sound only heart rate, as rhythm, and blood pressure, as pitch. Adding a third measure, blood oxygen level, by changing the timbre of the alert sound would let clinicians hear more of a patient's condition without looking at the screen."
   video: "jP-JpDugG9w"
   slides: ""
