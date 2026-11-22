@@ -16,9 +16,11 @@ $luminance: #ffb500;
   --global-theme-color: #{$beaver-orange};
   --global-hover-color: #{$beaver-orange};
   --global-text-color: #{$copy};
-  --global-bg-color: #ffffff;
+  --global-bg-color: #{$off-white}; // OSU web page background
   --global-card-bg-color: #ffffff;
-  --sb-band-bg: #{$off-white};
+  --sb-band-bg: #ffffff;
+  --sb-heading-color: #{$beaver-orange};
+  --sb-link-color: #{$copy};
   --sb-chip-text: #{$copy};
   --global-footer-bg-color: #{$dark-bg};
   --global-footer-text-color: #{$nav-grey};
@@ -33,6 +35,8 @@ html[data-theme="dark"] {
   --global-card-bg-color: #2b3035;
   --sb-band-bg: #2b3035;
   --sb-chip-text: #e9e5e4;
+  --sb-heading-color: #{$luminance};
+  --sb-link-color: #e9e5e4;
 }
 
 // Links get an underline so colour is not the only cue (OSU web guidance).
@@ -452,5 +456,137 @@ html[data-theme="dark"] .sb-venue {
       width: auto;
       margin-bottom: 0.25rem;
     }
+  }
+}
+
+
+/* ---------- OSU-Cascades look (osucascades.edu/research/events) ----------
+   Open Sans body text; page titles and h2 in a condensed face (OSU uses the
+   licensed Stratum2; Barlow Semi Condensed is the closest free match);
+   orange page titles and h3 subheads; dark underlined links; bold item titles. */
+$sb-body-font: "Open Sans", -apple-system, "Segoe UI", Roboto, sans-serif;
+$sb-head-font: "Barlow Semi Condensed", "Arial Narrow", "Open Sans", sans-serif;
+
+body {
+  font-family: $sb-body-font;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--global-text-color);
+  background-color: var(--global-bg-color);
+}
+
+// white bar on the off-white page, like the OSU header
+#navbar,
+.navbar {
+  background-color: #ffffff !important;
+}
+
+html[data-theme="dark"] #navbar,
+html[data-theme="dark"] .navbar {
+  background-color: #{$dark-bg} !important;
+}
+
+.navbar-brand.title {
+  font-family: $sb-head-font;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+// page title: orange, condensed
+.post-header {
+  .post-title {
+    font-family: $sb-head-font;
+    font-weight: 700;
+    color: var(--sb-heading-color);
+    font-size: 2.6rem;
+    line-height: 1.1;
+    margin-bottom: 0.35rem;
+  }
+
+  .post-description {
+    color: var(--global-text-color);
+    font-size: 1.05rem;
+    margin-bottom: 1.25rem;
+  }
+}
+
+// section headings: condensed, dark and semi-bold
+article h2,
+.post h2,
+.publications h2.sb-section,
+h2.sb-year {
+  font-family: $sb-head-font;
+  font-weight: 600;
+  color: var(--global-text-color);
+  font-size: 1.9rem;
+  line-height: 1.15;
+  margin-top: 1.75rem;
+}
+
+// year rules in publication lists stay quiet
+.publications h2.bibliography {
+  font-family: $sb-head-font;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--global-text-color-light);
+}
+
+// subheads: orange Open Sans
+article h3,
+.post h3,
+.sb-group > h3 {
+  font-family: $sb-body-font;
+  font-weight: 500;
+  color: var(--sb-heading-color);
+  font-size: 1.4rem;
+  line-height: 1.3;
+  margin-top: 1.25rem;
+}
+
+// links in running text: copy colour, underlined; orange on hover
+article p a,
+article li a,
+.post p a,
+.post li a,
+.news a,
+.sb-related a,
+.sb-team a,
+.sb-work a {
+  color: var(--sb-link-color);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+
+  &:hover {
+    color: var(--global-theme-color);
+  }
+}
+
+// bold item titles, as on the OSU events list
+.publications ol.bibliography li .title,
+.sb-project-title,
+.sb-name {
+  font-weight: 700;
+}
+
+.publications ol.bibliography li .title {
+  color: var(--global-text-color);
+}
+
+// News table: dates in orange, like the event dates
+.news th[scope="row"] {
+  color: var(--sb-heading-color);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+// details toggles read as orange subheads
+details.sb-earlier > summary,
+details.sb-more > summary {
+  color: var(--sb-heading-color);
+}
+
+@media (max-width: 575px) {
+  .post-header .post-title {
+    font-size: 2.1rem;
   }
 }
