@@ -691,7 +691,7 @@
   type: "URSA"
   people: ["chitali-buge"]
   tags: ["Perception", "Audio Synthesis", "Health", "Interfaces"]
-  summary: "Hospital vital-sign monitors sound only heart rate, as rhythm, and blood pressure, as pitch. This project proposes adding a third measure, blood oxygen level, by changing the timbre of the alert sound, so clinicians could hear more of a patient's condition without looking at the screen."
+  summary: "Hospital vital-sign monitors sound only heart rate, as rhythm, and blood pressure, as pitch. Adding a third measure, blood oxygen level, by changing the timbre of the alert sound would let clinicians hear more of a patient's condition without looking at the screen."
   video: "jP-JpDugG9w"
   slides: ""
   poster: ""
