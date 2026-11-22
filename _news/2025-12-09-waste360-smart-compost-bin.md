@@ -9,4 +9,4 @@ inline: true
 related_posts: false
 ---
 
-Arlene Karidis covers the smart compost bin and quotes Patrick on designing it for household use.
+Arlene Karidis covers Oregon State's smart compost bin, its AI camera and companion app, alongside Jason and Quincy Clark's household food-waste research. Patrick explains why the bin was designed to be easy for households to use.
