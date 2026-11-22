@@ -131,7 +131,7 @@ donnelly2012standards:
   kind: "Paper"
   year: "2012"
   title: "A standards-based approach to gray-scale health assessment using fuzzy fault trees"
-  tags: "Sustainability|Datasets"
+  tags: ""
 donnelly2013classification:
   page: "/donnelly/"
   label: "Donnelly & Sheppard 2013"
