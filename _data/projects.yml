@@ -3,7 +3,7 @@
 #   type      URSA | NCUR | CRF | Layman Fellowship | Grant project | Capstone | Research
 #   people    ids from _data/people.yml     tags  theme tags (see _data/tags.yml)
 #   team      optional text shown instead of (or after) people, e.g. a team with no named members
-#   video     YouTube video ID              slides, poster, poster2  paths under assets/pdf/
+#   video     YouTube video ID (video2: optional second talk)              slides, poster, poster2  paths under assets/pdf/
 #   image     card image under assets/img/ (else the video thumbnail)
 #   related   bib keys of later papers or theses
 
@@ -22,6 +22,36 @@
   website: ""
   code: ""
 
+- id: "2025-llm-emotion-prediction"
+  title: "LLM Emotion Prediction"
+  year: 2025
+  type: "CRF"
+  people: ["isaac-brickner"]
+  tags: ["Music Emotion"]
+  summary: ""
+  video: "VKpTv3OJy1Y"
+  slides: ""
+  poster: ""
+  image: ""
+  website: ""
+  code: ""
+  related: []
+
+- id: "2025-sound-dataset-annotation-tool"
+  title: "Sound Dataset Annotation Tool"
+  year: 2025
+  type: "CRF"
+  people: ["daniel-lounsbury"]
+  tags: ["Tools"]
+  summary: ""
+  video: "2bl0nL1c2hk"
+  slides: ""
+  poster: ""
+  image: ""
+  website: ""
+  code: ""
+  related: []
+
 - id: "2024-algorhythms"
   title: "AlgoRhythms"
   year: 2024
@@ -29,7 +59,7 @@
   people: ["kameron-keller", "dalton-shults", "matthew-omalley-nichols"]
   tags: ["Music Emotion", "Health"]
   summary: "The AlgoRhythms mobile application generates a fun, interactive workout based on user-selected music. Using machine learning, we analyzed music and extracted data about its composition to build interactive workout visualizations in a mobile application. The application connects to a robust backend infrastructure that includes a Django API for passing data to the application, a PostgreSQL database for storing data, and an Nginx web server, all hosted on Amazon Web Services. AlgoRhythms focuses on creating a product that will let users pick the music they enjoy, providing them with a workout synchronized to their favorite music's rhythms. AlgoRhythms automatically generates your exercises, removing the need for prior exercise knowledge, lowering the barrier of entry for those new to working out, and providing variety for seasoned fitness enthusiasts. The application also provides detailed workout descriptions and video guides for each exercise. The project is currently entering a testing Alpha phase and is unavailable to the public. To learn more, contact Dalton, Kameron, or Matthew via LinkedIn by hovering over the images below."
-  video: ""
+  video: "ypiphXN5uuU"
   slides: ""
   poster: "projects/2024-algorhythms-poster.pdf"
   image: "projects/2024-algorhythms.png"
@@ -75,7 +105,7 @@
   people: ["matthew-omalley-nichols"]
   tags: ["Signal Processing"]
   summary: ""
-  video: ""
+  video: "aMbrJmQmweI"
   related: []
   slides: ""
   poster: "projects/2024-hierarchical-spectral-clustering-poster.pdf"
@@ -98,6 +128,21 @@
   code: ""
   related: ["leib2025interpreting", "leib2026time"]
 
+- id: "2024-sound-annotation-tool"
+  title: "Sound Annotation Tool"
+  year: 2024
+  type: "Independent study"
+  people: ["andrew-young"]
+  tags: ["Tools"]
+  summary: ""
+  video: "HqV5deCIMXA"
+  slides: ""
+  poster: ""
+  image: ""
+  website: ""
+  code: ""
+  related: []
+
 - id: "2024-walking-piano-interface"
   title: "Walking Piano Interface"
   year: 2024
@@ -105,7 +150,7 @@
   people: ["jake-anding", "devin-martin"]
   tags: ["Music Theory"]
   summary: "The Walking Piano project allows users to play various songs on a piano with a catch: the user must play with their feet! Our aim is to develop a standalone software that works alongside a physical MIDI piano controller that can be played by the user as they move across the physical piano. By providing simple guidance with colorful notes falling towards a visual piano for reference, the software will empower users of all skill levels to enjoy the unique experience of playing a large MIDI piano and creating incredible music, alone, or with a friend."
-  video: ""
+  video: "vvf6wcLTews"
   slides: ""
   poster: "projects/2024-walking-piano-interface-poster.pdf"
   image: "projects/2024-walking-piano-interface.png"
@@ -512,6 +557,7 @@
   tags: ["Music Emotion", "Speech & Language"]
   summary: "Determining the emotional affect of a song is a challenging task in the music information retrieval domain. Our research seeks to contribute a framework for predicting musical affect based on commentary from social media platforms. We extract features from comments by analyzing the sentiment of individual words."
   video: "E8lY8DfLb2I"
+  video2: "zFpPjxJeq54"
   slides: "projects/2021-semantic-analysis-of-music-discourse-slides.pdf"
   poster: "projects/2021-semantic-analysis-of-music-discourse-poster.pdf"
   image: "projects/2021-semantic-analysis-of-music-discourse.png"

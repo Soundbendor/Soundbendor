@@ -327,11 +327,11 @@
   campus: "Cascades"
   other_degrees: []
   activities: ["CRF"]
-  tags: []
+  tags: ["Music Emotion"]
   note: ""
   theses: []
   papers: []
-  projects: []
+  projects: ["2025-llm-emotion-prediction"]
   links:
     linkedin: ""
     github: ""
@@ -375,7 +375,7 @@
   note: ""
   theses: []
   papers: []
-  projects: []
+  projects: ["2025-sound-dataset-annotation-tool"]
   links:
     linkedin: ""
     github: ""
@@ -903,7 +903,7 @@
   note: ""
   theses: []
   papers: []
-  projects: ["2023-music-affect-app"]
+  projects: ["2024-sound-annotation-tool", "2023-music-affect-app"]
   links:
     linkedin: "https://www.linkedin.com/in/andyruwruw"
     github: ""

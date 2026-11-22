@@ -21,6 +21,7 @@
     {%- endif -%}
     <div class="links sb-links">
       {%- if pr.video != "" %}<a class="btn btn-sm z-depth-0" href="https://www.youtube.com/watch?v={{ pr.video }}">Video</a>{% endif -%}
+      {%- if pr.video2 and pr.video2 != "" %}<a class="btn btn-sm z-depth-0" href="https://www.youtube.com/watch?v={{ pr.video2 }}">Video 2</a>{% endif -%}
       {%- if pr.slides != "" %}<a class="btn btn-sm z-depth-0" href="{{ pr.slides | prepend: '/assets/pdf/' | relative_url }}">Slides</a>{% endif -%}
       {%- if pr.poster != "" %}<a class="btn btn-sm z-depth-0" href="{{ pr.poster | prepend: '/assets/pdf/' | relative_url }}">Poster</a>{% endif -%}
       {%- if pr.poster2 and pr.poster2 != "" %}<a class="btn btn-sm z-depth-0" href="{{ pr.poster2 | prepend: '/assets/pdf/' | relative_url }}">Poster 2</a>{% endif -%}
@@ -32,6 +33,9 @@
         <summary>{% if pr.video != "" %}Watch and read more{% else %}Read more{% endif %}</summary>
         {%- if pr.video != "" -%}
           <div class="sb-video"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/{{ pr.video }}" title="{{ pr.title }}" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+        {%- endif -%}
+        {%- if pr.video2 and pr.video2 != "" -%}
+          <div class="sb-video"><iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/{{ pr.video2 }}" title="{{ pr.title }} (second video)" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
         {%- endif -%}
         {%- if pr.summary != "" %}<p>{{ pr.summary }}</p>{% endif -%}
       </details>
