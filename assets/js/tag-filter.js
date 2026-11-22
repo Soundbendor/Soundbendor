@@ -9,6 +9,10 @@
       var item = el.closest(".publications li") || el;
       item.classList.toggle("sb-hidden", !!tag && tags.indexOf(tag) === -1);
     });
+    // hide collapsible year groups that have nothing left to show
+    document.querySelectorAll("details.sb-year").forEach(function (d) {
+      d.classList.toggle("sb-hidden", d.querySelectorAll("li:not(.sb-hidden)").length === 0);
+    });
     // hide year headings (and their lists) that have nothing left to show
     document.querySelectorAll(".publications h2.bibliography").forEach(function (h) {
       var list = h.nextElementSibling;
@@ -57,6 +61,22 @@
     apply(tag);
   });
 
+  // .sb-year-toggle: wrap each year heading and its list in a <details>, open by default
+  function wrapYears() {
+    document.querySelectorAll(".sb-year-toggle h2.bibliography").forEach(function (h) {
+      var list = h.nextElementSibling;
+      if (!list || list.tagName !== "OL") return;
+      var d = document.createElement("details");
+      d.className = "sb-year";
+      d.open = true;
+      var sum = document.createElement("summary");
+      h.parentNode.insertBefore(d, h);
+      sum.appendChild(h);
+      d.appendChild(sum);
+      d.appendChild(list);
+    });
+  }
+
   // hide chips for tags that nothing on this page carries
   function hideEmptyChips() {
     var used = {};
@@ -73,6 +93,7 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     if (!document.querySelector(".sb-filter")) return;
+    wrapYears();
     hideEmptyChips();
     apply(current());
   });

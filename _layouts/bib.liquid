@@ -4,7 +4,8 @@
   Soundbendor override of al_folio_core 1.0.15 _layouts/bib.liquid.
   Changes: clearer button labels (Abstract, BibTeX, Publisher page); data-tags on the row; Data button for entry.data; venue badge column always on (no thumbnails);
   the bib "note" field (a CV annotation) is not shown; Archive/Link button for entry.url;
-  theme-tag chips and a closed-by-default "Related (n)" toggle on one line after the buttons.
+  theme-tag chips and a closed-by-default "Related (n)" toggle on one line after the buttons;
+  venue line drops "In", "Proceedings of the" and a trailing "(ACRONYM YEAR)" (the bib keeps them); date in span.sb-date.
   After a gem update, re-diff with: bundle exec al-folio upgrade overrides diff _layouts/bib.liquid
 {%- endcomment -%}
 {%- assign sb_tags = entry.keywords | split: ',' -%}
@@ -177,10 +178,23 @@
     <!-- Journal/Book title and date -->
     {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
     {% assign thesis = 'thesis,mastersthesis,phdthesis' | split: ',' %}
+    {%- comment -%} Soundbendor: venue shown without "In" / "Proceedings of the" and without a trailing "(ACRONYM YEAR)" {%- endcomment -%}
+    {% assign sb_venue = entry.journal %}
+    {% if proceedings contains entry.type %}{% assign sb_venue = entry.booktitle %}{% endif %}
+    {% assign sb_first = sb_venue | slice: 0, 19 %}
+    {% if sb_first == 'Proceedings of the ' or sb_first == 'Proceedings on the ' %}
+      {% assign sb_venue = sb_venue | slice: 19, 500 %}
+    {% endif %}
+    {% assign sb_last = sb_venue | slice: -1, 1 %}
+    {% if sb_last == ')' %}
+      {% assign sb_paren = sb_venue | split: ' (' | last %}
+      {% assign sb_cut = ' (' | append: sb_paren %}
+      {% assign sb_venue = sb_venue | remove: sb_cut %}
+    {% endif %}
     {% if entry.type == 'article' %}
-      {% capture entrytype %}<em>{{ entry.journal }}</em>{% endcapture %}
+      {% capture entrytype %}<em>{{ sb_venue }}</em>{% endcapture %}
     {% elsif proceedings contains entry.type %}
-      {% capture entrytype %}<em>In {{ entry.booktitle }}</em>{% endcapture %}
+      {% capture entrytype %}<em>{{ sb_venue }}</em>{% endcapture %}
     {% elsif thesis contains entry.type %}
       {% capture entrytype %}<em>{{ entry.school }}</em>{% endcapture %}
     {% else %}
@@ -205,7 +219,7 @@
       {% include hook/bib.liquid %}
     {% endif %}
     {% assign entrytype_text = entrytype | strip_html | strip %}
-    {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
+    {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}<span class="sb-date">{{ entrymonth | append: entryyear | strip }}</span>{% endcapture %}
     <div class="periodical">
       {{ periodical | strip }}
     </div>

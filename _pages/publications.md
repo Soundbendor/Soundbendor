@@ -9,8 +9,6 @@ nav_order: 2
 
 {% include tag_filter.liquid %}
 
-<div class="publications">
+<div class="publications sb-year-toggle">
 {% bibliography --file publications %}
 </div>
-
-Earlier work by Dr. Donnelly is on [his page]({{ '/donnelly/' | relative_url }}#earlier-work).

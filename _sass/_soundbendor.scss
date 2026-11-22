@@ -542,6 +542,44 @@ h2.sb-year {
   color: var(--global-text-color-light);
 }
 
+// collapsible year groups on Publications (built by tag-filter.js)
+details.sb-year {
+  > summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    &::-webkit-details-marker {
+      display: none;
+    }
+    &::before {
+      content: "\25B8";
+      color: var(--global-text-color-light);
+      font-size: 1.1rem;
+      transition: transform 0.15s;
+    }
+    h2.bibliography {
+      margin: 0.75rem 0 0.5rem;
+    }
+    &:hover h2.bibliography {
+      color: var(--global-theme-color);
+    }
+  }
+  &[open] > summary::before {
+    transform: rotate(90deg);
+  }
+}
+
+// month and year after the venue
+.publications .periodical .sb-date {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.9em;
+  color: var(--global-theme-color);
+  white-space: nowrap;
+}
+
 // subheads: orange Open Sans
 article h3,
 .post h3,
