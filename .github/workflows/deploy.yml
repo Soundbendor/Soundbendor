@@ -8,6 +8,7 @@ on:
       - dev
     paths:
       - "assets/**"
+      - "_sass/**"
       - "**.bib"
       - "**.html"
       - "**.js"
