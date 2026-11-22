@@ -1,5 +1,7 @@
 # Lab members. Seeded 2026-11-21 from the CV, the old site's database and the photo folder.
-# Edit by pull request. One entry per person:
+# Edit by pull request. Keep entries ordered: current before alumni; Ph.D., M.S., B.S.;
+# alumni by year (newest first); then by last name. The People page shows them in this order.
+# One entry per person:
 #   id        = photo file stem in assets/img/people/ (photo: "" shows the placeholder)
 #   status    current | alumni        level   phd | ms | bs (highest degree with the lab)
 #   year      graduation year (blank if unknown or current)
@@ -119,6 +121,28 @@
     scholar: ""
   now: ""
 
+- id: "alex-armendariz"
+  name: "Alex Armendariz"
+  photo: ""
+  status: "current"
+  level: "ms"
+  program: "M.S., Artificial Intelligence"
+  year: ""
+  campus: ""
+  other_degrees: []
+  activities: []
+  tags: []
+  note: ""
+  theses: []
+  papers: []
+  projects: []
+  links:
+    linkedin: ""
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
 - id: "abbey-hankins"
   name: "Abbey Hankins"
   photo: "abbey-hankins.jpeg"
@@ -141,16 +165,170 @@
     scholar: ""
   now: ""
 
-- id: "alex-armendariz"
-  name: "Alex Armendariz"
+- id: "brendan-bessman"
+  name: "Brendan Bessman"
+  photo: "brendan-bessman.jpg"
+  status: "current"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: ""
+  campus: "Bend"
+  other_degrees: []
+  activities: ["CRF"]
+  tags: []
+  note: ""
+  theses: []
+  papers: []
+  projects: []
+  links:
+    linkedin: "https://www.linkedin.com/in/bessmanb/"
+    github: ""
+    website: "https://brendanb627.github.io/"
+    scholar: ""
+  now: ""
+
+- id: "dylan-deforrest"
+  name: "Dylan DeForrest"
+  photo: "dylan-deforrest.jpg"
+  status: "current"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: ""
+  campus: "Bend"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Datasets", "Interfaces"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2026-sound-dataset-annotation-tool-capstone"]
+  links:
+    linkedin: ""
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "colin-mant"
+  name: "Colin Mant"
+  photo: "colin-mant.jpg"
+  status: "current"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: ""
+  campus: "Bend"
+  other_degrees: []
+  activities: ["CRF"]
+  tags: []
+  note: ""
+  theses: []
+  papers: []
+  projects: []
+  links:
+    linkedin: "https://www.linkedin.com/in/colinmant/"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "madison-neiswonger"
+  name: "Madison Neiswonger"
+  photo: "madison-neiswonger.jpg"
+  status: "current"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: ""
+  campus: "Bend"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Datasets", "Interfaces"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2026-sound-dataset-annotation-tool-capstone"]
+  links:
+    linkedin: "https://www.linkedin.com/in/madison-neiswonger/"
+    github: "https://github.com/MadsNeis"
+    website: "https://madison-neiswonger.figma.site/"
+    scholar: ""
+  now: ""
+
+- id: "eric-orr"
+  name: "Eric Orr"
+  photo: "eric-orr.jpg"
+  status: "current"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: ""
+  campus: "Bend"
+  other_degrees: []
+  activities: ["AMP", "CRF"]
+  tags: []
+  note: ""
+  theses: []
+  papers: []
+  projects: []
+  links:
+    linkedin: "https://www.linkedin.com/in/eric-orr-dev/"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "hunter-scholtz"
+  name: "Hunter Scholtz"
+  photo: "hunter-scholtz.jpg"
+  status: "current"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: ""
+  campus: "Bend"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Datasets", "Interfaces"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2026-sound-dataset-annotation-tool-capstone"]
+  links:
+    linkedin: "https://www.linkedin.com/in/hunter-scholz-971869296/"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "tyler-silva"
+  name: "Tyler Silva"
+  photo: "tyler-silva.jpg"
+  status: "current"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: ""
+  campus: "Bend"
+  other_degrees: []
+  activities: ["AMP", "CRF"]
+  tags: []
+  note: ""
+  theses: []
+  papers: []
+  projects: []
+  links:
+    linkedin: "https://www.linkedin.com/in/tylersilva23/"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "eames-smallwood"
+  name: "Eames Smallwood"
   photo: ""
   status: "current"
-  level: "ms"
-  program: "M.S., Artificial Intelligence"
+  level: "bs"
+  program: "B.S., Computer Science"
   year: ""
-  campus: ""
+  campus: "Bend"
   other_degrees: []
-  activities: []
+  activities: ["CRF"]
   tags: []
   note: ""
   theses: []
@@ -185,177 +363,23 @@
     scholar: ""
   now: ""
 
-- id: "brendan-bessman"
-  name: "Brendan Bessman"
-  photo: "brendan-bessman.jpg"
-  status: "current"
-  level: "bs"
-  program: "B.S., Computer Science"
-  year: ""
-  campus: "Bend"
-  other_degrees: []
-  activities: ["CRF"]
-  tags: []
+- id: "shaun-leib"
+  name: "Shaun Leib"
+  photo: "shaun-leib.jpg"
+  status: "alumni"
+  level: "ms"
+  program: "M.S., Computer Science"
+  year: "2026"
+  campus: "Corvallis"
+  other_degrees: ["B.S. 2025"]
+  activities: ["AMP", "CRF", "URSA", "Honors", "Capstone"]
+  tags: ["Music Emotion"]
   note: ""
-  theses: []
+  theses: ["leib2026time", "leib2025interpreting"]
   papers: []
-  projects: []
+  projects: ["2024-music-sentiment-analysis", "2022-music-sentiment-analysis"]
   links:
-    linkedin: "https://www.linkedin.com/in/bessmanb/"
-    github: ""
-    website: "https://brendanb627.github.io/"
-    scholar: ""
-  now: ""
-
-- id: "colin-mant"
-  name: "Colin Mant"
-  photo: "colin-mant.jpg"
-  status: "current"
-  level: "bs"
-  program: "B.S., Computer Science"
-  year: ""
-  campus: "Bend"
-  other_degrees: []
-  activities: ["CRF"]
-  tags: []
-  note: ""
-  theses: []
-  papers: []
-  projects: []
-  links:
-    linkedin: "https://www.linkedin.com/in/colinmant/"
-    github: ""
-    website: ""
-    scholar: ""
-  now: ""
-
-- id: "eames-smallwood"
-  name: "Eames Smallwood"
-  photo: ""
-  status: "current"
-  level: "bs"
-  program: "B.S., Computer Science"
-  year: ""
-  campus: "Bend"
-  other_degrees: []
-  activities: ["CRF"]
-  tags: []
-  note: ""
-  theses: []
-  papers: []
-  projects: []
-  links:
-    linkedin: ""
-    github: ""
-    website: ""
-    scholar: ""
-  now: ""
-
-- id: "tyler-silva"
-  name: "Tyler Silva"
-  photo: "tyler-silva.jpg"
-  status: "current"
-  level: "bs"
-  program: "B.S., Computer Science"
-  year: ""
-  campus: "Bend"
-  other_degrees: []
-  activities: ["AMP", "CRF"]
-  tags: []
-  note: ""
-  theses: []
-  papers: []
-  projects: []
-  links:
-    linkedin: "https://www.linkedin.com/in/tylersilva23/"
-    github: ""
-    website: ""
-    scholar: ""
-  now: ""
-
-- id: "eric-orr"
-  name: "Eric Orr"
-  photo: "eric-orr.jpg"
-  status: "current"
-  level: "bs"
-  program: "B.S., Computer Science"
-  year: ""
-  campus: "Bend"
-  other_degrees: []
-  activities: ["AMP", "CRF"]
-  tags: []
-  note: ""
-  theses: []
-  papers: []
-  projects: []
-  links:
-    linkedin: "https://www.linkedin.com/in/eric-orr-dev/"
-    github: ""
-    website: ""
-    scholar: ""
-  now: ""
-
-- id: "madison-neiswonger"
-  name: "Madison Neiswonger"
-  photo: "madison-neiswonger.jpg"
-  status: "current"
-  level: "bs"
-  program: "B.S., Computer Science"
-  year: ""
-  campus: "Bend"
-  other_degrees: []
-  activities: ["Capstone"]
-  tags: ["Datasets", "Interfaces"]
-  note: ""
-  theses: []
-  papers: []
-  projects: ["2026-sound-dataset-annotation-tool-capstone"]
-  links:
-    linkedin: "https://www.linkedin.com/in/madison-neiswonger/"
-    github: "https://github.com/MadsNeis"
-    website: "https://madison-neiswonger.figma.site/"
-    scholar: ""
-  now: ""
-
-- id: "dylan-deforrest"
-  name: "Dylan DeForrest"
-  photo: "dylan-deforrest.jpg"
-  status: "current"
-  level: "bs"
-  program: "B.S., Computer Science"
-  year: ""
-  campus: "Bend"
-  other_degrees: []
-  activities: ["Capstone"]
-  tags: ["Datasets", "Interfaces"]
-  note: ""
-  theses: []
-  papers: []
-  projects: ["2026-sound-dataset-annotation-tool-capstone"]
-  links:
-    linkedin: ""
-    github: ""
-    website: ""
-    scholar: ""
-  now: ""
-
-- id: "hunter-scholtz"
-  name: "Hunter Scholtz"
-  photo: "hunter-scholtz.jpg"
-  status: "current"
-  level: "bs"
-  program: "B.S., Computer Science"
-  year: ""
-  campus: "Bend"
-  other_degrees: []
-  activities: ["Capstone"]
-  tags: ["Datasets", "Interfaces"]
-  note: ""
-  theses: []
-  papers: []
-  projects: ["2026-sound-dataset-annotation-tool-capstone"]
-  links:
-    linkedin: "https://www.linkedin.com/in/hunter-scholz-971869296/"
+    linkedin: "https://www.linkedin.com/in/shaun-leib-72b84b264/"
     github: ""
     website: ""
     scholar: ""
@@ -378,50 +402,6 @@
   projects: []
   links:
     linkedin: "https://www.linkedin.com/in/janita-aamir/"
-    github: ""
-    website: ""
-    scholar: ""
-  now: ""
-
-- id: "jc-zontos"
-  name: "JC Zontos"
-  photo: "jc-zontos.png"
-  status: "alumni"
-  level: "ms"
-  program: "M.S., Artificial Intelligence"
-  year: "2025"
-  campus: "Corvallis"
-  other_degrees: []
-  activities: []
-  tags: []
-  note: ""
-  theses: []
-  papers: []
-  projects: []
-  links:
-    linkedin: "https://www.linkedin.com/in/jczontos/"
-    github: ""
-    website: ""
-    scholar: ""
-  now: "Adobe"
-
-- id: "shaun-leib"
-  name: "Shaun Leib"
-  photo: "shaun-leib.jpg"
-  status: "alumni"
-  level: "ms"
-  program: "M.S., Computer Science"
-  year: "2026"
-  campus: "Corvallis"
-  other_degrees: ["B.S. 2025"]
-  activities: ["AMP", "CRF", "URSA", "Honors", "Capstone"]
-  tags: ["Music Emotion"]
-  note: ""
-  theses: ["leib2026time", "leib2025interpreting"]
-  papers: []
-  projects: ["2024-music-sentiment-analysis", "2022-music-sentiment-analysis"]
-  links:
-    linkedin: "https://www.linkedin.com/in/shaun-leib-72b84b264/"
     github: ""
     website: ""
     scholar: ""
@@ -470,6 +450,28 @@
     website: ""
     scholar: ""
   now: "LinkedIn"
+
+- id: "jc-zontos"
+  name: "JC Zontos"
+  photo: "jc-zontos.png"
+  status: "alumni"
+  level: "ms"
+  program: "M.S., Artificial Intelligence"
+  year: "2025"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: []
+  tags: []
+  note: ""
+  theses: []
+  papers: []
+  projects: []
+  links:
+    linkedin: "https://www.linkedin.com/in/jczontos/"
+    github: ""
+    website: ""
+    scholar: ""
+  now: "Adobe"
 
 - id: "daniel-de-leon"
   name: "Daniel De Leon"
