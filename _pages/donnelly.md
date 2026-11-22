@@ -3,6 +3,10 @@ layout: page
 permalink: /donnelly/
 title: Patrick Donnelly
 description: Director, Soundbendor Lab
+_styles: >
+  .post-description { font-family: "Barlow Semi Condensed", "Arial Narrow", sans-serif; font-weight: 600;
+  font-size: 1.45rem !important; text-transform: uppercase; letter-spacing: 0.07em; color: #006a8e !important; }
+  html[data-theme="dark"] .post-description { color: #8cc8e0 !important; }
 nav: true
 nav_order: 6
 ---
@@ -10,7 +14,8 @@ nav_order: 6
 <img class="img-fluid rounded float-md-right ml-md-4 mb-3" style="max-width: 240px;" src="{{ '/assets/img/people/patrick-donnelly-2024.png' | relative_url }}" alt="Patrick Donnelly">
 
 Patrick Donnelly is an Associate Professor of Computer Science at Oregon State University, where he directs the Soundbendor Lab.
-Combining his background in machine learning and musicology, he uses computational approaches to better understand sound and music.
+Combining his background in machine learning and musicology, he uses computational approaches to better understand sound and music,
+studying music emotion, timbre, music theory, bioacoustics and sustainability.
 
 Patrick has always been fascinated by the intersection of math, music and language.
 As an undergraduate at Washington University in St. Louis he majored in computer science, music and Italian.
@@ -18,19 +23,18 @@ He received master's degrees in Computer Music and Musicology from the Peabody C
 and his Ph.D. in Computer Science from Montana State University in 2015, with a dissertation on classifying musical instrument timbre in polyphonic audio.
 As a postdoctoral researcher in the Emotive Computing Lab at the University of Notre Dame, he analyzed teachers' instructional practices using acoustic signal processing and machine learning.
 Before joining OSU in 2019 he taught computer science at Chico State.
-He teaches mainly on the OSU-Cascades campus in Bend and mentors students in Corvallis, in Bend and online through Ecampus.
+He teaches mainly on the OSU-Cascades campus in Bend and mentors undergraduate and graduate student researchers in Corvallis, in Bend and online through Oregon State Ecampus.
 
 <div class="sb-pi-links">
   <div>
     <a href="mailto:patrick.donnelly@oregonstate.edu"><i class="fa-solid fa-envelope"></i>patrick.donnelly@oregonstate.edu</a><span class="sb-sep">•</span>
-    <a href="https://scholar.google.com/citations?user=TFDLhm4AAAAJ"><i class="ai ai-google-scholar"></i>Google Scholar</a><span class="sb-sep">•</span>
     <a href="https://engineering.oregonstate.edu/about/directory/patrick-donnelly"><i class="fa-solid fa-building-columns"></i>OSU Engineering</a><span class="sb-sep">•</span>
-    <a href="https://osucascades.edu/directory/patrick-donnelly"><i class="fa-solid fa-mountain-sun"></i>OSU-Cascades</a>
+    <a href="https://osucascades.edu/directory/patrick-donnelly"><i class="fa-solid fa-mountain-sun"></i>OSU Cascades</a>
   </div>
   <div>
-    <a href="https://github.com/Soundbendor"><i class="fa-brands fa-github"></i>Soundbendor GitHub</a><span class="sb-sep">•</span>
-    <a href="https://github.com/donnpat"><i class="fa-brands fa-github"></i>Personal GitHub</a><span class="sb-sep">•</span>
-    <a href="https://www.youtube.com/@soundbendorlab7615"><i class="fa-brands fa-youtube"></i>Soundbendor YouTube</a>
+    <a href="https://scholar.google.com/citations?user=TFDLhm4AAAAJ"><i class="ai ai-google-scholar"></i>Google Scholar</a><span class="sb-sep">•</span>
+    <a href="https://github.com/Soundbendor"><i class="fa-brands fa-github"></i>GitHub</a><span class="sb-sep">•</span>
+    <a href="https://www.youtube.com/@soundbendorlab7615"><i class="fa-brands fa-youtube"></i>YouTube</a>
   </div>
 </div>
 

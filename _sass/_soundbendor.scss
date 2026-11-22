@@ -1568,12 +1568,18 @@ article > .sb-section-head:first-child {
   gap: 0.35rem;
   font-weight: 600;
   font-size: 1rem;
+  clear: both;
 
   > div {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     row-gap: 0.25rem;
+  }
+
+  .sb-sep {
+    margin: 0 0.75em;
   }
 
   a {
