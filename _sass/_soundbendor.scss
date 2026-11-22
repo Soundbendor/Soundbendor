@@ -1552,3 +1552,10 @@ article > .sb-section-head:first-child {
   vertical-align: -0.05em;
   color: var(--global-text-color-light);
 }
+
+// "Now: Employer" stays on one line
+.sb-now {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

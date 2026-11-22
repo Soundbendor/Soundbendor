@@ -7,7 +7,7 @@
 #   activities  URSA, CRF, NCUR, Honors, Capstone, AMP, Grant
 #   tags      theme tags (see _data/tags.yml)
 #   theses, papers  bib keys; projects  ids from _data/projects.yml
-#   now       alumni: current job or school, e.g. "Software engineer at X" (optional)
+#   now       alumni: current employer or school only, short enough for one line, e.g. "Intel" (optional)
 
 - id: "aidan-beery"
   name: "Aidan Beery"
@@ -301,7 +301,7 @@
   status: "alumni"
   level: "ms"
   program: "M.S., Computer Science"
-  year: ""
+  year: "2025"
   campus: "Corvallis"
   other_degrees: []
   activities: []
@@ -323,7 +323,7 @@
   status: "alumni"
   level: "ms"
   program: "M.S., Artificial Intelligence"
-  year: ""
+  year: "2025"
   campus: "Corvallis"
   other_degrees: []
   activities: []
@@ -425,7 +425,7 @@
     github: ""
     website: ""
     scholar: ""
-  now: "Machine Learning Engineer, Intel"
+  now: "Intel"
 
 - id: "vi-vuong"
   name: "Vi Vuong"
@@ -909,7 +909,7 @@
     github: ""
     website: ""
     scholar: ""
-  now: "Software Engineer at Paladin Data Corporation"
+  now: "Paladin Data"
 
 - id: "dalton-shults"
   name: "Dalton Shults"
@@ -1129,7 +1129,7 @@
     github: ""
     website: ""
     scholar: ""
-  now: "Software Developer at Autodesk"
+  now: "Autodesk"
 
 - id: "parker-carlson"
   name: "Parker Carlson"
@@ -1151,7 +1151,7 @@
     github: ""
     website: ""
     scholar: ""
-  now: "Doctoral candidate, University of California, Santa Barbara"
+  now: "UC Santa Barbara"
 
 - id: "hao-jun-chen"
   name: "Hao Jun Chen"
@@ -1327,7 +1327,7 @@
     github: ""
     website: ""
     scholar: ""
-  now: "Masters candidate, Radbound University"
+  now: "Radboud University"
 
 - id: "aj-gokule"
   name: "AJ Gokule"
@@ -1657,7 +1657,7 @@
     github: ""
     website: ""
     scholar: ""
-  now: "Software Engineer, Yoodli"
+  now: "Yoodli"
 
 - id: "michael-murad"
   name: "Michael Murad"
@@ -2053,7 +2053,7 @@
     github: ""
     website: ""
     scholar: ""
-  now: "Software Developer, PNC Financial Services"
+  now: "PNC Financial"
 
 - id: "victoria-ebert"
   name: "Victoria Ebert"
@@ -2075,7 +2075,7 @@
     github: ""
     website: ""
     scholar: ""
-  now: "Doctoral candidate (NLP), University of Washington"
+  now: "University of Washington"
 
 - id: "shayla-lane"
   name: "Shayla Lane"
@@ -2097,7 +2097,7 @@
     github: ""
     website: ""
     scholar: ""
-  now: "Software Engineering, Vector Care"
+  now: "Vector Care"
 
 - id: "marji-symonds"
   name: "Marji Symonds"
@@ -2119,7 +2119,7 @@
     github: ""
     website: ""
     scholar: ""
-  now: "Cybersecurity Specialist, U.S. Coast Guard"
+  now: "U.S. Coast Guard"
 
 - id: "thomas-burg"
   name: "Thomas Burg"

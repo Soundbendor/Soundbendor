@@ -19,16 +19,32 @@
       {{ p.name }}
     </div>
     {%- capture sb_sep %}<span class="sb-sep">•</span>{% endcapture -%}
-    {%- assign sb_prog = p.program | replace: ', ', sb_sep | replace: 'Computer Science', 'CS' | replace: 'Artificial Intelligence', 'AI' | replace: 'Mechanical Engineering', 'ME' | replace: 'Electrical Engineering', 'EE' -%}
+    {%- comment -%} Degree line: every degree with the lab in order, then major, then the year of the most recent finished degree {%- endcomment -%}
+    {%- assign sb_parts = p.program | split: ', ' -%}
+    {%- assign sb_main = sb_parts | first -%}
+    {%- assign sb_major = p.program | remove_first: sb_main | remove_first: ', ' | replace: 'Computer Science', 'CS' | replace: 'Artificial Intelligence', 'AI' | replace: 'Mechanical Engineering', 'ME' | replace: 'Electrical Engineering', 'EE' -%}
+    {%- assign sb_names = "" -%}{%- assign sb_last = "" -%}
+    {%- for d in p.other_degrees -%}
+      {%- assign dn = d | split: ' ' | first -%}{%- assign sb_names = sb_names | append: '|' | append: dn | append: '|' -%}
+      {%- assign dy = d | split: ' ' | last -%}{%- if dy != dn and dy > sb_last -%}{%- assign sb_last = dy -%}{%- endif -%}
+    {%- endfor -%}
+    {%- assign sb_names = sb_names | append: '|' | append: sb_main | append: '|' -%}
+    {%- assign sb_degs = "" -%}
+    {%- assign sb_order = "B.S.,M.S.,M.Eng.,Ph.D." | split: ',' -%}
+    {%- for dn in sb_order -%}
+      {%- assign needle = '|' | append: dn | append: '|' -%}
+      {%- if sb_names contains needle -%}{%- if sb_degs != "" -%}{%- assign sb_degs = sb_degs | append: sb_sep -%}{%- endif -%}{%- assign sb_degs = sb_degs | append: dn -%}{%- endif -%}
+    {%- endfor -%}
+    {%- assign sb_year = p.year -%}
+    {%- if sb_year == "" and p.status == "alumni" -%}{%- assign sb_year = sb_last -%}{%- endif -%}
     <div class="sb-meta">
-      {{ sb_prog }}{% if p.year != "" %}{{ sb_sep }}{{ p.year }}{% endif %}
+      {{ sb_degs }}{% if sb_major != "" %}{{ sb_sep }}{{ sb_major }}{% endif %}{% if sb_year != "" %}{{ sb_sep }}{{ sb_year }}{% endif %}
       {%- if p.campus != "" %}<br><span class="sb-campus">{{ p.campus }}</span>{% endif -%}
-      {%- if p.other_degrees.size > 0 %}<br>Also {{ p.other_degrees | join: ', ' }}{% endif -%}
       {%- if p.note != "" %}<br>{{ p.note }}{% endif -%}
     </div>
     {%- if p.now != "" %}<div class="sb-now">Now: {{ p.now }}</div>{% endif -%}
     {%- if p.activities.size > 0 -%}
-      <div class="sb-badges">{% for a in p.activities %}<span class="sb-badge">{{ a }}</span>{% endfor %}</div>
+      <div class="sb-badges">{% for a in p.activities %}<span class="sb-badge">{{ a | replace: "Honors", "HC" | replace: "Capstone", "Cap" }}</span>{% endfor %}</div>
     {%- endif -%}
     {%- comment -%} Work links by category (Paper, Thesis, Project, Capstone), each to the most recent item {%- endcomment -%}
     {%- assign n_pap = 0 -%}{%- assign y_pap = 0 -%}{%- assign k_pap = "" -%}
