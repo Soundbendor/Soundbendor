@@ -31,7 +31,7 @@
             {% endif %}
           </abbr>
         {% else %}
-          {%- assign sb_kind = "conf" -%}{%- if entry.venue_kind == "conference" -%}{%- elsif entry.type == "article" -%}{%- assign sb_kind = "journal" -%}{%- elsif entry.type == "incollection" or entry.type == "book" or entry.type == "inbook" -%}{%- assign sb_kind = "book" -%}{%- endif -%}
+          {%- assign sb_kind = "conf" -%}{%- if entry.type == "article" -%}{%- assign sb_kind = "journal" -%}{%- elsif entry.type == "incollection" or entry.type == "book" or entry.type == "inbook" -%}{%- assign sb_kind = "book" -%}{%- endif -%}
           <abbr class="sb-venue sb-venue-{{ sb_kind }}" title="{{ entry.abbr }}">{{ entry.abbr }}</abbr>
         {% endif %}
       {% elsif entry.school %}
