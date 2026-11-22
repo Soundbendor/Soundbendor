@@ -77,24 +77,9 @@
     });
   }
 
-  // hide chips for tags that nothing on this page carries
-  function hideEmptyChips() {
-    var used = {};
-    document.querySelectorAll("[data-tags]").forEach(function (el) {
-      (el.getAttribute("data-tags") || "").split("|").forEach(function (t) {
-        if (t) used[t] = true;
-      });
-    });
-    document.querySelectorAll(".sb-filter .sb-chip").forEach(function (c) {
-      var t = c.getAttribute("data-tag") || "";
-      if (t && !used[t]) c.hidden = true;
-    });
-  }
-
   document.addEventListener("DOMContentLoaded", function () {
     if (!document.querySelector(".sb-filter")) return;
     wrapYears();
-    hideEmptyChips();
     apply(current());
   });
 })();

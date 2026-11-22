@@ -22,13 +22,8 @@ engaging undergraduate and graduate students in Corvallis, Bend, and on Ecampus.
   <a class="sb-btn" href="{{ '/research/' | relative_url }}">Explore our research <i class="fa-solid fa-arrow-right"></i></a>
 </div>
 
-{% comment -%} only topics that have at least one paper on /publications/ {%- endcomment -%}
-{%- assign pubtags = "|" -%}
-{%- for e in site.data.bibkeys -%}{%- if e[1].page == "/publications/" -%}{%- assign pubtags = pubtags | append: e[1].tags | append: "|" -%}{%- endif -%}{%- endfor -%}
 <div class="sb-tags">
 {%- for t in site.data.tags -%}
-  {%- assign needle = "|" | append: t | append: "|" -%}
-  {%- unless pubtags contains needle -%}{%- continue -%}{%- endunless -%}
   <a class="sb-tag sb-t-{{ t | slugify }}" data-tag="{{ t }}" href="{{ '/publications/' | relative_url }}?tag={{ t | url_encode }}">{{ t }}</a>
 {%- endfor -%}
 </div>
