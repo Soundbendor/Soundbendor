@@ -1477,3 +1477,8 @@ article > .sb-section-head:first-child {
   font-style: normal;
   color: var(--global-text-color-light);
 }
+
+// pages without a description leave an empty subtitle; drop its space
+.post-description:empty {
+  display: none;
+}
