@@ -2104,6 +2104,8 @@ html[data-theme="dark"] .publications ol.bibliography li .abbr abbr.sb-venue-the
     gap: 0.9rem 2.5rem;
     margin: 0;
     font-size: 1.05rem;
+    flex: 1;                 // take the space beside the photo
+    justify-content: center; // and centre the two columns in it
   }
 
   @media (max-width: 640px) {
@@ -2111,7 +2113,7 @@ html[data-theme="dark"] .publications ol.bibliography li .abbr abbr.sb-venue-the
     align-items: flex-start;
     gap: 1rem;
 
-    .sb-pi-links { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.7rem 1.25rem; }
+    .sb-pi-links { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.7rem 1.25rem; justify-content: start; width: 100%; }
   }
 }
 
