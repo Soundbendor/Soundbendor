@@ -583,6 +583,28 @@
     scholar: ""
   now: ""
 
+- id: "kevin-ng"
+  name: "Kevin Ng"
+  photo: "kevin-ng.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2025"
+  campus: ""
+  other_degrees: []
+  activities: []
+  tags: ["Sustainability"]
+  note: ""
+  theses: []
+  papers: []
+  projects: []
+  links:
+    linkedin: ""
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
 - id: "will-richards"
   name: "Will Richards"
   photo: "will-richards.jpeg"
@@ -605,6 +627,28 @@
     scholar: ""
   now: "Quantiiv"
 
+- id: "nathan-rumsey"
+  name: "Nathan Rumsey"
+  photo: "nathan-rumsey.jpg"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2025"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["URSA"]
+  tags: []
+  note: ""
+  theses: []
+  papers: []
+  projects: []
+  links:
+    linkedin: "https://www.linkedin.com/in/nathan-s-rumsey/"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
 - id: "jake-anding"
   name: "Jake Anding"
   photo: "jake-anding.jpg"
@@ -622,6 +666,28 @@
   projects: ["2024-walking-piano-interface"]
   links:
     linkedin: "https://www.linkedin.com/in/wesleyanding/"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "thomas-burg"
+  name: "Thomas Burg"
+  photo: "thomas-burg.png"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Bioengineering"
+  year: "2024"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["URSA"]
+  tags: ["Audio Tagging", "Timbre"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2021-identifying-musical-instruments-with-machine-learning"]
+  links:
+    linkedin: "https://www.linkedin.com/in/thomas-p-burg/"
     github: ""
     website: ""
     scholar: ""
@@ -2189,28 +2255,6 @@
     scholar: ""
   now: "U.S. Coast Guard"
 
-- id: "thomas-burg"
-  name: "Thomas Burg"
-  photo: "thomas-burg.png"
-  status: "alumni"
-  level: "bs"
-  program: "B.S., Bioengineering"
-  year: ""
-  campus: "Corvallis"
-  other_degrees: []
-  activities: ["URSA"]
-  tags: ["Audio Tagging", "Timbre"]
-  note: ""
-  theses: []
-  papers: []
-  projects: ["2021-identifying-musical-instruments-with-machine-learning"]
-  links:
-    linkedin: "https://www.linkedin.com/in/thomas-burg-27635b21b/"
-    github: ""
-    website: ""
-    scholar: ""
-  now: ""
-
 - id: "king-hin-chan"
   name: "King-Hin Chan"
   photo: "king-hin-chan.png"
@@ -2250,50 +2294,6 @@
   projects: []
   links:
     linkedin: "https://www.linkedin.com/in/bguerra841/"
-    github: ""
-    website: ""
-    scholar: ""
-  now: ""
-
-- id: "kevin-ng"
-  name: "Kevin Ng"
-  photo: "kevin-ng.png"
-  status: "alumni"
-  level: "bs"
-  program: "B.S., Computer Science"
-  year: ""
-  campus: ""
-  other_degrees: []
-  activities: []
-  tags: ["Sustainability"]
-  note: ""
-  theses: []
-  papers: []
-  projects: []
-  links:
-    linkedin: ""
-    github: ""
-    website: ""
-    scholar: ""
-  now: ""
-
-- id: "nathan-rumsey"
-  name: "Nathan Rumsey"
-  photo: "nathan-rumsey.jpg"
-  status: "alumni"
-  level: "bs"
-  program: "B.S., Computer Science"
-  year: ""
-  campus: "Corvallis"
-  other_degrees: []
-  activities: ["URSA"]
-  tags: []
-  note: ""
-  theses: []
-  papers: []
-  projects: []
-  links:
-    linkedin: ""
     github: ""
     website: ""
     scholar: ""

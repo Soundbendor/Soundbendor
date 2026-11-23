@@ -53,24 +53,28 @@ Soundbendor Lab supports undergraduate research through several different progra
   <div class="sb-join-card sb-accent-teal">
     <div class="sb-join-icon"><i class="fa-solid fa-flask"></i></div>
     <h3>URSA Engage</h3>
+    <div class="sb-degrees sb-campuses"><span>Corvallis</span><span>Bend</span><span>Ecampus</span></div>
     <p>A mentored first research experience for early undergraduates.</p>
     <a class="sb-more-link" href="https://undergradresearch.oregonstate.edu/ursa-engage">Learn more <i class="fa-solid fa-arrow-right"></i></a>
   </div>
   <div class="sb-join-card sb-accent-green">
     <div class="sb-join-icon"><i class="fa-solid fa-mountain-sun"></i></div>
     <h3>Cascades Research Fellowship</h3>
-    <p>A research fellowship for OSU-Cascades students in Bend.</p>
+    <div class="sb-degrees sb-campuses"><span>Bend</span></div>
+    <p>A research fellowship for OSU-Cascades students.</p>
     <a class="sb-more-link" href="https://osucascades.edu/research/students/cascades-research-and-scholarship-fellowship">Learn more <i class="fa-solid fa-arrow-right"></i></a>
   </div>
   <div class="sb-join-card sb-accent-orange">
     <div class="sb-join-icon"><i class="fa-solid fa-book-open"></i></div>
     <h3>Honors College</h3>
+    <div class="sb-degrees sb-campuses"><span>Corvallis</span><span>Bend</span></div>
     <p>An undergraduate research thesis through the Honors College.</p>
     <a class="sb-more-link" href="https://honors.oregonstate.edu/thesis-guide">Learn more <i class="fa-solid fa-arrow-right"></i></a>
   </div>
   <div class="sb-join-card sb-accent-teal">
     <div class="sb-join-icon"><i class="fa-solid fa-forward-fast"></i></div>
     <h3>Accelerated Master's Platform</h3>
+    <div class="sb-degrees sb-campuses"><span>Corvallis</span><span>Bend</span><span>Ecampus</span></div>
     <p>Begin graduate courses as an undergraduate, then finish the M.S.</p>
     <a class="sb-more-link" href="https://gradschool.oregonstate.edu/accelerated-masters-platform">Learn more <i class="fa-solid fa-arrow-right"></i></a>
   </div>

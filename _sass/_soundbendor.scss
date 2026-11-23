@@ -52,7 +52,6 @@ $sb-stratosphere: #006a8e;
 $sb-moondust: #c6dae7;
 $sb-star-canvas: #003b5c;
 $sb-rogue-wave: #0d5257;
-$sb-solar-flare: #d3832b;
 $sb-pine-stand: #4a773c;
 $sb-high-desert: #7a6855;
 $sb-crater: #8e9089;
@@ -74,7 +73,7 @@ $sb-tag-colors: (
   "audio-models": $sb-rogue-wave,
   "audio-synthesis": $sb-rogue-wave,
   "signal-processing": $sb-rogue-wave,
-  "computer-vision": $sb-solar-flare,
+  "computer-vision": $sb-rogue-wave,
   "bioacoustics": $sb-pine-stand,
   "environment": $sb-pine-stand,
   "sustainability": $sb-pine-stand,
@@ -558,7 +557,7 @@ html[data-theme="dark"] .navbar {
 
 // page title: orange, condensed; room above it so it isn't crowded by the navbar
 .post-header {
-  margin-top: 1.5rem;
+  margin-top: 2.75rem;
   margin-bottom: 1.75rem;
 
   .post-title {
@@ -1214,7 +1213,7 @@ $sb-kind-colors: (
 /* ---------- audit quick fixes ---------- */
 // Home logo: one per theme (display comes from .only-light/.only-dark)
 .sb-home-logo {
-  max-width: 380px;
+  max-width: 540px; // visible logo about as wide as the tagline below it
   width: 100%;
   height: auto;
   margin: 0 auto 1.25rem;
@@ -1890,4 +1889,46 @@ html[data-theme="dark"] .sb-cta {
     line-clamp: 2;
     overflow: hidden;
   }
+}
+
+/* ---------- venue badges: beat the theme's filled-orange rule for .abbr abbr ---------- */
+.publications ol.bibliography li .abbr abbr.sb-venue {
+  background: transparent !important;
+  border: 2px solid #{$beaver-orange};
+  color: #{$beaver-orange} !important;
+  font-weight: 700;
+}
+.publications ol.bibliography li .abbr abbr.sb-venue-journal {
+  border-color: #4a773c;
+  color: #4a773c !important;
+}
+.publications ol.bibliography li .abbr abbr.sb-venue-book {
+  border-color: #{$luminance};
+  color: #{mix($luminance, #423e3c, 55%)} !important;
+}
+html[data-theme="dark"] {
+  .publications ol.bibliography li .abbr abbr.sb-venue { border-color: #ff7a45; color: #ff7a45 !important; }
+  .publications ol.bibliography li .abbr abbr.sb-venue-journal { border-color: #8fbf7f; color: #8fbf7f !important; }
+  .publications ol.bibliography li .abbr abbr.sb-venue-book { border-color: #{$luminance}; color: #{$luminance} !important; }
+}
+
+/* ---------- Home: space under the Research themes heading ---------- */
+.sb-section-head + .sb-tags {
+  margin-top: 1.25rem;
+}
+
+/* ---------- footer: everything after the copyright in bold ---------- */
+.sb-foot-strong {
+  font-weight: 700;
+}
+
+/* ---------- People: collapsible group headings sit a little closer than page sections ---------- */
+.sb-people-grid + * { margin-top: 0; }
+
+// avoid a lone word on the last line of paragraphs (browsers that support it; others ignore it)
+article p,
+.sb-intro,
+.sb-news-summary,
+.sb-join-card p {
+  text-wrap: pretty;
 }

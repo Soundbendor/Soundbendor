@@ -1,6 +1,6 @@
 {%- comment -%} Soundbendor override of al_folio_core 1.0.15 _includes/footer.liquid: "© Copyright YEAR · " then footer_text (no repeated name). {%- endcomment -%}
 {% capture footer_contents %}
-  &copy; Copyright {{ site.time | date: '%Y' }} <span class="sb-sep">•</span> {{ site.footer_text }}
+  &copy; Copyright {{ site.time | date: '%Y' }} <span class="sb-sep">•</span> <span class="sb-foot-strong">{{ site.footer_text }}</span>
   {% if site.impressum_path %}
     <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
   {% endif %}

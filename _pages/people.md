@@ -25,28 +25,28 @@ nav_order: 1
   {% assign parts = g | split: ":" %}
   {% assign list = current | where: "level", parts[0] %}
   {% if list.size > 0 %}
-  <section class="sb-group">
-    <h3>{{ parts[1] }}</h3>
+  <details class="sb-year sb-group" open>
+    <summary><h3 class="sb-collapse-h">{{ parts[1] }}</h3></summary>
     <div class="sb-people-grid">{% for p in list %}{% include person_card.liquid p=p %}{% endfor %}</div>
-  </section>
+  </details>
   {% endif %}
 {% endfor %}
 
 <h2>Alumni</h2>
 {% assign grads = alumni | where_exp: "p", "p.level != 'bs'" %}
-<section class="sb-group">
-  <h3>Graduate students</h3>
+<details class="sb-year sb-group" open>
+  <summary><h3 class="sb-collapse-h">Graduate students</h3></summary>
   <div class="sb-people-grid">{% for p in grads %}{% include person_card.liquid p=p %}{% endfor %}</div>
-</section>
+</details>
 
 {% assign ugrads = alumni | where: "level", "bs" %}
 {% assign uyears = ugrads | map: "year" | uniq %}
 {% for y in uyears %}
-<section class="sb-group">
-  <h3>Undergraduates{% if y != "" %}, {{ y }}{% else %}, year not listed{% endif %}</h3>
+<details class="sb-year sb-group" open>
+  <summary><h3 class="sb-collapse-h">{% if y != "" %}Undergraduates, {{ y }}{% else %}Transferred{% endif %}</h3></summary>
   {% assign list = ugrads | where: "year", y %}
   <div class="sb-people-grid sb-compact-grid">{% for p in list %}{% include person_card.liquid p=p compact=true %}{% endfor %}</div>
-</section>
+</details>
 {% endfor %}
 
 <p class="sb-optout">Listed here by mistake, or want something changed or removed? Email <a href="mailto:{{ site.lab_email }}">{{ site.lab_email }}</a>.</p>
