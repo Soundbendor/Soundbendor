@@ -31,6 +31,25 @@ through hands-on projects with students in Corvallis, Bend,&nbsp;&amp;&nbsp;Ecam
 {%- endfor -%}
 </div>
 
+{% assign fd = site.data.featured_demo %}{% assign fd_cite = site.data.bibkeys[fd.paper] %}
+
+<div class="sb-section-head">
+  <h2 id="featured-demo">Featured Demo</h2>
+  <a class="sb-btn" href="{{ '/research/' | relative_url }}#datasets-and-code">All demos <i class="fa-solid fa-arrow-right"></i></a>
+</div>
+
+<div class="sb-feature">
+  <a class="sb-feature-imglink" href="{{ fd.url }}"><img class="sb-feature-img" src="{{ fd.image | prepend: '/assets/' | relative_url }}" alt="{{ fd.alt | escape }}"></a>
+  <div class="sb-feature-text">
+    <h3 class="sb-feature-title">{{ fd.title }}</h3>
+    <p>{{ fd.description }}</p>
+    <div class="sb-feature-foot">
+      <a class="sb-btn" href="{{ fd.url }}">Try the demo <i class="fa-solid fa-arrow-right"></i></a>
+      <span class="sb-feature-meta">{% for pid in fd.people %}{% assign fp = site.data.people | where: "id", pid | first %}{% if fp %}<a href="{{ '/people/' | relative_url }}#{{ pid }}">{{ fp.name }}</a>{% unless forloop.last %}, {% endunless %}{% endif %}{% endfor %}{% if fd_cite %}<span class="sb-sep">•</span>Cite: <a href="{{ fd_cite.page | relative_url }}#{{ fd.paper }}">{{ fd_cite.label }}</a>{% endif %}</span>
+    </div>
+  </div>
+</div>
+
 ## Recent News
 
 {% include sb_news.liquid limit=3 student=true %}

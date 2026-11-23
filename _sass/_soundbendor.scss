@@ -2252,3 +2252,51 @@ html[data-theme="dark"] {
   .sb-res-dataset { --sb-res: #5aa9c9; }
   .sb-res-code { --sb-res: #8fbf7f; }
 }
+
+/* ---------- Home: Featured Demo (content in _data/featured_demo.yml) ---------- */
+// a white card with the Demo colour (Beaver Orange) on its left edge, like the Demo cards on Research
+.sb-feature {
+  display: grid;
+  grid-template-columns: 340px minmax(0, 1fr);
+  gap: 1.75rem;
+  align-items: center;
+  margin-top: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--sb-band-bg);
+  border-radius: 0.5rem;
+  border-left: 4px solid #{$beaver-orange};
+}
+
+.sb-feature-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.35rem;
+  border: 1px solid var(--global-divider-color);
+  background: #ffffff;
+}
+
+.post .sb-feature-title {
+  margin: 0 0 0.5rem;
+}
+
+.sb-feature-text p {
+  margin: 0 0 1rem;
+}
+
+.sb-feature-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1.25rem;
+}
+
+.sb-feature-meta {
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+}
+
+@media (max-width: 700px) {
+  .sb-feature { grid-template-columns: minmax(0, 1fr); gap: 1rem; }
+  .sb-feature-img { max-width: 420px; }
+}
