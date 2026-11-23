@@ -40,6 +40,21 @@
   website: ""
   code: ""
 
+- id: "2024-concert-program-note-extraction"
+  title: "Concert Program Note Extraction"
+  year: 2026
+  type: "CRF"
+  people: ["alexander-miesbauer"]
+  tags: ["Music Emotion", "Language Models", "Datasets"]
+  related: ["khanal2025emotionotes"]
+  summary: "Pulls descriptions of individual pieces from New York Philharmonic concert programs to build an emotion dataset for classical music. Tf-idf first removes irrelevant text, cutting words by 74%, then Llama 3 isolates the note for a given piece. This work fed into the EmotioNotes dataset."
+  video: ""
+  slides: ""
+  poster: "projects/2024-concert-program-note-extraction-poster.pdf"
+  image: "projects/2024-concert-program-note-extraction.jpg"
+  website: ""
+  code: ""
+
 - id: "2025-llm-emotion-prediction"
   title: "LLM Emotion Prediction"
   year: 2025
@@ -115,21 +130,6 @@
   website: ""
   code: ""  # github.com/Soundbendor/smart-bin-app is private; add it back if the repo becomes public
   related: ["beery2024smart", "beery2025towards"]
-
-- id: "2024-concert-program-note-extraction"
-  title: "Concert Program Note Extraction"
-  year: 2024
-  type: "CRF"
-  people: ["alexander-miesbauer"]
-  tags: ["Music Emotion", "Language Models", "Datasets"]
-  related: ["khanal2025emotionotes"]
-  summary: "Pulls descriptions of individual pieces from New York Philharmonic concert programs to build an emotion dataset for classical music. Tf-idf first removes irrelevant text, cutting words by 74%, then Llama 3 isolates the note for a given piece. This work fed into the EmotioNotes dataset."
-  video: ""
-  slides: ""
-  poster: "projects/2024-concert-program-note-extraction-poster.pdf"
-  image: "projects/2024-concert-program-note-extraction.jpg"
-  website: ""
-  code: ""
 
 - id: "2024-hierarchical-spectral-clustering"
   title: "Hierarchical Spectral Clustering"
