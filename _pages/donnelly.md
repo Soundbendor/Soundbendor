@@ -16,7 +16,7 @@ nav_order: 6
   <div class="sb-pi-links">
     <!-- Contact -->
     <a href="mailto:patrick.donnelly@oregonstate.edu"><i class="fa-solid fa-envelope"></i>Email</a>
-    <a href="https://engineering.oregonstate.edu/about/directory/patrick-donnelly"><i class="fa-solid fa-building-columns"></i>OSU Engineering</a>
+    <a href="https://engineering.oregonstate.edu/about/directory/patrick-donnelly"><i class="fa-solid fa-building-columns"></i>OSU</a>
     <a href="https://osucascades.edu/directory/patrick-donnelly"><i class="fa-solid fa-mountain-sun"></i>OSU Cascades</a>
     <!-- Scholarship -->
     <a href="{{ '/assets/pdf/cv/donnelly-cv.pdf' | relative_url }}"><i class="fa-solid fa-file-lines"></i>CV</a>

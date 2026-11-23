@@ -2040,6 +2040,12 @@ html[data-theme="dark"] .sb-rarea-feature { color: #{$beaver-orange} !important;
 .sb-dataset-cite {
   font-size: 0.85rem;
   font-weight: 600;
+  color: var(--global-text-color-light);
+}
+.sb-dataset-cite a {
+  color: #{$beaver-orange};
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
 }
 
 // thesis badges (M.S., Honors, Ph.D., ...): Stratosphere blue, so they differ from conferences
