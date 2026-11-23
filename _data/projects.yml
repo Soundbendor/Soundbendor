@@ -262,7 +262,8 @@
   slides: ""
   poster: "projects/2023-hearing-simulator-poster.pdf"
   image: "projects/2023-hearing-simulator.png"
-  website: "https://hearingsimulator.com/"
+  website: ""
+  demo: "https://hearingsimulator.com/"
   code: ""
   related: []
 
