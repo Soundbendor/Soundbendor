@@ -1,9 +1,9 @@
 ---
 layout: post
-date: 2025-06-01
+date: 2025-06-15
 title: "Honors College highlights Shaun Leib's music emotion thesis"
 kind: Press
-when: "2025"
+when: "June 2025"
 student: true
 source: "OSU Honors College"
 link: https://honors.oregonstate.edu/tags/hc-graduates?page=13

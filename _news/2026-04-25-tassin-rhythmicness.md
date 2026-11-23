@@ -1,9 +1,8 @@
 ---
 layout: post
-date: 2026-02-01
+date: 2026-04-25
 title: "Ian Tassin publishes research on measuring rhythmicness"
 kind: Paper
-when: "2026"
 student: true
 source: "IHIET-AI 2026 (AHFE Open Access)"
 link: https://doi.org/10.54941/ahfe1007220

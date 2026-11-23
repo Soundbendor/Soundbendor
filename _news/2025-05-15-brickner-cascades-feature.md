@@ -1,9 +1,9 @@
 ---
 layout: post
-date: 2025-09-01
+date: 2025-05-15
 title: "OSU-Cascades features Isaac Brickner's music emotion research"
 kind: Press
-when: "2025"
+when: "May 2025"
 student: true
 source: "OSU-Cascades"
 link: https://osucascades.edu/simple-slider/research-find-solutions

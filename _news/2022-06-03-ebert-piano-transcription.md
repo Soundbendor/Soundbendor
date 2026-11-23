@@ -1,9 +1,9 @@
 ---
 layout: post
-date: 2022-06-01
+date: 2022-06-03
 title: "Victoria Ebert shares research on automatic piano transcription"
 kind: Event
-when: "2022"
+when: "Early June 2022"
 student: true
 source: "OSU Engineering Expo"
 link: https://events.engineering.oregonstate.edu/sites/expo.engr.oregonstate.edu/files/poster_v2_0.pdf

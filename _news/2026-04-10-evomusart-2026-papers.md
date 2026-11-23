@@ -1,9 +1,8 @@
 ---
 layout: post
-date: 2026-04-08
+date: 2026-04-10
 title: "Three Soundbendor papers at EvoMUSART 2026"
 kind: Paper
-when: "April 8–10, 2026"
 student: true
 source: "EvoMUSART 2026 proceedings (Springer)"
 link: https://link.springer.com/book/10.1007/978-3-032-24350-8
