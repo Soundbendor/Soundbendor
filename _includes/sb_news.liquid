@@ -3,7 +3,7 @@
                     {% include sb_news.liquid limit=3 %} (compact, newest first)
   Each _news item: title, date, kind (Press|Award|Talk|Funding|Event|Service|Paper), source,
   link, optional image (under assets/img/), when (shown instead of the date),
-  links (label/url list), student: true for student milestones; the body is a one- or
+  links (label/url list), student: true for student milestones, alumni: true adds an Alumni badge for news about former students; the body is a one- or
   two-sentence summary, at most two lines on the News page; titles fit on one line. With student=true, the compact list always includes a student item.
 {%- endcomment -%}
 {%- assign items = site.news | sort: "date" | reverse -%}

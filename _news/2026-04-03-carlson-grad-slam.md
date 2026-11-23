@@ -4,6 +4,7 @@ date: 2026-04-03
 title: "Parker Carlson runner-up at UCSB Engineering Grad Slam"
 kind: Award
 student: true
+alumni: true
 source: "UC Santa Barbara College of Engineering"
 link: https://engineering.ucsb.edu/node/4267
 inline: true

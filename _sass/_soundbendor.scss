@@ -2219,3 +2219,8 @@ html[data-theme="dark"] .publications ol.bibliography li .abbr abbr.sb-venue-the
 .sb-scholar-chart figcaption { margin-top: 1.3rem; font-size: 0.72rem; }
 
 html[data-theme="dark"] .sb-scholar-bar { background: #5aa9c9; }
+
+// second badge on news about former students
+.sb-news-kind.sb-news-alumni {
+  --sb-kind: #aa9d2e; // Hop Bine
+}

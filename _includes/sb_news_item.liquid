@@ -3,6 +3,7 @@
   <div class="sb-news-meta">
     <span class="sb-news-date">{% if n.when %}{{ n.when }}{% else %}{{ n.date | date: '%b %-d, %Y' }}{% endif %}</span>
     <span class="sb-news-kind">{{ n.kind }}</span>
+    {%- if n.alumni %}<span class="sb-news-kind sb-news-alumni">Alumni</span>{% endif -%}
   </div>
   <div class="sb-news-main">
     {%- if n.link contains '://' -%}{%- assign nl = n.link -%}{%- else -%}{%- assign nl = n.link | relative_url -%}{%- endif -%}
