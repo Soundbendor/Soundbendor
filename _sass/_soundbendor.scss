@@ -2025,3 +2025,13 @@ html[data-theme="dark"] .sb-rarea-feature { color: #{$beaver-orange} !important;
   font-size: 0.85rem;
   font-weight: 600;
 }
+
+// thesis badges (M.S., Honors, Ph.D., ...): Stratosphere blue, so they differ from conferences
+.publications ol.bibliography li .abbr abbr.sb-venue-thesis {
+  border-color: #006a8e;
+  color: #006a8e !important;
+}
+html[data-theme="dark"] .publications ol.bibliography li .abbr abbr.sb-venue-thesis {
+  border-color: #5aa9c9;
+  color: #5aa9c9 !important;
+}

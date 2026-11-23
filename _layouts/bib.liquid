@@ -36,7 +36,7 @@
           <abbr class="sb-venue sb-venue-{{ sb_kind }}" title="{{ entry.abbr }}">{{ entry.abbr }}</abbr>
         {% endif %}
       {% elsif entry.school %}
-        <abbr class="sb-venue" title="{{ entry.type }}">{{ entry.type | split: ' ' | first | replace: ',', '' }}</abbr>
+        <abbr class="sb-venue sb-venue-thesis" title="{{ entry.type }}">{{ entry.type | split: ' ' | first | replace: ',', '' }}</abbr>
       {% endif %}
       {% if entry.preview %}
         {%- comment -%}
