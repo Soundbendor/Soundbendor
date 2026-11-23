@@ -131,6 +131,10 @@ $sb-tag-colors: (
       --sb-tag-bg: #{rgba($c, 0.45)};
       --sb-tag-border: #{mix($c, #423e3c, 60%)};
       --sb-dot-edge: #{mix($c, #423e3c, 50%)};
+    } @else if lightness($c) < 30% {
+      // the dark families (Stratosphere, Star Canvas, Rogue Wave) read faint at 12%; give them a little more fill
+      --sb-tag-bg: #{rgba($c, 0.2)};
+      --sb-tag-border: #{rgba($c, 0.6)};
     } @else {
       --sb-tag-bg: #{rgba($c, 0.12)};
       --sb-tag-border: #{rgba($c, 0.45)};
