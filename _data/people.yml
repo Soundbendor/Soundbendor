@@ -539,6 +539,28 @@
     scholar: ""
   now: "Oregon State University"
 
+- id: "jake-anding"
+  name: "Jake Anding"
+  photo: "jake-anding.jpg"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2025"
+  campus: "Corvallis"
+  other_degrees: []
+  activities: ["Capstone"]
+  tags: ["Interfaces"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2024-walking-piano-interface"]
+  links:
+    linkedin: "https://www.linkedin.com/in/wesleyanding/"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
 - id: "isaac-brickner"
   name: "Isaac Brickner"
   photo: "isaac-brickner.jpeg"
@@ -627,6 +649,28 @@
     scholar: ""
   now: ""
 
+- id: "matthew-omalley-nichols"
+  name: "Matthew O'Malley-Nichols"
+  photo: "matthew-omalley-nichols.jpeg"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2025"
+  campus: "Bend"
+  other_degrees: []
+  activities: ["CRF", "Capstone"]
+  tags: ["Rhythm", "Health", "Interfaces", "Timbre", "Signal Processing"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2024-algorhythms", "2024-hierarchical-spectral-clustering"]
+  links:
+    linkedin: "https://www.linkedin.com/in/matthew-o-malley-nichols-b30725296/"
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
 - id: "will-richards"
   name: "Will Richards"
   photo: "will-richards.jpeg"
@@ -666,28 +710,6 @@
   projects: []
   links:
     linkedin: "https://www.linkedin.com/in/nathan-s-rumsey/"
-    github: ""
-    website: ""
-    scholar: ""
-  now: ""
-
-- id: "jake-anding"
-  name: "Jake Anding"
-  photo: "jake-anding.jpg"
-  status: "alumni"
-  level: "bs"
-  program: "B.S., Computer Science"
-  year: "2024"
-  campus: "Corvallis"
-  other_degrees: []
-  activities: ["Capstone"]
-  tags: ["Interfaces"]
-  note: ""
-  theses: []
-  papers: []
-  projects: ["2024-walking-piano-interface"]
-  links:
-    linkedin: "https://www.linkedin.com/in/wesleyanding/"
     github: ""
     website: ""
     scholar: ""
@@ -1000,28 +1022,6 @@
     website: ""
     scholar: ""
   now: "Garmin"
-
-- id: "matthew-omalley-nichols"
-  name: "Matthew O'Malley-Nichols"
-  photo: "matthew-omalley-nichols.jpeg"
-  status: "alumni"
-  level: "bs"
-  program: "B.S., Computer Science"
-  year: "2024"
-  campus: "Bend"
-  other_degrees: []
-  activities: ["CRF", "Capstone"]
-  tags: ["Rhythm", "Health", "Interfaces", "Timbre", "Signal Processing"]
-  note: ""
-  theses: []
-  papers: []
-  projects: ["2024-algorhythms", "2024-hierarchical-spectral-clustering"]
-  links:
-    linkedin: "https://www.linkedin.com/in/matthew-o-malley-nichols-b30725296/"
-    github: ""
-    website: ""
-    scholar: ""
-  now: ""
 
 - id: "blake-pugh"
   name: "Blake Pugh"
