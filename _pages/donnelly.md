@@ -36,8 +36,6 @@ Before joining OSU in 2019 he taught computer science at Chico State.
 He teaches mainly on the OSU-Cascades campus in Bend and mentors undergraduate and graduate student researchers in Corvallis, in Bend and online through Oregon State Ecampus.
 
 
-{% include sb_scholar.liquid %}
-
 <nav class="sb-jump" aria-label="On this page"><a href="#publications">Publications</a><a href="#earlier-work">Before 2020</a><a href="#theses">Student Theses</a><a href="#service">Service</a><a href="#funding">Funding</a><a href="#outside-the-lab">Outside the lab</a></nav>
 
 <div style="clear: both;"></div>
@@ -63,6 +61,8 @@ He teaches mainly on the OSU-Cascades campus in Bend and mentors undergraduate a
 {% bibliography --file theses-pi --group_by none %}
 </div>
 </details>
+
+{% include sb_scholar.liquid %}
 
 ## Service
 
