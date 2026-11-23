@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://soundbendor.github.io/Soundbendor/sitemap.xml
+Sitemap: https://www.soundbendor.org/sitemap.xml
