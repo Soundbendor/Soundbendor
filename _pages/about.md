@@ -57,6 +57,6 @@ through hands-on projects with students in Corvallis, Bend,&nbsp;&amp;&nbsp;Ecam
 <p class="sb-more-news"><a href="{{ '/news/' | relative_url }}">All news <i class="fa-solid fa-arrow-right"></i></a></p>
 
 <div class="sb-band sb-join-band">
-  <div>We welcome students with backgrounds in music and computer<br>science, from undergraduate research to the Ph.D.</div>
+  <div>We welcome students with backgrounds in music and computer science,<br>from their first undergraduate research project through doctoral study.</div>
   <a class="sb-btn" href="{{ '/join/' | relative_url }}">Join the lab <i class="fa-solid fa-arrow-right"></i></a>
 </div>
