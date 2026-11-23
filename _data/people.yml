@@ -495,6 +495,28 @@
     scholar: ""
   now: "Confidential Core AI"
 
+- id: "alexander-miesbauer"
+  name: "Alexander Miesbauer"
+  photo: "alexander-miesbauer.jpg"
+  status: "alumni"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: "2026"
+  campus: "Bend"
+  other_degrees: []
+  activities: ["CRF"]
+  tags: ["Music Emotion", "Language Models", "Datasets"]
+  note: ""
+  theses: []
+  papers: []
+  projects: ["2024-concert-program-note-extraction"]
+  links:
+    linkedin: ""
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
 - id: "vi-vuong"
   name: "Vi Vuong"
   photo: ""
@@ -952,28 +974,6 @@
   projects: []
   links:
     linkedin: "https://www.linkedin.com/in/vaylenmelendez/"
-    github: ""
-    website: ""
-    scholar: ""
-  now: ""
-
-- id: "alexander-miesbauer"
-  name: "Alexander Miesbauer"
-  photo: "alexander-miesbauer.jpg"
-  status: "alumni"
-  level: "bs"
-  program: "B.S., Computer Science"
-  year: "2024"
-  campus: "Bend"
-  other_degrees: []
-  activities: ["CRF"]
-  tags: ["Music Emotion", "Language Models", "Datasets"]
-  note: ""
-  theses: []
-  papers: []
-  projects: ["2024-concert-program-note-extraction"]
-  links:
-    linkedin: ""
     github: ""
     website: ""
     scholar: ""
