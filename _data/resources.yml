@@ -1,4 +1,5 @@
 # Datasets, code and demos on /research/#datasets-and-code. Only public, verified links.
+#   kind: Dataset | Code | Demo
 #   short: the one-sentence description shown on the page; description: longer note
 - name: SynTheory+
   kind: Dataset
@@ -15,3 +16,17 @@
   description: Historical New York Philharmonic concert program notes (from the 1840s on), with performance metadata and estimated valence, arousal and dominance scores, for music emotion recognition and cultural musicology.
   short: New York Philharmonic program notes from the 1840s on, with estimated emotion scores for music emotion research.
   paper: khanal2025emotionotes
+- name: Mood-Dynamic Playlist
+  kind: Demo
+  url: https://soundbendor-productivity-playlist-stream-a3w1d6.streamlit.app/
+  host: Streamlit
+  short: Build a playlist that moves smoothly from one song's mood to another's, plotted on the valence–arousal map.
+  description: Shaurya Gaur's interactive demo of the KNN playlist algorithm (IHIET-AI 2022, EvoMUSART 2024, Honors thesis 2023).
+  paper: gaur2024generating
+- name: Proto-Indo-European Text-to-Speech
+  kind: Demo
+  url: https://soundbendor-pie-phoneme-synthesis-srcappapp-sqgbyi.streamlit.app/
+  host: Streamlit
+  short: Hear hypothesized pronunciations of Proto-Indo-European words and fables, choosing the sound for each disputed phoneme.
+  description: Patrick Donnelly's concatenative phonetic synthesizer (ICNLSP 2022), built from phones of 100 languages.
+  paper: donnelly2022concatenative

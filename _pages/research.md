@@ -40,13 +40,13 @@ nav_order: 0
 </section>
 {% endfor %}
 
-## Datasets &amp; Code {#datasets-and-code}
+## Datasets, Code &amp; Demos {#datasets-and-code}
 
 <div class="sb-datasets">
 {%- for r in site.data.resources -%}
   {%- assign info = site.data.bibkeys[r.paper] -%}
   <div class="sb-dataset">
-    <div class="sb-dataset-name"><strong>{{ r.name }}</strong> <a class="sb-prog-link" href="{{ r.url }}">{{ r.host }}</a></div>
+    <div class="sb-dataset-name">{% if r.kind %}<span class="sb-dataset-kind">{{ r.kind }}</span> {% endif %}<strong>{{ r.name }}</strong> <a class="sb-prog-link" href="{{ r.url }}">{% if r.kind == "Demo" %}Open the demo{% else %}{{ r.host }}{% endif %}</a></div>
     <p>{{ r.short }}</p>
     {%- if info -%}<a class="sb-dataset-cite" href="{{ info.page | relative_url }}#{{ r.paper }}">Cite: {{ info.label }}</a>{%- endif -%}
   </div>

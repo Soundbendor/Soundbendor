@@ -6,6 +6,7 @@
 #   team      optional text shown instead of (or after) people, e.g. a team with no named members
 #   video     YouTube video ID (video2: optional second talk)              slides, poster, poster2  paths under assets/pdf/
 #   image     card image under assets/img/ (else the video thumbnail)
+#   demo      optional link to a live demo (shown as a Demo button)
 #   related   bib keys of later papers or theses
 
 - id: "2026-aura-capstone"
@@ -578,6 +579,7 @@
   poster: "projects/2021-mood-dynamic-playlists-poster.pdf"
   image: "projects/2021-mood-dynamic-playlists.png"
   website: ""
+  demo: "https://soundbendor-productivity-playlist-stream-a3w1d6.streamlit.app/"
   code: ""
   related: ["gaur2023mood", "donnelly2022mood", "gaur2024generating"]
 

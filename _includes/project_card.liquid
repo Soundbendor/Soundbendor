@@ -27,6 +27,7 @@
       {%- if pr.poster != "" %}<a class="btn btn-sm z-depth-0" href="{{ pr.poster | prepend: '/assets/pdf/' | relative_url }}">Poster</a>{% endif -%}
       {%- if pr.poster2 and pr.poster2 != "" %}<a class="btn btn-sm z-depth-0" href="{{ pr.poster2 | prepend: '/assets/pdf/' | relative_url }}">Poster 2</a>{% endif -%}
       {%- if pr.website != "" %}<a class="btn btn-sm z-depth-0" href="{{ pr.website }}">Website</a>{% endif -%}
+      {%- if pr.demo and pr.demo != "" %}<a class="btn btn-sm z-depth-0" href="{{ pr.demo }}">Demo</a>{% endif -%}
       {%- if pr.code != "" %}<a class="btn btn-sm z-depth-0" href="{{ pr.code }}">Code</a>{% endif -%}
     </div>
     <div class="sb-card-foot">

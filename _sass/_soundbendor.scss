@@ -2224,3 +2224,13 @@ html[data-theme="dark"] .sb-scholar-bar { background: #5aa9c9; }
 .sb-news-kind.sb-news-alumni {
   --sb-kind: #aa9d2e; // Hop Bine
 }
+
+// kind label on Datasets, Code & Demos cards
+.sb-dataset-kind {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #006a8e;
+  margin-right: 0.3rem;
+}

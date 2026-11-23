@@ -315,6 +315,9 @@
       {% if entry.website %}
         <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
       {% endif %}
+      {% if entry.demo %}
+        <a href="{{ entry.demo }}" class="btn btn-sm z-depth-0" role="button">Demo</a>
+      {% endif %}
       {% if entry.url %}
         {% if entry.school %}
           <a href="{{ entry.url }}" class="btn btn-sm z-depth-0" role="button">Archive</a>
