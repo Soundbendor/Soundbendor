@@ -54,7 +54,7 @@ Public data released with our papers. Each links to its paper for citation.
 {%- for r in site.data.resources -%}
   {%- assign info = site.data.bibkeys[r.paper] -%}
   <div class="sb-resource">
-    <div class="sb-resource-head"><span class="sb-news-kind">{{ r.kind }}</span> <a href="{{ r.url }}"><strong>{{ r.name }}</strong></a> <span class="sb-area-cite">on {{ r.host }}{% if r.license %} · {{ r.license }} license{% endif %}</span></div>
+    <div class="sb-resource-head"><span class="sb-news-kind">{{ r.kind }}</span> <a href="{{ r.url }}"><strong>{{ r.name }}</strong></a> <span class="sb-area-cite">on {{ r.host }}{% if r.license %}<span class="sb-sep">•</span>{{ r.license }} license{% endif %}</span></div>
     <p>{{ r.description }}</p>
     {%- if info -%}<div class="sb-area-cite">Cite: <a href="{{ info.page | relative_url }}#{{ r.paper }}">{{ info.title | default: info.label }}</a> ({{ info.label }})</div>{%- endif -%}
   </div>

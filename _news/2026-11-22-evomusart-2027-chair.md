@@ -11,5 +11,4 @@ links:
 inline: true
 related_posts: false
 ---
-
-Patrick is a conference chair of EvoMUSART 2027, the 16th International Conference on Artificial Intelligence in Music, Sound, Art and Design, March 31–April 2, 2027, in Mainz, Germany, and online.
+Patrick will co-chair EvoMUSART 2027, the 16th International Conference on AI in Music, Sound, Art and Design, March 31–April 2 in Mainz, Germany, and online.

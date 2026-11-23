@@ -9,13 +9,13 @@ nav_order: 7
 <figure class="sb-hero">
   <img src="{{ '/assets/img/news/lab-group-2023.jpg' | relative_url }}" alt="Soundbendor students and Dr. Donnelly testing the smart compost bin">
   <figcaption>
-    <span class="sb-hero-title">Music, sound and AI at Oregon State</span>
-    <span class="sb-hero-sub">Students from computer science, music, engineering and beyond</span>
+    <span class="sb-hero-title">Music, Sound, and AI at Oregon State</span>
+    <span class="sb-hero-sub">Students from computer science, music, engineering, and beyond</span>
   </figcaption>
 </figure>
 
-We are actively recruiting students with interdisciplinary backgrounds in music and computer science who want to combine these interests through research in artificial intelligence.
-Our students work on [music emotion, timbre, speech, bioacoustics and more]({{ '/projects/' | relative_url }}), and many have co-authored [papers]({{ '/publications/' | relative_url }}) and presented at national conferences.
+<p class="sb-join-intro">We are actively recruiting students with interdisciplinary backgrounds in music and computer science who want to combine these interests through research in artificial intelligence.
+Our students work on <a class="sb-hl-link" href="{{ '/projects/' | relative_url }}">projects</a> in <span class="sb-topics">music emotion, timbre, music theory, speech, bioacoustics, food waste and more</span>; many have co-authored <a class="sb-hl-link" href="{{ '/publications/' | relative_url }}">papers</a>, written <a class="sb-hl-link" href="{{ '/theses/' | relative_url }}">theses</a> and presented at national and international conferences, from NCUR to EvoMUSART, ICMI and ICNLSP.</p>
 
 ## Graduate students
 
@@ -24,7 +24,7 @@ Our students work on [music emotion, timbre, speech, bioacoustics and more]({{ '
     <div class="sb-join-icon"><i class="fa-solid fa-laptop-code"></i></div>
     <h3>Computer Science</h3>
     <div class="sb-degrees"><span>M.S.</span><span>M.Eng.</span><span>Ph.D.</span></div>
-    <p>For applicants with an undergraduate degree in computer science or a related field.</p>
+    <p>For applicants with an undergraduate degree in computer science or another closely related field.</p>
   </div>
   <div class="sb-join-card sb-accent-blue">
     <div class="sb-join-icon"><i class="fa-solid fa-brain"></i></div>
@@ -47,7 +47,7 @@ Our students work on [music emotion, timbre, speech, bioacoustics and more]({{ '
 
 ## Undergraduates
 
-OSU undergraduates join the lab in several ways. Several projects have led to conference papers and talks; see [Projects]({{ '/projects/' | relative_url }}) and [Theses]({{ '/theses/' | relative_url }}).
+Soundbendor Lab supports undergraduate research through several different programs.
 
 <div class="sb-join-grid sb-join-small">
   <div class="sb-join-card sb-accent-teal">
@@ -58,27 +58,21 @@ OSU undergraduates join the lab in several ways. Several projects have led to co
   </div>
   <div class="sb-join-card sb-accent-green">
     <div class="sb-join-icon"><i class="fa-solid fa-mountain-sun"></i></div>
-    <h3>Cascades Research and Scholarship Fellowship</h3>
+    <h3>Cascades Research Fellowship</h3>
     <p>A research fellowship for OSU-Cascades students in Bend.</p>
     <a class="sb-more-link" href="https://osucascades.edu/research/students/cascades-research-and-scholarship-fellowship">Learn more <i class="fa-solid fa-arrow-right"></i></a>
   </div>
   <div class="sb-join-card sb-accent-orange">
     <div class="sb-join-icon"><i class="fa-solid fa-book-open"></i></div>
-    <h3>Honors College thesis</h3>
+    <h3>Honors College</h3>
     <p>An undergraduate research thesis through the Honors College.</p>
     <a class="sb-more-link" href="https://honors.oregonstate.edu/thesis-guide">Learn more <i class="fa-solid fa-arrow-right"></i></a>
   </div>
   <div class="sb-join-card sb-accent-teal">
     <div class="sb-join-icon"><i class="fa-solid fa-forward-fast"></i></div>
-    <h3>Accelerated Master's Platform (AMP)</h3>
-    <p>Start graduate courses as an undergraduate and continue into the M.S. Several lab members have taken this path from the B.S. to the M.S.</p>
+    <h3>Accelerated Master's Platform</h3>
+    <p>Begin graduate courses as an undergraduate, then finish the M.S.</p>
     <a class="sb-more-link" href="https://gradschool.oregonstate.edu/accelerated-masters-platform">Learn more <i class="fa-solid fa-arrow-right"></i></a>
-  </div>
-  <div class="sb-join-card sb-accent-blue">
-    <div class="sb-join-icon"><i class="fa-solid fa-people-group"></i></div>
-    <h3>Senior capstone (EECS)</h3>
-    <p>Team projects that build tools, apps and datasets for the lab.</p>
-    <a class="sb-more-link" href="https://engineering.oregonstate.edu/EECS/alumni-industry/student-engagement/Capstone">Learn more <i class="fa-solid fa-arrow-right"></i></a>
   </div>
 </div>
 
@@ -87,7 +81,7 @@ OSU undergraduates join the lab in several ways. Several projects have led to co
     <div class="sb-cta-title">Get in touch</div>
     <div>Send a short note about your background and interests.</div>
   </div>
-  <a class="sb-cta-btn" href="mailto:{{ site.lab_email }}"><i class="fa-solid fa-envelope"></i> {{ site.lab_email }}</a>
+  <a class="sb-cta-btn" href="mailto:patrick.donnelly@oregonstate.edu"><i class="fa-solid fa-envelope"></i> Contact Us</a>
 </div>
 
 <div class="sb-dei">

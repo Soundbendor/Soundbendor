@@ -556,8 +556,11 @@ html[data-theme="dark"] .navbar {
   letter-spacing: 0.01em;
 }
 
-// page title: orange, condensed
+// page title: orange, condensed; room above it so it isn't crowded by the navbar
 .post-header {
+  margin-top: 1.5rem;
+  margin-bottom: 1.75rem;
+
   .post-title {
     font-family: $sb-head-font;
     font-weight: 700;
@@ -595,8 +598,20 @@ h2.sb-year {
   color: var(--global-text-color-light);
 }
 
-// collapsible year groups on Publications (built by tag-filter.js): the year heading keeps its
-// usual look (right-aligned, rule above); a small arrow after the year shows open or closed
+// collapsible group headings (Publications and News years, Projects years, Theses types):
+// right-aligned, a rule above, condensed grey; a small arrow after the text shows open or closed
+.post .sb-collapse-h,
+.post .publications h2.sb-collapse-h {
+  font-family: $sb-head-font;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--global-text-color-light);
+  text-align: right;
+  border-top: 1px solid var(--global-divider-color);
+  padding-top: 0.5rem;
+  margin: 1.25rem 0 0.75rem;
+}
+
 details.sb-year {
   > summary {
     display: block;
@@ -607,7 +622,7 @@ details.sb-year {
       display: none;
     }
 
-    h2.bibliography::after {
+    h2::after {
       content: "\25BE";
       display: inline-block;
       margin-left: 0.4em;
@@ -615,12 +630,12 @@ details.sb-year {
       transition: transform 0.15s;
     }
 
-    &:hover h2.bibliography {
+    &:hover h2 {
       color: var(--global-theme-color);
     }
   }
 
-  &:not([open]) > summary h2.bibliography::after {
+  &:not([open]) > summary h2::after {
     transform: rotate(90deg);
   }
 }
@@ -1054,8 +1069,8 @@ $sb-kind-colors: (
   display: grid;
   gap: 0.75rem;
 
-  .sb-year {
-    margin: 1.25rem 0 0.1rem;
+  details.sb-year > .sb-news-item + .sb-news-item {
+    margin-top: 0.75rem;
   }
 }
 
@@ -1541,13 +1556,18 @@ article > .sb-section-head:first-child {
 }
 
 // separator in the People degree line: Degree • Major • Year
+// the one bullet used site-wide between inline items (Degree • Major • Year, links rows, footer)
 .sb-sep {
   display: inline-block;
-  margin: 0 0.35em;
-  font-size: 1.15em;
+  margin: 0 0.5em;
+  font-size: 1.3em;
   line-height: 1;
-  vertical-align: -0.05em;
-  color: var(--global-text-color-light);
+  vertical-align: -0.08em;
+  color: #{$beaver-orange};
+  opacity: 0.6;
+}
+html[data-theme="dark"] .sb-sep {
+  color: #{$luminance};
 }
 
 // "Now: Employer" stays on one line
@@ -1741,8 +1761,133 @@ html[data-theme="dark"] .sb-status {
     color: var(--sb-heading-color);
   }
 
+  > h2 {
+    margin-bottom: 1.25rem;
+  }
+
   dd {
     margin: 0.15rem 0 0;
     font-size: 0.92rem;
+  }
+}
+
+/* ---------- list bullets: the same orange bullet as inline separators ---------- */
+article ul > li::marker {
+  color: #{$beaver-orange};
+  font-size: 1.15em;
+}
+html[data-theme="dark"] article ul > li::marker {
+  color: #{$luminance};
+}
+
+/* ---------- project cards: Read more on the left, Related on the right ---------- */
+.sb-card-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0 1rem;
+  margin-top: 0.5rem;
+
+  > details { margin-top: 0 !important; }
+  > details.sb-related { margin-left: auto; text-align: right; }
+  > details[open] { flex-basis: 100%; text-align: left; }
+}
+
+/* ---------- jump links (Research, PI page) centred ---------- */
+.sb-jump {
+  justify-content: center;
+}
+
+// program links in the Projects legend: the same rounded pill as News links
+.sb-prog-link {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.05rem 0.6rem;
+  margin-left: 0.2rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 999px;
+  color: var(--global-text-color) !important;
+  text-decoration: none !important;
+  white-space: nowrap;
+
+  &:hover {
+    border-color: var(--global-theme-color);
+    color: var(--global-theme-color) !important;
+  }
+}
+
+/* ---------- Join: intro highlights, readable hero caption, lighter call-to-action ---------- */
+.sb-join-intro {
+  a.sb-hl-link {
+    color: #{$beaver-orange} !important;
+    font-weight: 700;
+    text-decoration: none !important;
+
+    &:hover { text-decoration: underline !important; }
+  }
+
+  .sb-topics {
+    font-style: italic;
+    color: #006a8e;   // Stratosphere: softer than the orange links
+  }
+}
+html[data-theme="dark"] .sb-join-intro {
+  a.sb-hl-link { color: #ff7a45 !important; }
+  .sb-topics { color: #8cc8e0; }
+}
+
+// hero caption on a light, slightly see-through panel so it stays legible over the photo
+.sb-hero figcaption {
+  background: none !important;
+
+  .sb-hero-title,
+  .sb-hero-sub {
+    display: table;
+    background: rgba(247, 245, 245, 0.85);
+    color: #{$copy} !important;
+    text-shadow: none !important;
+    padding: 0.15rem 0.6rem;
+    border-radius: 0.3rem;
+  }
+
+  .sb-hero-title { color: #{$beaver-orange} !important; margin-bottom: 0.3rem; }
+}
+
+// Get in touch: a light orange panel with an orange edge; the button carries the strong colour
+.sb-cta {
+  background: #{mix($beaver-orange, #ffffff, 12%)} !important;
+  color: #{$copy} !important;
+  border-left: 5px solid #{$beaver-orange};
+
+  .sb-cta-title { color: #{$beaver-orange} !important; }
+
+  .sb-cta-btn {
+    background: #{$beaver-orange} !important;
+    color: #ffffff !important;
+    border-color: #{$beaver-orange} !important;
+  }
+}
+html[data-theme="dark"] .sb-cta {
+  background: #{mix($beaver-orange, #2b3035, 18%)} !important;
+  color: #f7f5f5 !important;
+  .sb-cta-title { color: #ff7a45 !important; }
+}
+
+/* ---------- News: one-line titles, two-line summaries (text is written to fit; this is the safety net) ---------- */
+.sb-news-item {
+  .sb-news-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .sb-news-summary {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
   }
 }

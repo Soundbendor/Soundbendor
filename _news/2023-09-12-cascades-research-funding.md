@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2023-09-12
-title: "OSU-Cascades attracts more than $2 million in annual research funding"
+title: "OSU-Cascades tops $2 million in annual research funding"
 kind: Funding
 source: "OSU-Cascades"
 link: https://osucascades.edu/news/osu-cascades-attracts-more-2-million-annual-research-award-and-grant-funding

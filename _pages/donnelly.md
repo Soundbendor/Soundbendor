@@ -2,7 +2,7 @@
 layout: page
 permalink: /donnelly/
 title: Patrick Donnelly
-description: Director, Soundbendor Lab
+description: Director
 _styles: >
   .post-description { font-family: "Barlow Semi Condensed", "Arial Narrow", sans-serif; font-weight: 600;
   font-size: 1.45rem !important; text-transform: uppercase; letter-spacing: 0.07em; color: #006a8e !important; }
@@ -67,8 +67,8 @@ He teaches mainly on the OSU-Cascades campus in Bend and mentors undergraduate a
 ## Service
 
 {% for x in site.data.service %}
-- **{{ x.role }}**, [{{ x.what }}]({{ x.url }}){% if x.venue %}, *{{ x.venue }}*{% endif %}, {{ x.year }}
-{% endfor %}
+- **{{ x.role }}:** [{{ x.what }}]({{ x.url }}){% if x.venue %}, *{{ x.venue }}*{% endif %}, {{ x.year }}
+{% endfor %}- **Reviewer:** EvoMUSART, ISMIR, *Computer Music Journal*, IEEE TAFFC, IEEE Access, ACM ICMI and others
 
 ## Funding
 

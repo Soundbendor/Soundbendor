@@ -10,7 +10,7 @@
       item.classList.toggle("sb-hidden", !!tag && tags.indexOf(tag) === -1);
     });
     // hide collapsible year groups that have nothing left to show
-    document.querySelectorAll("details.sb-year").forEach(function (d) {
+    document.querySelectorAll(".publications details.sb-year").forEach(function (d) {
       d.classList.toggle("sb-hidden", d.querySelectorAll("li:not(.sb-hidden)").length === 0);
     });
     // hide year headings (and their lists) that have nothing left to show
@@ -68,6 +68,7 @@
       if (!list || list.tagName !== "OL") return;
       var d = document.createElement("details");
       d.className = "sb-year";
+      h.classList.add("sb-collapse-h");
       d.open = true;
       var sum = document.createElement("summary");
       h.parentNode.insertBefore(d, h);

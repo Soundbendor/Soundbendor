@@ -30,3 +30,13 @@
     </div>
   </footer>
 {% endif %}
+
+<script>
+  // open PDFs (papers, slides, posters) in a new tab instead of replacing the page
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('a[href$=".pdf"], a[href*=".pdf?"], a[href*=".pdf#"]').forEach(function (a) {
+      a.target = "_blank";
+      a.rel = "noopener";
+    });
+  });
+</script>

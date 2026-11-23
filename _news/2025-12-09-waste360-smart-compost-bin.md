@@ -8,5 +8,4 @@ link: https://www.waste360.com/food-waste/next-gen-food-waste-busting-tech-targe
 inline: true
 related_posts: false
 ---
-
-Arlene Karidis covers Oregon State's smart compost bin, its AI camera and companion app, alongside Jason and Quincy Clark's household food-waste research. Patrick explains why the bin was designed to be easy for households to use.
+Waste360 covers Oregon State's smart compost bin, with its AI camera and companion app; Patrick explains why it was designed to be easy for households to use.

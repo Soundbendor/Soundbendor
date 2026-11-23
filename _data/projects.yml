@@ -1,7 +1,7 @@
 # Student projects without their own paper page: research projects and capstones.
 # Seeded 2026-11-21 from the old site's database. Edit by pull request.
 #   status    optional, e.g. "In progress" (shown as a badge on the card)
-#   type      URSA | NCUR | CRF (Cascades Research Fellowship, formerly Layman) | Ind. Study | Grant project | Capstone | Research
+#   type      URSA | NCUR | CRF (Cascades Research Fellowship, formerly Layman) | Ind. Study | Grant | Capstone
 #   people    ids from _data/people.yml     tags  theme tags (see _data/tags.yml)
 #   team      optional text shown instead of (or after) people, e.g. a team with no named members
 #   video     YouTube video ID (video2: optional second talk)              slides, poster, poster2  paths under assets/pdf/
@@ -434,7 +434,7 @@
 - id: "2022-multi-food-item-detection"
   title: "Multi-food Item Detection"
   year: 2022
-  type: "Grant project"
+  type: "Grant"
   people: ["matt-morgan"]
   tags: ["Computer Vision", "Health", "Datasets"]
   summary: "Toward a camera that logs meals automatically instead of a written food diary. The team assembled a dataset of annotated images containing several foods and trained a PyTorch model that recognizes and locates 18 foods with 91% accuracy, a baseline for tracking nutrition in hospitals, schools and correctional facilities."

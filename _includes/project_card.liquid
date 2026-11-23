@@ -7,7 +7,7 @@
     <img class="sb-project-img" loading="lazy" src="https://i.ytimg.com/vi/{{ pr.video }}/hqdefault.jpg" alt="">
   {%- endif -%}
   <div class="sb-project-body">
-    <div class="sb-meta">{{ pr.year }} · <a class="sb-program" href="#program-{{ pr.type | slugify }}" title="What is {{ pr.type }}?">{{ pr.type }}</a></div>
+    <div class="sb-meta">{{ pr.year }}<span class="sb-sep">•</span><a class="sb-program" href="#program-{{ pr.type | slugify }}" title="What is {{ pr.type }}?">{{ pr.type }}</a></div>
     <h3 class="sb-project-title">{{ pr.title }}</h3>
     <div class="sb-team">
       {%- if pr.team and pr.team != "" -%}{{ pr.team }}{% if pr.people.size > 0 %}: {% endif %}{%- endif -%}
@@ -29,6 +29,7 @@
       {%- if pr.website != "" %}<a class="btn btn-sm z-depth-0" href="{{ pr.website }}">Website</a>{% endif -%}
       {%- if pr.code != "" %}<a class="btn btn-sm z-depth-0" href="{{ pr.code }}">Code</a>{% endif -%}
     </div>
+    <div class="sb-card-foot">
     {%- if pr.summary != "" or pr.video != "" -%}
       <details class="sb-more">
         <summary>{% if pr.video != "" %}Watch and read more{% else %}Read more{% endif %}</summary>
@@ -47,5 +48,6 @@
         <div class="sb-related-list">{% for k in pr.related %}{% assign info = site.data.bibkeys[k] %}{% if info %}<a href="{{ info.page | relative_url }}#{{ k }}">{{ info.label }}</a>{% unless forloop.last %}; {% endunless %}{% endif %}{% endfor %}</div>
       </details>
     {%- endif -%}
+    </div>
   </div>
 </div>

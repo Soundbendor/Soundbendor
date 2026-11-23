@@ -4,7 +4,7 @@
   Each _news item: title, date, kind (Press|Award|Talk|Funding|Event|Service), source,
   link, optional image (under assets/img/), when (shown instead of the date),
   links (label/url list), student: true for student milestones; the body is a one- or
-  two-sentence summary. With student=true, the compact list always includes a student item.
+  two-sentence summary, at most two lines on the News page; titles fit on one line. With student=true, the compact list always includes a student item.
 {%- endcomment -%}
 {%- assign items = site.news | sort: "date" | reverse -%}
 {%- if include.limit -%}
@@ -27,8 +27,10 @@
 {%- assign years = items | group_by_exp: "n", "n.date | date: '%Y'" -%}
 <div class="sb-news">
   {%- for y in years -%}
-  <h2 class="sb-year">{{ y.name }}</h2>
+  <details class="sb-year" open>
+  <summary><h2 class="sb-collapse-h">{{ y.name }}</h2></summary>
   {%- for n in y.items -%}{% include sb_news_item.liquid n=n %}{%- endfor -%}
+  </details>
   {%- endfor -%}
 </div>
 {%- endif -%}

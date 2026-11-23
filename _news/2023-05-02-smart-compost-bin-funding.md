@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2023-05-02
-title: "OSU-Cascades researcher explores AI solution for tracking and reducing household food waste"
+title: "OSU-Cascades explores AI to cut household food waste"
 kind: Funding
 source: "Oregon State Newsroom"
 link: https://news.oregonstate.edu/news/osu-cascades-researcher-explores-ai-solution-tracking-and-reducing-household-food-waste
@@ -18,5 +18,4 @@ links:
 inline: true
 related_posts: false
 ---
-
-About $640,000 from the Foundation for Food & Agriculture Research and the Kroger Co. Zero Hunger &#124; Zero Waste Foundation to build an AI-enabled smart compost bin that measures household food waste.
+About $640,000 from FFAR and the Kroger Co. Zero Hunger &#124; Zero Waste Foundation for a smart compost bin that measures food waste.
