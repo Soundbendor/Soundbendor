@@ -223,7 +223,7 @@
 - id: "2023-concert-program-data"
   title: "Concert Program Data"
   year: 2023
-  type: "Ind. Study"
+  type: "CRF"
   people: ["samson-devol", "jonah-broyer"]
   tags: ["Speech & Text", "Computer Vision", "Datasets"]
   summary: "Collects historical concert programs from the web, converts them to text with optical character recognition, and organizes them in a searchable repository. Users can filter by attributes and download the data, which is ready to feed to a range of deep learning algorithms for research on music and text."
