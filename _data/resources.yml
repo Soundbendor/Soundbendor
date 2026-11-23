@@ -25,7 +25,7 @@
   paper: gaur2024generating
 - name: Proto-Indo-European Text-to-Speech
   kind: Demo
-  url: https://soundbendor-pie-phoneme-synthesis-srcappapp-sqgbyi.streamlit.app/
+  url: https://soundbendor-pie-phonenetic-synthesis-deploy-app-7ieutx.streamlit.app/
   host: Streamlit
   short: Hear hypothesized pronunciations of Proto-Indo-European words and fables, choosing the sound for each disputed phoneme.
   description: Patrick Donnelly's concatenative phonetic synthesizer (ICNLSP 2022), built from phones of 100 languages.
