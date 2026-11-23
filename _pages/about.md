@@ -17,8 +17,8 @@ _styles: >
 <a class="sb-hl-eecs" href="https://engineering.oregonstate.edu/EECS">School of Electrical Engineering and Computer Science</a> at
 <a class="sb-hl-osu" href="https://oregonstate.edu/">Oregon State University</a>.
 We use artificial intelligence and deep learning to study sound and music, drawing on computer science, signal processing, and musicology.
-Our interdisciplinary research explores computational musicology, music emotion recognition, acoustic analysis, and bioacoustics,
-engaging undergraduate and graduate students in Corvallis, Bend,&nbsp;&amp;&nbsp;Ecampus.</p>
+Our interdisciplinary research explores computational musicology, music emotion recognition, acoustic analysis, and bioacoustics
+with students in Corvallis, Bend,&nbsp;&amp;&nbsp;Ecampus.</p>
 
 <div class="sb-section-head">
   <h2 id="research-themes">Research themes</h2>
