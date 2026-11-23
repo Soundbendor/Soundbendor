@@ -16,14 +16,14 @@
   description: Historical New York Philharmonic concert program notes (from the 1840s on), with performance metadata and estimated valence, arousal and dominance scores, for music emotion recognition and cultural musicology.
   short: New York Philharmonic program notes from the 1840s on, with estimated emotion scores for music emotion research.
   paper: khanal2025emotionotes
-- name: EmotioNotes Explorer
+- name: EmotioNotes
   kind: Demo
   url: https://soundbendor-emotionotes.streamlit.app/
   host: Streamlit
   short: Search 32,000 New York Philharmonic program notes (1842–2023) by composer or piece, and see the emotion scores of each note.
   description: Pratik Khanal's EmotioNotes dataset (EvoMUSART 2025) as a searchable explorer, with valence, arousal and dominance estimates for each note.
   paper: khanal2025emotionotes
-- name: Mood-Dynamic Playlist
+- name: Mood Playlist
   kind: Demo
   url: https://soundbendor-productivity-playlist-stream-a3w1d6.streamlit.app/
   host: Streamlit
