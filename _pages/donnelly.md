@@ -38,7 +38,7 @@ He teaches mainly on the OSU-Cascades campus in Bend and mentors undergraduate a
   </div>
 </div>
 
-<nav class="sb-jump" aria-label="On this page"><a href="#publications">Publications</a><a href="#earlier-work">Before 2020</a><a href="#theses">Student Theses</a><a href="#service">Service</a><a href="#funding">Funding</a></nav>
+<nav class="sb-jump" aria-label="On this page"><a href="#publications">Publications</a><a href="#earlier-work">Before 2020</a><a href="#theses">Student Theses</a><a href="#service">Service</a><a href="#funding">Funding</a><a href="#outside-the-lab">Outside the lab</a></nav>
 
 <div style="clear: both;"></div>
 
@@ -75,3 +75,12 @@ He teaches mainly on the OSU-Cascades campus in Bend and mentors undergraduate a
 {% for g in site.data.funding %}
 - {% if g.role %}**{{ g.role }}**, {% endif %}[{{ g.title }}]({{ g.url }}). {{ g.sponsor }}{% if g.number %}, {{ g.number }}{% endif %}{% if g.years %}, {{ g.years }}{% endif %}.{% if g.poster %} <a class="sb-pill-link" href="{{ g.poster | prepend: '/assets/pdf/' | relative_url }}"><i class="fa-solid fa-image"></i> Poster</a>{% endif %}
 {% endfor %}
+
+## Outside the lab
+
+<div class="sb-outside">
+  <figure><img src="{{ '/assets/img/people/patrick/dogs.jpg' | relative_url }}" alt="Patrick in sunglasses and a cap, mouth open in mock surprise, with his two dogs on a trail" loading="lazy"><figcaption>With his dogs</figcaption></figure>
+  <figure><img src="{{ '/assets/img/people/patrick/hiking.jpg' | relative_url }}" alt="Patrick taking a selfie on a hike above a river canyon" loading="lazy"><figcaption>On the trail</figcaption></figure>
+  <figure><img src="{{ '/assets/img/people/patrick/opera.jpg' | relative_url }}" alt="Patrick in a feathered helmet and armour costume, arms spread wide" loading="lazy"><figcaption>In costume for an opera</figcaption></figure>
+  <figure><img src="{{ '/assets/img/people/patrick/performance.jpg' | relative_url }}" alt="Patrick in a tuxedo holding a bouquet of flowers after a performance" loading="lazy"><figcaption>After a performance</figcaption></figure>
+</div>
