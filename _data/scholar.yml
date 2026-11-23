@@ -1,0 +1,20 @@
+# Google Scholar summary on the PI page. Update by hand from the Scholar profile (Scholar has no API and
+# blocks automated scraping). The table numbers are exact from the profile; per-year counts were read from
+# the bar chart on 2026-11-22 (about +/-2), so replace them with exact values when convenient.
+updated: 2026-11-22
+url: https://scholar.google.com/citations?user=TFDLhm4AAAAJ
+since: 2021
+rows:
+  - {label: Citations, all: 1751, since: 930}
+  - {label: h-index, all: 19, since: 14}
+  - {label: i10-index, all: 23, since: 19}
+axis_max: 220   # top of the chart scale
+per_year:
+  - {year: 2019, n: 95}
+  - {year: 2020, n: 128}
+  - {year: 2021, n: 130}
+  - {year: 2022, n: 122}
+  - {year: 2023, n: 124}
+  - {year: 2024, n: 177}
+  - {year: 2025, n: 209}
+  - {year: 2026, n: 157}

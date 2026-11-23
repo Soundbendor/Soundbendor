@@ -1,0 +1,31 @@
+{%- comment -%} Google Scholar summary: metrics table and citations-per-year bars, side by side. Data: _data/scholar.yml {%- endcomment -%}
+{%- assign s = site.data.scholar -%}
+<section class="sb-scholar" aria-labelledby="scholar-title">
+  <div class="sb-scholar-head">
+    <h3 id="scholar-title"><i class="ai ai-google-scholar"></i> Google Scholar</h3>
+    <a class="sb-btn sb-btn-sm" href="{{ s.url }}">Scholar profile <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+  <div class="sb-scholar-body">
+    <table class="sb-scholar-table">
+      <thead><tr><th></th><th>All</th><th>Since {{ s.since }}</th></tr></thead>
+      <tbody>
+        {%- for r in s.rows -%}
+        <tr><th scope="row">{{ r.label }}</th><td>{{ r.all }}</td><td>{{ r.since }}</td></tr>
+        {%- endfor -%}
+      </tbody>
+    </table>
+    <figure class="sb-scholar-chart" aria-label="Citations per year">
+      <div class="sb-scholar-bars">
+        {%- for y in s.per_year -%}
+          {%- assign pct = y.n | times: 100 | divided_by: s.axis_max -%}
+          <div class="sb-scholar-col" title="{{ y.year }}: about {{ y.n }} citations">
+            <span class="sb-scholar-n">{{ y.n }}</span>
+            <span class="sb-scholar-bar" style="height: {{ pct }}%;"></span>
+            <span class="sb-scholar-year">{{ y.year }}</span>
+          </div>
+        {%- endfor -%}
+      </div>
+      <figcaption>Citations per year</figcaption>
+    </figure>
+  </div>
+</section>
