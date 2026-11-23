@@ -22,7 +22,7 @@
     {%- comment -%} Degree line: every degree with the lab in order, then major, then the year of the most recent finished degree {%- endcomment -%}
     {%- assign sb_parts = p.program | split: ', ' -%}
     {%- assign sb_main = sb_parts | first -%}
-    {%- assign sb_major = p.program | remove_first: sb_main | remove_first: ', ' | replace: 'Computer Science', 'CS' | replace: 'Artificial Intelligence', 'AI' | replace: 'Mechanical Engineering', 'ME' | replace: 'Electrical Engineering', 'EE' -%}
+    {%- assign sb_major = p.program | remove_first: sb_main | remove_first: ', ' | replace: 'Computer Science', 'CS' | replace: 'Artificial Intelligence', 'AI' | replace: 'Mechanical Engineering', 'ME' | replace: 'Electrical Engineering', 'EE' | replace: 'Bioengineering', 'BioE' -%}
     {%- assign sb_names = "" -%}{%- assign sb_last = "" -%}
     {%- for d in p.other_degrees -%}
       {%- assign dn = d | split: ' ' | first -%}{%- assign sb_names = sb_names | append: '|' | append: dn | append: '|' -%}
