@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" font-family="Open Sans, Arial, sans-serif">
+<rect width="600" height="400" fill="#1d1f22"/>
+<text x="40" y="58" font-size="24" font-weight="700" fill="#ffffff">Listen to the sample</text>
+<rect x="40" y="78" width="520" height="62" rx="8" fill="#2a2d31"/>
+<circle cx="74" cy="109" r="18" fill="none" stroke="#ff6a00" stroke-width="3"/>
+<rect x="67" y="100" width="4.5" height="18" fill="#ff6a00"/><rect x="76.5" y="100" width="4.5" height="18" fill="#ff6a00"/>
+<rect x="106.0" y="103.8" width="4.6" height="10.4" rx="1.5" fill="#ff6a00"/>
+<rect x="113.6" y="98.8" width="4.6" height="20.3" rx="1.5" fill="#ff6a00"/>
+<rect x="121.2" y="92.8" width="4.6" height="32.3" rx="1.5" fill="#ff6a00"/>
+<rect x="128.8" y="91.5" width="4.6" height="34.9" rx="1.5" fill="#ff6a00"/>
+<rect x="136.4" y="92.0" width="4.6" height="34.0" rx="1.5" fill="#ff6a00"/>
+<rect x="144.0" y="92.9" width="4.6" height="32.2" rx="1.5" fill="#ff6a00"/>
+<rect x="151.6" y="94.9" width="4.6" height="28.3" rx="1.5" fill="#ff6a00"/>
+<rect x="159.2" y="100.9" width="4.6" height="16.2" rx="1.5" fill="#ff6a00"/>
+<rect x="166.8" y="95.4" width="4.6" height="27.2" rx="1.5" fill="#ff6a00"/>
+<rect x="174.4" y="93.6" width="4.6" height="30.7" rx="1.5" fill="#ff6a00"/>
+<rect x="182.0" y="89.6" width="4.6" height="38.8" rx="1.5" fill="#ff6a00"/>
+<rect x="189.6" y="91.0" width="4.6" height="36.0" rx="1.5" fill="#ff6a00"/>
+<rect x="197.2" y="94.1" width="4.6" height="29.8" rx="1.5" fill="#ff6a00"/>
+<rect x="204.8" y="99.0" width="4.6" height="20.0" rx="1.5" fill="#ff6a00"/>
+<rect x="212.4" y="103.7" width="4.6" height="10.6" rx="1.5" fill="#ff6a00"/>
+<rect x="220.0" y="94.5" width="4.6" height="29.0" rx="1.5" fill="#ff6a00"/>
+<rect x="227.6" y="90.5" width="4.6" height="36.9" rx="1.5" fill="#ff6a00"/>
+<rect x="235.2" y="88.2" width="4.6" height="41.5" rx="1.5" fill="#ff6a00"/>
+<rect x="242.8" y="88.4" width="4.6" height="41.2" rx="1.5" fill="#ff6a00"/>
+<rect x="250.4" y="94.1" width="4.6" height="29.9" rx="1.5" fill="#ff6a00"/>
+<rect x="258.0" y="98.1" width="4.6" height="21.8" rx="1.5" fill="#ff6a00"/>
+<rect x="265.6" y="101.5" width="4.6" height="14.9" rx="1.5" fill="#ff6a00"/>
+<rect x="273.2" y="95.4" width="4.6" height="27.2" rx="1.5" fill="#ff6a00"/>
+<rect x="280.8" y="90.3" width="4.6" height="37.3" rx="1.5" fill="#ff6a00"/>
+<rect x="288.4" y="87.8" width="4.6" height="42.3" rx="1.5" fill="#ff6a00"/>
+<rect x="296.0" y="92.0" width="4.6" height="34.0" rx="1.5" fill="#ff6a00"/>
+<rect x="303.6" y="92.1" width="4.6" height="33.9" rx="1.5" fill="#ff6a00"/>
+<rect x="311.2" y="96.4" width="4.6" height="25.2" rx="1.5" fill="#ff6a00"/>
+<rect x="318.8" y="102.0" width="4.6" height="13.9" rx="1.5" fill="#ff6a00"/>
+<rect x="326.4" y="98.1" width="4.6" height="21.9" rx="1.5" fill="#ff6a00"/>
+<rect x="334.0" y="92.2" width="4.6" height="33.6" rx="1.5" fill="#5a5e63"/>
+<rect x="341.6" y="91.8" width="4.6" height="34.4" rx="1.5" fill="#5a5e63"/>
+<rect x="349.2" y="87.8" width="4.6" height="42.5" rx="1.5" fill="#5a5e63"/>
+<rect x="356.8" y="90.8" width="4.6" height="36.3" rx="1.5" fill="#5a5e63"/>
+<rect x="364.4" y="97.1" width="4.6" height="23.8" rx="1.5" fill="#5a5e63"/>
+<rect x="372.0" y="103.0" width="4.6" height="12.1" rx="1.5" fill="#5a5e63"/>
+<rect x="379.6" y="94.3" width="4.6" height="29.4" rx="1.5" fill="#5a5e63"/>
+<rect x="387.2" y="91.6" width="4.6" height="34.8" rx="1.5" fill="#5a5e63"/>
+<rect x="394.8" y="87.8" width="4.6" height="42.4" rx="1.5" fill="#5a5e63"/>
+<rect x="402.4" y="88.2" width="4.6" height="41.5" rx="1.5" fill="#5a5e63"/>
+<rect x="410.0" y="92.7" width="4.6" height="32.6" rx="1.5" fill="#5a5e63"/>
+<rect x="417.6" y="97.9" width="4.6" height="22.3" rx="1.5" fill="#5a5e63"/>
+<rect x="425.2" y="101.3" width="4.6" height="15.3" rx="1.5" fill="#5a5e63"/>
+<rect x="432.8" y="96.6" width="4.6" height="24.8" rx="1.5" fill="#5a5e63"/>
+<rect x="440.4" y="93.6" width="4.6" height="30.8" rx="1.5" fill="#5a5e63"/>
+<rect x="448.0" y="90.7" width="4.6" height="36.7" rx="1.5" fill="#5a5e63"/>
+<rect x="455.6" y="88.4" width="4.6" height="41.1" rx="1.5" fill="#5a5e63"/>
+<rect x="463.2" y="95.1" width="4.6" height="27.8" rx="1.5" fill="#5a5e63"/>
+<rect x="470.8" y="99.8" width="4.6" height="18.4" rx="1.5" fill="#5a5e63"/>
+<rect x="478.4" y="101.1" width="4.6" height="15.8" rx="1.5" fill="#5a5e63"/>
+<rect x="486.0" y="97.3" width="4.6" height="23.5" rx="1.5" fill="#5a5e63"/>
+<rect x="493.6" y="91.7" width="4.6" height="34.6" rx="1.5" fill="#5a5e63"/>
+<rect x="501.2" y="89.8" width="4.6" height="38.4" rx="1.5" fill="#5a5e63"/>
+<rect x="508.8" y="90.8" width="4.6" height="36.4" rx="1.5" fill="#5a5e63"/>
+<rect x="516.4" y="90.4" width="4.6" height="37.2" rx="1.5" fill="#5a5e63"/>
+<rect x="524.0" y="99.2" width="4.6" height="19.7" rx="1.5" fill="#5a5e63"/>
+<rect x="531.6" y="102.1" width="4.6" height="13.9" rx="1.5" fill="#5a5e63"/>
+<rect x="539.2" y="97.6" width="4.6" height="22.9" rx="1.5" fill="#5a5e63"/>
+<text x="300" y="190" text-anchor="middle" font-size="26" font-weight="700" fill="#ffffff">How does it sound?</text>
+<text x="300" y="218" text-anchor="middle" font-size="16" fill="#9aa0a6">Select every word that fits the sample</text>
+<rect x="70" y="244" width="140" height="46" rx="6" fill="#ff6a00" stroke="#ff6a00" stroke-width="2"/>
+<text x="140" y="274" text-anchor="middle" font-size="19" font-weight="700" fill="#1d1f22">Bright</text>
+<rect x="230" y="244" width="140" height="46" rx="6" fill="none" stroke="#6b7075" stroke-width="2"/>
+<text x="300" y="274" text-anchor="middle" font-size="19" font-weight="700" fill="#e6e6e6">Warm</text>
+<rect x="390" y="244" width="140" height="46" rx="6" fill="none" stroke="#6b7075" stroke-width="2"/>
+<text x="460" y="274" text-anchor="middle" font-size="19" font-weight="700" fill="#e6e6e6">Rough</text>
+<rect x="70" y="308" width="140" height="46" rx="6" fill="none" stroke="#6b7075" stroke-width="2"/>
+<text x="140" y="338" text-anchor="middle" font-size="19" font-weight="700" fill="#e6e6e6">Smooth</text>
+<rect x="230" y="308" width="140" height="46" rx="6" fill="none" stroke="#6b7075" stroke-width="2"/>
+<text x="300" y="338" text-anchor="middle" font-size="19" font-weight="700" fill="#e6e6e6">Hollow</text>
+<rect x="390" y="308" width="140" height="46" rx="6" fill="#ff6a00" stroke="#ff6a00" stroke-width="2"/>
+<text x="460" y="338" text-anchor="middle" font-size="19" font-weight="700" fill="#1d1f22">Metallic</text>
+</svg>
