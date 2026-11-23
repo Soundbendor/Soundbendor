@@ -9,7 +9,8 @@
 #   activities  URSA, CRF, NCUR, Honors, Capstone, AMP, Grant
 #   tags      theme tags (see _data/tags.yml)
 #   theses, papers  bib keys; projects  ids from _data/projects.yml
-#   now       alumni: current employer or school only, short enough for one line, e.g. "Intel" (optional)
+#   now       alumni: current employer or school only, short enough for one line, e.g. "Intel" (optional;
+#             leave blank if it would be Oregon State University)
 
 - id: "aidan-beery"
   name: "Aidan Beery"
@@ -537,7 +538,7 @@
     github: ""
     website: ""
     scholar: ""
-  now: "Oregon State University"
+  now: ""
 
 - id: "jake-anding"
   name: "Jake Anding"
@@ -1483,7 +1484,7 @@
     github: "https://github.com/aj-arts"
     website: "https://www.ajinkya.dev/"
     scholar: ""
-  now: "Oregon State University"
+  now: ""
 
 - id: "ann-marie-hicks"
   name: "Ann Marie Hicks"
