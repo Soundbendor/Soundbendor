@@ -1,4 +1,5 @@
 # Datasets, code and demos on /research/#datasets-and-code. Only public, verified links.
+# Order: newest first, by the year of the paper (or of the project when there is no paper).
 #   kind: Dataset | Code | Demo  (card colour: Stratosphere / Pine Stand / Beaver Orange)
 #   short: the one-sentence description shown on the page; description: longer note
 #   paper: bib key for the "Cite:" link; project: projects.yml id for a "Project:" link when there is no paper
@@ -24,6 +25,13 @@
   short: Search 32,000 New York Philharmonic program notes (1842–2023) by composer or piece, and see the emotion scores of each note.
   description: Pratik Khanal's EmotioNotes dataset (EvoMUSART 2025) as a searchable explorer, with valence, arousal and dominance estimates for each note.
   paper: khanal2025emotionotes
+- name: Hot 100 Emotion
+  kind: Demo
+  url: https://soundbendor-hot100-emotion.streamlit.app/
+  host: Streamlit
+  short: See how GPT-4o-mini rated the mood of 31,596 Billboard Hot 100 songs (1958–2024), and how its ratings compare with human listeners'.
+  description: Isaac Brickner's Cascades Research Fellowship project LLM Emotion Prediction (2025) as an explorer of chart history, songs, an emotion map and GPT-versus-human agreement. Repo Soundbendor/hot100-emotion-explorer.
+  project: 2025-llm-emotion-prediction
 - name: Mood Playlist
   kind: Demo
   url: https://soundbendor-productivity-playlist-stream-a3w1d6.streamlit.app/
@@ -38,10 +46,3 @@
   short: Hear hypothesized pronunciations of Proto-Indo-European words and fables, choosing the sound for each disputed phoneme.
   description: Patrick Donnelly's concatenative phonetic synthesizer (ICNLSP 2022), built from phones of 100 languages.
   paper: donnelly2022concatenative
-- name: Hot 100 Emotion
-  kind: Demo
-  url: https://soundbendor-hot100-emotion.streamlit.app/
-  host: Streamlit
-  short: See how GPT-4o-mini rated the mood of 31,596 Billboard Hot 100 songs (1958–2024), and how its ratings compare with human listeners'.
-  description: Isaac Brickner's Cascades Research Fellowship project LLM Emotion Prediction (2025) as an explorer of chart history, songs, an emotion map and GPT-versus-human agreement. Repo Soundbendor/hot100-emotion-explorer.
-  project: 2025-llm-emotion-prediction
