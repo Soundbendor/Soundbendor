@@ -39,7 +39,7 @@ through hands-on projects with students in Corvallis, Bend,&nbsp;&amp;&nbsp;Ecam
 </div>
 
 <div class="sb-feature">
-  <a class="sb-feature-imglink" href="{{ fd.url }}"><img class="sb-feature-img" src="{{ fd.image | prepend: '/assets/' | relative_url }}" alt="{{ fd.alt | escape }}"></a>
+  <a class="sb-feature-imglink" href="{{ fd.url }}"><img class="sb-feature-img" src="{{ fd.image | prepend: '/assets/' | relative_url }}?v={{ site.time | date: '%s' }}" alt="{{ fd.alt | escape }}"></a>
   <div class="sb-feature-text">
     <h3 class="sb-feature-title">{{ fd.title }}</h3>
     <p>{{ fd.description }}</p>
