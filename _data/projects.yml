@@ -52,6 +52,7 @@
   poster: "projects/2025-llm-emotion-prediction-poster.pdf"
   image: ""
   website: ""
+  demo: "https://soundbendor-hot100-emotion.streamlit.app/"
   code: ""
   related: []
 

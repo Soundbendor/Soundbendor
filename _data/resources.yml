@@ -1,6 +1,7 @@
 # Datasets, code and demos on /research/#datasets-and-code. Only public, verified links.
 #   kind: Dataset | Code | Demo  (card colour: Stratosphere / Pine Stand / Beaver Orange)
 #   short: the one-sentence description shown on the page; description: longer note
+#   paper: bib key for the "Cite:" link; project: projects.yml id for a "Project:" link when there is no paper
 - name: SynTheory+
   kind: Dataset
   url: https://huggingface.co/datasets/derekxkwan/syntheory_plus
@@ -37,3 +38,10 @@
   short: Hear hypothesized pronunciations of Proto-Indo-European words and fables, choosing the sound for each disputed phoneme.
   description: Patrick Donnelly's concatenative phonetic synthesizer (ICNLSP 2022), built from phones of 100 languages.
   paper: donnelly2022concatenative
+- name: Hot 100 Emotion
+  kind: Demo
+  url: https://soundbendor-hot100-emotion.streamlit.app/
+  host: Streamlit
+  short: See how GPT-4o-mini rated the mood of 31,596 Billboard Hot 100 songs (1958–2024), and how its ratings compare with human listeners'.
+  description: Isaac Brickner's Cascades Research Fellowship project LLM Emotion Prediction (2025) as an explorer of chart history, songs, an emotion map and GPT-versus-human agreement. Repo Soundbendor/hot100-emotion-explorer.
+  project: 2025-llm-emotion-prediction

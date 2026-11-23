@@ -49,6 +49,7 @@ nav_order: 0
     <div class="sb-dataset-name">{% if r.kind %}<span class="sb-dataset-kind">{{ r.kind }}</span> {% endif %}<strong>{{ r.name }}</strong> <a class="sb-prog-link" href="{{ r.url }}">{% if r.kind == "Demo" %}Demo{% else %}{{ r.host }}{% endif %}</a></div>
     <p>{{ r.short }}</p>
     {%- if info -%}<span class="sb-dataset-cite">Cite: <a href="{{ info.page | relative_url }}#{{ r.paper }}">{{ info.label }}</a></span>{%- endif -%}
+    {%- if r.project -%}{%- assign sb_pr = site.data.projects | where: "id", r.project | first -%}{%- if sb_pr -%}{%- assign sb_pp = site.data.people | where: "id", sb_pr.people[0] | first -%}<span class="sb-dataset-cite">Project: <a href="{{ '/projects/' | relative_url }}#{{ r.project }}">{% if sb_pp %}{{ sb_pp.name | split: ' ' | last }} {% endif %}{{ sb_pr.year }}</a></span>{%- endif -%}{%- endif -%}
   </div>
 {%- endfor -%}
 </div>
