@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Soundbendor Lab
+nav_title: Lab
 permalink: /
 nav: false
 _styles: >

@@ -18,7 +18,7 @@ nav_order: 0
 <section class="sb-rarea" id="{{ a.id }}" style="--sb-accent: {{ a.accent }};">
   <h2 class="sb-rarea-title">{{ a.title }}</h2>
   <div class="sb-rarea-body">
-    <img class="sb-rarea-img" src="{{ a.image | prepend: '/assets/img/' | relative_url }}" alt="{{ a.alt | strip }}" loading="lazy">
+    <img class="sb-rarea-img" src="{{ a.image | prepend: '/assets/img/' | relative_url }}" alt="{{ a.alt | strip | escape }}" loading="lazy">
     <div class="sb-rarea-text">
       <p>{{ a.summary }}</p>
       <div class="sb-tags sb-rarea-tags">

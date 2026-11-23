@@ -161,16 +161,17 @@ $sb-tag-colors: (
 // Filter bar: scrolls sideways on phones instead of wrapping into many rows.
 .sb-filter {
   display: flex;
+  flex-wrap: wrap;   // wraps on every screen size (no sideways scrolling)
   gap: 0.4rem;
-  overflow-x: auto;
   margin-top: 1.25rem;
   padding: 0.25rem 0 0.75rem;
   margin-bottom: 0.5rem;
-  scrollbar-width: thin;
 
-  @media (min-width: 768px) {
-    flex-wrap: wrap;
-    overflow-x: visible;
+  // phones: slightly smaller chips so the full list stays compact
+  @media (max-width: 575px) {
+    gap: 0.3rem;
+
+    .sb-chip { font-size: 0.72rem; padding: 0 0.5em; }
   }
 }
 

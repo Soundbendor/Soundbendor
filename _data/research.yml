@@ -25,7 +25,7 @@
     interactive tools that let people explore how hearing loss can change familiar sounds.
   image: research/sound-perception.svg
   alt: >-
-    A listening-test screen: a sound clip with a play button, the question "How does it sound?" and
+    A listening-test screen: a sound clip with a play button, the question How does it sound? and
     descriptor buttons such as bright, warm, rough and metallic, with two selected.
   tags: [Timbre, Perception, Hearing]
 - id: musical-structure
