@@ -1142,7 +1142,7 @@
   year: "2023"
   campus: "Bend"
   other_degrees: []
-  activities: ["Capstone"]
+  activities: ["CRF", "Capstone"]
   tags: ["Speech & Text", "Computer Vision", "Datasets"]
   note: ""
   theses: []
