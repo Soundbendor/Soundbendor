@@ -19,6 +19,7 @@ nav_order: 6
     <a href="https://engineering.oregonstate.edu/about/directory/patrick-donnelly"><i class="fa-solid fa-building-columns"></i>OSU Engineering</a>
     <a href="https://osucascades.edu/directory/patrick-donnelly"><i class="fa-solid fa-mountain-sun"></i>OSU Cascades</a>
     <a href="https://scholar.google.com/citations?user=TFDLhm4AAAAJ"><i class="ai ai-google-scholar"></i>Google Scholar</a>
+    <a href="https://orcid.org/0000-0003-1033-5931"><i class="ai ai-orcid"></i>ORCID</a>
     <a href="https://github.com/Soundbendor"><i class="fa-brands fa-github"></i>GitHub</a>
     <a href="https://www.youtube.com/@soundbendorlab7615"><i class="fa-brands fa-youtube"></i>YouTube</a>
   </div>
