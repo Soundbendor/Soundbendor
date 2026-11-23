@@ -1932,3 +1932,95 @@ article p,
 .sb-join-card p {
   text-wrap: pretty;
 }
+
+/* ---------- Research: four short sections, same structure ---------- */
+.sb-rarea {
+  margin-top: 2.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--global-divider-color);
+  scroll-margin-top: 80px;
+
+  &:first-of-type { margin-top: 0.5rem; border-top: 0; padding-top: 0; }
+}
+
+.post .sb-rarea-title {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0 0 1rem;
+
+  &::before {
+    content: "";
+    width: 0.4rem;
+    height: 1.4em;
+    border-radius: 2px;
+    background: var(--sb-accent);
+    flex: none;
+  }
+}
+
+.sb-rarea-body {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  gap: 1.75rem;
+  align-items: start;
+}
+
+.sb-rarea-img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  border: 1px solid var(--global-divider-color);
+  background: #ffffff;
+  display: block;
+}
+
+.sb-rarea-text p {
+  margin: 0 0 0.75rem;
+}
+
+.sb-rarea-tags {
+  align-items: center;
+  margin-top: 0;
+}
+
+.sb-rarea-feature {
+  margin-left: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #{$beaver-orange} !important;
+  text-decoration: none !important;
+  white-space: nowrap;
+
+  &:hover { text-decoration: underline !important; }
+}
+html[data-theme="dark"] .sb-rarea-feature { color: #ff7a45 !important; }
+
+@media (max-width: 700px) {
+  .sb-rarea-body { grid-template-columns: minmax(0, 1fr); gap: 0.9rem; }
+  .sb-rarea-img { max-width: 420px; }
+}
+
+// Datasets & Code: two compact cards
+.sb-datasets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+.sb-dataset {
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--global-divider-color);
+  border-left: 4px solid #006a8e;
+  border-radius: 0 0.4rem 0.4rem 0;
+  background: var(--global-card-bg-color);
+
+  p { margin: 0.35rem 0; font-size: 0.95rem; }
+}
+
+.sb-dataset-cite {
+  font-size: 0.85rem;
+  font-weight: 600;
+}

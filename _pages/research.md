@@ -6,57 +6,49 @@ nav: true
 nav_order: 0
 ---
 
-
-<nav class="sb-jump" aria-label="Research areas">
-{%- for a in site.data.research -%}<a href="#{{ a.id }}">{{ a.title }}</a>{%- endfor -%}<a href="#datasets-and-code">Datasets &amp; code</a>
-</nav>
+{%- comment -%} pages where each tag has results: lab publications first, then projects, then theses {%- endcomment -%}
+{%- assign pubtags = "|" -%}
+{%- for e in site.data.bibkeys -%}{%- if e[1].page == "/publications/" -%}{%- assign pubtags = pubtags | append: e[1].tags | append: "|" -%}{%- endif -%}{%- endfor -%}
+{%- assign thesistags = "|" -%}
+{%- for e in site.data.bibkeys -%}{%- if e[1].page == "/theses/" -%}{%- assign thesistags = thesistags | append: e[1].tags | append: "|" -%}{%- endif -%}{%- endfor -%}
+{%- assign projtags = "|" -%}
+{%- for p in site.data.projects -%}{%- assign pj = p.tags | join: "|" -%}{%- assign projtags = projtags | append: pj | append: "|" -%}{%- endfor -%}
 
 {% for a in site.data.research %}
-<section class="sb-area" id="{{ a.id }}">
-  <img class="sb-area-img" loading="lazy" src="{{ a.image | prepend: '/assets/img/' | relative_url }}" alt="">
-  <div class="sb-area-body">
-    <h2>{{ a.title }}</h2>
-    <p class="sb-area-q">{{ a.question }}</p>
-    <p>{{ a.summary }}</p>
-    <div class="sb-area-lists">
-      {%- if a.papers.size > 0 -%}
-      <div><h4>Papers</h4><ul>
-        {%- for k in a.papers -%}{%- assign info = site.data.bibkeys[k] -%}{%- if info -%}<li><a href="{{ info.page | relative_url }}#{{ k }}">{{ info.title | default: info.label }}</a> <span class="sb-area-cite">{{ info.label }}</span></li>{%- endif -%}{%- endfor -%}
-      </ul></div>
-      {%- endif -%}
-      {%- if a.theses.size > 0 -%}
-      <div><h4>Theses</h4><ul>
-        {%- for k in a.theses -%}{%- assign info = site.data.bibkeys[k] -%}{%- if info -%}<li><a href="{{ info.page | relative_url }}#{{ k }}">{{ info.title | default: info.label }}</a> <span class="sb-area-cite">{{ info.label }}</span></li>{%- endif -%}{%- endfor -%}
-      </ul></div>
-      {%- endif -%}
-      {%- if a.projects.size > 0 -%}
-      <div><h4>Projects</h4><ul>
-        {%- for pid in a.projects -%}{%- assign pr = site.data.projects | where: "id", pid | first -%}{%- if pr -%}<li><a href="{{ '/projects/' | relative_url }}#{{ pid }}">{{ pr.title }}</a> <span class="sb-area-cite">{{ pr.type }} {{ pr.year }}</span></li>{%- endif -%}{%- endfor -%}
-      </ul></div>
-      {%- endif -%}
-    </div>
-    <div class="sb-area-browse">
-      Browse all:
-      {%- for t in a.tags -%}
-        <a class="sb-tag sb-t-{{ t | slugify }}" data-tag="{{ t }}" href="{{ '/publications/' | relative_url }}?tag={{ t | url_encode }}">{{ t }} papers</a>
-        <a class="sb-tag sb-t-{{ t | slugify }}" data-tag="{{ t }}" href="{{ '/projects/' | relative_url }}?tag={{ t | url_encode }}">{{ t }} projects</a>
-      {%- endfor -%}
+<section class="sb-rarea" id="{{ a.id }}" style="--sb-accent: {{ a.accent }};">
+  <h2 class="sb-rarea-title">{{ a.title }}</h2>
+  <div class="sb-rarea-body">
+    <img class="sb-rarea-img" src="{{ a.image | prepend: '/assets/img/' | relative_url }}" alt="{{ a.alt | strip }}" loading="lazy">
+    <div class="sb-rarea-text">
+      <p>{{ a.summary }}</p>
+      <div class="sb-tags sb-rarea-tags">
+        {%- for t in a.tags -%}
+          {%- assign needle = "|" | append: t | append: "|" -%}
+          {%- if pubtags contains needle -%}{%- assign dest = '/publications/' -%}
+          {%- elsif projtags contains needle -%}{%- assign dest = '/projects/' -%}
+          {%- elsif thesistags contains needle -%}{%- assign dest = '/theses/' -%}
+          {%- else -%}{%- assign dest = '/publications/' -%}{%- endif -%}
+          <a class="sb-tag sb-t-{{ t | slugify }}" data-tag="{{ t }}" href="{{ dest | relative_url }}?tag={{ t | url_encode }}">{{ t }}</a>
+        {%- endfor -%}
+        {%- if a.feature -%}
+          {%- if a.feature.url contains '://' -%}{%- assign fu = a.feature.url -%}{%- else -%}{%- assign fu = a.feature.url | relative_url -%}{%- endif -%}
+          <a class="sb-rarea-feature" href="{{ fu }}">{{ a.feature.label }} <i class="fa-solid fa-arrow-right"></i></a>
+        {%- endif -%}
+      </div>
     </div>
   </div>
 </section>
 {% endfor %}
 
-## Datasets &amp; code {#datasets-and-code}
+## Datasets &amp; Code {#datasets-and-code}
 
-Public data released with our papers. Each links to its paper for citation.
-
-<div class="sb-resources">
+<div class="sb-datasets">
 {%- for r in site.data.resources -%}
   {%- assign info = site.data.bibkeys[r.paper] -%}
-  <div class="sb-resource">
-    <div class="sb-resource-head"><span class="sb-news-kind">{{ r.kind }}</span> <a href="{{ r.url }}"><strong>{{ r.name }}</strong></a> <span class="sb-area-cite">on {{ r.host }}{% if r.license %}<span class="sb-sep">•</span>{{ r.license }} license{% endif %}</span></div>
-    <p>{{ r.description }}</p>
-    {%- if info -%}<div class="sb-area-cite">Cite: <a href="{{ info.page | relative_url }}#{{ r.paper }}">{{ info.title | default: info.label }}</a> ({{ info.label }})</div>{%- endif -%}
+  <div class="sb-dataset">
+    <div class="sb-dataset-name"><strong>{{ r.name }}</strong> <a class="sb-prog-link" href="{{ r.url }}">{{ r.host }}</a></div>
+    <p>{{ r.short }}</p>
+    {%- if info -%}<a class="sb-dataset-cite" href="{{ info.page | relative_url }}#{{ r.paper }}">Cite: {{ info.label }}</a>{%- endif -%}
   </div>
 {%- endfor -%}
 </div>

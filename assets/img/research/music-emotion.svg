@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" font-family="Open Sans, Arial, sans-serif">
+<rect width="600" height="400" fill="#ffffff"/>
+<circle cx="300" cy="182" r="150" fill="#f7f5f5" stroke="#c9c4c2" stroke-width="1.5"/>
+<line x1="138" y1="182" x2="462" y2="182" stroke="#b7b2b0" stroke-width="1.5"/>
+<line x1="300" y1="20" x2="300" y2="344" stroke="#b7b2b0" stroke-width="1.5"/>
+<text x="232" y="95" text-anchor="middle" font-size="18" font-weight="600" fill="#9a9c96">Angry</text>
+<text x="354" y="77" text-anchor="middle" font-size="18" font-weight="600" fill="#9a9c96">Excited</text>
+<text x="201" y="149" text-anchor="middle" font-size="18" font-weight="600" fill="#9a9c96">Afraid</text>
+<text x="420" y="164" text-anchor="middle" font-size="18" font-weight="600" fill="#9a9c96">Happy</text>
+<text x="387" y="242" text-anchor="middle" font-size="18" font-weight="600" fill="#9a9c96">Content</text>
+<text x="369" y="287" text-anchor="middle" font-size="18" font-weight="600" fill="#9a9c96">Calm</text>
+<text x="252" y="299" text-anchor="middle" font-size="18" font-weight="600" fill="#9a9c96">Depressed</text>
+<text x="246" y="257" text-anchor="middle" font-size="18" font-weight="600" fill="#9a9c96">Sad</text>
+<path d="M183.0,238.2 L207.0,229.2 L228.0,215.8 L240.0,197.8 L273.0,182.0 L292.5,176.4 L319.5,168.5 L342.0,159.5 L358.5,125.8 L379.5,123.5 L403.5,107.8" fill="none" stroke="#d73f09" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="183.0" cy="238.2" r="8" fill="#006a8e" stroke="#ffffff" stroke-width="2"/>
+<circle cx="207.0" cy="229.2" r="5" fill="#d73f09" stroke="#ffffff" stroke-width="2"/>
+<circle cx="228.0" cy="215.8" r="5" fill="#d73f09" stroke="#ffffff" stroke-width="2"/>
+<circle cx="240.0" cy="197.8" r="5" fill="#d73f09" stroke="#ffffff" stroke-width="2"/>
+<circle cx="273.0" cy="182.0" r="5" fill="#d73f09" stroke="#ffffff" stroke-width="2"/>
+<circle cx="292.5" cy="176.4" r="5" fill="#d73f09" stroke="#ffffff" stroke-width="2"/>
+<circle cx="319.5" cy="168.5" r="5" fill="#d73f09" stroke="#ffffff" stroke-width="2"/>
+<circle cx="342.0" cy="159.5" r="5" fill="#d73f09" stroke="#ffffff" stroke-width="2"/>
+<circle cx="358.5" cy="125.8" r="5" fill="#d73f09" stroke="#ffffff" stroke-width="2"/>
+<circle cx="379.5" cy="123.5" r="5" fill="#d73f09" stroke="#ffffff" stroke-width="2"/>
+<circle cx="403.5" cy="107.8" r="8" fill="#d73f09" stroke="#ffffff" stroke-width="2"/>
+<text x="179" y="268" text-anchor="middle" font-size="16" font-weight="700" fill="#006a8e">first song</text>
+<text x="406" y="92" text-anchor="middle" font-size="16" font-weight="700" fill="#d73f09">last song</text>
+<text x="300" y="374" text-anchor="middle" font-size="18" font-weight="700" fill="#423e3c">Valence</text>
+<text x="120" y="182" text-anchor="middle" font-size="18" font-weight="700" fill="#423e3c" transform="rotate(-90 120 182)">Arousal</text>
+</svg>
