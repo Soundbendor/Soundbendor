@@ -1551,7 +1551,9 @@ article > .sb-section-head:first-child {
 
 .sb-person-links {
   display: flex;
-  gap: 0.6rem;
+  flex-wrap: wrap;           // two icons per row: three make an inverted triangle, four a square
+  max-width: 3.1rem;
+  gap: 0.45rem 0.6rem;
   justify-content: center;
   font-size: 1.05rem;
   line-height: 1;
