@@ -2080,3 +2080,37 @@ html[data-theme="dark"] .publications ol.bibliography li .abbr abbr.sb-venue-the
 
   @media (max-width: 575px) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+
+/* ---------- PI page: headshot with the profile links beside it ---------- */
+.sb-pi-head {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+
+  .sb-pi-photo {
+    width: 240px;
+    height: auto;
+    border-radius: 0.5rem;
+    flex: none;
+  }
+
+  // links in two columns of three (contact and profiles, then lab channels), beside the photo
+  .sb-pi-links {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 0.9rem 2.5rem;
+    margin: 0;
+    font-size: 1.05rem;
+  }
+
+  @media (max-width: 640px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+
+    .sb-pi-links { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.7rem 1.25rem; }
+  }
+}
