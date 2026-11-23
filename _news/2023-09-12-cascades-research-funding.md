@@ -12,5 +12,4 @@ links:
 inline: true
 related_posts: false
 ---
-
-The campus research roundup highlights the smart compost bin grant.
+The campus research roundup highlights the smart compost bin; Micah Stalberg, Kimberly Markley and Daniel Lau appear with Patrick in KTVZ's coverage.
