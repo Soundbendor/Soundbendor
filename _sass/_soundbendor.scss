@@ -2234,3 +2234,15 @@ html[data-theme="dark"] .sb-scholar-bar { background: #5aa9c9; }
   color: #006a8e;
   margin-right: 0.3rem;
 }
+
+// Datasets, Code & Demos: one colour per kind (edge and label)
+//   Dataset: Stratosphere   Code: Pine Stand   Demo: Beaver Orange
+.sb-dataset { --sb-res: #006a8e; border-left-color: var(--sb-res) !important; }
+.sb-dataset .sb-dataset-kind { color: var(--sb-res); }
+.sb-res-dataset { --sb-res: #006a8e; }
+.sb-res-code { --sb-res: #4a773c; }
+.sb-res-demo { --sb-res: #{$beaver-orange}; }
+html[data-theme="dark"] {
+  .sb-res-dataset { --sb-res: #5aa9c9; }
+  .sb-res-code { --sb-res: #8fbf7f; }
+}
