@@ -5,7 +5,8 @@
     <span class="sb-news-kind">{{ n.kind }}</span>
   </div>
   <div class="sb-news-main">
-    <h3 class="sb-news-title">{% if n.link %}<a href="{{ n.link }}">{{ n.title }}</a>{% else %}{{ n.title }}{% endif %}</h3>
+    {%- if n.link contains '://' -%}{%- assign nl = n.link -%}{%- else -%}{%- assign nl = n.link | relative_url -%}{%- endif -%}
+    <h3 class="sb-news-title">{% if n.link %}<a href="{{ nl }}">{{ n.title }}</a>{% else %}{{ n.title }}{% endif %}</h3>
     <div class="sb-news-source">{{ n.source }}</div>
     <div class="sb-news-summary">{{ n.content | strip_html | strip }}</div>
     {%- if n.links -%}

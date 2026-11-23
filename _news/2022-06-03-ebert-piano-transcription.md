@@ -6,7 +6,7 @@ kind: Event
 when: "Early June 2022"
 student: true
 source: "OSU Engineering Expo"
-link: https://events.engineering.oregonstate.edu/sites/expo.engr.oregonstate.edu/files/poster_v2_0.pdf
+link: /assets/pdf/projects/2021-deep-audio-transcription-poster.pdf
 links:
   - label: "Honors College profile"
     url: https://honors.oregonstate.edu/envoy/victoria-ebert
