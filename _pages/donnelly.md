@@ -79,8 +79,8 @@ He teaches mainly on the OSU-Cascades campus in Bend and mentors undergraduate a
 ## Outside the lab
 
 <div class="sb-outside">
-  <figure><img src="{{ '/assets/img/people/patrick/dogs.jpg' | relative_url }}" alt="Patrick in sunglasses and a cap, mouth open in mock surprise, with his two dogs on a trail" loading="lazy"><figcaption>With his dogs</figcaption></figure>
-  <figure><img src="{{ '/assets/img/people/patrick/hiking.jpg' | relative_url }}" alt="Patrick taking a selfie on a hike above a river canyon" loading="lazy"><figcaption>On the trail</figcaption></figure>
-  <figure><img src="{{ '/assets/img/people/patrick/opera.jpg' | relative_url }}" alt="Patrick in a feathered helmet and armour costume, arms spread wide" loading="lazy"><figcaption>In costume for an opera</figcaption></figure>
-  <figure><img src="{{ '/assets/img/people/patrick/performance.jpg' | relative_url }}" alt="Patrick in a tuxedo holding a bouquet of flowers after a performance" loading="lazy"><figcaption>After a performance</figcaption></figure>
+  <figure><img src="{{ '/assets/img/people/patrick/dogs.jpg' | relative_url }}" alt="Patrick in sunglasses and a cap, mouth open in mock surprise, with his two dogs on a trail" loading="lazy"></figure>
+  <figure><img src="{{ '/assets/img/people/patrick/hiking.jpg' | relative_url }}" alt="Patrick taking a selfie on a hike above a river canyon" loading="lazy"></figure>
+  <figure><img src="{{ '/assets/img/people/patrick/opera.jpg' | relative_url }}" alt="Patrick in a feathered helmet and armour costume, arms spread wide" loading="lazy"></figure>
+  <figure><img src="{{ '/assets/img/people/patrick/performance.jpg' | relative_url }}" alt="Patrick in a tuxedo holding a bouquet of flowers after a performance" loading="lazy"></figure>
 </div>
