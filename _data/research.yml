@@ -35,9 +35,10 @@
     We study how computers recognize, represent, and generate musical structure. We test what generative
     models learn about rhythm and harmony, build systems that transcribe piano recordings into notes, and
     create datasets to test these abilities. Our musicology work examines music in its historical context.
-  image: research/musical-structure.jpg
+  image: research/musical-structure.png
   alt: >-
-    A piano recording's waveform above the piano roll of notes that a neural network transcribed from it.
+    Piano roll of a performance from C2 to C7 over about 45 seconds, note colour showing velocity; outlined notes
+    mark edits to pitch, velocity, duration and timing, and deleted notes.
   tags: [Musicology, Transcription, Generation]
   feature: {label: "Explore SynTheory+", url: "https://huggingface.co/datasets/derekxkwan/syntheory_plus"}
 - id: applied-sensing
