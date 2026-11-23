@@ -28,14 +28,14 @@ $luminance: #ffb500;
 }
 
 html[data-theme="dark"] {
-  --global-theme-color: #{$luminance};
-  --global-hover-color: #{$luminance};
-  --global-hover-text-color: #{$dark-bg};
+  --global-theme-color: #{$beaver-orange};
+  --global-hover-color: #{$beaver-orange};
+  --global-hover-text-color: #ffffff;
   --global-bg-color: #{$dark-bg};
   --global-card-bg-color: #2b3035;
   --sb-band-bg: #2b3035;
   --sb-chip-text: #e9e5e4;
-  --sb-heading-color: #{$luminance};
+  --sb-heading-color: #{$beaver-orange};
   --sb-link-color: #e9e5e4;
 }
 
@@ -490,7 +490,7 @@ details.sb-more {
 }
 
 html[data-theme="dark"] {
-  .sb-venue { border-color: #ff7a45; color: #ff7a45; }
+  .sb-venue { border-color: #{$beaver-orange}; color: #{$beaver-orange}; }
   .sb-venue-journal { border-color: #8fbf7f; color: #8fbf7f; }
   .sb-venue-book { border-color: #{$luminance}; color: #{$luminance}; }
 }
@@ -1449,7 +1449,7 @@ article .sb-intro a.sb-hl-eecs {
 }
 
 html[data-theme="dark"] .sb-intro .sb-hl-osu {
-  color: #ff7a45 !important; // Beaver Orange is too dark on the dark background
+  color: #{$beaver-orange} !important; // Beaver Orange in both themes
 }
 
 // a section heading with a button on its right
@@ -1484,7 +1484,7 @@ html[data-theme="dark"] .sb-intro .sb-hl-osu {
 
 html[data-theme="dark"] .sb-btn {
   background: var(--global-theme-color);
-  color: #{$dark-bg} !important;
+  color: #ffffff !important;
 }
 
 .sb-join-band {
@@ -1566,7 +1566,7 @@ article > .sb-section-head:first-child {
   opacity: 0.6;
 }
 html[data-theme="dark"] .sb-sep {
-  color: #{$luminance};
+  color: #{$beaver-orange};
 }
 
 // "Now: Employer" stays on one line
@@ -1625,7 +1625,7 @@ html[data-theme="dark"] .sb-sep {
 
 html[data-theme="dark"] .sb-pi-links a i,
 html[data-theme="dark"] .sb-pi-links .sb-sep {
-  color: #{$luminance};
+  color: #{$beaver-orange};
 }
 
 // footer: Copyright YEAR • Soundbendor Lab • EECS • Oregon State University
@@ -1663,8 +1663,8 @@ footer .sb-sep {
   }
 }
 html[data-theme="dark"] .sb-pill-link {
-  border-color: #{$luminance};
-  color: #{$luminance} !important;
+  border-color: #{$beaver-orange};
+  color: #{$beaver-orange} !important;
 }
 
 /* ---------- Project cards: image rule, small tags, link buttons, status ---------- */
@@ -1720,8 +1720,8 @@ html[data-theme="dark"] .sb-pill-link {
   color: #{$beaver-orange};
 }
 html[data-theme="dark"] .sb-status {
-  border-color: #{$luminance};
-  color: #{$luminance};
+  border-color: #{$beaver-orange};
+  color: #{$beaver-orange};
 }
 
 /* ---------- Projects: program legend at the bottom; card labels link to it ---------- */
@@ -1776,7 +1776,7 @@ article ul > li::marker {
   font-size: 1.15em;
 }
 html[data-theme="dark"] article ul > li::marker {
-  color: #{$luminance};
+  color: #{$beaver-orange};
 }
 
 /* ---------- project cards: Read more on the left, Related on the right ---------- */
@@ -1833,7 +1833,7 @@ html[data-theme="dark"] article ul > li::marker {
   }
 }
 html[data-theme="dark"] .sb-join-intro {
-  a.sb-hl-link { color: #ff7a45 !important; }
+  a.sb-hl-link { color: #{$beaver-orange} !important; }
   .sb-topics { color: #8cc8e0; }
 }
 
@@ -1871,7 +1871,7 @@ html[data-theme="dark"] .sb-join-intro {
 html[data-theme="dark"] .sb-cta {
   background: #{mix($beaver-orange, #2b3035, 18%)} !important;
   color: #f7f5f5 !important;
-  .sb-cta-title { color: #ff7a45 !important; }
+  .sb-cta-title { color: #{$beaver-orange} !important; }
 }
 
 /* ---------- News: one-line titles, two-line summaries (text is written to fit; this is the safety net) ---------- */
@@ -1907,7 +1907,7 @@ html[data-theme="dark"] .sb-cta {
   color: #{mix($luminance, #423e3c, 55%)} !important;
 }
 html[data-theme="dark"] {
-  .publications ol.bibliography li .abbr abbr.sb-venue { border-color: #ff7a45; color: #ff7a45 !important; }
+  .publications ol.bibliography li .abbr abbr.sb-venue { border-color: #{$beaver-orange}; color: #{$beaver-orange} !important; }
   .publications ol.bibliography li .abbr abbr.sb-venue-journal { border-color: #8fbf7f; color: #8fbf7f !important; }
   .publications ol.bibliography li .abbr abbr.sb-venue-book { border-color: #{$luminance}; color: #{$luminance} !important; }
 }
@@ -1995,7 +1995,7 @@ article p,
 
   &:hover { text-decoration: underline !important; }
 }
-html[data-theme="dark"] .sb-rarea-feature { color: #ff7a45 !important; }
+html[data-theme="dark"] .sb-rarea-feature { color: #{$beaver-orange} !important; }
 
 @media (max-width: 700px) {
   .sb-rarea-body { grid-template-columns: minmax(0, 1fr); gap: 0.9rem; }
