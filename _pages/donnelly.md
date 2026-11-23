@@ -12,7 +12,7 @@ nav_order: 6
 ---
 
 <div class="sb-pi-head">
-  <img class="sb-pi-photo" src="{{ '/assets/img/people/patrick-donnelly-2024.png' | relative_url }}" alt="Patrick Donnelly">
+  <img class="sb-pi-photo" src="{{ '/assets/img/people/patrick/headshot-2026.jpg' | relative_url }}" alt="Patrick Donnelly">
   <div class="sb-pi-links">
     <a href="mailto:patrick.donnelly@oregonstate.edu"><i class="fa-solid fa-envelope"></i>Email</a>
     <a href="https://engineering.oregonstate.edu/about/directory/patrick-donnelly"><i class="fa-solid fa-building-columns"></i>OSU Engineering</a>
