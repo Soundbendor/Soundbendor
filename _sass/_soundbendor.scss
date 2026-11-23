@@ -2039,3 +2039,14 @@ html[data-theme="dark"] .publications ol.bibliography li .abbr abbr.sb-venue-the
   border-color: #5aa9c9;
   color: #5aa9c9 !important;
 }
+
+/* ---------- navbar brand: the lab's "db" mark ---------- */
+.navbar-brand.sb-brand {
+  display: flex;
+  align-items: center;
+  padding: 0.15rem 0;
+}
+.sb-brand-logo {
+  height: 2rem;
+  width: auto;
+}

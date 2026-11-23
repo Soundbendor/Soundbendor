@@ -1,30 +1,12 @@
-{%- comment -%} Soundbendor override of al_folio_core 1.0.15 _includes/header.liquid: a page's optional nav_title is used as its navbar label (e.g. Student Projects shows as Projects). {%- endcomment -%}
+{%- comment -%} Soundbendor override of al_folio_core 1.0.15 _includes/header.liquid: a page's optional nav_title is used as its navbar label (e.g. Student Projects shows as Projects); the brand on the left is the lab's "db" mark (light and dark versions) on every page. {%- endcomment -%}
 <header>
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
-      {% if page.permalink != '/' %}
-        <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
-          {% if site.title == 'blank' %}
-            {% if site.first_name %}
-              <span class="font-weight-bold">
-                {{- site.first_name -}}
-              </span>
-            {% endif %}
-            {% if site.middle_name %}
-              {{- site.middle_name -}}
-            {% endif %}
-            {% if site.last_name %}
-              {{- site.last_name -}}
-            {% endif %}
-          {% else %}
-            {{- site.title -}}
-          {% endif %}
-        </a>
-      {% elsif site.enable_navbar_social %}
-        <!-- Social Icons -->
-        <div class="navbar-brand social">{% social_links %}</div>
-      {% endif %}
+      <a class="navbar-brand sb-brand" href="{{ site.baseurl }}/" aria-label="{{ site.title }} home">
+        <img class="sb-brand-logo only-light" src="{{ '/assets/img/logo/db-light.png' | relative_url }}" alt="{{ site.title }}">
+        <img class="sb-brand-logo only-dark" src="{{ '/assets/img/logo/db-dark.png' | relative_url }}" alt="{{ site.title }}">
+      </a>
       <!-- Navbar Toggle -->
       <button
         class="navbar-toggler collapsed navbar-toggler-main"
