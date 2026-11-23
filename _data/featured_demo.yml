@@ -8,7 +8,7 @@
 title: "Mood Playlist"
 url: "https://soundbendor-productivity-playlist-stream-a3w1d6.streamlit.app/"
 image: "img/home/featured-mood-playlist.png"
-alt: "A playlist path on the valence–arousal map, rising in steps from House of Pain by Faster Pussycat to From Zero To Hero by Sarah Connor"
+alt: "An 11-song playlist path on the valence–arousal map, climbing from Patty Loveless (How Can I Help You Say Goodbye) to Rachael Yamagata (1963)"
 description: "Pick a starting song and a destination song, and the demo builds a playlist that moves smoothly from one mood to the other, one step at a time across the valence–arousal map. It runs the k-nearest-neighbour playlist algorithm Shaurya Gaur developed from an NCUR project into an Honors thesis and an EvoMUSART paper."
 people: ["shaurya-gaur"]
 paper: "gaur2024generating"

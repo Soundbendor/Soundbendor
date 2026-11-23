@@ -2254,7 +2254,10 @@ html[data-theme="dark"] {
 }
 
 /* ---------- Home: Featured Demo (content in _data/featured_demo.yml) ---------- */
-// a white card with the Demo colour (Beaver Orange) on its left edge, like the Demo cards on Research
+// a light-gray band (to break up the page) with the Demo colour (Beaver Orange) on its left edge
+:root { --sb-feature-bg: #e9e5e4; }
+html[data-theme="dark"] { --sb-feature-bg: #343a40; }
+
 .sb-feature {
   display: grid;
   grid-template-columns: 340px minmax(0, 1fr);
@@ -2262,7 +2265,7 @@ html[data-theme="dark"] {
   align-items: center;
   margin-top: 1.25rem;
   padding: 1.25rem 1.5rem;
-  background: var(--sb-band-bg);
+  background: var(--sb-feature-bg);
   border-radius: 0.5rem;
   border-left: 4px solid #{$beaver-orange};
 }
