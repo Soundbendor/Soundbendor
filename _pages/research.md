@@ -46,7 +46,7 @@ nav_order: 0
 {%- for r in site.data.resources -%}
   {%- assign info = site.data.bibkeys[r.paper] -%}
   <div class="sb-dataset sb-res-{{ r.kind | default: 'Dataset' | slugify }}">
-    <div class="sb-dataset-name">{% if r.kind %}<span class="sb-dataset-kind">{{ r.kind }}</span> {% endif %}<strong>{{ r.name }}</strong> <a class="sb-prog-link" href="{{ r.url }}">{% if r.kind == "Demo" %}Open the demo{% else %}{{ r.host }}{% endif %}</a></div>
+    <div class="sb-dataset-name">{% if r.kind %}<span class="sb-dataset-kind">{{ r.kind }}</span> {% endif %}<strong>{{ r.name }}</strong> <a class="sb-prog-link" href="{{ r.url }}">{% if r.kind == "Demo" %}Demo{% else %}{{ r.host }}{% endif %}</a></div>
     <p>{{ r.short }}</p>
     {%- if info -%}<span class="sb-dataset-cite">Cite: <a href="{{ info.page | relative_url }}#{{ r.paper }}">{{ info.label }}</a></span>{%- endif -%}
   </div>

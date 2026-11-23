@@ -30,7 +30,7 @@
   short: Build a playlist that moves smoothly from one song's mood to another's, plotted on the valence–arousal map.
   description: Shaurya Gaur's interactive demo of the KNN playlist algorithm (IHIET-AI 2022, EvoMUSART 2024, Honors thesis 2023).
   paper: gaur2024generating
-- name: Proto-Indo-European Text-to-Speech
+- name: PIE Text-to-Speech
   kind: Demo
   url: https://soundbendor-pie-phonenetic-synthesis-deploy-app-7ieutx.streamlit.app/
   host: Streamlit
