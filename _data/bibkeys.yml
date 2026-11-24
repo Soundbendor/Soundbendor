@@ -179,7 +179,7 @@ donnelly2017words:
   label: "Donnelly et al. 2017"
   kind: "Paper"
   year: "2017"
-  title: "Words matter: Automatic detection of questions in classroom discourse using linguistics, paralinguistics, and context"
+  title: "Words matter: Automatic detection of teacher questions in live classroom discourse using linguistics, acoustics, and context"
   tags: "Speech & Text|Multimodal|Education"
 donnelly2022concatenative:
   page: "/publications/"
