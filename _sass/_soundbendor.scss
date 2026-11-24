@@ -2178,8 +2178,11 @@ html[data-theme="dark"] .publications ol.bibliography li .abbr abbr.sb-venue-the
 }
 .sb-pubcount-label { font-weight: 700; }
 .sb-pubcount-parts {
+  margin-left: 1rem;   // space between the label and the breakdown
   font-size: 0.9rem;
   color: var(--global-text-color-light);
+
+  .sb-sep { margin: 0 0.85em; }
 }
 
 .sb-scholar-body {
