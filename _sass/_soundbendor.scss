@@ -2159,6 +2159,29 @@ html[data-theme="dark"] .publications ol.bibliography li .abbr abbr.sb-venue-the
 
 .sb-btn-sm { padding: 0.15rem 0.7rem; font-size: 0.78rem; }
 
+// publication count line at the top of the PI page's Publications & Citations band (_data/pubcounts.yml)
+.sb-pubcount {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.2rem 0.5rem;
+  margin: 0 0 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+.sb-pubcount-n {
+  font-family: $sb-head-font;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #{$beaver-orange};
+}
+.sb-pubcount-label { font-weight: 700; }
+.sb-pubcount-parts {
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+}
+
 .sb-scholar-body {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
