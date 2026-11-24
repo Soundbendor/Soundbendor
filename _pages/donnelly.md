@@ -72,9 +72,10 @@ He teaches mainly on the OSU-Cascades campus in Bend and mentors undergraduate a
 
 ## Service
 
-{% for x in site.data.service %}
+{% for x in site.data.service -%}
 - **{{ x.role }}:** [{{ x.what }}]({{ x.url }}){% if x.venue %}, *{{ x.venue }}*{% endif %}, {{ x.year }}
-{% endfor %}- **Reviewer:** EvoMUSART, ISMIR, *Computer Music Journal*, IEEE TAFFC, IEEE Access, ACM ICMI and others
+{% endfor -%}
+- **Reviewer:** EvoMUSART, ISMIR, *Computer Music Journal*, IEEE TAFFC, IEEE Access, ACM ICMI and others
 
 ## Funding
 
