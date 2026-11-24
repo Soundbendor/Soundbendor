@@ -79,9 +79,9 @@ He teaches mainly on the OSU-Cascades campus in Bend and mentors undergraduate a
 
 ## Funding
 
-{% for g in site.data.funding %}
+{% for g in site.data.funding -%}
 - {% if g.role %}**{{ g.role }}**, {% endif %}[{{ g.title }}]({{ g.url }}). {{ g.sponsor }}{% if g.number %}, {{ g.number }}{% endif %}{% if g.years %}, {{ g.years }}{% endif %}.{% if g.poster %} <a class="sb-pill-link" href="{{ g.poster | prepend: '/assets/pdf/' | relative_url }}"><i class="fa-solid fa-image"></i> Poster</a>{% endif %}
-{% endfor %}
+{% endfor -%}
 
 ## Outside the lab
 
