@@ -1069,6 +1069,8 @@ $sb-kind-colors: (
   // High Desert
   "paper": #003b5c,
   // Star Canvas
+  "demo": #d73f09,
+  // Beaver Orange (as on the Research Demo cards)
 );
 
 .sb-news {
@@ -2303,4 +2305,52 @@ html[data-theme="dark"] { --sb-feature-bg: #343a40; }
 @media (max-width: 700px) {
   .sb-feature { grid-template-columns: minmax(0, 1fr); gap: 1rem; }
   .sb-feature-img { max-width: 420px; }
+}
+
+/* ---------- Home: "Just for fun" band (content in _data/fun_demo.yml) ---------- */
+// a dark Star Canvas band with white text, so it reads differently from the gray Featured Demo block
+$sb-star-canvas: #003b5c;
+
+.sb-fun {
+  display: grid;
+  grid-template-columns: 132px minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: center;
+  margin: 1.75rem 0 1.5rem;
+  padding: 1.25rem 1.5rem;
+  background: #{$sb-star-canvas};
+  border-radius: 0.5rem;
+  color: #ffffff;
+}
+
+.sb-fun-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.35rem;
+  border: 2px solid #ffffff;
+}
+
+.sb-fun-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #{$luminance};
+  margin-bottom: 0.25rem;
+}
+
+.post .sb-fun-title {
+  margin: 0 0 0.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.sb-fun-text p {
+  margin: 0 0 0.9rem;
+  color: #ffffff;
+}
+
+@media (max-width: 560px) {
+  .sb-fun { grid-template-columns: 88px minmax(0, 1fr); gap: 1rem; padding: 1rem; }
 }

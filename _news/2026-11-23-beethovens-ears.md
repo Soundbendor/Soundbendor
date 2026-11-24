@@ -1,0 +1,14 @@
+---
+layout: post
+date: 2026-11-23
+title: "New demo: Beethoven's Ears"
+kind: Demo
+source: "Interactive demo (Streamlit)"
+link: https://beethovens-ears.streamlit.app/
+links:
+  - label: "Code"
+    url: https://github.com/Soundbendor/beethovens-ears
+inline: true
+related_posts: false
+---
+How did Beethoven hear his own music? Hear it through reconstructions of his hearing in 1801, 1812 and 1824, then try those hearing losses on any sound.

@@ -56,6 +56,17 @@ through hands-on projects with students in Corvallis, Bend,&nbsp;&amp;&nbsp;Ecam
 
 <p class="sb-more-news"><a href="{{ '/news/' | relative_url }}">All news <i class="fa-solid fa-arrow-right"></i></a></p>
 
+{% assign fun = site.data.fun_demo %}
+<div class="sb-fun">
+  <a class="sb-fun-imglink" href="{{ fun.url }}"><img class="sb-fun-img" src="{{ fun.image | prepend: '/assets/' | relative_url }}?v={{ site.time | date: '%s' }}" alt="{{ fun.alt | escape }}" title="{{ fun.credit | escape }}"></a>
+  <div class="sb-fun-text">
+    <div class="sb-fun-label">{{ fun.label }}: {{ fun.title }}</div>
+    <h3 class="sb-fun-title">{{ fun.question }}</h3>
+    <p>{{ fun.text }}</p>
+    <a class="sb-btn" href="{{ fun.url }}">Listen <i class="fa-solid fa-headphones"></i></a>
+  </div>
+</div>
+
 <div class="sb-band sb-join-band">
   <div>We welcome students with backgrounds in music and computer science,<br>from their first undergraduate research project through doctoral study.</div>
   <a class="sb-btn" href="{{ '/join/' | relative_url }}">Join the lab <i class="fa-solid fa-arrow-right"></i></a>
