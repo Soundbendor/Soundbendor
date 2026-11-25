@@ -386,6 +386,8 @@ filtered_bibtex_keywords:
     data,
     eprint,
     note,
+    gradstudents,
+    ugstudents,
     exclude,
     keywords,
     related,
