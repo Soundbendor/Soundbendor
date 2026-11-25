@@ -1,0 +1,11 @@
+{%- comment -%}
+  Controls for a Home carousel (.sb-carousel). Hidden until assets/js/sb-carousel.js starts the carousel,
+  which also adds one dot per slide. Use only when the carousel has two or more slides.
+  include.label: what one slide is, for screen-reader labels ("featured demo")
+{%- endcomment -%}
+<div class="sb-carousel-controls" hidden>
+  <button type="button" class="sb-carousel-btn sb-carousel-prev" aria-label="Previous {{ include.label }}"><i class="fa-solid fa-chevron-left" aria-hidden="true"></i></button>
+  <span class="sb-carousel-dots"></span>
+  <button type="button" class="sb-carousel-btn sb-carousel-next" aria-label="Next {{ include.label }}"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+  <button type="button" class="sb-carousel-btn sb-carousel-pause" aria-label="Pause automatic scrolling"><i class="fa-solid fa-pause" aria-hidden="true"></i></button>
+</div>

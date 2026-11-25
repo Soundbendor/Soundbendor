@@ -2380,3 +2380,113 @@ $sb-star-canvas: #003b5c;
 @media (max-width: 560px) {
   .sb-fun { grid-template-columns: 88px minmax(0, 1fr); gap: 1rem; padding: 1rem; }
 }
+
+/* ---------- Home carousels: Featured Demo and Just for fun (assets/js/sb-carousel.js) ---------- */
+// Slides share one grid cell, so the tallest slide sets the height and the page never jumps; the active one fades in.
+// Inactive slides are visibility:hidden, which also takes them out of the tab order and the accessibility tree.
+// The carousel wrapper carries the outer margins the single .sb-feature / .sb-fun block used to have.
+.sb-carousel-feature { margin-top: 1.25rem; }
+.sb-carousel-fun { margin: 1.75rem 0 1.5rem; }
+.sb-carousel .sb-feature,
+.sb-carousel .sb-fun { margin: 0; }
+
+.sb-carousel-track {
+  display: grid;
+}
+
+.sb-slide {
+  grid-area: 1 / 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0s linear 0.5s;
+}
+
+.sb-slide.is-active {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sb-slide,
+  .sb-slide.is-active { transition: none; }
+}
+
+// arrows, one dot per slide, pause/play; hidden until the script starts (and absent with a single slide)
+.sb-carousel-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.6rem;
+}
+
+.sb-carousel-controls[hidden] { display: none; }
+
+.sb-carousel-dots {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0.25rem;
+}
+
+.sb-carousel-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid var(--global-divider-color);
+  background: var(--global-card-bg-color);
+  color: #{$beaver-orange};
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+
+  &:hover {
+    background: #{$beaver-orange};
+    border-color: #{$beaver-orange};
+    color: #ffffff;
+  }
+}
+
+// the pause button is secondary: smaller and set slightly apart
+.sb-carousel-pause {
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-left: 0.4rem;
+  font-size: 0.65rem;
+  color: var(--global-text-color-light);
+}
+
+// 24 px target, 10 px visible dot
+.sb-carousel-dot {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 0.65rem;
+    height: 0.65rem;
+    margin: auto;
+    border-radius: 50%;
+    border: 2px solid #{$beaver-orange};
+    background: transparent;
+    transition: background 0.15s ease;
+  }
+
+  &.is-active::before,
+  &:hover::before { background: #{$beaver-orange}; }
+}
+
+.sb-carousel-btn:focus-visible,
+.sb-carousel-dot:focus-visible {
+  outline: 2px solid #{$beaver-orange};
+  outline-offset: 2px;
+}
