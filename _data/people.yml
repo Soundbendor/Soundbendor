@@ -92,7 +92,7 @@
   note: ""
   theses: ["mccabe2026audiofree"]
   papers: ["mccabe2026measuring", "mccabe2026classifying", "mccabe2026audio"]
-  projects: ["2025-explainable-timbre-annotators"]
+  projects: ["2026-explainable-timbre-annotators"]
   links:
     linkedin: "https://www.linkedin.com/in/p-j-mccabe/"
     github: ""
@@ -205,6 +205,28 @@
   projects: ["2026-aura-capstone"]
   links:
     linkedin: ""
+    github: ""
+    website: ""
+    scholar: ""
+  now: ""
+
+- id: "alec-krsek"
+  name: "Alec Krsek"
+  photo: "alec-krsek.jpg"
+  status: "current"
+  level: "bs"
+  program: "B.S., Computer Science"
+  year: ""
+  campus: "Bend"
+  other_degrees: []
+  activities: ["CRF"]
+  tags: ["Timbre", "Perception", "Language Models", "Datasets", "Audio Tagging", "Signal Processing"]
+  note: ""
+  theses: []
+  papers: ["mccabe2026measuring"]
+  projects: ["2025-timbral-analysis"]
+  links:
+    linkedin: "https://www.linkedin.com/in/alec-krsek-091bb4296/"
     github: ""
     website: ""
     scholar: ""
@@ -583,28 +605,6 @@
     website: ""
     scholar: ""
   now: "Columbia Sportswear"
-
-- id: "alec-krsek"
-  name: "Alec Krsek"
-  photo: "alec-krsek.jpg"
-  status: "alumni"
-  level: "bs"
-  program: "B.S., Computer Science"
-  year: "2025"
-  campus: "Bend"
-  other_degrees: []
-  activities: ["CRF"]
-  tags: ["Timbre", "Perception", "Language Models", "Datasets", "Audio Tagging", "Signal Processing"]
-  note: ""
-  theses: []
-  papers: ["mccabe2026measuring"]
-  projects: ["2025-explainable-timbre-annotators", "2025-timbral-analysis"]
-  links:
-    linkedin: "https://www.linkedin.com/in/alec-krsek-091bb4296/"
-    github: ""
-    website: ""
-    scholar: ""
-  now: "Worldwide Tech Services"
 
 - id: "daniel-lounsbury"
   name: "Daniel Lounsbury"

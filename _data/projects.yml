@@ -1,7 +1,8 @@
 # Student projects without their own paper page: research projects and capstones.
 # Seeded 2026-11-21 from the old site's database. Edit by pull request.
 #   status    optional, e.g. "In progress" (shown as a badge on the card)
-#   type      URSA | NCUR | CRF (Cascades Research Fellowship, formerly Layman) | Ind. Study | Grant | Capstone
+#   type      URSA | NCUR | CRF (Cascades Research Fellowship, formerly Layman) | Ind. Study | Grant | Capstone,
+#             or "" for work outside these programs (e.g. graduate research): the card then shows only the year
 #   people    ids from _data/people.yml     tags  theme tags (see _data/tags.yml)
 #   team      optional text shown instead of (or after) people, e.g. a team with no named members
 #   video     YouTube video ID (video2: optional second talk)              slides, poster, poster2  paths under assets/pdf/
@@ -40,6 +41,21 @@
   website: ""
   code: ""
 
+- id: "2026-explainable-timbre-annotators"
+  title: "Explainable Synthetic Timbre Annotators"
+  year: 2026
+  type: ""
+  people: ["peter-mccabe"]
+  tags: ["Timbre", "Perception", "Language Models"]
+  summary: "Language models as explainable timbre raters: Claude and GPT wrote 60 Python functions that score sounds on eight timbre words, such as bright, rough and warm, from familiar audio features. On the AudioCommons dataset their ratings correlated at least weakly with human listeners' but varied far more."
+  video: ""
+  slides: ""
+  poster: "projects/2026-explainable-timbre-annotators-poster.pdf"
+  image: "projects/2026-explainable-timbre-annotators.jpg"
+  website: ""
+  code: ""
+  related: ["mccabe2026measuring"]
+
 - id: "2025-llm-emotion-prediction"
   title: "LLM Emotion Prediction"
   year: 2025
@@ -70,21 +86,6 @@
   website: ""
   code: ""
   related: []
-
-- id: "2025-explainable-timbre-annotators"
-  title: "Explainable Synthetic Timbre Annotators"
-  year: 2025
-  type: "Ind. Study"
-  people: ["peter-mccabe", "alec-krsek"]
-  tags: ["Timbre", "Perception", "Language Models"]
-  summary: "Language models as explainable timbre raters: Claude and GPT wrote 60 Python functions that score sounds on eight timbre words, such as bright, rough and warm, from familiar audio features. On the AudioCommons dataset their ratings correlated at least weakly with human listeners' but varied far more."
-  video: ""
-  slides: ""
-  poster: "projects/2025-explainable-timbre-annotators-poster.pdf"
-  image: "projects/2025-explainable-timbre-annotators.jpg"
-  website: ""
-  code: ""
-  related: ["mccabe2026measuring"]
 
 - id: "2025-timbral-analysis"
   title: "Timbral Analysis"
