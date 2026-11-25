@@ -32,6 +32,13 @@
   short: See how GPT-4o-mini rated the mood of 31,596 Billboard Hot 100 songs (1958–2024), and how its ratings compare with human listeners'.
   description: Isaac Brickner's Cascades Research Fellowship project LLM Emotion Prediction (2025) as an explorer of chart history, songs, an emotion map and GPT-versus-human agreement. Repo Soundbendor/hot100-emotion-explorer.
   project: 2025-llm-emotion-prediction
+- name: Sung Vowel Explorer
+  kind: Demo
+  url: https://sung-vowel-explorer.streamlit.app/
+  host: Streamlit
+  short: See how sung vowels blur at high pitch, hear where a classifier goes wrong, and sing into your mic to see which vowel it hears.
+  description: Parker Carlson's sung vowel classification (EvoMUSART 2024), retrained on VocalSet as an explorer of the vowel space, the model's mistakes and a sing-along classifier. Repo Soundbendor/sung-vowel-explorer.
+  paper: carlson2024sung
 - name: Mood Playlist
   kind: Demo
   url: https://soundbendor-productivity-playlist-stream-a3w1d6.streamlit.app/
