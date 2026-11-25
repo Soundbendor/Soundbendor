@@ -46,6 +46,13 @@
   short: Build a playlist that moves smoothly from one song's mood to another's, one step at a time, plotted on the valence–arousal map.
   description: Shaurya Gaur's interactive demo of the KNN playlist algorithm (IHIET-AI 2022, EvoMUSART 2024, Honors thesis 2023).
   paper: gaur2024generating
+- name: Voice Vote
+  kind: Demo
+  url: https://voice-vote.streamlit.app/
+  host: Streamlit
+  short: Mix single yes and no voices into a crowd, see whether a model can hear how the crowd voted, and add your own voice to the mix.
+  description: Alex Prestwich's URSA project and paper with Patrick Donnelly (ICFSP 2022) as an interactive demo, comparing the 2022 recipe with a model trained today. Repo Soundbendor/voice-vote.
+  paper: donnelly2022identifying
 - name: PIE Text-to-Speech
   kind: Demo
   url: https://soundbendor-pie.streamlit.app/

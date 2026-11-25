@@ -614,6 +614,7 @@
   image: "projects/2021-voice-vote.png"
   website: ""
   code: ""
+  demo: "https://voice-vote.streamlit.app/"
   related: ["donnelly2022identifying"]
 
 - id: "2020-audio-transposition"
