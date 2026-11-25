@@ -22,7 +22,7 @@
   campus: "Bend → Corvallis"
   other_degrees: ["M.S. 2026", "B.S. 2022"]
   activities: ["AMP", "CRF", "NCUR", "Capstone", "Honors"]
-  tags: ["Music Emotion", "Speech & Text", "Language Models", "Datasets", "Multimodal", "Computer Vision", "Sustainability", "Food Waste", "IoT"]
+  tags: ["Multimodal", "Computer Vision", "Sustainability", "Food Waste", "IoT", "Music Emotion", "Speech & Text", "Language Models", "Datasets"]
   note: ""
   theses: ["beery2025towards", "beery2022predicting"]
   papers: ["beery2026towards", "beery2024smart", "beery2024learning", "donnelly2022evaluating"]
@@ -88,11 +88,11 @@
   campus: "Corvallis"
   other_degrees: ["M.S. 2026"]
   activities: []
-  tags: ["Audio Tagging", "Timbre", "Language Models", "Multimodal"]
+  tags: ["Audio Tagging", "Timbre", "Language Models", "Multimodal", "Perception", "Datasets"]
   note: ""
   theses: ["mccabe2026audiofree"]
   papers: ["mccabe2026measuring", "mccabe2026classifying", "mccabe2026audio"]
-  projects: []
+  projects: ["2025-explainable-timbre-annotators"]
   links:
     linkedin: "https://www.linkedin.com/in/p-j-mccabe/"
     github: ""
@@ -594,11 +594,11 @@
   campus: "Bend"
   other_degrees: []
   activities: ["CRF"]
-  tags: ["Audio Tagging", "Timbre", "Signal Processing"]
+  tags: ["Timbre", "Perception", "Language Models", "Datasets", "Audio Tagging", "Signal Processing"]
   note: ""
   theses: []
   papers: ["mccabe2026measuring"]
-  projects: ["2025-timbral-analysis"]
+  projects: ["2025-explainable-timbre-annotators", "2025-timbral-analysis"]
   links:
     linkedin: "https://www.linkedin.com/in/alec-krsek-091bb4296/"
     github: ""
@@ -1276,7 +1276,7 @@
   campus: "Corvallis"
   other_degrees: []
   activities: ["URSA", "NCUR"]
-  tags: ["Audio Synthesis", "Signal Processing", "Voice", "Speech & Text", "Audio Models"]
+  tags: ["Voice", "Speech & Text", "Audio Models", "Audio Synthesis", "Signal Processing"]
   note: ""
   theses: []
   papers: ["carlson2024sung", "donnelly2023transposition"]

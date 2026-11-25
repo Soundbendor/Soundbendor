@@ -71,6 +71,21 @@
   code: ""
   related: []
 
+- id: "2025-explainable-timbre-annotators"
+  title: "Explainable Synthetic Timbre Annotators"
+  year: 2025
+  type: "Ind. Study"
+  people: ["peter-mccabe", "alec-krsek"]
+  tags: ["Timbre", "Perception", "Language Models"]
+  summary: "Language models as explainable timbre raters: Claude and GPT wrote 60 Python functions that score sounds on eight timbre words, such as bright, rough and warm, from familiar audio features. On the AudioCommons dataset their ratings correlated at least weakly with human listeners' but varied far more."
+  video: ""
+  slides: ""
+  poster: "projects/2025-explainable-timbre-annotators-poster.pdf"
+  image: "projects/2025-explainable-timbre-annotators.jpg"
+  website: ""
+  code: ""
+  related: ["mccabe2026measuring"]
+
 - id: "2025-timbral-analysis"
   title: "Timbral Analysis"
   year: 2025
@@ -84,7 +99,7 @@
   image: "projects/2025-timbral-analysis.jpg"
   website: ""
   code: ""
-  related: []
+  related: ["mccabe2026measuring"]
 
 - id: "2024-algorhythms"
   title: "AlgoRhythms"
