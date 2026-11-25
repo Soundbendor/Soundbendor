@@ -342,6 +342,13 @@ mathew2023improving:
   year: "2023"
   title: "Improving the Accuracy and Efficiency of Bird Song Analysis with Machine Learning Based Event Detection"
   tags: "Audio Tagging|Signal Processing|Bioacoustics"
+mccabe2026audio:
+  page: "/publications/"
+  label: "McCabe & Donnelly 2026"
+  kind: "Paper"
+  year: "2026"
+  title: "Audio Timbre Classification With Text-only Training"
+  tags: "Audio Tagging|Timbre|Language Models|Multimodal"
 mccabe2026audiofree:
   page: "/theses/"
   label: "McCabe 2026 (Thesis)"
@@ -356,6 +363,13 @@ mccabe2026classifying:
   year: "2026"
   title: "Classifying Audio Timbre Without Audio Using Text-Only Training"
   tags: "Audio Tagging|Timbre|Language Models|Multimodal"
+mccabe2026measuring:
+  page: "/publications/"
+  label: "McCabe et al. 2026"
+  kind: "Paper"
+  year: "2026"
+  title: "Measuring Consistency in Explainable Synthetic Timbre Annotators"
+  tags: "Timbre|Perception|Language Models|Datasets"
 olney2017assessing:
   page: "/donnelly/"
   label: "Olney et al. 2017"

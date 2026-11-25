@@ -91,7 +91,7 @@
   tags: ["Audio Tagging", "Timbre", "Language Models", "Multimodal"]
   note: ""
   theses: ["mccabe2026audiofree"]
-  papers: ["mccabe2026classifying"]
+  papers: ["mccabe2026measuring", "mccabe2026classifying", "mccabe2026audio"]
   projects: []
   links:
     linkedin: "https://www.linkedin.com/in/p-j-mccabe/"
@@ -597,7 +597,7 @@
   tags: ["Audio Tagging", "Timbre", "Signal Processing"]
   note: ""
   theses: []
-  papers: []
+  papers: ["mccabe2026measuring"]
   projects: ["2025-timbral-analysis"]
   links:
     linkedin: "https://www.linkedin.com/in/alec-krsek-091bb4296/"
