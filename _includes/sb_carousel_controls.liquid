@@ -2,10 +2,12 @@
   Controls for a Home carousel (.sb-carousel). Hidden until assets/js/sb-carousel.js starts the carousel,
   which also adds one dot per slide. Use only when the carousel has two or more slides.
   include.label: what one slide is, for screen-reader labels ("featured demo")
+  include.id, include.target: when the controls sit outside the carousel (e.g. in its section head), give them an id,
+    set data-controls="<id>" on the .sb-carousel, and pass the track's id as target (for aria-controls)
 {%- endcomment -%}
-<div class="sb-carousel-controls" hidden>
-  <button type="button" class="sb-carousel-btn sb-carousel-prev" aria-label="Previous {{ include.label }}"><i class="fa-solid fa-chevron-left" aria-hidden="true"></i></button>
+<div class="sb-carousel-controls"{% if include.id %} id="{{ include.id }}"{% endif %} hidden>
+  <button type="button" class="sb-carousel-btn sb-carousel-prev"{% if include.target %} aria-controls="{{ include.target }}"{% endif %} aria-label="Previous {{ include.label }}"><i class="fa-solid fa-chevron-left" aria-hidden="true"></i></button>
   <span class="sb-carousel-dots"></span>
-  <button type="button" class="sb-carousel-btn sb-carousel-next" aria-label="Next {{ include.label }}"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+  <button type="button" class="sb-carousel-btn sb-carousel-next"{% if include.target %} aria-controls="{{ include.target }}"{% endif %} aria-label="Next {{ include.label }}"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
   <button type="button" class="sb-carousel-btn sb-carousel-pause" aria-label="Pause automatic scrolling"><i class="fa-solid fa-pause" aria-hidden="true"></i></button>
 </div>

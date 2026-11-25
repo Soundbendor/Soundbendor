@@ -1,5 +1,6 @@
 // Home carousels ("Featured Demo", "Just for fun"): one slide at a time, arrows, dots, auto-advance.
-// Markup: _pages/about.md (.sb-carousel > .sb-carousel-track > .sb-slide) + _includes/sb_carousel_controls.liquid.
+// Markup: _pages/about.md (.sb-carousel > .sb-carousel-track > .sb-slide) + _includes/sb_carousel_controls.liquid
+// (inside the carousel, or anywhere else when the carousel names them with data-controls="<id>").
 // Slides are stacked in one grid cell (CSS), so the tallest sets the height and nothing jumps.
 // Auto-advance every data-interval ms; pauses on mouse hover, keyboard focus, a hidden tab, or the pause button.
 // prefers-reduced-motion: starts paused (arrows and dots still work). Without JS only the first slide shows.
@@ -10,7 +11,8 @@
 
   function init(root) {
     var slides = Array.prototype.slice.call(root.querySelectorAll(".sb-slide"));
-    var bar = root.querySelector(".sb-carousel-controls");
+    // controls inside the carousel, or elsewhere (e.g. the section head) named by data-controls="<id>"
+    var bar = root.querySelector(".sb-carousel-controls") || document.getElementById(root.getAttribute("data-controls") || "");
     if (slides.length < 2 || !bar) return;
     var track = root.querySelector(".sb-carousel-track");
     var dotsBox = bar.querySelector(".sb-carousel-dots");
@@ -18,7 +20,7 @@
     var pauseIcon = pauseBtn.querySelector("i");
     var label = root.getAttribute("data-label") || "slide";
     var interval = parseInt(root.getAttribute("data-interval"), 10) || 10000;
-    var cur = 0, timer = null, userPaused = reduce, hover = false, focused = false;
+    var cur = 0, timer = null, userPaused = reduce, hover = [false, false], focused = [false, false];
 
     var dots = slides.map(function (s, i) {
       var b = document.createElement("button");
@@ -43,7 +45,7 @@
     function restart() {
       clearTimeout(timer);
       timer = null;
-      var run = !userPaused && !hover && !focused;
+      var run = !userPaused && !hover[0] && !hover[1] && !focused[0] && !focused[1];
       track.setAttribute("aria-live", run ? "off" : "polite");
       root.classList.toggle("is-paused", userPaused);
       if (run) timer = setTimeout(tick, interval);
@@ -66,17 +68,20 @@
     bar.querySelector(".sb-carousel-next").addEventListener("click", function () { go(cur + 1, true); });
     pauseBtn.addEventListener("click", function () { setPaused(!userPaused); });
 
-    // hover pause for a real mouse only (a tap on a touch screen never sends the matching "leave")
-    root.addEventListener("pointerenter", function (e) { if (e.pointerType === "mouse") { hover = true; restart(); } });
-    root.addEventListener("pointerleave", function (e) { if (e.pointerType === "mouse") { hover = false; restart(); } });
-    // pause while the keyboard is inside the carousel (not after a mouse click on an arrow)
-    root.addEventListener("focusin", function (e) {
-      var t = e.target;
-      focused = !!(t && t.matches && t.matches(":focus-visible"));
-      restart();
-    });
-    root.addEventListener("focusout", function (e) {
-      if (!root.contains(e.relatedTarget)) { focused = false; restart(); }
+    // hover pause for a real mouse only (a tap on a touch screen never sends the matching "leave");
+    // keyboard-focus pause (not after a mouse click on an arrow). Watched on the slides and on the controls.
+    [root, bar].forEach(function (el, n) {
+      if (n === 1 && root.contains(bar)) return;
+      el.addEventListener("pointerenter", function (e) { if (e.pointerType === "mouse") { hover[n] = true; restart(); } });
+      el.addEventListener("pointerleave", function (e) { if (e.pointerType === "mouse") { hover[n] = false; restart(); } });
+      el.addEventListener("focusin", function (e) {
+        var t = e.target;
+        focused[n] = !!(t && t.matches && t.matches(":focus-visible"));
+        restart();
+      });
+      el.addEventListener("focusout", function (e) {
+        if (!el.contains(e.relatedTarget)) { focused[n] = false; restart(); }
+      });
     });
 
     // swipe on touch screens

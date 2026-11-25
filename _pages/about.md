@@ -35,11 +35,12 @@ through hands-on projects with students in Corvallis, Bend,&nbsp;&amp;&nbsp;Ecam
 
 <div class="sb-section-head">
   <h2 id="featured-demo">Featured Demo</h2>
+  {% if sb_fds.size > 1 %}{% include sb_carousel_controls.liquid label="featured demo" id="sb-feature-controls" target="sb-feature-track" %}{% endif %}
   <a class="sb-btn" href="{{ '/research/' | relative_url }}#datasets-and-code">All demos <i class="fa-solid fa-arrow-right"></i></a>
 </div>
 
-<div class="sb-carousel sb-carousel-feature" data-interval="10000" data-label="featured demo" aria-roledescription="carousel" aria-label="Featured demos">
-<div class="sb-carousel-track" aria-live="off">
+<div class="sb-carousel sb-carousel-feature" data-interval="10000" data-label="featured demo" data-controls="sb-feature-controls" aria-roledescription="carousel" aria-label="Featured demos">
+<div class="sb-carousel-track" id="sb-feature-track" aria-live="off">
 {%- for fd in sb_fds -%}{%- assign fd_cite = site.data.bibkeys[fd.paper] -%}{%- if fd.project -%}{%- assign fd_pr = site.data.projects | where: "id", fd.project | first -%}{%- assign fd_pp = site.data.people | where: "id", fd_pr.people[0] | first -%}{%- endif %}
 <div class="sb-slide sb-feature{% if forloop.first %} is-active{% endif %}" role="group" aria-roledescription="slide" aria-label="{{ forloop.index }} of {{ forloop.length }}: {{ fd.title | escape }}">
   <a class="sb-feature-imglink" href="{{ fd.url }}"><img class="sb-feature-img" src="{{ fd.image | prepend: '/assets/' | relative_url }}?v={{ site.time | date: '%s' }}" alt="{{ fd.alt | escape }}"{% unless forloop.first %} loading="lazy"{% endunless %}></a>
@@ -55,7 +56,6 @@ through hands-on projects with students in Corvallis, Bend,&nbsp;&amp;&nbsp;Ecam
 {%- assign fd_pr = nil -%}{%- assign fd_pp = nil -%}
 {%- endfor %}
 </div>
-{% if sb_fds.size > 1 %}{% include sb_carousel_controls.liquid label="featured demo" %}{% endif %}
 </div>
 
 ## Recent News

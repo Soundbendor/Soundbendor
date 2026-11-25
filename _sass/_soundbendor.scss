@@ -2490,3 +2490,14 @@ $sb-star-canvas: #003b5c;
   outline: 2px solid #{$beaver-orange};
   outline-offset: 2px;
 }
+
+// controls placed in a section head (Featured Demo): centred between the heading and its button by the head's
+// space-between; on narrow screens they drop to their own centred line under the heading
+.sb-section-head .sb-carousel-controls { margin-top: 0; }
+
+@media (max-width: 575px) {
+  .sb-section-head .sb-carousel-controls {
+    order: 3;
+    flex-basis: 100%;
+  }
+}
