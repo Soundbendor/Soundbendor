@@ -2543,6 +2543,10 @@ $sb-star-canvas: #003b5c;
   margin-bottom: 3rem;
   scroll-margin-top: 120px;
 }
+.sb-x-section + .sb-x-section {
+  padding-top: 2.75rem;
+  border-top: 1px solid var(--global-divider-color);
+}
 
 .sb-x-head {
   display: flex;
