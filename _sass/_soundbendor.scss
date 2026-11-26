@@ -2688,6 +2688,14 @@ $sb-star-canvas: #003b5c;
   .sb-x-kick { color: #{$luminance}; }
   .sb-btn { justify-self: start; }
 }
+// drawn pictures: a 5:1 band above the text, on the drawing's own dark ground
+.sb-x-cur.sb-x-band {
+  align-content: start;
+  background: #101e2c;
+
+  > img { position: static; height: auto; aspect-ratio: 5; object-position: 50% 0; z-index: auto; }
+  &::after { display: none; }
+}
 .sb-x-cur-body {
   display: grid;
   gap: 0.5rem;
