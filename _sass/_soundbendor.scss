@@ -2696,6 +2696,17 @@ $sb-star-canvas: #003b5c;
   > img { position: static; height: auto; aspect-ratio: 5; object-position: 50% 0; z-index: auto; }
   &::after { display: none; }
 }
+.sb-x-cur.sb-x-band .sb-x-kick { color: rgba(255, 255, 255, 0.9); }
+.sb-x-cur.sb-x-light {
+  color: #{$sb-star-canvas};
+
+  h3, p { color: #{$sb-star-canvas}; }
+  .sb-x-kick { color: #{$sb-star-canvas}; }
+  .sb-x-credit { color: rgba(0, 59, 92, 0.8) !important; }
+  .sb-x-soon { color: #{$sb-star-canvas} !important; border-color: #{$sb-star-canvas}; }
+}
+// an odd last tile spans the row: let its text use the width
+.sb-x-cur:last-child:nth-child(odd):not(:first-child) p { max-width: none; }
 .sb-x-cur-body {
   display: grid;
   gap: 0.5rem;
