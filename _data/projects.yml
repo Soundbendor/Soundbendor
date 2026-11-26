@@ -264,7 +264,7 @@
   slides: ""
   poster: "projects/2023-deployable-ensembles-for-river-forecasting-poster.pdf"
   image: "projects/2023-deployable-ensembles-for-river-forecasting.png"
-  website: ""
+  website: "https://orion-junkins.github.io/RLF/"
   code: ""
   related: []
 
@@ -521,8 +521,8 @@
   slides: "projects/2022-river-level-forecasting-slides.pdf"
   poster: "projects/2022-river-level-forecasting-poster.pdf"
   image: "projects/2022-river-level-forecasting.png"
-  website: ""
-  code: ""
+  website: "https://orion-junkins.github.io/RLF/"
+  code: "https://github.com/orion-junkins/river-level-forecasting"
   related: ["donnelly2022short"]
 
 - id: "2021-conscience-consumer"
