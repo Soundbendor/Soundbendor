@@ -68,7 +68,7 @@
   poster: "projects/2025-llm-emotion-prediction-poster.pdf"
   image: ""
   website: ""
-  demo: "https://soundbendor-hot100-emotion.streamlit.app/"
+  demo: "https://hot100-emotion.streamlit.app/"
   code: ""
   related: []
 
@@ -597,7 +597,7 @@
   poster: "projects/2021-mood-dynamic-playlists-poster.pdf"
   image: "projects/2021-mood-dynamic-playlists.png"
   website: ""
-  demo: "https://soundbendor-productivity-playlist-stream-a3w1d6.streamlit.app/"
+  demo: "https://mood-playlist.streamlit.app/"
   code: ""
   related: ["gaur2023mood", "donnelly2022mood", "gaur2024generating"]
 
