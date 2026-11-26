@@ -11,6 +11,7 @@
 #   description  the longer Home Featured Demo text, 55-65 words (the tallest card sets the height of all of them)
 # Curiosity only:
 #   question the headline                    text  one or two sentences
+#   focus    image object-position (default "50% 22%"; "50% 0" keeps a top-band drawing in view)
 #   credit   image credit                    art   "wheel" draws Scriabin's key colors instead of an image
 #   soon     true shows a "Coming soon" pill instead of the button (the app is a placeholder)
 #   button, icon  button text and Font Awesome name (defaults "Try it", arrow-right);  shortlink  soundbendor.org short link
@@ -118,6 +119,7 @@
   question: "What is a sound made of?"
   text: "Every sound is a stack of sine waves. Add pure tones one at a time and hear a buzz, a bell or an organ take shape. Organ builders were doing this with pipes centuries before synthesizers."
   image: "img/explore/sine-by-sine.png"
+  focus: "50% 0"
   alt: "Six sine waves, each faster and quieter than the one above, and below them their sum: a sawtooth-like wave"
   credit: "Picture: harmonics 1 to 6 of a sawtooth and their sum"
   button: "Build a sound"
@@ -130,6 +132,7 @@
   question: "Can a sound keep rising forever?"
   text: "Pitch feels simple: a sound is high or low. These sounds were built to break that rule. Listen first and decide what you hear, then see how the trick works and try to break it yourself."
   image: "img/explore/endless-staircase.png"
+  focus: "50% 0"
   alt: "A Shepard scale drawn as a spectrogram: rows of tones a semitone apart climbing to the right, brightest in the middle and fading at the top and bottom"
   credit: "Picture: a Shepard scale, octave-spaced tones climbing under a fixed loudness curve"
   button: "Listen"
@@ -143,6 +146,7 @@
   question: "Which notes belong together?"
   text: "Two scrambled scales that turn into smooth melodies, a rhythm that splits in two, a tone that carries on through a burst of noise, and speech that turns into song."
   image: "img/explore/trust-your-ears.png"
+  focus: "50% 0"
   alt: "Deutsch's scale illusion: notes of a rising and a falling scale, alternating between the left ear (orange) and the right ear (blue), drawn as two zigzag lines"
   credit: "Picture: Diana Deutsch's scale illusion, as played to the left and right ears"
 
