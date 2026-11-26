@@ -2689,6 +2689,14 @@ $sb-star-canvas: #003b5c;
   gap: 0.5rem;
   padding: 1.3rem 1.5rem;
 }
+.sb-x-soon {
+  justify-self: start;
+  padding: 0.2rem 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
 .sb-x-credit { font-size: 0.72rem; color: rgba(255, 255, 255, 0.85) !important; }
 // Seeing Music: Scriabin's key colors around the circle of fifths (Sabaneyev 1911)
 .sb-x-art-wheel {

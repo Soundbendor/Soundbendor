@@ -12,6 +12,7 @@
 # Curiosity only:
 #   question the headline                    text  one or two sentences
 #   credit   image credit                    art   "wheel" draws Scriabin's key colors instead of an image
+#   soon     true shows a "Coming soon" pill instead of the button (the app is a placeholder)
 #   button, icon  button text and Font Awesome name (defaults "Try it", arrow-right);  shortlink  soundbendor.org short link
 # Dataset only:
 #   host     where it lives (GitHub, Hugging Face)
@@ -79,6 +80,8 @@
   area: voice-speech
   url: "https://soundbendor-pie.streamlit.app/"
   short: "Hear hypothesized pronunciations of Proto-Indo-European words and fables, choosing the sound for each disputed phoneme."
+  image: "img/explore/pie.png"
+  alt: "A simplified Indo-European family tree: Proto-Indo-European at the top, branching to Anatolian, Indo-Iranian, Hellenic, Italic, Celtic, Germanic and Balto-Slavic, over the reconstructed text of Schleicher's fable The Sheep and the Horses"
   people: ["donnelly"]
   paper: "donnelly2022concatenative"
 
@@ -107,6 +110,41 @@
   credit: "Colors: Scriabin's keys around the circle of fifths (Sabaneyev 1911)"
   button: "See it"
   icon: "palette"
+
+- name: "Sine by Sine"
+  kind: Curiosity
+  area: sound-perception
+  url: "https://sine-by-sine.streamlit.app/"
+  question: "What is a sound made of?"
+  text: "Every sound is a stack of sine waves. Add pure tones one at a time and hear a buzz, a bell or an organ take shape. Organ builders were doing this with pipes centuries before synthesizers."
+  image: "img/explore/sine-by-sine.png"
+  alt: "Six sine waves, each faster and quieter than the one above, and below them their sum: a sawtooth-like wave"
+  credit: "Picture: harmonics 1 to 6 of a sawtooth and their sum"
+  button: "Build a sound"
+  icon: "wave-square"
+
+- name: "The Endless Staircase"
+  kind: Curiosity
+  area: sound-perception
+  url: "https://endless-staircase.streamlit.app/"
+  question: "Can a sound keep rising forever?"
+  text: "Pitch feels simple: a sound is high or low. These sounds were built to break that rule. Listen first and decide what you hear, then see how the trick works and try to break it yourself."
+  image: "img/explore/endless-staircase.png"
+  alt: "A Shepard scale drawn as a spectrogram: rows of tones a semitone apart climbing to the right, brightest in the middle and fading at the top and bottom"
+  credit: "Picture: a Shepard scale, octave-spaced tones climbing under a fixed loudness curve"
+  button: "Listen"
+  icon: "headphones"
+
+- name: "Trust Your Ears?"
+  kind: Curiosity
+  area: sound-perception
+  url: "https://trust-your-ears.streamlit.app/"
+  soon: true
+  question: "Which notes belong together?"
+  text: "Two scrambled scales that turn into smooth melodies, a rhythm that splits in two, a tone that carries on through a burst of noise, and speech that turns into song."
+  image: "img/explore/trust-your-ears.png"
+  alt: "Deutsch's scale illusion: notes of a rising and a falling scale, alternating between the left ear (orange) and the right ear (blue), drawn as two zigzag lines"
+  credit: "Picture: Diana Deutsch's scale illusion, as played to the left and right ears"
 
 # ---------- Datasets ----------
 - name: "EmotioNotes"
