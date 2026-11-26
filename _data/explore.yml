@@ -11,7 +11,8 @@
 #   description  the longer Home Featured Demo text, 55-65 words (the tallest card sets the height of all of them)
 # Curiosity only:
 #   question the headline                    text  one or two sentences
-#   ground   tile color behind a band (match the drawing's ground);  light  true = dark text, for a light ground
+#   tint     true shades the text area in the ground color (a full-tile drawing on a colored ground)
+#   ground   tile color behind a band or tint (match the drawing's ground);  light  true = dark text, for a light ground
 #   band     true shows the image as a 5:1 band above the text (for drawings) instead of behind it
 #   credit   image credit                    art   "wheel" draws Scriabin's key colors instead of an image
 #   soon     true shows a "Coming soon" pill instead of the button (the app is a placeholder)
@@ -94,7 +95,7 @@
   url: "https://beethovens-ears.streamlit.app/"
   shortlink: "/beethoven/"
   question: "How did Beethoven hear his own music?"
-  text: "Listen to his music the way his failing ears may have delivered it to him, from the first signs of deafness in 1801 to the year of the Ninth Symphony's premiere in 1824. Then try the same hearing loss on any sound you like."
+  text: "Hear his music as his failing ears may have delivered it, from the first signs of deafness in 1801 to the Ninth Symphony in 1824. Then try his hearing loss on any sound."
   image: "img/home/beethoven-stieler-1820.jpg"
   alt: "Portrait of Beethoven holding the score of the Missa solemnis, by Joseph Karl Stieler, 1820"
   credit: "Portrait: Joseph Karl Stieler, 1820"
@@ -107,7 +108,7 @@
   area: sound-perception
   url: "https://seeing-music.streamlit.app/"
   question: "What color is a C major chord?"
-  text: "Some composers saw colors when they heard music, and their lists don't agree. Pick a recording and watch it in Scriabin's colors, then in Rimsky-Korsakov's, then in Amy Beach's."
+  text: "Some composers saw colors when they heard music, and their lists don't agree. Watch a recording in Scriabin's colors, then in Rimsky-Korsakov's."
   art: wheel
   credit: "Colors: Scriabin's keys around the circle of fifths (Sabaneyev 1911)"
   button: "See it"
@@ -118,10 +119,10 @@
   area: sound-perception
   url: "https://sine-by-sine.streamlit.app/"
   question: "What is a sound made of?"
-  text: "Every sound is a stack of sine waves. Add pure tones one at a time and hear a buzz, a bell or an organ take shape. Organ builders were doing this with pipes centuries before synthesizers."
+  text: "Every sound is a stack of sine waves. Add pure tones one at a time and hear a buzz, a bell or an organ take shape."
   image: "img/explore/sine-by-sine.png"
-  band: true
   ground: "#006a8e"
+  tint: true
   alt: "Six sine waves, each faster and quieter than the one above, and below them their sum: a sawtooth-like wave"
   credit: "Picture: harmonics 1 to 6 of a sawtooth and their sum"
   button: "Build a sound"
@@ -132,10 +133,10 @@
   area: sound-perception
   url: "https://endless-staircase.streamlit.app/"
   question: "Can a sound keep rising forever?"
-  text: "Pitch feels simple: a sound is high or low. These sounds were built to break that rule. Listen first and decide what you hear, then see how the trick works and try to break it yourself."
+  text: "These sounds were built to break the rules of pitch. Decide what you hear, see how the trick works, then try to break it."
   image: "img/explore/endless-staircase.png"
-  band: true
   ground: "#4a773c"
+  tint: true
   alt: "A Shepard scale drawn as a spectrogram: rows of tones a semitone apart climbing to the right, brightest in the middle and fading at the top and bottom"
   credit: "Picture: a Shepard scale, octave-spaced tones climbing under a fixed loudness curve"
   button: "Listen"
