@@ -1495,6 +1495,13 @@ html[data-theme="dark"] .sb-btn {
   background: var(--global-theme-color);
   color: #ffffff !important;
 }
+// inverted button (Home "Try the demo"), so it differs from the solid "All demos" beside it
+.sb-btn.sb-btn-outline,
+html[data-theme="dark"] .sb-btn.sb-btn-outline {
+  background: #ffffff;
+  color: #{$beaver-orange} !important;
+  box-shadow: inset 0 0 0 2px #{$beaver-orange};
+}
 
 .sb-join-band {
   display: flex;

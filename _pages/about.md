@@ -48,7 +48,7 @@ through hands-on projects with students in Corvallis, Bend,&nbsp;&amp;&nbsp;Ecam
     <h3 class="sb-feature-title">{{ fd.name }}</h3>
     <p>{{ fd.description }}</p>
     <div class="sb-feature-foot">
-      <a class="sb-btn" href="{{ fd.url }}">Try the demo <i class="fa-solid fa-arrow-right"></i></a>
+      <a class="sb-btn sb-btn-outline" href="{{ fd.url }}">Try the demo <i class="fa-solid fa-arrow-right"></i></a>
       <span class="sb-feature-meta">{% for pid in fd.people %}{% assign fp = site.data.people | where: "id", pid | first %}{% if fp %}<a href="{{ '/people/' | relative_url }}#{{ pid }}">{{ fp.name }}</a>{% unless forloop.last %}, {% endunless %}{% endif %}{% endfor %}{% if fd_cite %}<span class="sb-sep">•</span>Cite: <a href="{{ fd_cite.page | relative_url }}#{{ fd.paper }}">{{ fd_cite.label }}</a>{% elsif fd_pr %}<span class="sb-sep">•</span>Project: <a href="{{ '/projects/' | relative_url }}#{{ fd.project }}">{% if fd_pp %}{{ fd_pp.name | split: ' ' | last }} {% endif %}{{ fd_pr.year }}</a>{% endif %}</span>
     </div>
   </div>
