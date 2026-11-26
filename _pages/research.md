@@ -50,4 +50,3 @@ nav_order: 0
 </section>
 {% endfor %}
 
-<p class="sb-research-explore" id="datasets-and-code"><a class="sb-btn" href="{{ '/explore/' | relative_url }}">All demos, curiosities, datasets and code <i class="fa-solid fa-arrow-right"></i></a></p>
