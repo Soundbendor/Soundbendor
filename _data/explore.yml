@@ -146,7 +146,6 @@
   kind: Curiosity
   area: sound-perception
   url: "https://trust-your-ears.streamlit.app/"
-  soon: true
   question: "Which notes belong together?"
   text: "Two scrambled scales that turn into smooth melodies, a rhythm that splits in two, a tone that carries on through a burst of noise, and speech that turns into song."
   image: "img/explore/trust-your-ears.png"
@@ -155,6 +154,8 @@
   light: true
   alt: "Deutsch's scale illusion: notes of a rising and a falling scale, alternating between the left ear (orange) and the right ear (blue), drawn as two zigzag lines"
   credit: "Picture: Deutsch's scale illusion"
+  button: "Test your ears"
+  icon: "headphones"
 
 # ---------- Datasets ----------
 - name: "EmotioNotes"
