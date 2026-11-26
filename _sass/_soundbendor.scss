@@ -2723,7 +2723,7 @@ $sb-star-canvas: #003b5c;
 }
 // a full-tile drawing on a colored ground: shade the text area in that ground color
 .sb-x-cur.sb-x-tint::after {
-  background: linear-gradient(to top, var(--sb-ground) 0%, var(--sb-ground) 58%, transparent 80%);
+  background: linear-gradient(to top, color-mix(in srgb, var(--sb-ground) 82%, transparent) 0%, color-mix(in srgb, var(--sb-ground) 62%, transparent) 50%, transparent 85%);
 }
 .sb-x-soon {
   justify-self: start;

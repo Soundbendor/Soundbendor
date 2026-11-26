@@ -124,7 +124,7 @@
   ground: "#006a8e"
   tint: true
   alt: "Six sine waves, each faster and quieter than the one above, and below them their sum: a sawtooth-like wave"
-  credit: "Picture: harmonics 1 to 6 of a sawtooth and their sum"
+  credit: "Picture: a sawtooth wave's first six harmonics"
   button: "Build a sound"
   icon: "wave-square"
 
@@ -138,7 +138,7 @@
   ground: "#4a773c"
   tint: true
   alt: "A Shepard scale drawn as a spectrogram: rows of tones a semitone apart climbing to the right, brightest in the middle and fading at the top and bottom"
-  credit: "Picture: a Shepard scale, octave-spaced tones climbing under a fixed loudness curve"
+  credit: "Picture: a Shepard scale"
   button: "Listen"
   icon: "headphones"
 
@@ -150,11 +150,11 @@
   question: "Which notes belong together?"
   text: "Two scrambled scales that turn into smooth melodies, a rhythm that splits in two, a tone that carries on through a burst of noise, and speech that turns into song."
   image: "img/explore/trust-your-ears.png"
-  band: true
   ground: "#c6dae7"
+  tint: true
   light: true
   alt: "Deutsch's scale illusion: notes of a rising and a falling scale, alternating between the left ear (orange) and the right ear (blue), drawn as two zigzag lines"
-  credit: "Picture: Diana Deutsch's scale illusion, as played to the left and right ears"
+  credit: "Picture: Deutsch's scale illusion"
 
 # ---------- Datasets ----------
 - name: "EmotioNotes"
