@@ -77,7 +77,7 @@ nav_order: 1
 
 {% if x_data.size > 0 %}
 <section class="sb-x-section" id="datasets" aria-labelledby="datasets-title">
-<div class="sb-x-head"><h2 id="datasets-title">Datasets</h2><p>Data we've built and released for other researchers to use. Please cite the paper if you use one.</p></div>
+<div class="sb-x-head"><h2 id="datasets-title">Datasets</h2><p>Data we've built and released for other researchers to use.</p></div>
 <div class="sb-x-rows">
 {%- for r in x_data -%}
   {%- assign twins = site.data.explore | where: "name", r.name %}
