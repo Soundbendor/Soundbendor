@@ -2702,7 +2702,7 @@ $sb-star-canvas: #003b5c;
   align-content: start;
   background: #101e2c;
 
-  > img { position: static; height: auto; aspect-ratio: 5; max-height: 140px; object-fit: contain; object-position: 50% 0; z-index: auto; }
+  > img { position: static; height: auto; aspect-ratio: 6.5; max-height: 120px; object-fit: contain; object-position: 50% 0; z-index: auto; }
   &::after { display: none; }
 }
 .sb-x-cur.sb-x-band .sb-x-kick { color: rgba(255, 255, 255, 0.9); }
