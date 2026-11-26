@@ -2574,7 +2574,7 @@ $sb-star-canvas: #003b5c;
   color: var(--global-text-color);
   cursor: pointer;
 
-  span { opacity: 0.7; margin-left: 0.2rem; font-variant-numeric: tabular-nums; }
+  span { color: inherit !important; opacity: 0.75; margin-left: 0.2rem; font-variant-numeric: tabular-nums; }
   &[aria-pressed="true"] { background: #{$beaver-orange}; border-color: #{$beaver-orange}; color: #ffffff; }
 }
 
@@ -2639,6 +2639,7 @@ $sb-star-canvas: #003b5c;
   text-decoration: none;
 }
 
+.post .sb-x-shot, .sb-x-shot { text-decoration: none !important; }
 .sb-x-shot .sb-x-noshot {
   display: grid;
   place-items: center;
@@ -2688,7 +2689,7 @@ $sb-star-canvas: #003b5c;
   gap: 0.5rem;
   padding: 1.3rem 1.5rem;
 }
-.sb-x-credit { font-size: 0.72rem; opacity: 0.8; }
+.sb-x-credit { font-size: 0.72rem; color: rgba(255, 255, 255, 0.85) !important; }
 // Seeing Music: Scriabin's key colors around the circle of fifths (Sabaneyev 1911)
 .sb-x-art-wheel {
   background: conic-gradient(from -15deg at 78% 30%, #e3170a, #f7946b, #f6d400, #33a853, #bfe2f4, #a8cdeb, #1e50ff, #7a2fbf, #a03cb0, #8e9dae, #7d8b99, #8b0f0f, #e3170a);
