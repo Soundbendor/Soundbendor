@@ -142,6 +142,21 @@
   button: "Listen"
   icon: "headphones"
 
+- name: "How Does Music Make You Feel?"
+  kind: Curiosity
+  area: music-emotion
+  url: "https://feel-the-music.streamlit.app/"
+  question: "How does music make you feel?"
+  text: "Make a tune sound sad, guess the next note, ask whether minor sounds sad everywhere, and tap along when a piece gives you chills."
+  image: "img/explore/feel-the-music.png"
+  ground: "#fdd26e"
+  tint: true
+  light: true
+  alt: "The loudness of a piece of music drawn as orange bars, swelling to a climax, with dots marking the moments that give listeners chills"
+  credit: "Picture: a crescendo, with chills marked"
+  button: "Find out"
+  icon: "heart"
+
 - name: "Trust Your Ears?"
   kind: Curiosity
   area: sound-perception
