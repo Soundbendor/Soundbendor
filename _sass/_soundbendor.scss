@@ -2501,3 +2501,271 @@ $sb-star-canvas: #003b5c;
     flex-basis: 100%;
   }
 }
+
+/* ---------- Explore page (/explore/, _pages/explore.html, data _data/explore.yml) ----------
+   Four sections, each with its own shape: Demos = 3-across screenshot cards with an area filter,
+   Curiosities = 2-across picture tiles led by the question (an odd last tile spans the row),
+   Datasets = full-width rows with a fact sheet, Code = compact two-column list. */
+.sb-x-jump {
+  position: sticky;
+  top: 56px; // set to the navbar's height by sb-explore.js
+  z-index: 5;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.5rem 0 1.5rem;
+  padding: 0.6rem 0;
+  background: var(--global-bg-color);
+  border-bottom: 1px solid var(--global-divider-color);
+
+  a {
+    display: inline-flex;
+    gap: 0.45rem;
+    align-items: baseline;
+    padding: 0.25rem 0.9rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 999px;
+    background: var(--global-card-bg-color);
+    color: var(--global-text-color);
+    font-weight: 600;
+    font-size: 0.92rem;
+    text-decoration: none;
+  }
+  a:hover { color: #{$beaver-orange}; }
+  b { color: var(--global-text-color-light); font-weight: 600; font-variant-numeric: tabular-nums; }
+  .sb-x-jump-demo { border-color: #{$beaver-orange}; }
+  .sb-x-jump-cur { border-color: #{$luminance}; }
+  .sb-x-jump-data { border-color: #{$sb-stratosphere}; }
+  .sb-x-jump-code { border-color: #{$sb-pine-stand}; }
+}
+
+.sb-x-section {
+  margin-bottom: 3rem;
+  scroll-margin-top: 120px;
+}
+
+.sb-x-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+
+  h2 { margin: 0; }
+  p { margin: 0; flex: 1 1 320px; max-width: 38rem; color: var(--global-text-color-light); }
+}
+
+// Demos
+.sb-x-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+.sb-x-chip {
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.2rem 0.8rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 999px;
+  background: var(--global-card-bg-color);
+  color: var(--global-text-color);
+  cursor: pointer;
+
+  span { opacity: 0.7; margin-left: 0.2rem; font-variant-numeric: tabular-nums; }
+  &[aria-pressed="true"] { background: #{$beaver-orange}; border-color: #{$beaver-orange}; color: #ffffff; }
+}
+
+.sb-x-demos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 1.25rem;
+}
+.sb-x-demo {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.4rem;
+  overflow: hidden;
+  background: var(--global-card-bg-color);
+
+  &[hidden] { display: none; }
+  h3 { margin: 0; font-size: 1.3rem; }
+  p { margin: 0; font-size: 0.95rem; }
+}
+.sb-x-shot {
+  display: block;
+  aspect-ratio: 1.87;
+  max-width: 100%;
+  background: var(--global-divider-color);
+  border-bottom: 1px solid var(--global-divider-color);
+
+  img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top; }
+}
+.sb-x-demo-body {
+  display: grid;
+  gap: 0.45rem;
+  align-content: start;
+  padding: 0.85rem 1rem 1rem;
+}
+.sb-x-area,
+.sb-x-kick {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
+}
+.sb-x-foot {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.9rem;
+  align-items: center;
+  margin-top: 0.3rem;
+  font-size: 0.85rem;
+}
+.sb-x-meta { color: var(--global-text-color-light); }
+.sb-x-meta a { color: #{$beaver-orange}; }
+.post .sb-x-also,
+.sb-x-also {
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0 0.6rem;
+  border: 1px solid #{$sb-stratosphere};
+  border-radius: 999px;
+  color: #{$sb-stratosphere};
+  text-decoration: none;
+}
+
+.sb-x-shot .sb-x-noshot {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  padding: 1rem;
+  background: #{$sb-star-canvas};
+  color: #ffffff;
+  font-family: $sb-head-font;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+// Curiosities
+.sb-x-curs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
+  gap: 1.25rem;
+}
+.sb-x-cur {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  align-content: end;
+  min-height: 340px;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  background: #{$sb-star-canvas};
+  color: #ffffff;
+
+  > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; z-index: -2; }
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(to top, rgba(20, 16, 14, 0.82) 0%, rgba(20, 16, 14, 0.78) 40%, rgba(20, 16, 14, 0.1) 78%);
+  }
+  &:last-child:nth-child(odd):not(:first-child) { grid-column: 1 / -1; min-height: 300px; }
+  h3 { margin: 0; color: #ffffff; font-size: 1.7rem; }
+  p { margin: 0; color: #ffffff; max-width: 34rem; }
+  .sb-x-kick { color: #{$luminance}; }
+  .sb-btn { justify-self: start; }
+}
+.sb-x-cur-body {
+  display: grid;
+  gap: 0.5rem;
+  padding: 1.3rem 1.5rem;
+}
+.sb-x-credit { font-size: 0.72rem; opacity: 0.8; }
+// Seeing Music: Scriabin's key colors around the circle of fifths (Sabaneyev 1911)
+.sb-x-art-wheel {
+  background: conic-gradient(from -15deg at 78% 30%, #e3170a, #f7946b, #f6d400, #33a853, #bfe2f4, #a8cdeb, #1e50ff, #7a2fbf, #a03cb0, #8e9dae, #7d8b99, #8b0f0f, #e3170a);
+}
+
+// Datasets
+.sb-x-rows { display: grid; gap: 0.85rem; }
+.sb-x-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+  gap: 0.9rem 1.75rem;
+  padding: 1rem 1.15rem;
+  border: 1px solid var(--global-divider-color);
+  border-left: 4px solid #{$sb-stratosphere};
+  border-radius: 0 0.4rem 0.4rem 0;
+  background: var(--global-card-bg-color);
+
+  h3 { margin: 0 0 0.3rem; font-size: 1.35rem; color: #{$sb-stratosphere}; }
+  p { margin: 0; font-size: 0.95rem; }
+}
+@media (max-width: 720px) {
+  .sb-x-row { grid-template-columns: minmax(0, 1fr); }
+}
+.sb-x-btn-data { background: #{$sb-stratosphere} !important; border-color: #{$sb-stratosphere} !important; }
+.sb-x-facts {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.2rem 0.9rem;
+  align-content: start;
+  margin: 0;
+  font-size: 0.88rem;
+
+  dt { color: var(--global-text-color-light); font-weight: 600; }
+  dd { margin: 0; font-variant-numeric: tabular-nums; }
+}
+
+// Code
+.sb-x-code {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 400px), 1fr));
+  gap: 0.25rem 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: grid;
+    grid-template-columns: 1.6rem minmax(0, 1fr) auto;
+    gap: 0.6rem;
+    align-items: start;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+  i { color: #{$sb-pine-stand}; font-size: 1.25rem; margin-top: 0.15rem; }
+  span { display: block; font-size: 0.88rem; }
+}
+.sb-x-lang {
+  font-size: 0.75rem;
+  padding: 0 0.5rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 999px;
+  color: var(--global-text-color-light);
+}
+
+html[data-theme="dark"] {
+  .sb-x-also { border-color: #5aa9c9; color: #5aa9c9; }
+  .sb-x-row h3 { color: #5aa9c9; }
+  .sb-x-jump-data { border-color: #5aa9c9; }
+}
+
+// Research page: "Try it / Data" line at the end of each area, built from _data/explore.yml
+.sb-rarea-try {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+
+  b { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--global-text-color-light); margin-right: 0.35rem; }
+  b + a, a + b { margin-left: 0; }
+  .sb-sep { margin: 0 0.5rem; }
+}
+.sb-research-explore { margin-top: 1rem; }

@@ -3,7 +3,7 @@ layout: page
 permalink: /people/
 title: People
 nav: true
-nav_order: 1
+nav_order: 2
 ---
 
 <div class="sb-person sb-director">

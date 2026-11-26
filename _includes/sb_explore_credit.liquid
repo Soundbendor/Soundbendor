@@ -1,0 +1,17 @@
+{%- comment -%}
+  People and "Cite:" / "Project:" line for an Explore item (_data/explore.yml). include.r = the item.
+  People ids come from _data/people.yml; "donnelly" links to the PI's page.
+{%- endcomment -%}
+{%- assign r = include.r -%}
+{%- assign cite = site.data.bibkeys[r.paper] -%}
+<span class="sb-x-meta">
+  {%- for pid in r.people -%}
+    {%- if pid == "donnelly" -%}<a href="{{ '/donnelly/' | relative_url }}">Patrick Donnelly</a>
+    {%- else -%}{%- assign p = site.data.people | where: "id", pid | first -%}{%- if p -%}<a href="{{ '/people/' | relative_url }}#{{ pid }}">{{ p.name }}</a>{%- endif -%}{%- endif -%}
+    {%- unless forloop.last -%}, {% endunless -%}
+  {%- endfor -%}
+  {%- assign has_ref = false -%}{%- if cite -%}{%- assign has_ref = true -%}{%- elsif r.project -%}{%- assign has_ref = true -%}{%- endif -%}
+  {%- if r.people.size > 0 and has_ref -%}<span class="sb-sep">•</span>{%- endif -%}
+  {%- if cite -%}Cite: <a href="{{ cite.page | relative_url }}#{{ r.paper }}">{{ cite.label }}</a>
+  {%- elsif r.project -%}{%- assign pr = site.data.projects | where: "id", r.project | first -%}{%- if pr -%}{%- assign pp = site.data.people | where: "id", pr.people[0] | first -%}Project: <a href="{{ '/projects/' | relative_url }}#{{ r.project }}">{% if pp %}{{ pp.name | split: ' ' | last }} {% endif %}{{ pr.year }}</a>{%- endif -%}{%- endif -%}
+</span>

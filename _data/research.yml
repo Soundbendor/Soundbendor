@@ -1,7 +1,7 @@
 # Research areas on /research/ (four short sections). Edit by pull request.
 #   accent  colour of the section marker (a tag colour family)
 #   tags    up to three theme tags (see _data/tags.yml); each chip links to the page where that tag has results
-#   feature optional direct link to a featured resource or project
+#   feature optional direct link to a featured project (demos and datasets are listed automatically from _data/explore.yml)
 #   image   under assets/img/research/ (3:2), with alt text
 - id: music-emotion
   title: Music Emotion
@@ -15,7 +15,6 @@
     Valence and arousal emotion map with words such as sad, calm, happy and excited; a playlist path of
     eleven songs climbs from the sad region to the excited region.
   tags: [Music Emotion, Datasets, Recommendation]
-  feature: {label: "Explore EmotioNotes", url: "https://github.com/Soundbendor/program_notes_data"}
 - id: sound-perception
   title: Sound Perception
   accent: "#c6dae7"   # Moondust
@@ -28,6 +27,18 @@
     A listening-test screen: a sound clip with a play button, the question How does it sound? and
     descriptor buttons such as bright, warm, rough and metallic, with two selected.
   tags: [Timbre, Perception, Hearing]
+- id: voice-speech
+  title: Voice & Speech
+  accent: "#003b5c"   # Star Canvas
+  summary: >-
+    We study the human voice in song and in speech. We classify vowels sung across a singer's range, analyze
+    sentiment in Chinese opera, and estimate how a crowd voted from the sound of its voices. We also synthesize
+    speech, from Proto-Indo-European pronunciations to text-to-speech for constructed languages.
+  image: research/voice-speech.svg
+  alt: >-
+    Vowel chart with the vowels i, e, ɛ, a, u, o, ɔ and ɑ; arrows show the close vowels drifting toward the open
+    center of the chart on high sung notes.
+  tags: [Voice, Speech & Text, Audio Synthesis]
 - id: musical-structure
   title: Musical Structure
   accent: "#006a8e"   # Stratosphere
@@ -40,7 +51,6 @@
     Piano roll of a performance from C2 to C7 over about 45 seconds, note colour showing velocity; outlined notes
     mark edits to pitch, velocity, duration and timing, and deleted notes.
   tags: [Musicology, Transcription, Generation]
-  feature: {label: "Explore SynTheory+", url: "https://huggingface.co/datasets/derekxkwan/syntheory_plus"}
 - id: applied-sensing
   title: Applied Sensing
   accent: "#4a773c"   # Pine Stand

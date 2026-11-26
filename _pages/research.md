@@ -35,21 +35,19 @@ nav_order: 0
           <a class="sb-rarea-feature" href="{{ fu }}">{{ a.feature.label }} <i class="fa-solid fa-arrow-right"></i></a>
         {%- endif -%}
       </div>
+      {%- assign a_items = site.data.explore | where: "area", a.id -%}
+      {%- assign a_try = "" | split: "" -%}{%- assign a_data = "" | split: "" -%}
+      {%- for r in a_items -%}{%- if r.kind == "Demo" or r.kind == "Curiosity" -%}{%- assign a_try = a_try | push: r -%}{%- elsif r.kind == "Dataset" or r.kind == "Code" -%}{%- assign a_data = a_data | push: r -%}{%- endif -%}{%- endfor -%}
+      {%- if a_items.size > 0 -%}
+      <div class="sb-rarea-try">
+        {%- if a_try.size > 0 -%}<b>Try it</b>{%- for r in a_try -%}<a href="{{ '/explore/' | relative_url }}#{{ r.kind | slugify }}-{{ r.name | slugify }}">{{ r.name }}</a>{%- unless forloop.last %} · {% endunless -%}{%- endfor -%}{%- endif -%}
+        {%- if a_try.size > 0 and a_data.size > 0 -%}<span class="sb-sep"></span>{%- endif -%}
+        {%- if a_data.size > 0 -%}<b>Data</b>{%- for r in a_data -%}<a href="{{ '/explore/' | relative_url }}#{{ r.kind | slugify }}-{{ r.name | slugify }}">{{ r.name }}</a>{%- unless forloop.last %} · {% endunless -%}{%- endfor -%}{%- endif -%}
+      </div>
+      {%- endif -%}
     </div>
   </div>
 </section>
 {% endfor %}
 
-## Datasets, Code &amp; Demos {#datasets-and-code}
-
-<div class="sb-datasets">
-{%- for r in site.data.resources -%}
-  {%- assign info = site.data.bibkeys[r.paper] -%}
-  <div class="sb-dataset sb-res-{{ r.kind | default: 'Dataset' | slugify }}">
-    <div class="sb-dataset-name">{% if r.kind %}<span class="sb-dataset-kind">{{ r.kind }}</span> {% endif %}<strong>{{ r.name }}</strong> <a class="sb-prog-link" href="{{ r.url }}">{% if r.kind == "Demo" %}Demo{% else %}{{ r.host }}{% endif %}</a></div>
-    <p>{{ r.short }}</p>
-    {%- if info -%}<span class="sb-dataset-cite">Cite: <a href="{{ info.page | relative_url }}#{{ r.paper }}">{{ info.label }}</a></span>{%- endif -%}
-    {%- if r.project -%}{%- assign sb_pr = site.data.projects | where: "id", r.project | first -%}{%- if sb_pr -%}{%- assign sb_pp = site.data.people | where: "id", sb_pr.people[0] | first -%}<span class="sb-dataset-cite">Project: <a href="{{ '/projects/' | relative_url }}#{{ r.project }}">{% if sb_pp %}{{ sb_pp.name | split: ' ' | last }} {% endif %}{{ sb_pr.year }}</a></span>{%- endif -%}{%- endif -%}
-  </div>
-{%- endfor -%}
-</div>
+<p class="sb-research-explore" id="datasets-and-code"><a class="sb-btn" href="{{ '/explore/' | relative_url }}">All demos, curiosities, datasets and code <i class="fa-solid fa-arrow-right"></i></a></p>

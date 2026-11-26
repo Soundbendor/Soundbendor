@@ -3,7 +3,7 @@ layout: page
 permalink: /theses/
 title: Theses
 nav: true
-nav_order: 3
+nav_order: 4
 ---
 
 {% include tag_filter.liquid %}

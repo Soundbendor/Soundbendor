@@ -8,7 +8,7 @@ _styles: >
   font-size: 1.45rem !important; text-transform: uppercase; letter-spacing: 0.07em; color: #006a8e !important; }
   html[data-theme="dark"] .post-description { color: #8cc8e0 !important; }
 nav: true
-nav_order: 6
+nav_order: 7
 ---
 
 <div class="sb-pi-head">

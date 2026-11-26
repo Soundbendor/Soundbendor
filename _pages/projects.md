@@ -4,7 +4,7 @@ permalink: /projects/
 title: Student Projects
 nav_title: Projects
 nav: true
-nav_order: 4
+nav_order: 5
 ---
 
 {% include tag_filter.liquid %}

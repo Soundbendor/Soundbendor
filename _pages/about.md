@@ -31,21 +31,21 @@ through hands-on projects with students in Corvallis, Bend,&nbsp;&amp;&nbsp;Ecam
 {%- endfor -%}
 </div>
 
-{% assign sb_fds = site.data.featured_demos %}
+{% assign sb_fds = site.data.explore | where: "kind", "Demo" | where_exp: "r", "r.home" | sort: "home" %}
 
 <div class="sb-section-head">
   <h2 id="featured-demo">Featured Demo</h2>
   {% if sb_fds.size > 1 %}{% include sb_carousel_controls.liquid label="featured demo" id="sb-feature-controls" target="sb-feature-track" %}{% endif %}
-  <a class="sb-btn" href="{{ '/research/' | relative_url }}#datasets-and-code">All demos <i class="fa-solid fa-arrow-right"></i></a>
+  <a class="sb-btn" href="{{ '/explore/' | relative_url }}#demos">All demos <i class="fa-solid fa-arrow-right"></i></a>
 </div>
 
 <div class="sb-carousel sb-carousel-feature" data-interval="10000" data-label="featured demo" data-controls="sb-feature-controls" aria-roledescription="carousel" aria-label="Featured demos">
 <div class="sb-carousel-track" id="sb-feature-track" aria-live="off">
 {%- for fd in sb_fds -%}{%- assign fd_cite = site.data.bibkeys[fd.paper] -%}{%- if fd.project -%}{%- assign fd_pr = site.data.projects | where: "id", fd.project | first -%}{%- assign fd_pp = site.data.people | where: "id", fd_pr.people[0] | first -%}{%- endif %}
-<div class="sb-slide sb-feature{% if forloop.first %} is-active{% endif %}" role="group" aria-roledescription="slide" aria-label="{{ forloop.index }} of {{ forloop.length }}: {{ fd.title | escape }}">
+<div class="sb-slide sb-feature{% if forloop.first %} is-active{% endif %}" role="group" aria-roledescription="slide" aria-label="{{ forloop.index }} of {{ forloop.length }}: {{ fd.name | escape }}">
   <a class="sb-feature-imglink" href="{{ fd.url }}"><img class="sb-feature-img" src="{{ fd.image | prepend: '/assets/' | relative_url }}?v={{ site.time | date: '%s' }}" alt="{{ fd.alt | escape }}"{% unless forloop.first %} loading="lazy"{% endunless %}></a>
   <div class="sb-feature-text">
-    <h3 class="sb-feature-title">{{ fd.title }}</h3>
+    <h3 class="sb-feature-title">{{ fd.name }}</h3>
     <p>{{ fd.description }}</p>
     <div class="sb-feature-foot">
       <a class="sb-btn" href="{{ fd.url }}">Try the demo <i class="fa-solid fa-arrow-right"></i></a>
@@ -64,14 +64,14 @@ through hands-on projects with students in Corvallis, Bend,&nbsp;&amp;&nbsp;Ecam
 
 <p class="sb-more-news"><a href="{{ '/news/' | relative_url }}">All news <i class="fa-solid fa-arrow-right"></i></a></p>
 
-{% assign sb_funs = site.data.fun_demos %}
+{% assign sb_funs = site.data.explore | where: "kind", "Curiosity" | where_exp: "r", "r.home" | sort: "home" %}
 <div class="sb-carousel sb-carousel-fun" data-interval="10000" data-label="fun demo" aria-roledescription="carousel" aria-label="Just for fun demos">
 <div class="sb-carousel-track" aria-live="off">
 {%- for fun in sb_funs %}
-<div class="sb-slide sb-fun{% if forloop.first %} is-active{% endif %}" role="group" aria-roledescription="slide" aria-label="{{ forloop.index }} of {{ forloop.length }}: {{ fun.title | escape }}">
+<div class="sb-slide sb-fun{% if forloop.first %} is-active{% endif %}" role="group" aria-roledescription="slide" aria-label="{{ forloop.index }} of {{ forloop.length }}: {{ fun.name | escape }}">
   <a class="sb-fun-imglink" href="{{ fun.url }}"><img class="sb-fun-img" src="{{ fun.image | prepend: '/assets/' | relative_url }}?v={{ site.time | date: '%s' }}" alt="{{ fun.alt | escape }}" title="{{ fun.credit | escape }}"{% unless forloop.first %} loading="lazy"{% endunless %}></a>
   <div class="sb-fun-text">
-    <div class="sb-fun-label">Just for fun: {{ fun.title }}</div>
+    <div class="sb-fun-label">Just for fun: {{ fun.name }}</div>
     <h3 class="sb-fun-title">{{ fun.question }}</h3>
     <p>{{ fun.text }}</p>
     <a class="sb-btn" href="{{ fun.url }}">{{ fun.button | default: "Try the demo" }} <i class="fa-solid fa-{{ fun.icon | default: 'arrow-right' }}"></i></a>

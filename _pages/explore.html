@@ -1,0 +1,115 @@
+---
+layout: page
+permalink: /explore/
+title: Explore
+description: Try our research yourself. Play with demos built from our papers and student projects, explore curiosities about how music and hearing work, and download the datasets and code we release.
+nav: true
+nav_order: 1
+---
+
+{%- comment -%}
+  All items come from _data/explore.yml (kinds Demo, Curiosity, Dataset, Code); research areas from _data/research.yml.
+  Each section shows only when it has items. Styles: .sb-x* in _sass/_soundbendor.scss; filter + sticky bar: assets/js/sb-explore.js.
+{%- endcomment -%}
+{%- assign x_demos = site.data.explore | where: "kind", "Demo" -%}
+{%- assign x_curs = site.data.explore | where: "kind", "Curiosity" -%}
+{%- assign x_data = site.data.explore | where: "kind", "Dataset" -%}
+{%- assign x_code = site.data.explore | where: "kind", "Code" -%}
+
+<nav class="sb-x-jump" aria-label="Sections on this page">
+  {%- if x_demos.size > 0 %}<a class="sb-x-jump-demo" href="#demos">Demos <b>{{ x_demos.size }}</b></a>{% endif -%}
+  {%- if x_curs.size > 0 %}<a class="sb-x-jump-cur" href="#curiosities">Curiosities <b>{{ x_curs.size }}</b></a>{% endif -%}
+  {%- if x_data.size > 0 %}<a class="sb-x-jump-data" href="#datasets">Datasets <b>{{ x_data.size }}</b></a>{% endif -%}
+  {%- if x_code.size > 0 %}<a class="sb-x-jump-code" href="#code">Code <b>{{ x_code.size }}</b></a>{% endif -%}
+</nav>
+
+{% if x_demos.size > 0 %}
+<section class="sb-x-section" id="demos" aria-labelledby="demos-title">
+<div class="sb-x-head"><h2 id="demos-title">Demos</h2><p>Our papers and student projects, as apps you can use in the browser.</p></div>
+<div class="sb-x-filter" role="group" aria-label="Show demos by research area">
+  <button type="button" class="sb-x-chip" data-area="" aria-pressed="true">All <span>{{ x_demos.size }}</span></button>
+  {%- for a in site.data.research -%}{%- assign n = x_demos | where: "area", a.id -%}{%- if n.size > 0 %}
+  <button type="button" class="sb-x-chip" data-area="{{ a.id }}" aria-pressed="false">{{ a.title }} <span>{{ n.size }}</span></button>
+  {%- endif -%}{%- endfor %}
+</div>
+<div class="sb-x-demos">
+{%- for r in x_demos -%}
+  {%- assign area = site.data.research | where: "id", r.area | first -%}
+  {%- assign twins = site.data.explore | where: "name", r.name -%}
+  <article class="sb-x-demo" id="demo-{{ r.name | slugify }}" data-area="{{ r.area }}">
+    <a class="sb-x-shot" href="{{ r.url }}" tabindex="-1" aria-hidden="true">{% if r.image %}<img src="{{ r.image | prepend: '/assets/' | relative_url }}" alt="" loading="lazy">{% else %}<span class="sb-x-noshot">{{ r.name }}</span>{% endif %}</a>
+    <div class="sb-x-demo-body">
+      {% if area %}<span class="sb-x-area">{{ area.title }}</span>{% endif %}
+      <h3>{{ r.name }}</h3>
+      <p>{{ r.short }}</p>
+      <div class="sb-x-foot">
+        <a class="sb-btn" href="{{ r.url }}">Try it <i class="fa-solid fa-arrow-right"></i></a>
+        {% include sb_explore_credit.liquid r=r %}
+        {%- for t in twins -%}{%- if t.kind == "Dataset" %}<a class="sb-x-also" href="#dataset-{{ t.name | slugify }}">Also a dataset</a>{% endif -%}{%- endfor %}
+      </div>
+    </div>
+  </article>
+{%- endfor %}
+</div>
+</section>
+{% endif %}
+
+{% if x_curs.size > 0 %}
+<section class="sb-x-section" id="curiosities" aria-labelledby="curiosities-title">
+<div class="sb-x-head"><h2 id="curiosities-title">Curiosities</h2><p>Questions about music and hearing that we found too interesting to leave alone. They aren't research results, just good fun to explore.</p></div>
+<div class="sb-x-curs">
+{%- for r in x_curs -%}
+  {%- assign area = site.data.research | where: "id", r.area | first %}
+  <article class="sb-x-cur{% if r.art %} sb-x-art-{{ r.art }}{% endif %}" id="curiosity-{{ r.name | slugify }}">
+    {% if r.image %}<img src="{{ r.image | prepend: '/assets/' | relative_url }}" alt="{{ r.alt | escape }}" loading="lazy">{% endif %}
+    <div class="sb-x-cur-body">
+      <span class="sb-x-kick">{{ r.name }}{% if area %} · {{ area.title }}{% endif %}</span>
+      <h3>{{ r.question }}</h3>
+      <p>{{ r.text }}</p>
+      <a class="sb-btn" href="{{ r.url }}">{{ r.button | default: "Try it" }} <i class="fa-solid fa-{{ r.icon | default: 'arrow-right' }}"></i></a>
+      {% if r.credit %}<span class="sb-x-credit">{{ r.credit }}</span>{% endif %}
+    </div>
+  </article>
+{%- endfor %}
+</div>
+</section>
+{% endif %}
+
+{% if x_data.size > 0 %}
+<section class="sb-x-section" id="datasets" aria-labelledby="datasets-title">
+<div class="sb-x-head"><h2 id="datasets-title">Datasets</h2><p>Data we've built and released for other researchers to use. Please cite the paper if you use one.</p></div>
+<div class="sb-x-rows">
+{%- for r in x_data -%}
+  {%- assign twins = site.data.explore | where: "name", r.name %}
+  <article class="sb-x-row" id="dataset-{{ r.name | slugify }}">
+    <div class="sb-x-row-main">
+      <h3>{{ r.name }}</h3>
+      <p>{{ r.short }}</p>
+      <div class="sb-x-foot">
+        <a class="sb-btn sb-x-btn-data" href="{{ r.url }}">Get the data <i class="fa-solid fa-arrow-right"></i></a>
+        {% include sb_explore_credit.liquid r=r %}
+        {%- for t in twins -%}{%- if t.kind == "Demo" %}<a class="sb-x-also" href="#demo-{{ t.name | slugify }}">Also a demo</a>{% endif -%}{%- endfor %}
+      </div>
+    </div>
+    <dl class="sb-x-facts">
+      {%- for f in r.facts %}<dt>{{ f[0] }}</dt><dd>{{ f[1] }}</dd>{% endfor -%}
+      {%- if r.host %}<dt>Host</dt><dd>{{ r.host }}</dd>{% endif -%}
+    </dl>
+  </article>
+{%- endfor %}
+</div>
+</section>
+{% endif %}
+
+{% if x_code.size > 0 %}
+<section class="sb-x-section" id="code" aria-labelledby="code-title">
+<div class="sb-x-head"><h2 id="code-title">Code</h2><p>Tools and libraries from the lab that you can use in your own work.</p></div>
+<ul class="sb-x-code">
+{%- for r in x_code %}
+  <li id="code-{{ r.name | slugify }}"><i class="fa-brands fa-github" aria-hidden="true"></i><div><a href="{{ r.url }}"><strong>{{ r.name }}</strong></a><span>{{ r.short }}</span>{% include sb_explore_credit.liquid r=r %}</div>{% if r.language %}<span class="sb-x-lang">{{ r.language }}</span>{% endif %}</li>
+{%- endfor %}
+</ul>
+</section>
+{% endif %}
+
+<script src="{{ '/assets/js/sb-explore.js' | relative_url | bust_file_cache }}" defer></script>

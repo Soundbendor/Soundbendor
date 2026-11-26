@@ -3,7 +3,7 @@ layout: page
 permalink: /join/
 title: Join
 nav: true
-nav_order: 7
+nav_order: 8
 ---
 
 <figure class="sb-hero">
