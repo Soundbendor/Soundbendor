@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" font-family="Open Sans, Arial, sans-serif">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#d73f09"/></marker></defs>
+<rect width="600" height="400" fill="#ffffff"/>
+<polygon points="120,60 500,60 500,320 250,320" fill="#f7f5f5" stroke="#b7b2b0" stroke-width="1.5"/>
+<line x1="163" y1="146" x2="500" y2="146" stroke="#d8d3d1" stroke-width="1.2"/>
+<line x1="207" y1="234" x2="500" y2="234" stroke="#d8d3d1" stroke-width="1.2"/>
+<line x1="310" y1="60" x2="375" y2="320" stroke="#d8d3d1" stroke-width="1.2"/>
+<ellipse cx="375" cy="263" rx="58" ry="30" fill="#c6dae7" opacity=".7"/>
+<line x1="139" y1="75" x2="326" y2="242" stroke="#d73f09" stroke-width="2.5" stroke-dasharray="7 5" marker-end="url(#ah)"/>
+<circle cx="120" cy="60" r="17" fill="#ffffff" stroke="#423e3c" stroke-width="2"/>
+<text x="120" y="67" text-anchor="middle" font-size="21" font-weight="700" fill="#423e3c">i</text>
+<line x1="184" y1="157" x2="320" y2="246" stroke="#d73f09" stroke-width="2.5" stroke-dasharray="7 5" marker-end="url(#ah)"/>
+<circle cx="163" cy="146" r="17" fill="#ffffff" stroke="#423e3c" stroke-width="2"/>
+<text x="163" y="153" text-anchor="middle" font-size="21" font-weight="700" fill="#423e3c">e</text>
+<circle cx="207" cy="234" r="17" fill="#ffffff" stroke="#423e3c" stroke-width="2"/>
+<text x="207" y="241" text-anchor="middle" font-size="21" font-weight="700" fill="#423e3c">ɛ</text>
+<circle cx="250" cy="320" r="17" fill="#ffffff" stroke="#423e3c" stroke-width="2"/>
+<text x="250" y="327" text-anchor="middle" font-size="21" font-weight="700" fill="#423e3c">a</text>
+<line x1="487" y1="80" x2="407" y2="234" stroke="#d73f09" stroke-width="2.5" stroke-dasharray="7 5" marker-end="url(#ah)"/>
+<circle cx="500" cy="60" r="17" fill="#ffffff" stroke="#423e3c" stroke-width="2"/>
+<text x="500" y="67" text-anchor="middle" font-size="21" font-weight="700" fill="#423e3c">u</text>
+<line x1="482" y1="162" x2="420" y2="240" stroke="#d73f09" stroke-width="2.5" stroke-dasharray="7 5" marker-end="url(#ah)"/>
+<circle cx="500" cy="146" r="17" fill="#ffffff" stroke="#423e3c" stroke-width="2"/>
+<text x="500" y="153" text-anchor="middle" font-size="21" font-weight="700" fill="#423e3c">o</text>
+<circle cx="500" cy="234" r="17" fill="#ffffff" stroke="#423e3c" stroke-width="2"/>
+<text x="500" y="241" text-anchor="middle" font-size="21" font-weight="700" fill="#423e3c">ɔ</text>
+<circle cx="500" cy="320" r="17" fill="#ffffff" stroke="#423e3c" stroke-width="2"/>
+<text x="500" y="327" text-anchor="middle" font-size="21" font-weight="700" fill="#423e3c">ɑ</text>
+<text x="120" y="40" font-size="16" font-weight="600" fill="#8e9089">Front</text>
+<text x="500" y="40" text-anchor="end" font-size="16" font-weight="600" fill="#8e9089">Back</text>
+<text x="96" y="66" text-anchor="end" font-size="16" font-weight="600" fill="#8e9089">Close</text>
+<text x="226" y="326" text-anchor="end" font-size="16" font-weight="600" fill="#8e9089">Open</text>
+<text x="375" y="352" text-anchor="middle" font-size="17" font-weight="700" fill="#d73f09">High sung notes</text>
+</svg>
