@@ -30,14 +30,14 @@
   url: https://soundbendor-hot100-emotion.streamlit.app/
   host: Streamlit
   short: See how GPT-4o-mini rated the mood of 31,596 Billboard Hot 100 songs (1958–2024), and how its ratings compare with human listeners'.
-  description: Isaac Brickner's Cascades Research Fellowship project LLM Emotion Prediction (2025) as an explorer of chart history, songs, an emotion map and GPT-versus-human agreement. Repo Soundbendor/hot100-emotion-explorer.
+  description: Isaac Brickner's Cascades Research Fellowship project LLM Emotion Prediction (2025) as an explorer of chart history, songs, an emotion map and GPT-versus-human agreement.
   project: 2025-llm-emotion-prediction
 - name: Sung Vowel Explorer
   kind: Demo
   url: https://sung-vowel-explorer.streamlit.app/
   host: Streamlit
   short: See how sung vowels blur at high pitch, hear where a classifier goes wrong, and sing into your mic to see which vowel it hears.
-  description: Parker Carlson's sung vowel classification (EvoMUSART 2024), retrained on VocalSet as an explorer of the vowel space, the model's mistakes and a sing-along classifier. Repo Soundbendor/sung-vowel-explorer.
+  description: Parker Carlson's sung vowel classification (EvoMUSART 2024), retrained on VocalSet as an explorer of the vowel space, the model's mistakes and a sing-along classifier.
   paper: carlson2024sung
 - name: Mood Playlist
   kind: Demo
@@ -51,7 +51,7 @@
   url: https://voice-vote.streamlit.app/
   host: Streamlit
   short: Mix single yes and no voices into a crowd, see whether a model can hear how the crowd voted, and add your own voice to the mix.
-  description: Alex Prestwich's URSA project and paper with Patrick Donnelly (ICFSP 2022) as an interactive demo, comparing the 2022 recipe with a model trained today. Repo Soundbendor/voice-vote.
+  description: Alex Prestwich's URSA project and paper with Patrick Donnelly (ICFSP 2022) as an interactive demo, comparing the 2022 recipe with a model trained today.
   paper: donnelly2022identifying
 - name: PIE Text-to-Speech
   kind: Demo

@@ -5,9 +5,6 @@ title: "New demo: Beethoven's Ears"
 kind: Demo
 source: "Interactive demo, inspired by a 2007 AES keynote by Charles Limb and Patrick Donnelly"
 link: https://beethovens-ears.streamlit.app/
-links:
-  - label: "Code"
-    url: https://github.com/Soundbendor/beethovens-ears
 inline: true
 related_posts: false
 ---
