@@ -521,6 +521,7 @@
   slides: "projects/2022-river-level-forecasting-slides.pdf"
   poster: "projects/2022-river-level-forecasting-poster.pdf"
   image: "projects/2022-river-level-forecasting.png"
+  demo: "https://river-forecast.streamlit.app/"
   website: "https://orion-junkins.github.io/RLF/"
   code: "https://github.com/orion-junkins/river-level-forecasting"
   related: ["donnelly2022short"]

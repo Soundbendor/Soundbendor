@@ -88,6 +88,16 @@
   people: ["donnelly"]
   paper: "donnelly2022concatenative"
 
+- name: "River Forecast"
+  kind: Demo
+  area: applied-sensing
+  url: "https://river-forecast.streamlit.app/"
+  short: "Where will the river be tomorrow? Live flow forecasts for rivers across Oregon, built from the weather in every corner of each catchment."
+  image: "img/explore/river-forecast.png"
+  alt: "River Forecast app screenshot"
+  people: ["orion-junkins"]
+  paper: "donnelly2022short"
+
 # ---------- Curiosities ----------
 - name: "Beethoven's Ears"
   kind: Curiosity
