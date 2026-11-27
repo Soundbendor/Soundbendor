@@ -94,7 +94,7 @@
   url: "https://river-forecast.streamlit.app/"
   short: "Where will the river be tomorrow? Live flow forecasts for rivers across Oregon, built from the weather in every corner of each catchment."
   image: "img/explore/river-forecast.png"
-  alt: "River Forecast app screenshot"
+  alt: "A drawn river-flow chart: observed flow in light blue up to now, then the forecast in gold with a shaded band that widens further ahead"
   people: ["orion-junkins"]
   paper: "donnelly2022short"
 
